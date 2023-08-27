@@ -80,9 +80,9 @@ transition: slide-left
 
 # FE News
 
-* Dependabot, grouped - https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
-* https://developer.chrome.com/blog/new-in-chrome-116/
-* Mest intressant, override XHR-requests & local overrides - https://developer.chrome.com/blog/new-in-devtools-117/
+* Dependabot, can now group PRs - https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
+* Mostly interesting are local override improvements (have you tried?), and now ability to override XHR-requests - https://developer.chrome.com/blog/new-in-devtools-117/
+* Minor updates (like more improved UI for missing CSS-imports) - https://developer.chrome.com/blog/new-in-chrome-116/
 
 ---
 transition: slide-left
