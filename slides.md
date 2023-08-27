@@ -14,15 +14,22 @@ transition: slide-left
 
 ## 30th of August
 
+Bobby Westberg
+
 ---
 transition: fade-out
 ---
 
 # Agenda
 
+Source: https://github.com/Bellfalasch/frontend-forum
+
 * New Builders Core
 * Deprecated packages
-* Inspiration
+* Dev survey results
+* FE News
+* FE Inspiration
+
 
 ---
 transition: slide-up
@@ -60,11 +67,28 @@ transition: slide-up
 transition: slide-left
 ---
 
-# Inspiration
+# Dev Surveys
 
-* State of CSS - https://www.twitch.tv/codeitlive
-* CSS Anchor Positioning - https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/
-* CSS subgrid - https://ishadeed.com/article/learn-css-subgrid/
+* 2023 surveys have closed
+* Stackoverflow - https://survey.stackoverflow.co/2023/#ai
+* State of CSS - https://2023.stateofcss.com/en-US
+* Excellent talk on SoCSS - https://www.twitch.tv/codeitlive
+
+---
+transition: slide-left
+---
+
+# FE News
+
+* Dependabot, grouped - https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
 * https://developer.chrome.com/blog/new-in-chrome-116/
 * Mest intressant, override XHR-requests & local overrides - https://developer.chrome.com/blog/new-in-devtools-117/
-* Dependabot, grouped - https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
+
+---
+transition: slide-left
+---
+
+# FE Inspiration
+
+* CSS Anchor Positioning - https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/
+* CSS subgrid - https://ishadeed.com/article/learn-css-subgrid/
