@@ -39,9 +39,25 @@ transition: slide-up
 
 # Builders Core
 
-New name: **Builders Core** ("*Builders Components*" is one of many builders-packages, like "*Builders Icons*" and "*Builders Tokens*").
+New name: **Builders Core**!
 
-* *#builders-core* (new channel name!)
+All new packages:
+
+```mermaid
+graph TD;
+    Builders-Core-->Builders-Components;
+    Builders-Core-->Builders-Tokens;
+    Builders-Core-->Builders-Icons;
+    Builders-Core-->Builders-Fonts;
+```
+
+---
+transition: slide-left
+---
+
+# Builders Core
+
+* NB! *#builders-core* (new channel name!)
 * <twemoji-baby/> Few weeks old
 * <twemoji-ring-buoy/> Old packages will live on (but not actively maintained)
 * <twemoji-building-construction/> Migration guide: https://www.gjensidige.builders/docs/core/?path=/docs/migrating-to-builders-core--about
@@ -99,8 +115,8 @@ transition: slide-up
 
 # <twemoji-headstone/> Sunsetted libraries
 
-* <twemoji-coffin /> **Grid** - what are people planning? Builders are considering smaller util components.
 * <twemoji-coffin /> **ESlint** - try defaults, create your own overwrites per repo or shared (usually pretty small).
+* <twemoji-coffin /> **Grid** - what are people planning? Builders are working on a new grid.
 * <twemoji-coffin /> **Global CSS** - it was just getting in the way
 * <twemoji-coffin /> **Utils** - use tokens and CSS instead
 * <twemoji-coffin /> **Link Helper** - used only locally
