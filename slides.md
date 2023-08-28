@@ -181,7 +181,7 @@ https://ishadeed.com/article/learn-css-subgrid/
 transition: slide-left
 ---
 
-# <twemoji-memo/> FE Survey
+# <twemoji-ballot-box-with-ballot/> FE Survey
 
 Gjensidige have done an amazing journey the last few years. From introducing **Slack** and **Github**, to **GAP** and **Builders Core**, to all the applications each one of you develop.
 
