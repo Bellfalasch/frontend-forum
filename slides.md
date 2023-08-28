@@ -39,18 +39,26 @@ transition: slide-up
 
 # Builders Core
 
-* Few weeks old (3?)
-* New name: **Builders Core**
+New name: **Builders Core** ("*Builders Components*" is one of many builders-packages, like "*Builders Icons*" and "*Builders Tokens*").
+
 * *#builders-core* (new channel name!)
-* Migration guide: https://www.gjensidige.builders/docs/core/?path=/docs/migrating-to-builders-core--about
+* <twemoji-baby/> Few weeks old
 * <twemoji-ring-buoy/> Old packages will live on (but not actively maintained)
-* <twemoji-building-construction/> Huge improvements, and new way of using them - Compound Components
+* <twemoji-building-construction/> Migration guide: https://www.gjensidige.builders/docs/core/?path=/docs/migrating-to-builders-core--about
+
+---
+transition: slide-left
+---
+
+# Builders Core
+
+Huge improvements, and new way of using them - **Compound Components**
 
 ```js
-// Current way
+// Old way
 <ComponentX title="My title" description="My desc"/>
 
-// New way - Compound Components
+// New way
 <ComponentX>
   <ComponentX.Title>My title</ComponentX.Title>
   <ComponentX.Description>My desc</ComponentX.Description>
@@ -63,7 +71,9 @@ transition: slide-left
 
 # Builders Core
 
-Looooads of updates and improvements already! Thanks community!
+Looooads of updates and improvements already!
+
+Thanks community for feedback! <twemoji-red-heart/>
 
 ---
 transition: slide-left
@@ -89,11 +99,11 @@ transition: slide-up
 
 # <twemoji-headstone/> Sunsetted libraries
 
-* **Grid** - what are people planning? Builders are considering smaller util components.
-* **ESlint** - try defaults, create your own overwrites per repo or shared (usually pretty small).
-* **Global CSS** - killed
-* **Utils** - killed (use tokens instead)
-* **Link Helper** - killed (used only locally)
+* <twemoji-coffin /> **Grid** - what are people planning? Builders are considering smaller util components.
+* <twemoji-coffin /> **ESlint** - try defaults, create your own overwrites per repo or shared (usually pretty small).
+* <twemoji-coffin /> **Global CSS** - it was just getting in the way
+* <twemoji-coffin /> **Utils** - use tokens and CSS instead
+* <twemoji-coffin /> **Link Helper** - used only locally
 
 ---
 transition: slide-left
@@ -103,9 +113,9 @@ transition: slide-left
 
 In the past years many teams have moved apps to Vite, it will probably be a thing for teams for some time.
 
-* <twemoji-shopping-cart/> NO sales done it (thx Gaute) - https://github.com/gjensidige/salg-nettbutikk/pull/2015
-* NO G+ done it (thx Jon) - https://github.com/gjensidige/salg-gpluss/pull/396
-* Step-by-step inspo (thx Ludovit) - https://blog.logrocket.com/vite-3-vs-create-react-app-comparison-migration-guide/
+* <twemoji-shopping-cart/> NO nettbutikk done it (thx Gaute) - https://github.com/gjensidige/salg-nettbutikk/pull/2015
+* <twemoji-shopping-cart/> NO G+ done it (thx Jon) - https://github.com/gjensidige/salg-gpluss/pull/396
+* <twemoji-clipboard/> Step-by-step inspo (thx Ludovit) - https://blog.logrocket.com/vite-3-vs-create-react-app-comparison-migration-guide/
 
 ---
 transition: slide-left
@@ -117,7 +127,7 @@ Many 2023-surveys have closed recently, and the reports are in.
 
 * <twemoji-chart-decreasing/> Stackoverflow 2023 - https://survey.stackoverflow.co/2023/#ai
 * <twemoji-chart-increasing/> State of CSS 2023 - https://2023.stateofcss.com/en-US
-  * <twemoji-film-projector/> Talk on SoCSS - https://www.twitch.tv/codeitlive
+  * <twemoji-cinema/> Talk on SoCSS - https://www.twitch.tv/codeitlive
 
 ---
 transition: slide-left
@@ -125,7 +135,9 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> FE News
 
-**Dependabot** You can now group PRs 
+## Dependabot
+You can now group PRs!
+
 https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
 
 ```yml{all|3|4-7|8-10|3-10}
@@ -141,10 +153,22 @@ groups:
     - "somepattern*"
 ```
 
-**Devtools 117** Mostly interesting are local override improvements (have you tried?), and now ability to override XHR-requests
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> FE News
+
+## Chrome news
+
+### Devtools 117
+Most interesting are local override improvements (have you tried?), and new ability to override XHR-requests.
+
 https://developer.chrome.com/blog/new-in-devtools-117/
 
-**Chrome 116** Minor updates (like more improved UI for missing CSS-imports)
+### Chrome 116
+Minor updates (like more improved UI for missing CSS-imports)
+
 https://developer.chrome.com/blog/new-in-chrome-116/
 
 ---
@@ -203,8 +227,8 @@ layout: center
 
 # That's all
 
---
-<twemoji-red-heart/>
+...
+<twemoji-red-heart class="animate-ping"/>
 
 Share the invite!
 
