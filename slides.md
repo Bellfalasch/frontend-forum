@@ -26,10 +26,10 @@ Source: https://github.com/Bellfalasch/frontend-forum
 
 * Builders Core
 * Deprecated Builders-packages
-* Dev surveys
+* Developer surveys
 * FE News
 * FE Inspiration
-
+* FE Survey
 
 ---
 transition: slide-up
@@ -175,3 +175,22 @@ https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-
 ```
 
 https://ishadeed.com/article/learn-css-subgrid/
+
+---
+transition: slide-left
+---
+
+# FE Survey
+
+Gjensidige have done an amazing journey the last few years. From introducing **Slack** and **Github**, to **GAP** and **Builders Core**, to all the applications each one of you develop.
+
+We're now interesting in understanding more about your experience as a *front-end developer*.
+
+* What tools do you use,
+* tools you cannot use,
+* gaps in the practical day-to-day development,
+* other pain-points,
+* things that make you happy.
+
+What could the community, the discipline, and Gjensidige do better?
+
