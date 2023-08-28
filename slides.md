@@ -38,8 +38,9 @@ transition: slide-up
 # Builders Core
 
 * Few weeks old (3?)
-* *#builders-core* (new channel name!)
 * New name: **Builders Core**
+* *#builders-core* (new channel name!)
+* Migration guide: https://www.gjensidige.builders/docs/core/?path=/docs/migrating-to-builders-core--about
 * <twemoji-ring-buoy/> Old packages will live on (but not actively maintained)
 * <twemoji-building-construction/> Huge improvements, and new way of using them - Compound Components
 
@@ -87,8 +88,22 @@ transition: slide-up
 # <twemoji-headstone/> Sunsetted libraries
 
 * **Grid** - what are people planning? Builders are considering smaller util components.
-* **Prettier** - try defaults, create your own overwrites per repo or shared (usually pretty small).
-* More?
+* **ESlint** - try defaults, create your own overwrites per repo or shared (usually pretty small).
+* **Global CSS** - killed
+* **Utils** - killed (use tokens instead)
+* **Link Helper** - killed (used only locally)
+
+---
+transition: slide-left
+---
+
+# Vite
+
+In the past years many teams have moved apps to Vite, it will probably be a thing for teams for some time.
+
+* NO sales done it (thx Gaute) - https://github.com/gjensidige/salg-nettbutikk/pull/2015
+* NO G+ done it (thx Jon) - https://github.com/gjensidige/salg-gpluss/pull/396
+* Step-by-step inspo from (thx Ludovit)  https://blog.logrocket.com/vite-3-vs-create-react-app-comparison-migration-guide/
 
 ---
 transition: slide-left
