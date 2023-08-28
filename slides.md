@@ -1,26 +1,27 @@
 ---
 # try also 'default' to start simple
-theme: dracula
+theme: the-unnamed
 
 # https://sli.dev/custom/highlighters.html
-highlighter: prism
+#highlighter: prism
 # show line numbers in code blocks
 lineNumbers: true
 # page transition
-transition: slide-left
+transition: fade-out
 ---
 
 # Front-end Forum
 
 ## 30th of August
 
-Bobby Westberg
+--
+  <twemoji-man-technologist/> Bobby Westberg
 
 ---
-transition: fade-out
+transition: slide-up
 ---
 
-# Agenda
+# <twemoji-spiral-notepad/> Agenda
 
 Source: https://github.com/Bellfalasch/frontend-forum
 
@@ -56,7 +57,7 @@ transition: slide-up
 ```
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Builders Core
@@ -97,30 +98,31 @@ transition: slide-up
 transition: slide-left
 ---
 
-# Vite
+# <twemoji-racing-car/> Vite
 
 In the past years many teams have moved apps to Vite, it will probably be a thing for teams for some time.
 
-* NO sales done it (thx Gaute) - https://github.com/gjensidige/salg-nettbutikk/pull/2015
+* <twemoji-shopping-cart/> NO sales done it (thx Gaute) - https://github.com/gjensidige/salg-nettbutikk/pull/2015
 * NO G+ done it (thx Jon) - https://github.com/gjensidige/salg-gpluss/pull/396
-* Step-by-step inspo from (thx Ludovit)  https://blog.logrocket.com/vite-3-vs-create-react-app-comparison-migration-guide/
+* Step-by-step inspo (thx Ludovit) - https://blog.logrocket.com/vite-3-vs-create-react-app-comparison-migration-guide/
 
 ---
 transition: slide-left
 ---
 
-# Dev Surveys
+# <twemoji-bar-chart/> Dev Surveys
 
-* <twemoji-chart-increasing/> Many 2023-surveys have closed
+Many 2023-surveys have closed recently, and the reports are in.
+
 * <twemoji-chart-decreasing/> Stackoverflow 2023 - https://survey.stackoverflow.co/2023/#ai
-* <twemoji-bar-chart/> State of CSS 2023 - https://2023.stateofcss.com/en-US
+* <twemoji-chart-increasing/> State of CSS 2023 - https://2023.stateofcss.com/en-US
   * <twemoji-film-projector/> Talk on SoCSS - https://www.twitch.tv/codeitlive
 
 ---
 transition: slide-left
 ---
 
-# FE News
+# <twemoji-rolled-up-newspaper/> FE News
 
 **Dependabot** You can now group PRs 
 https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
@@ -150,7 +152,7 @@ transition: slide-left
 
 # FE Inspiration
 
-<twemoji-anchor/> CSS **Anchor Positioning**
+### <twemoji-anchor/> CSS **Anchor Positioning**
 ```css
 .anchor {
   anchor-name: --my-anchor;
@@ -164,8 +166,7 @@ transition: slide-left
 
 https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/ 
 
-
-<twemoji-window/> CSS **subgrid**
+### <twemoji-window/> CSS **subgrid**
 ```css
 .grid {
   display: grid;
@@ -180,7 +181,7 @@ https://ishadeed.com/article/learn-css-subgrid/
 transition: slide-left
 ---
 
-# FE Survey
+# <twemoji-memo/> FE Survey
 
 Gjensidige have done an amazing journey the last few years. From introducing **Slack** and **Github**, to **GAP** and **Builders Core**, to all the applications each one of you develop.
 
