@@ -14,8 +14,8 @@ transition: fade-out
 
 ## 30th of August
 
---
-  <twemoji-man-technologist/> Bobby Westberg
+...
+<twemoji-man-technologist/> Bobby Westberg
 
 ---
 transition: slide-up
@@ -27,10 +27,11 @@ Source: https://github.com/Bellfalasch/frontend-forum
 
 * Builders Core
 * Deprecated Builders-packages
+* CRA to Vite
 * Developer surveys
 * FE News
 * FE Inspiration
-* FE Survey
+* Gjensidige FE Survey
 
 ---
 transition: slide-up
@@ -68,19 +69,19 @@ Looooads of updates and improvements already! Thanks community!
 transition: slide-left
 ---
 
-![Local Image](/images/2023-08-30/core3.png)
+<img src="/images/2023-08-30/core3.png" class="rounded shadow" />
 
 ---
 transition: slide-left
 ---
 
-![Local Image](/images/2023-08-30/core2.png)
+<img src="/images/2023-08-30/core2.png" class="rounded shadow" />
 
 ---
 transition: slide-left
 ---
 
-![Local Image](/images/2023-08-30/core1.png)
+<img src="/images/2023-08-30/core1.png" class="rounded shadow" />
 
 ---
 transition: slide-up
@@ -127,7 +128,7 @@ transition: slide-left
 **Dependabot** You can now group PRs 
 https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
 
-```yml
+```yml{all|3|4-7|8-10|3-10}
 # .github/dependabot.yml
 
 groups:
@@ -150,10 +151,10 @@ https://developer.chrome.com/blog/new-in-chrome-116/
 transition: slide-left
 ---
 
-# FE Inspiration
+# <twemoji-cherry-blossom/> FE Inspiration
 
 ### <twemoji-anchor/> CSS **Anchor Positioning**
-```css
+```css{all|2}
 .anchor {
   anchor-name: --my-anchor;
 }
@@ -167,7 +168,7 @@ transition: slide-left
 https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/ 
 
 ### <twemoji-window/> CSS **subgrid**
-```css
+```css{all|4}
 .grid {
   display: grid;
   grid-column: 1 / 3;
@@ -195,3 +196,16 @@ We're now interesting in understanding more about your experience as a *front-en
 
 What could the community, the discipline, and Gjensidige do better?
 
+---
+transition: slide-up
+layout: center
+---
+
+# That's all
+
+--
+<twemoji-red-heart/>
+
+Share the invite!
+
+See you next time
