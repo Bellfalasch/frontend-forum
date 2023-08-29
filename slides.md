@@ -49,6 +49,8 @@ graph TD;
     Builders-Core-->Builders-Tokens;
     Builders-Core-->Builders-Icons;
     Builders-Core-->Builders-Fonts;
+    Builders-Core-->Core-Analytics;
+    Builders-Core-->Core-Navigation;
 ```
 
 ---
@@ -219,7 +221,16 @@ https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-
 https://ishadeed.com/article/learn-css-subgrid/
 
 ---
-transition: slide-left
+transition: slide-up
+---
+
+# <twemoji-magic-wand/> FE Tricks
+
+1. Visit any Github-repo, press the dot-key on your keyboard. This will open the repo in a web-edition of VScode. Thx Magnus
+
+
+---
+transition: slide-up
 ---
 
 # <twemoji-ballot-box-with-ballot/> FE Survey
