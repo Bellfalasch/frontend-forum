@@ -45,7 +45,7 @@ transition: slide-left
 
 **Requirements:**
 
-* API key: *AKx5GXA8XGsEIq9WJhtsNWxIGKPAfTM7*
+* API key: *x*
 
 * BusinessUnit: *4b400bea00006400050531f2*
 
