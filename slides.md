@@ -227,6 +227,7 @@ transition: slide-up
 # <twemoji-magic-wand/> FE Tricks
 
 1. Visit any Github-repo, press the dot-key on your keyboard. This will open the repo in a web-edition of VScode. Thx Magnus
+2. Visit any Github-repo, press the T-key on your keyboard. This will open a file-search dialog so you can quickly find a specific file based on name. Thx Eirik
 
 
 ---
