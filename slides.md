@@ -132,36 +132,16 @@ graph TD;
 \* Only contains employees, not consultants, for its corresponding disciplines. Each one "lended out" to a specific delivery team. A bit like our own in-house consultant agency.
 
 ---
-transition: slide-up
----
-
-# Front-end Forum
-
-* Not mandatory
-* Bi-weekly
-* Physical (4th floor in "Sanhandlingssonen", main office in Oslo)
-* In English
-* Also on Teams
-* Recorded, saved for 30 days
-* Starts 09:30, usually lasts 30-45 minutes
-
----
 transition: slide-left
 ---
 
-# Builders Core - Our designsystem
+# Our designsystem
 
-Designsystemet
-* koden bak og dokumentasjonen for det
-* Ønske om at bidra tilbake (delingskultur)
+Gjensidige have a state of the art design system, it is called **Builders Core**!
 
----
-transition: slide-up
----
+It is maintained by **Team Builders**, closely working with Gjensidige's marketing department.
 
-# Builders Core
-
-Our design system is called **Builders Core**!
+It's a community effort, you can use it, but you are welcome to fix it and extend it!
 
 It contains these packages:
 
@@ -179,12 +159,46 @@ graph TD;
 transition: slide-up
 ---
 
+# Builders Core
+
+TODO:
+* koden bak og dokumentasjonen for det
+* Ønske om at bidra tilbake (delingskultur)
+
+---
+transition: slide-up
+---
+
+# Front-end Forum
+
+* For everyone!
+* In English
+* Not mandatory
+* Bi-weekly
+* Physical (4th floor in "Samhandlingssonen", main office in Oslo)
+* Also on Teams
+* Starts 09:30, usually lasts 30-45 minutes
+* Recorded, saved for 30 days
+* Open for you to talk/share/show, and request!
+
+---
+transition: slide-up
+---
+
 # Slack for a front-ender
 
-Slack-intro
-* Åpen kommunikasjon på Slack (ikke bruke private meldinger)
-* Populære/nyttige kanaler i Slack
-* Threading i Slack
+We use Slack as our go-to tool for internal communication. Use it rather than call for holding meetings, or sending e-mails.
+
+Some guidance in how Gjensidige uses Slack:
+* **Openness** - don't let valuable information die in private messages.
+* **Oppeness 2** - don't create private channels, unless absolutely necessary.
+* **Threading** - alsways answer questions as a thread.
+
+Some nice channels to watch:
+* #general
+* #gap #team-platform #team-security
+* #team-builders #builders-core #builders-platform
+* #frontend #design #content
 
 ---
 transition: slide-up
