@@ -226,9 +226,17 @@ transition: slide-up
 
 # Github
 
-TODO
-Github – hvordan lage repo, og annet som er spesielt hos oss
-* Namnkonvention
+We use Github, but repos and secret are not created in the web gui. Instead head to our Slack-channel **#github-at-gjensidige**
+
+Use `/platform-github ...` to "talk" to the bot, that will open up dialogs for you to use when interacting with Github.
+
+Ask your team for naming-conventions and overiew of your repos.
+
+#team-platform "owns" the Github service at us, they can assist with anything.
+
+https://www.github.com/gjensidige/
+
+Currently only closed source ='(
 
 ---
 transition: slide-up
