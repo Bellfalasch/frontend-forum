@@ -91,40 +91,45 @@ transition: slide-left
 
 We just say "T&I", or "T, I", in normal conversations.
 
+The director for T&I is **Sverre Johan Rostoft**. 
+
+Digitalisation & Design is "our" area. Our director is **Kristian Vige**.
+
 ```mermaid
 graph TD;
-    TI(T&I)-->DD(Digitalization & Design);
-    TI(T&I)-->Private;
-    TI(T&I)-->Commercial;
-    TI(T&I)-->Claims;
-    TI(T&I)-->Sweden;
-    TI(T&I)-->Denmark;
+    TI(T&I)-->DD(Digitalisation & Design);
+    TI(T&I)-->Security;
+    TI(T&I)-->Strategy;
+    TI(T&I)-->Architecture;
+    TI(T&I)-->BI(Business Intelligence & Analytics);
+    TI(T&I)-->...;
 ```
 
 ---
 transition: slide-up
 ---
 
-# Digitalization & Design
+# Digitalisation & Design
 
 We just say "DD" (D, D) in normal conversations.
 
+The disciplinary leaders are a shared resource for all of DD.
+
+You are a part of a team organized in one of these delivery areas:
+
 ```mermaid
 graph TD;
-    DD-->Builders;
+    DD-->Builders++;
     DD-->Private;
     DD-->Commercial;
     DD-->Claims;
     DD-->Sweden;
-    DD-->Denmark;
     DD-->Devs(Developers*);
     DD-->Design(Designers*);
     DD-->Content(Content*);
 ```
 
-You are a part of a team in one of these delivery areas above.
-
-\* Only contains employees, not consultants, for the different disciplines.
+\* Only contains employees, not consultants, for its corresponding disciplines. Each one "lended out" to a specific delivery team. A bit like our own in-house consultant agency.
 
 ---
 transition: slide-up
@@ -132,8 +137,13 @@ transition: slide-up
 
 # Front-end Forum
 
-Arena/forum – altså Front-end Forum
-* When/why/what/where/etc
+* Not mandatory
+* Bi-weekly
+* Physical (4th floor in "Sanhandlingssonen", main office in Oslo)
+* In English
+* Also on Teams
+* Recorded, saved for 30 days
+* Starts 09:30, usually lasts 30-45 minutes
 
 ---
 transition: slide-left
