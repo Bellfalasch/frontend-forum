@@ -181,6 +181,8 @@ transition: slide-up
 * Recorded, saved for 30 days
 * Open for you to talk/share/show, and request!
 
+https://www.gjensidige.builders/community/frontend-forum
+
 ---
 transition: slide-up
 ---
@@ -206,6 +208,7 @@ transition: slide-up
 
 # Accessibility
 
+TODO
 Vekten av Accessibility (uten å gå i dybde)
 
 ---
@@ -214,6 +217,7 @@ transition: slide-up
 
 # Security Score
 
+TODO
 Security Score – hvordan det fungerer
 
 ---
@@ -222,7 +226,9 @@ transition: slide-up
 
 # Github
 
+TODO
 Github – hvordan lage repo, og annet som er spesielt hos oss
+* Namnkonvention
 
 ---
 transition: slide-up
@@ -230,9 +236,17 @@ transition: slide-up
 
 # Gjensidige.Builders
 
-Gjensidige.Builders
-* Kort om nettstedet, men spesielt /frontend/-sidene
-* Gjennomgang av best practice principles vi har laget (18 punkter)
+Gjensidige employee's own website. Most of it open. Reach out if you want to contribute.
+
+Contains best practice, guidelines, team overview (not open to the public), news, and more.
+
+Short way to Builders Core-documentation, and more.
+
+Front-end has its own `/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
+https://www.gjensidige.builders/frontend 
+
+Read our "Principles for building web applications" (18 rules):
+https://www.gjensidige.builders/blog/principles
 
 ---
 transition: slide-up
@@ -240,6 +254,7 @@ transition: slide-up
 
 # Work culture
 
+TODO
 * Oppeness
 * The power of "no"
 * Sharing, contributing, giving back
@@ -251,6 +266,7 @@ transition: slide-up
 
 # More help?
 
+TODO
 Jeg tilbyr meg og å hjelpe dem med dette (noe de per nå ordner på egen hand, eller med en fra teamet som støtte):
 * Sette opp Builders Core på egen maskin, og Github Personal Access Token
 * Ta i bruk Core i praksis, bli kjent med docs
@@ -265,6 +281,6 @@ layout: center
 ...
 <twemoji-red-heart class="animate-ping"/>
 
-Welcome!
+Welcome to the Gjensidige family!
 
 Don't be afraid to reach out
