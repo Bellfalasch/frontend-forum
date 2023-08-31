@@ -42,6 +42,7 @@ transition: slide-left
 
 * hva en fagleder for front-end er
 * kan hjelpe dem med
+
 ---
 transition: slide-up
 ---
@@ -56,19 +57,74 @@ transition: slide-up
 * Loves CSS, and the interaction that CMSes gives
 
 ## Private
-* 42yo, 2 kids, cat
+* Swedish, 42yo, 2 kids (7yo & 5yo), cat (9yo)
 * Norway since 2010
-* Love socks, old games, and to draw and write
+* Love craft beer, socks, old games, and to draw & write
+
+---
+transition: slide-left
+---
+
+# Gjensidige for a front-ender
+
+## Gjensidige
+
+You probably know some of our history, operating countries, markets, etc.
+
+But where are you in this mix?
+
+```mermaid
+graph TD;
+    Gjensidige-->Private;
+    Gjensidige-->Commercial;
+    Gjensidige-->Claims;
+    Gjensidige-->People;
+    Gjensidige-->TI(Technology & Insight)
+    Gjensidige-->...;
+```
+
+---
+transition: slide-left
+---
+
+# Technology & Insights
+
+We just say "T&I", or "T, I", in normal conversations.
+
+```mermaid
+graph TD;
+    TI(T&I)-->DD(Digitalization & Design);
+    TI(T&I)-->Private;
+    TI(T&I)-->Commercial;
+    TI(T&I)-->Claims;
+    TI(T&I)-->Sweden;
+    TI(T&I)-->Denmark;
+```
 
 ---
 transition: slide-up
 ---
 
-# Gjensidige for a front-ender
+# Digitalization & Design
 
-«Bedriften Gjensidige»
-* Litt om front-end-miljøet våres (struktur)
-* Litt om de ulike støtte-teamene, Builders og Platform og Security
+We just say "DD" (D, D) in normal conversations.
+
+```mermaid
+graph TD;
+    DD-->Builders;
+    DD-->Private;
+    DD-->Commercial;
+    DD-->Claims;
+    DD-->Sweden;
+    DD-->Denmark;
+    DD-->Devs(Developers*);
+    DD-->Design(Designers*);
+    DD-->Content(Content*);
+```
+
+You are a part of a team in one of these delivery areas above.
+
+\* Only contains employees, not consultants, for the different disciplines.
 
 ---
 transition: slide-up
