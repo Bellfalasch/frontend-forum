@@ -37,9 +37,12 @@ transition: slide-left
 
 # Discipline Leader Front-end
 
-TODO
-* hva en fagleder for front-end er
-* kan hjelpe dem med
+* I don't belong to any specific team
+* I'm passionate on sharing, and helping
+* I love collabs; cross-team, cross-discipline, cross-country
+* Reusability, efficiency, smoothness, accessability, is important for me
+* My time is dedicated to our employees and our community
+* Use me for getting to know the community, finding the right persons, tools, etc
 
 ---
 transition: slide-up
@@ -282,10 +285,14 @@ transition: slide-up
 
 # More help?
 
-TODO
-Jeg tilbyr meg og å hjelpe dem med dette (noe de per nå ordner på egen hand, eller med en fra teamet som støtte):
-* Sette opp Builders Core på egen maskin, og Github Personal Access Token
-* Ta i bruk Core i praksis, bli kjent med docs
+If there's anything else you would like help with, your teams and mentors usually do this but perhaps offload them a bit by trying me with:
+
+* simple questions
+* getting Builders Core running locally
+* setting up Personal Access Token from Github
+* setting up VScode and extensions
+* sharing inspiration
+* getting to know Builders Core better
 
 ---
 transition: slide-up
