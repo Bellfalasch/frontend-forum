@@ -222,8 +222,11 @@ transition: slide-up
 
 # Security Score
 
-TODO
-Security Score – hvordan det fungerer
+Working in fintech, security is of highest importance. We have our own #security channel in Slack, and our own #team-security governing this.
+
+To assist teams, Team Platform have developed the handy **Security Score** website. Here you can quickly overview all repoes in Gjensidige, divided by teams and more. Each getting a score based on mulitple parameters that you can easily dig into and use to strenghten your own security.
+
+https://security-score.gjensidige.io/
 
 ---
 transition: slide-up
