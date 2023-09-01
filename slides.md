@@ -12,7 +12,7 @@ transition: fade-out
 
 # Front-end Onboarding
 
-## x?
+## Welcome to Gjensidige!
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -28,11 +28,8 @@ transition: slide-up
 * Gjensidige, what you need to know
 * Our front-end community and arenas
 * Our designsystem
-* Slack for front-enders
+* Slack and other useful tools for front-enders
 * Accessibility
-* Security Score
-* Github
-* Gjensidige.builders - our community
 
 ---
 transition: slide-left
@@ -40,6 +37,7 @@ transition: slide-left
 
 # Discipline Leader Front-end
 
+TODO
 * hva en fagleder for front-end er
 * kan hjelpe dem med
 
@@ -137,13 +135,7 @@ transition: slide-left
 
 # Our designsystem
 
-Gjensidige have a state of the art design system, it is called **Builders Core**!
-
-It is maintained by **Team Builders**, closely working with Gjensidige's marketing department.
-
-It's a community effort, you can use it, but you are welcome to fix it and extend it!
-
-It contains these packages:
+Gjensidige have a state of the art design system, it is called **Builders Core**! It contains these packages:
 
 ```mermaid
 graph TD;
@@ -155,15 +147,28 @@ graph TD;
     Builders-Core-->Core-Navigation;
 ```
 
+* **Components** - ready-to-use React compound components
+* **Tokens** - tokens/variables to use with less or sass for sizes, colors, spacing, etc
+* **Icons** - our brand-icons
+* **Fonts** - our brand-fonts
+* **Analytics** - tracking-lib for all components
+* **Navigation** - ready-to-use navigation components (header and footer)
+
 ---
 transition: slide-up
 ---
 
 # Builders Core
 
-TODO:
-* koden bak og dokumentasjonen for det
-* Ønske om at bidra tilbake (delingskultur)
+Builders Core is "open source", it is not available for the general public (yet ...), and it is not owned by one team in Gjensidige, it is owned by *everyone* in Gjensidige!
+
+It is *maintained* by **Team Builders**, closely working with Gjensidige's marketing department. Still, it's a community product, you can use it and are more than welcome to fix it and extend it!
+
+We highly appriciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in #builders-core
+
+The extensive documentation (wich is easily editable on Github) is open for everyone:
+
+https://www.gjensidige.builders/docs/core/
 
 ---
 transition: slide-up
