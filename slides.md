@@ -216,8 +216,13 @@ transition: slide-up
 
 # Accessibility
 
-TODO
-Vekten av Accessibility (uten å gå i dybde)
+This is worth a session of its own. But accessability (often called "UU" in Norway) is of high importance in our digital products.
+
+WCAG 2.0 is the minimum in Norway, enforced legally. But in near future WCAG 2.1 will be the standard.
+
+It is expected that when working for Gjensidige you can develop accordingly, and/or update yourself using available online resources.
+
+Read more: https://www.gjensidige.builders/learn/universal-design/universal-design-dev
 
 ---
 transition: slide-up
@@ -273,11 +278,33 @@ transition: slide-up
 
 # Work culture
 
-TODO
+TODO:
+
+At Gjensidige, our keywords are
+
+* make the leap ("ta sats")
+* create ("skap trygghet")
+* x ("x")
+
+As working culture we would therefore appriciate:
+
 * Oppeness
+* Positively challenge each other
 * The power of "no"
 * Sharing, contributing, giving back
 * Cross-disciplinary teams
+
+---
+transition: slide-up
+---
+
+# Additional resources
+
+## Our developer checklist
+https://www.gjensidige.builders/onboarding/developer-checklist
+
+## Analytics and tracking
+https://www.gjensidige.builders/core/core-analytics-package
 
 ---
 transition: slide-up
