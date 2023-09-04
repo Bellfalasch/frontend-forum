@@ -246,7 +246,7 @@ We use Github, but repos and secret are not created in the web gui. Instead head
 
 Use `/platform-github ...` to "talk" to the bot, that will open up dialogs for you to use when interacting with Github.
 
-Ask your team for naming-conventions and overiew of your repos.
+Ask your team for naming-conventions and overiew of your repos. Some use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 #team-platform "owns" the Github service at us, they can assist with anything.
 
@@ -281,8 +281,7 @@ transition: slide-up
 At Gjensidige we strive for and appreciate:
 
 * Openness
-* Positively challenge each other
-* Constructive feedback
+* Positively challenge each other, constructive feedback
 * Sharing, contributing, giving back
 * Cross-disciplinary teams
 
