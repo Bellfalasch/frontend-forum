@@ -278,21 +278,19 @@ transition: slide-up
 
 # Work culture
 
-TODO:
+At Gjensidige we strive for and appreciate:
 
-At Gjensidige, our keywords are
-
-* make the leap ("ta sats")
-* create ("skap trygghet")
-* x ("x")
-
-As working culture we would therefore appriciate:
-
-* Oppeness
+* Openness
 * Positively challenge each other
-* The power of "no"
+* Constructive feedback
 * Sharing, contributing, giving back
 * Cross-disciplinary teams
+
+Remember, we're the experts on our area, implications that design, changes, features have, is close to impossible for other disciplines to anticipate. It is our mission to educate and inform when changes can be done in a different way to ease development.
+
+We should suggest different solutions when suitable, we should inform early when features take more time (or have bigger implications) than first known. Sometimes we should even suggest a feature not be implemented because of the technical difficulties.
+
+Remember, we as developers are partners to the business and design, not just a one-stop-shop.
 
 ---
 transition: slide-up
