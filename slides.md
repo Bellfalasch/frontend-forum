@@ -38,7 +38,7 @@ transition: slide-left
 # Discipline Leader Front-end
 
 * I don't belong to any specific team
-* I'm passionate on sharing, and helping
+* I'm passionate about sharing, and helping
 * I love collabs; cross-team, cross-discipline, cross-country
 * Reusability, efficiency, smoothness, accessability, is important for me
 * My time is dedicated to our employees and our community
@@ -167,7 +167,7 @@ Builders Core is "open source", it is not available for the general public (yet 
 
 It is *maintained* by **Team Builders**, closely working with Gjensidige's marketing department. Still, it's a community product, you can use it and are more than welcome to fix it and extend it!
 
-We highly appriciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in #builders-core
+We highly appriciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in #builders-core, or with me.
 
 The extensive documentation (wich is easily editable on Github) is open for everyone:
 
@@ -197,7 +197,7 @@ transition: slide-up
 
 # Slack for a front-ender
 
-We use Slack as our go-to tool for internal communication. Use it rather than call for holding meetings, or sending e-mails.
+We use Slack as our go-to tool for internal communication. Use it rather than big meetings, or sending e-mails.
 
 Some guidance in how Gjensidige uses Slack:
 * **Openness** - don't let valuable information die in private messages.
@@ -228,11 +228,11 @@ Read more: https://www.gjensidige.builders/learn/universal-design/universal-desi
 transition: slide-up
 ---
 
-# Security Score
+# Security
 
-Working in fintech, security is of highest importance. We have our own #security channel in Slack, and our own #team-security governing this.
+Working in fin-tech, security is of highest importance. We have our own #security channel in Slack, and our own #team-security governing this.
 
-To assist teams, Team Platform have developed the handy **Security Score** website. Here you can quickly overview all repoes in Gjensidige, divided by teams and more. Each getting a score based on mulitple parameters that you can easily dig into and use to strenghten your own security.
+To assist teams, Team Platform have developed the handy **Security Score** website. Here you can quickly overview all repoes in Gjensidige, divided by teams and more. Each getting a score based on multiple parameters that you can easily dig into and use to strenghten your own security.
 
 https://security-score.gjensidige.io/
 
