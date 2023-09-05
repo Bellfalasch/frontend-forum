@@ -51,7 +51,7 @@ transition: slide-up
 # Bobby Westberg
 
 ## Front-end
-* Developed since 1996, proffesionally since 2006
+* Wrote my first webpage 1996, been working proffesionally since 2006
 * Gjensidige since 2019 (this role since 2022)
 * Done alot of everything (Java, ASP.NET, MySQL, webdesign, ++)
 * Passion for front-end (vanilla, VueJS, React, Next.JS ++)
