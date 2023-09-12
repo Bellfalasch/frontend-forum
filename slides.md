@@ -38,11 +38,19 @@ transition: slide-left
 
 New name: **Builders Core**!
 
-*#builders-core* - Loads of good feedback! <twemoji-red-heart />
+## #builders-core
+
+Loads of good feedback! <twemoji-red-heart />
+
+Ask questions, come with constructive feedback (or even a PR!) - everything grows our collective toolkit.
 
 Multiple minor releases since last FEF, check *#builders-core*!
 
-Ask questions, come with feedback, everything grows our collective knowledge.
+---
+transition: slide-left
+---
+
+<img src="/images/2023-09-13/core.png" class="rounded shadow" />
 
 ---
 transition: slide-left
