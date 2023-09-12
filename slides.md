@@ -12,7 +12,7 @@ transition: fade-out
 
 # Front-end Forum
 
-## 30th of August
+## 13th of September
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -23,129 +23,116 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
-Source: https://github.com/Bellfalasch/frontend-forum
-
 * Builders Core
-* Deprecated Builders-packages
-* CRA to Vite
-* Developer surveys
-* FE News
-* FE Inspiration
-* Gjensidige FE Survey
+* Migration guide
+* Form patterns
+* Piwik
+* FE News & Inspiration
+* Talks!
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # Builders Core
 
 New name: **Builders Core**!
 
-All new packages:
+*#builders-core* - Loads of good feedback! <twemoji-red-heart />
 
-```mermaid
-graph TD;
-    Builders-Core-->Builders-Components;
-    Builders-Core-->Builders-Tokens;
-    Builders-Core-->Builders-Icons;
-    Builders-Core-->Builders-Fonts;
-    Builders-Core-->Core-Analytics;
-    Builders-Core-->Core-Navigation;
-```
+Multiple minor releases since last FEF, check *#builders-core*!
+
+Ask questions, come with feedback, everything grows our collective knowledge.
 
 ---
 transition: slide-left
 ---
 
-# Builders Core
+# <twemoji-building-construction/> Migration guide:
 
-* NB! *#builders-core* (new channel name!)
-* <twemoji-baby/> Few weeks old
-* <twemoji-ring-buoy/> Old packages will live on (but not actively maintained)
-* <twemoji-building-construction/> Migration guide: https://www.gjensidige.builders/docs/core/?path=/docs/migrating-to-builders-core--about
+There's automatic upgrade-scripts, for tokens and more.
 
----
-transition: slide-left
----
+https://www.gjensidige.builders/docs/core/?path=/docs/migrating-to-builders-core--about
 
-# Builders Core
-
-Huge improvements, and new way of using them - **Compound Components**
-
-```js
-// Old way
-<ComponentX title="My title" description="My desc"/>
-
-// New way
-<ComponentX>
-  <ComponentX.Title>My title</ComponentX.Title>
-  <ComponentX.Description>My desc</ComponentX.Description>
-</ComponentX>
-```
 
 ---
 transition: slide-left
 ---
 
-# Builders Core
+# <twemoji-check-mark-button/> Form patterns
 
-Looooads of updates and improvements already!
+Have you explored the new addition to Builders Core? **Form patterns**
 
-Thanks community for feedback! <twemoji-red-heart/>
+https://www.gjensidige.builders/docs/core/?path=/docs/principles-forms--about
+
+Principles to guide you on:
+* Information overload
+* Short vs long forms
+* Columns
+* Input field and group styling
+* Buttons in forms
+* Questions vs information
+* Grid, spacing and layout
+
+And many excellent examples of Do's and Dont's
 
 ---
 transition: slide-left
 ---
 
-<img src="/images/2023-08-30/core3.png" class="rounded shadow" />
+# <twemoji-bar-chart/> Does Piwik change anything?
+
+**No** 
+
+(Since we use Telium/utag in front, your life and your code needs zero changes)
 
 ---
 transition: slide-left
 ---
 
-<img src="/images/2023-08-30/core2.png" class="rounded shadow" />
+# <twemoji-headstone/> Deprecated libraries
+
+Worth repeating: **Nothing** is deleted, unpublished or removed.
+
+* "New" Builders Core is shipped as separate packages.
+* No apps are forced to upgrade/migrate.
+* Nothing existing/old breaks.
+* You can migrate on a component-by-component basis.
 
 ---
 transition: slide-left
 ---
 
-<img src="/images/2023-08-30/core1.png" class="rounded shadow" />
+# <twemoji-headstone/> Deprecated libraries
+
+## <twemoji-coffin /> **ESlint**
+
+**Vebjørn** was quick with a service-package with some quick rules.
+
+https://github.com/gjensidige/service/pull/485
+
+... or just go for bare defaults.
+
+## <twemoji-coffin /> **Grid**
+
+Early early thoughts, so early Builders don't want me to mention too much.
 
 ---
 transition: slide-up
 ---
 
-# <twemoji-headstone/> Sunsetted libraries
+# <twemoji-headstone/> Deprecated libraries
 
-* <twemoji-coffin /> **ESlint** - try defaults, create your own overwrites per repo or shared (usually pretty small).
-* <twemoji-coffin /> **Grid** - what are people planning? Builders are working on a new grid.
-* <twemoji-coffin /> **Global CSS** - it was just getting in the way
-* <twemoji-coffin /> **Utils** - use tokens and CSS instead
-* <twemoji-coffin /> **Link Helper** - used only locally
+## <twemoji-coffin /> **Utils**
 
----
-transition: slide-left
----
+Use tokens and migrate spacing to CSS instead.
 
-# <twemoji-racing-car/> Vite
+* Put a `class` on the element instead
+* replace each padding/margin util with the equivalent token in your SCSS/LESS
+* use normal media queries to replace `md`, `sm`, etc
+* app is now smaller and faster!
 
-In the past years many teams have moved apps to Vite, it will probably be a thing for teams for some time.
-
-* <twemoji-shopping-cart/> NO nettbutikk done it (thx Gaute) - https://github.com/gjensidige/salg-nettbutikk/pull/2015
-* <twemoji-shopping-cart/> NO G+ done it (thx Jon) - https://github.com/gjensidige/salg-gpluss/pull/396
-* <twemoji-clipboard/> Step-by-step inspo (thx Ludovit) - https://blog.logrocket.com/vite-3-vs-create-react-app-comparison-migration-guide/
-
----
-transition: slide-left
----
-
-# <twemoji-bar-chart/> Dev Surveys
-
-Many 2023-surveys have closed recently, and the reports are in.
-
-* <twemoji-chart-decreasing/> Stackoverflow 2023 - https://survey.stackoverflow.co/2023/#ai
-* <twemoji-chart-increasing/> State of CSS 2023 - https://2023.stateofcss.com/en-US
-  * <twemoji-cinema/> Talk on SoCSS - https://www.twitch.tv/codeitlive
+Some teams are looking at maybe trying **Tailwind** to ease the transition.
 
 ---
 transition: slide-left
@@ -153,41 +140,36 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> FE News
 
-## Dependabot
-You can now group PRs!
+## Astro 3.0
 
-https://github.blog/changelog/2023-08-24-grouped-version-updates-for-dependabot-are-generally-available/ 
+Speedy framework Astro is out with version 3:
+https://astro.build/blog/astro-3/
 
-```yml{all|3|4-7|8-10|3-10}
-# .github/dependabot.yml
+* Faster, smaller, smoother!
+* View Transition API implemented!
+* Better HMR
+* Optimized build-output, images, rendering
 
-groups:
-  development-dependencies:
-    dependency-type: "development"
-    exclude-patterns:
-    - "somepattern*"
-  whatever-name:
-    patterns:
-    - "somepattern*"
-```
+## Chrome Devtools 117
 
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> FE News
-
-## Chrome news
-
-### Devtools 117
-Most interesting are local override improvements (have you tried?), and new ability to override XHR-requests.
+Worth checking out, lofs of nice features. Like: override XHR-requests, see human readable status-codes, debug loading priorities, and more.
 
 https://developer.chrome.com/blog/new-in-devtools-117/
 
-### Chrome 116
-Minor updates (like more improved UI for missing CSS-imports)
+---
+transition: slide-up
+---
 
-https://developer.chrome.com/blog/new-in-chrome-116/
+# <twemoji-rolled-up-newspaper/> FE News
+
+## Chrome turns 15
+
+https://blog.google/products/chrome/google-chrome-new-features-redesign-2023/
+
+## Vite 5 ... soon
+
+September marks the EOL for Node 16, which is the mark for when Vite-gang want to do version 5:
+https://github.com/vitejs/vite/discussions/12466
 
 ---
 transition: slide-left
@@ -195,69 +177,84 @@ transition: slide-left
 
 # <twemoji-cherry-blossom/> FE Inspiration
 
-### <twemoji-anchor/> CSS **Anchor Positioning**
+Small, not so new, but sometimes forgotten CSS-gems!
+
+---
+transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> FE Inspiration
+
+### CSS: **Margin Block Start**
+
 ```css{all|2}
-.anchor {
-  anchor-name: --my-anchor;
+p {
+  margin-block-start: 1rem;
 }
+
+.my-block > * + * {
+  margin-block-start: 1rem;
+}
+```
+
+https://every-layout.dev/layouts/stack/
+
+---
+transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> FE Inspiration
+
+### CSS **hypen auto**
+
+Consider these two:
+
+```
+Hejsan, hvordan
+går det?
+```
+
+```
+Hejsan, hvor-
+dan går det?
 ```
 
 ```html
-<a id="my-anchor" class="anchor"></a>
-<div anchor="my-anchor" class="boat">I’m a boat!</div>
+<html lang="dk">
 ```
 
-https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/ 
-
-### <twemoji-window/> CSS **subgrid**
-```css{all|4}
-.grid {
-  display: grid;
-  grid-column: 1 / 3;
-  grid-template-columns: subgrid;
+```css{all|2}
+.longWordsButSmallSpace {
+  hyphen: auto;
 }
 ```
 
-https://ishadeed.com/article/learn-css-subgrid/
-
----
-transition: slide-up
----
-
-# <twemoji-magic-wand/> FE Tricks
-
-1. Visit any Github-repo, press the dot-key on your keyboard. This will open the repo in a web-edition of VScode. Thx Magnus
-2. Visit any Github-repo, press the T-key on your keyboard. This will open a file-search dialog so you can quickly find a specific file based on name. Thx Eirik
-
-
----
-transition: slide-up
----
-
-# <twemoji-ballot-box-with-ballot/> FE Survey
-
-Gjensidige have done an amazing journey the last few years. From introducing **Slack** and **Github**, to **GAP** and **Builders Core**, to all the applications each one of you develop.
-
-We're now interesting in understanding more about your experience as a *front-end developer*.
-
-* What tools do you use,
-* tools you cannot use,
-* gaps in the practical day-to-day development,
-* other pain-points,
-* things that make you happy.
-
-What could the community, the discipline, and Gjensidige do better?
+https://caniuse.com/mdn-css_properties_hyphens_auto_value
 
 ---
 transition: slide-up
 layout: center
 ---
 
-# That's all
+# Time for talks!
 
-...
+That's all for me, time for talks!
+
 <twemoji-red-heart class="animate-ping"/>
 
-Share the invite!
+---
+transition: slide-up
+layout: center
+---
 
-See you next time
+# Katarina Matysova
+
+Overview of Treatment insurance application, how a claim registration process looks like from a user perspective. Big code-base, contains a lot of technical debt, old dependencies and special conditions.
+
+# Peter Jezik
+
+Give an overview of the application we are working on (GPluss), techstack, some challenges we faced. Currently not on NCI.
+
+# Pavol Repka
+
+Share an example of new builders components and show how the changes helped developers life! With practical examples.
