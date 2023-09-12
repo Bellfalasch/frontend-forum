@@ -165,7 +165,7 @@ Worth checking out, lofs of nice features. Like: override XHR-requests, see huma
 https://developer.chrome.com/blog/new-in-devtools-117/
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # <twemoji-rolled-up-newspaper/> FE News
@@ -178,6 +178,22 @@ https://blog.google/products/chrome/google-chrome-new-features-redesign-2023/
 
 September marks the EOL for Node 16, which is the mark for when Vite-gang want to do version 5:
 https://github.com/vitejs/vite/discussions/12466
+
+---
+transition: slide-up
+---
+
+# <twemoji-rolled-up-newspaper/> FE News
+
+## Node-contender: Bun 1.0
+
+Born this weekend!
+
+New lightning fast runtime, build tool, bundler, package manage, and testing tool.
+
+Can replace Node, npm, Yarn, pnpm, Vite and similar, and esbuild, webpack ++
+
+https://bun.sh/
 
 ---
 transition: slide-left
@@ -228,7 +244,7 @@ dan går det?
 ```
 
 ```html
-<html lang="dk">
+<html lang="da">
 ```
 
 ```css{all|2}
