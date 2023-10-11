@@ -12,7 +12,7 @@ transition: fade-out
 
 # Front-end Forum
 
-## 27th of September
+## 11th of October
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -23,102 +23,12 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
-* Bratislava
 * Builders Core
-* Tech debt & Node 16
-* Builders website
+* Tech debt
 * Accessibility
+* Gjensidige-related info
 * FE News
 * FE Inspiration
-
----
-transition: slide-left
-layout: center
-background: /images/2023-09-27/brati1.jpg
----
-
-# <twemoji-flag-slovakia/> Bratislava
-
----
-transition: slide-left
-layout: image-left
-image: /images/2023-09-27/brati_manhole.jpg
----
-
-* 2 full days
-* Discipline leaders (Pia, Marlene, Torstein) and Kristian Vige
-* Fly inn to Vienna on Tuesday, back on Friday
-* Stayed in Bratislava
-* <twemoji-red-heart/> Cosy town center
-* <twemoji-sun/> 25 degress Celsius!
-
----
-transition: slide-left
-layout: image-left
-image: /images/2023-09-27/brati_office.jpg
----
-
-* Nice offices (karaoke and playgrounds)
-* <twemoji-sign-of-the-horns/> Meeting rooms with legendary rock names 
-* 15-20 minute walk from city center
-* Welcoming people, smart and engaged
-* Had many good conversations, loads of valuable feedback
-* <twemoji-soccer-ball/> Won a intense game of Foosball with legend Dávid Marko
-
----
-transition: slide-left
-layout: image
-image: /images/2023-09-27/brati_talk.jpg
----
-
----
-transition: slide-left
-layout: image
-image: /images/2023-09-27/brati_castle.jpg
----
-
----
-transition: slide-left
-layout: image
-image: /images/2023-09-27/brati_statue.jpg
----
-
----
-transition: slide-left
-layout: image
-image: /images/2023-09-27/brati_square.jpg
----
-
----
-transition: slide-left
-layout: image
-image: /images/2023-09-27/brati_house.jpg
----
-
----
-transition: slide-left
-layout: image
-image: /images/2023-09-27/brati_night1.jpg
----
-
----
-transition: slide-up
-layout: image-left
-image: /images/2023-09-27/brati_beer.jpg
----
-
-# Presentations
-
-And again, super-thankful for sharing guys - you're awesome!
-
-### <twemoji-flag-slovakia/> Katarina Matysova
-Overview of Treatment insurance app, how a claim registration process looks like.
-
-### <twemoji-flag-slovakia/> Peter Jezik
-Overview of the GPluss application tech-stack and challenges.
-
-### <twemoji-flag-slovakia/> Pavol Repka
-Show a few hands-on examples on how new Builders components helps developers life.
 
 ---
 transition: slide-left
@@ -132,23 +42,15 @@ Keep the feedback flowing! <twemoji-red-heart />
 
 Ask questions, come with constructive feedback (or even a PR!).
 
-~~One~~ Two releases since last FEF (Builders now move around and visits teams in Oslo to help, and learn).
-
----
-transition: slide-left
----
-
-<img src="/images/2023-09-27/core.png" class="rounded shadow" />
-
 ---
 transition: slide-left
 ---
 
 # <twemoji-building-construction/> Flex
 
-Builders are working on a new generation Grid-replacer, currently named **Flex**.
+Reminder that a new generation Grid-replacer, named **Flex**, is out.
 
-The code was merged into `main` of Builders Core yesterday evening.
+Tried it? Feedback?
 
 It is *experimental*, so if you use it:
 
@@ -162,31 +64,11 @@ transition: slide-up
 
 # <twemoji-building-construction/> FileUploader
 
-Builders just started designing a new **FileUploader**.
+Reminder!
 
-Do you use it? We would like your input! Design-phase is nearing a critical point.
+Builders are putting the final touches on design on an improved **FileUploader**.
 
----
-transition: slide-up
----
-
-# <twemoji-headstone/> Node 16
-
-Worth repeating, but **Node 16** is now officially **dead** <twemoji-face-with-crossed-out-eyes/>
-
-Make sure to let your PO/TL know about this, and upgrade to Node 18/20.
-
----
-transition: slide-up
----
-
-# <twemoji-headstone/> Github and Node 16
-
-Github recently announced that within 6 months, they will no longer support **Node 16** for those that *build* Github Actions. They need to upgrade to Node 20.
-
-https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/
-
-What this means for you? Basically look for updates to your actions and upgrade when available.
+Do you use it? We would like your input!
 
 ---
 transition: slide-up
@@ -194,36 +76,15 @@ transition: slide-up
 
 # <twemoji-chart-increasing-with-yen/> Tech-Debt
 
-Topic to get more focus further. Using our forum to spread more knowledge.
+I eee some nice progress on tech-debt around the house.
 
-<v-clicks>
+More teams have moved to Vite and Vitest. It looks like this helps a lot with removing old Webpack and upgrading React and Node at the same time, as well as solving issues that Jest have. Less config, fewer files, equals reduced hassle.
 
-* Debt is **0** on brand new projects (usually)
-* It uses new best practices for building, new libraries, etc
-* Upgrades done during project
-* But after release?
-* Stuck on old CRA, Webpack 3/4, or Node 14/16, or React 16/17
-* Debt is accumulated over time
-* Adding new packages is troublesome (like Builders Core)
-* However, some apps doesn't need upgrades
-* "Quickfix" might sometime be to just change to Vite?
+Many devs report the same thing: don't bother hacking Jest, just go for Vitest!
 
-</v-clicks>
+https://vitejs.dev/
 
-
----
-transition: slide-up
----
-
-# <twemoji-newspaper/> Builders website
-
-Front-end "hub" on Gjensidige Builders website has changed URL.
-
-We're now under */learn/*
-
-https://www.gjensidige.builders/learn/frontend
-
-PS! Recommended reading: https://www.gjensidige.builders/blog/conversational-form-design
+https://vitest.dev/
 
 ---
 transition: slide-up
@@ -231,19 +92,66 @@ transition: slide-up
 
 # Accessibility
 
-Use proper HTML element rather than aria-tagging.
+**WCAG 2.2** released last week! It builds on top of 2.1. https://www.w3.org/TR/WCAG22/ 
 
-https://web.dev/learn/accessibility/aria-html/#rule-1-dont-use-aria
+And here's the overview on what's new: https://www.w3.org/TR/WCAG22/#new-features-in-wcag-2-2 
 
-* `button` for things that acts like buttons, not `span` with `aria-role="button"`
+* Accessible Authentication
+* Dragging
+* Findable Help
+* Fixed Reference Points
+* Focus Appearance (Minimum)
+* Focus Appearance (Enhanced)
+* Hidden Controls
+* Pointer Target Spacing
 
-* `nav` for menus, not `div` with `aria-role="menu"`
+---
+transition: slide-up
+---
 
-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/menu_role
+# <twemoji-rolled-up-newspaper/> New brandmanager: Frontify
 
-Also check more in-depth https://www.w3.org/WAI/ARIA/apg/patterns/ like how elements should interact with keyboard, and Aria-roles.
+Gjensidige purchased a new brand manager early this year, internationally renowned Frontify.
 
-PS. There's 142 HTML-elements! <twemoji-exploding-head/>
+Now, this will be the place for designers, and others, in need of Gjensidige assets, photos, etc:
+
+https://brandcenter.gjensidige.com/
+
+---
+transition: slide-up
+---
+
+# <twemoji-rolled-up-newspaper/> Note from Security
+
+*Don't (or at least be super-careful) sync request-tools to cloud!*
+
+Postman and Insomnia now auto-syncs (or requires login with sync) to cloud all your projects. Be aware of the risks when testing requests containing keys, tokens, passwords, etc.
+
+At least Postman have options to disable this - **do it**!
+
+---
+transition: slide-up
+layout: image-left
+image: /images/2023-10-11/evan-you-portrait.jpg
+---
+
+<v-clicks>
+
+# Evan You
+
+Creator of:
+
+* Vue.js
+
+* Vite
+
+Just in: **Rolldown**, a rust-port of Rollup.
+
+Focus: performance with best-effort compatibility with Rollup
+
+Goal: replace esbuild and Rollup in Vite with minimal impact on end users
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -251,13 +159,56 @@ transition: slide-up
 
 # <twemoji-rolled-up-newspaper/> FE News
 
-## Bun 1.0.3
+## Google birthday
 
-Bun's been out for two weeks. 3 fix-releases since then.
+Google just turned 25 years old! https://blog.google/inside-google/company-announcements/google-25th-birthday/
+## StackOverflow birthday
+
+15 years! https://stackoverflow.blog/2023/09/26/celebrating-15-years-of-stack-overflow/ 
+
+## DuckDuckGo birthday
+
+Yet another 15-year-old! https://spreadprivacy.com/15-years-of-duckduckgo/
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> FE News
+
+## Bun 1.0.4
+
+Bun released a new fix-release during last week, fixing 60+ bugs.
 
 https://bun.sh/
 
-Many users love the speed, but report multiple issues with migrating complex apps, not mature enough, slow in too many scenarios, compatibility issues, etc. User "strager" got 100k views on [his video migrating an existing app](https://www.youtube.com/watch?v=EVMMoDWN79E), titled "Don't use Bun".
+Still nobody tried it?
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> FE News
+
+## Vitest 1.0 is in Beta (2)
+
+https://github.com/vitest-dev/vitest/releases
+
+## Vite 5.0 is in Beta (4)
+
+https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> FE News
+
+## State of HTML
+
+Another "State of", now HTML. How much HTML do you know?
+
+https://lea.verou.me/blog/2023/state-of-html-2023/ 
 
 ---
 transition: slide-left
@@ -265,55 +216,17 @@ transition: slide-left
 
 # <twemoji-cherry-blossom/> FE Inspiration
 
-## web.dev
+## Native CSS nesting
 
-You know webdev already, but *web.dev* is a nice resource anyways.
+Sass and Less-users came for variables and nesting, now soon both features are mature in modern browsers!
 
-https://web.dev/learn/
+*Native CSS nesting is around the corner!*
 
-Some nice "courses":
+Johan Lindkvist: Here you can help influence how CSS cascading will work with the new nesting feature - https://webkit.org/blog/14571/css-nesting-and-the-cascade/
 
-https://web.dev/learn/html/semantic-html/
+Github issue - https://github.com/w3c/csswg-drafts/issues/8738
 
-https://web.dev/learn/accessibility/structure/
-
-https://web.dev/learn/css/box-model/
-
-Or this on CLS - https://web.dev/cls/
-
----
-transition: slide-left
----
-
-# <twemoji-cherry-blossom/> FE Inspiration
-
-## Every Layout
-
-Some free articles, most payed, but still worth checking out.
-
-https://every-layout.dev
-
-* Best CSS to do covering elements: 
-https://every-layout.dev/layouts/cover/
-
-* Easier stacking:
-https://every-layout.dev/layouts/stack/
-
----
-transition: slide-left
----
-
-# <twemoji-cherry-blossom/> FE Inspiration
-
-## Monorepo
-
-Pretty excellent and easy to browse explanation on Mono versus Poly.
-
-https://monorepo.tools/
-
-Nice for sharing with non-techies (short sentences, illustrations, summaries).
-
-Nice overview and comparison on all needs, tools, and whatnots, for monorepos.
+Nice video - https://www.youtube.com/watch?v=YnWPeA6l5UE
 
 ---
 transition: slide-up
@@ -321,13 +234,29 @@ transition: slide-up
 
 # <twemoji-cherry-blossom/> FE Inspiration
 
-Some links and packages to share that I have been notified about last few months, sorry for being a bit outdated here, but still might be some gems here.
+## Typescript - the documentary
 
-- <twemoji-framed-picture/> **Solid.JS** - Framework saying it's faster than Svelte, React, Vue - https://www.solidjs.com/
-- <twemoji-package/> **Zustand** - smaller and simpler React-library for state - https://zustand-demo.pmnd.rs/
-- <twemoji-package/> **Alova.js** - light-weight request-package, Axios contender - https://alova.js.org/
-- <twemoji-package/> **Default Composer** - npm-package that helps you set defaults on nested objects - https://socket.dev/npm/package/default-composer
-- <twemoji-wrench/> **Unlighthouse** - run Lighthouse on multiple pages - https://unlighthouse.dev/ 
+Have 1.5 hour to kill? See how TypeScript was born:
+
+https://www.youtube.com/watch?v=U6s2pdxebSo
+
+## React - the documentary
+
+Still time? Here's a 1.5 hour React-documentary:
+
+https://www.youtube.com/watch?v=8pDqJVdNa44
+
+---
+transition: slide-up
+---
+
+# Next FEF
+
+Next FEF was planned for **25th of October**, but this crashes with *Digitalisering og Design* two-day gathering.
+
+<twemoji-crying-face/> No FEF **25th of October**
+
+So, next FEF will be **8th of November** =)
 
 ---
 transition: slide-up
