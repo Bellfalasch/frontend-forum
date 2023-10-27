@@ -1,273 +1,381 @@
 ---
 # try also 'default' to start simple
-theme: the-unnamed
+theme: penguin
 
 # https://sli.dev/custom/highlighters.html
-#highlighter: prism
+highlighter: prism
 # show line numbers in code blocks
 lineNumbers: true
 # page transition
-transition: fade-out
+# transition: fade-out
+
+layout: intro
+colorSchema: dark
 ---
 
-# Front-end Forum
+# Hackathon
 
-## 11th of October
+### DD Digital Summit 2023
 
-...
-<twemoji-man-technologist/> Bobby Westberg
-
----
-transition: slide-up
----
-
-# <twemoji-spiral-notepad/> Agenda
-
-* Builders Core
-* Tech debt
-* Accessibility
-* Gjensidige-related info
-* FE News
-* FE Inspiration
+26th of October  
 
 ---
 transition: slide-left
 ---
 
-# Builders Core
+# <twemoji-spiral-notepad/> Your mission
 
-For details, see Slack: *#builders-core*
+* We will divide into small groups.  
+* We will learn how the **Astro** framework works.  
+* We will mix this with a few known and/or unknown "tools", of your choice.  
+* I will give an intro to **Bun**, but you can use Node 18.14+ if you want.  
+* With this, create some cool webapps and learn some new things!  
 
-Keep the feedback flowing! <twemoji-red-heart />
+---
+transition: slide-up
+---
 
-Ask questions, come with constructive feedback (or even a PR!).
+# Repetition
+
+* See **#tmp-frontend-workshop-ddsummit23** for details and links.
+* Use **Astro** as the main framework.
+* Use any JS engine (Node, or Bun).
+* Integrate **any** external API (rest or GraphQL).
+  * https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+  * Use native fetch or Apollo or whatnot for this.
+* Use any CSS framework, or dont.
+* Final step: add View Transitions with Astro.
+
+Implement your own MPA (Multi Page Application) based on your own idea - some suggestions are: a blog, a product website, a webshop (simplified), a miniature DD-facebook (simplified), info on your fav sports-teams.
+
+Main idea is to let the API drive your MPA, you can sparkle it with your own content but there's no time to build a custom API. Keep in mind we only have maybe 4 hours effective time to code.
+
+---
+transition: slide-left
+layout: intro
+---
+
+# Astro
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-building-construction/> Flex
+# Astro
 
-Reminder that a new generation Grid-replacer, named **Flex**, is out.
+Astro is a modern **UI-agnostic** **MPA framework** (Multi Page Application) that is built for **speed**. It is designed to help developers build fast, modern web applications with ease.
 
-Tried it? Feedback?
+Astro is different from other frameworks in that it allows developers to use **any UI library** or framework they prefer, such as **React, Vue, Svelte, Lit, and Solid**.
 
-It is *experimental*, so if you use it:
+Astro also offers a static site generation feature that can help improve the performance of your website.
 
-* Be prepared for sudden breaking changes
-* Try it in a limited/controlled way
-* Give Builders feedback on it!
+Astro is mainly a **client-side framework**.
 
----
-transition: slide-up
----
+It is designed to be used with any CSS framework, such as **Tailwind CSS, Bootstrap, and Bulma**.
 
-# <twemoji-building-construction/> FileUploader
+It's built by the people behind **Snowpack** (the webpack-contender, born in 2019).
 
-Reminder!
-
-Builders are putting the final touches on design on an improved **FileUploader**.
-
-Do you use it? We would like your input!
+https://astro.build/
 
 ---
-transition: slide-up
+transition: slide-left
+layout: text-window
 ---
 
-# <twemoji-chart-increasing-with-yen/> Tech-Debt
+# Speed
 
-I eee some nice progress on tech-debt around the house.
+One of Astro's main goals is to be fast. Astro uses a **build-time rendering** approach, instead of at runtime.
 
-More teams have moved to Vite and Vitest. It looks like this helps a lot with removing old Webpack and upgrading React and Node at the same time, as well as solving issues that Jest have. Less config, fewer files, equals reduced hassle.
+This allows Astro to generate **static HTML** files for each page in your application, which can then be served directly from a CDN or other static hosting provider. All **client-side JavaScript is removed**. The client downloads minimal code.
 
-Many devs report the same thing: don't bother hacking Jest, just go for Vitest!
+Updating code behind one component will hot-reload only that component, nothing else.
 
-https://vitejs.dev/
+Each component can support hydration, depending on your needs, and then additional client-side JS is serverd.
 
-https://vitest.dev/
+::window::
 
----
-transition: slide-up
----
-
-# Accessibility
-
-**WCAG 2.2** released last week! It builds on top of 2.1. https://www.w3.org/TR/WCAG22/ 
-
-And here's the overview on what's new: https://www.w3.org/TR/WCAG22/#new-features-in-wcag-2-2 
-
-* Accessible Authentication
-* Dragging
-* Findable Help
-* Fixed Reference Points
-* Focus Appearance (Minimum)
-* Focus Appearance (Enhanced)
-* Hidden Controls
-* Pointer Target Spacing
+<img src="/images/2023-10-26/astro-speed.png" alt="Lighthouse benchmark of Astro" />
 
 ---
-transition: slide-up
+transition: slide-left
+layout: text-window
 ---
 
-# <twemoji-rolled-up-newspaper/> New brandmanager: Frontify
+# Astro Islands
 
-Gjensidige purchased a new brand manager early this year, internationally renowned Frontify.
+A few years ago, the concept **Component Islands** was born.
 
-Now, this will be the place for designers, and others, in need of Gjensidige assets, photos, etc:
+If you've used Preact, this concept might be known to you.
 
-https://brandcenter.gjensidige.com/
+In Astro, this is refered to as Astro islands and it's a central concept.
 
----
-transition: slide-up
----
+A webpage is divided into sections and each section can be an island. Each island is a collection of components that can be used to build your application. An island will render fully independent. And they are designed to be used with any UI library or framework (like React, Svelte, Vue, etc) - you can even mix islands of different frameworks in the same app!
 
-# <twemoji-rolled-up-newspaper/> Note from Security
+::window::
 
-*Don't (or at least be super-careful) sync request-tools to cloud!*
-
-Postman and Insomnia now auto-syncs (or requires login with sync) to cloud all your projects. Be aware of the risks when testing requests containing keys, tokens, passwords, etc.
-
-At least Postman have options to disable this - **do it**!
-
----
-transition: slide-up
-layout: image-left
-image: /images/2023-10-11/evan-you-portrait.jpg
----
-
-<v-clicks>
-
-# Evan You
-
-Creator of:
-
-* Vue.js
-
-* Vite
-
-Just in: **Rolldown**, a rust-port of Rollup.
-
-Focus: performance with best-effort compatibility with Rollup
-
-Goal: replace esbuild and Rollup in Vite with minimal impact on end users
-
-</v-clicks>
-
----
-transition: slide-up
----
-
-# <twemoji-rolled-up-newspaper/> FE News
-
-## Google birthday
-
-Google just turned 25 years old! https://blog.google/inside-google/company-announcements/google-25th-birthday/
-## StackOverflow birthday
-
-15 years! https://stackoverflow.blog/2023/09/26/celebrating-15-years-of-stack-overflow/ 
-
-## DuckDuckGo birthday
-
-Yet another 15-year-old! https://spreadprivacy.com/15-years-of-duckduckgo/
+<img src="/images/2023-10-26/astro-islands.webp" alt="Astro Islands" />
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> FE News
+# Next.JS vs Astro - part 1
 
-## Bun 1.0.4
-
-Bun released a new fix-release during last week, fixing 60+ bugs.
-
-https://bun.sh/
-
-Still nobody tried it?
-
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> FE News
-
-## Vitest 1.0 is in Beta (2)
-
-https://github.com/vitest-dev/vitest/releases
-
-## Vite 5.0 is in Beta (4)
-
-https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md
+| Feature | Next.js | Astro |
+| --- | --- | --- |
+| First release | 2016 | 2021 |
+| GitHub stars | 111k+ | 33.1K+ |
+| License | MIT | MIT |
+| Build speeds | Fast | Faster |
+| Built with | JavaScript | JavaScript |
+| TypeScript support | Yes | Yes |
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> FE News
+# Next.JS vs Astro - part 2
 
-## State of HTML
-
-Another "State of", now HTML. How much HTML do you know?
-
-https://lea.verou.me/blog/2023/state-of-html-2023/ 
+| Feature | Next.js | Astro |
+| --- | --- | --- |
+| Templating language(s) | JSX | Astro, HTML, Markdown, JavaScript, JSX |
+| Supported UI framework(s) | React | React, Preact, Svelte, Vue, Solid, Lit |
+| Installation requirements | Node.js / Bun / deno | Node.js / Bun / deno |
+| Plugins | Yes — limited | Yes — many |
+| Themes / Templates / Starters | Yes (templates) | Yes (themes) |
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> FE Inspiration
+# Astro versus Next.JS - ownership
 
-## Native CSS nesting
+Astro and Next.js are both **open-source** frameworks that are licensed under the MIT license. Therefore, neither of them is proprietary.
 
-Sass and Less-users came for variables and nesting, now soon both features are mature in modern browsers!
+However, there are some differences between the two frameworks. For instance, Astro is a **static site generator that offers support for React**, while Next.js is **a full-stack framework specifically built for React**. Furthermore, Next.js offers both client- and server-side functionality, whereas Astro focuses solely on the client side.
 
-*Native CSS nesting is around the corner!*
+In terms of openness and community support, both frameworks have active communities and are backed by reputable companies. Next.js is developed and maintained by **Vercel**, while Astro is developed and maintained by **Snowpack**.
 
-Johan Lindkvist: Here you can help influence how CSS cascading will work with the new nesting feature - https://webkit.org/blog/14571/css-nesting-and-the-cascade/
+---
+transition: slide-left
+layout: text-window
+---
 
-Github issue - https://github.com/w3c/csswg-drafts/issues/8738
+# .astro templating
 
-Nice video - https://www.youtube.com/watch?v=YnWPeA6l5UE
+Astro has its own templating language, called .astro. It is a mix of HTML, Markdown, JavaScript, and JSX. It is designed to be easy to learn and use. Astro also supports other templating languages, such as Pug, Handlebars, and EJS.
+
+The Astro docs offers indepth information about the templating language.
+
+::window::
+
+```html
+---
+const name = "Astro";
+const compliment = "great";
+---
+
+<div>
+  <!-- Good old familiar HTML here -->
+  <!-- ... with some templating =) -->
+
+  <h1>Hello {name}!</h1>
+  <p>You look {compliment} today</p>
+  
+  <!-- Outputs: -->
+  <!-- <h1>Hello Astro!</h1> -->
+  <!-- <p>You look great today</p> -->
+</div>
+```
 
 ---
 transition: slide-up
 ---
 
-# <twemoji-cherry-blossom/> FE Inspiration
+# When to use Astro?
 
-## Typescript - the documentary
+Astro is a great choice for building static websites, blogs, and documentation. Basically, if you need speed and need to display a lot of content (have many different pages), Astro is a good choice. Astro is also a good choice if you want to use a UI library or framework that is not supported by other frameworks, such as React, Vue, or Svelte.
 
-Have 1.5 hour to kill? See how TypeScript was born:
+Astro is perhaps not the best choice for building complex web applications, such as e-commerce sites or social networks, or SPAs, then Next.JS is a much stronger option.
 
-https://www.youtube.com/watch?v=U6s2pdxebSo
+---
+transition: slide-left
+layout: intro
+---
 
-## React - the documentary
+# Bun
 
-Still time? Here's a 1.5 hour React-documentary:
+---
+transition: slide-left
+layout: text-window
+---
 
-https://www.youtube.com/watch?v=8pDqJVdNa44
+# Bun - Javascript runtime
+
+Bun released just after the summer, so it's a rather fresh contender in the Javascript runtime space. But it has been developed on for some time.
+
+The correct label for Bun is **JavaScript runtime**. It's built from scratch to serve the modern JavaScript ecosystem. It is designed to be a fast all-in-one JavaScript runtime that can develop, test, run, and bundle JavaScript and TypeScript projects. It includes a bundler, test runner, and Node.js-compatible package manager. It has native Typescript support.
+
+https://bun.sh
+
+::window::
+
+<img src="/images/2023-10-26/bun-speed.png" alt="Benchmark on Bun, compared to Deno and Node" />
+
+---
+transition: slide-left
+---
+
+# Speed
+
+According to a benchmark test conducted by Builder.io, Bun is up to 3 times faster than Node.js and Deno in server-side rendering React. The test was conducted on a dashboard app with a full tree of components, business logic, dependencies, props, state, and other typical React features. The throughput (requests per second) of each runtime server-rendering the React app was measured using autocannon. The results showed that Bun was faster than both Node.js and Deno.
+
+Another benchmark test conducted by Grifel.dev compared the pipeline speed of Bun and Node.js. The test showed that Bun’s pipeline speed didn’t change much when compared to Node.js when the app didn’t have many dependencies. However, when there was a native library present in the app, such as better-sqlite3, the pipeline slowed down drastically in Node.js.
+
+---
+transition: slide-left
+layout: text-window
+---
+
+# Compared to Node
+
+## TypeScript & JSX
+
+Bun can directly execute **.ts** and **.tsx** files just like vanilla JavaScript, with no extra configuration. It can even execute **.jsx** files without config.
+
+## Bun.serve()
+
+Bun has a built-in high performant web server so that you easily can spin up servers from Bun without additional installs.
+
+::window::
+
+```js
+Bun.serve({
+  fetch(req) {
+    const url = new URL(req.url);
+    if (url.pathname === "/") { 
+      return new Response("Home page!");
+    }
+    if (url.pathname === "/blog") {
+      return new Response("Blog!");
+    }
+    return new Response("404!");
+  },
+});
+```
+
+---
+transition: slide-left
+---
+
+# Compared to Node, continued
+
+## Package manager
+
+The package manager in Bun is called **bunpkg**. It is a Node.js-compatible package manager that can install and manage packages from npm, GitHub, and other sources. It is designed to be fast and easy to use.
+
+## package.json
+
+Bun uses the same good old **package.json** file we already know. Bun, however, doesn't use the lock-file natively, but it can migrate NPM-lockfiles to Bun-lockfiles. Soon it will also be able to migrate Yarn-lockfiles.
+
+## bun.lockb
+
+Bun uses **bun.lockb** to store information about the packages that are installed in your project. This file is used by the package manager to determine which packages should be installed when you run the install command. The format of this file is binary, so it cannot be edited manually. They do this because it is faster than using a text-based format like JSON or YAML.
+
+---
+transition: slide-left
+layout: text-window
+---
+
+# Installer
+
+Bun blew people's minds when they saw how fast it can install packages. It is possible to use Bun only for the installer, but Node as the runtime.
+
+The main reason for it being so fast is that it uses a binary format for the lockfile, which is much faster than the text-based formats used by other package managers.
+
+As mentioned, Bun creates it's own lock-file, called **bun.lockb**. It should, like other lock-files, be version controlled.
+
+::window::
+
+```bash
+bun install           # install dependencies
+bun run <script>      # run a defined script, like:
+bun run start         # run the `start` script
+bun install <pkg>​     # install a package
+bun test              # run tests
+```
+
+---
+transition: slide-left
+---
+
+# Why Bun?
+
+Some of the key selling points of Bun are:
+
+* In theory it is a drop-in replacement for Node
+* Performance: According to the Bun team, it is up to 3 times faster than Node.js and Deno.
+* Memory efficiency: Bun uses a low-level memory control system that allows it to use less memory than other runtimes.
+* Easy to use: Bun has a simple API that makes it easy to get started with.
+* Cohesive DX: a complete toolkit for building JavaScript apps, including a package manager, test runner, and bundler.
+
+However, there are also some disadvantages of using Bun ...
+
+---
+transition: slide-left
+---
+
+# Why NOT Bun?
+
+Since Bun is a pretty new runtime, it suffers primarely from these issues:
+
+* Lack of community support
+* Lack of third-party modules
+* Lack of documentation
+* Gotchas and quirks that can impact large projects negatively
+* Missing features
+* Still some bugs here and there
+* Compatibility issues
+
+It's is not yet ready to replace Node all over Gjensidige, but it is interesting enough for us to play with it!
+
+---
+transition: slide-left
+---
+
+# Test-runner
+
+To use the native test runner in Bun, you can use the bun test command. The `bun test` command is a fast, built-in, Jest-compatible test runner that supports TypeScript and JSX, lifecycle hooks, snapshot testing, UI and DOM testing, and watch mode with `--watch`.
+
+To write tests, you can create a file with a `.test.js`, `.test.jsx`, `.test.ts`, or `.test.tsx` extension. You can then write tests using the Jest-like API. For example:
+
+```ts
+import { expect, test } from "bun:test";
+
+test("Two plus two is four", () => {
+  expect(2 + 2).toBe(4);
+});
+```
+
+The runner recursively searches the working directory for files that match the previously mentioned pattern.
+
+---
+transition: slide-up
+layout: intro
+---
+
+# Schedule
 
 ---
 transition: slide-up
 ---
 
-# Next FEF
+# Time plan
 
-Next FEF was planned for **25th of October**, but this crashes with *Digitalisering og Design* two-day gathering.
-
-<twemoji-crying-face/> No FEF **25th of October**
-
-So, next FEF will be **8th of November** =)
-
----
-transition: slide-up
-layout: center
----
-
-# That's all
-
-...
-<twemoji-red-heart class="animate-ping"/>
-
-Share the invite!
-
-See you next time
+**10:00** - Intro  
+**10:30** - Of you go - Round 1  
+**11:00** - Lunch served in Gjensidige Lab!  
+**12:30** - First demo (5 min each)  
+**13:00** - Round 2  
+**15:00** - Final demo (longer)  
+**16:00** - The end (most likely a bit before)  
