@@ -64,16 +64,6 @@ https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-componen
 https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-card--about 
 
 ---
-transition: slide-left
----
-
-# Github inspo
-
-Many teams still live in the Jira-world (and Confluence), for many reasons, but here's an inspirational use of Github wiki from Team Builders:
-
-https://github.com/gjensidige/builders-platform/wiki/How-we-label-pull-requests
-
----
 transition: slide-up
 ---
 
@@ -172,6 +162,28 @@ https://remix.run/blog/remix-heart-vite
 ### Rollup 4.3
 
 https://github.com/rollup/rollup/releases/tag/v4.3.0 
+
+---
+transition: slide-up
+---
+
+# <twemoji-cherry-blossom/> FE Inspiration
+
+### Github inspo
+
+Many teams still live in the Jira-world (and Confluence), for many reasons, but here's an inspirational use of Github wiki from Team Builders: https://github.com/gjensidige/builders-platform/wiki/How-we-label-pull-requests
+
+### Vite 5-beta
+
+Private sales is playing around with beta of Vite 5. Build-time on their enormous repo went from 40s to 24s!!!
+
+```
+Vite 4: ✓ built in 40.20s
+Vite 5: ✓ built in 24.32s
+```
+
+### Repeat your CSS selectors
+https://fffuel.co/css-selectors/
 
 ---
 transition: slide-up
