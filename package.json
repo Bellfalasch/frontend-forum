@@ -2,17 +2,17 @@
   "name": "frontendforum",
   "private": true,
   "scripts": {
+    "dev": "slidev",
     "build": "slidev build",
-    "dev": "slidev --open",
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "0.43.7",
+    "@slidev/cli": "0.43.14",
     "@slidev/theme-bricks": "^0.0.2",
     "@slidev/theme-default": "*",
     "slidev-theme-dracula": "0.2.0",
     "slidev-theme-penguin": "^2.1.0",
-    "slidev-theme-the-unnamed": "^0.0.10",
+    "slidev-theme-the-unnamed": "^0.0.15",
     "slidev-theme-zhozhoba": "^1.0.0"
   },
   "devDependencies": {
