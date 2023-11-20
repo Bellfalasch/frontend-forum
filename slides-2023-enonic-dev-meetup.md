@@ -28,16 +28,17 @@ transition: slide-up
 # Agenda
 
 * BW/TT intro
-* Gjensidige intro
+* Gjensidige intro (4000 ansatte, 2500 i Norge, 300 i TI, 70 i DD)
 * Designsystem intro - Builders Core
 * Team intro
 * The dream - TS, React, in XP - zero gotchas
-* What we tried
-* What we settled for
+* What we tried (next.JS, react4xp 0.x)
+* What we settled for (custom express server, no views in XP, shared types)
 * What it serves today (stats)
-* How it looks
-* Also apps!
+* How it looks (.builders, .se, .dk, .com, .no)
+* Also apps, mounted on URLs!
 * How it works today from Core to Parts and SSR, in GAP
+  * designsystem + components + api + XP typescript + XP xml and auto-types
 
 ---
 transition: slide-left
