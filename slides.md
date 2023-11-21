@@ -62,11 +62,19 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> FE News
 
+## Faster Prettier
+
+In Rust. Bounty for 25 000 USD! https://console.algora.io/challenges/prettier
+
 ## State of React
 
 The poll closed last week, hope you had time to pitch in on your use of React!
 
 https://survey.devographics.com/en-US/survey/state-of-react/2023
+
+## GitHub Universe 2023
+
+TL:DR; AI everywhere - https://www.youtube.com/watch?v=NrQkdDVupQE
 
 ---
 transition: slide-up
@@ -88,9 +96,16 @@ transition: slide-up
 
 ---
 transition: slide-up
+layout: image-right
+image: /images/2023-11-22/visualizer.png
 ---
 
 # <twemoji-cherry-blossom/> FE Inspiration
+
+### Rollup Visualizer
+
+A plugin that can visualize package sizes in your bundle:
+https://github.com/btd/rollup-plugin-visualizer
 
 ### Vite 5
 
@@ -100,11 +115,6 @@ Private Sales is now running Vite 5 in production. Result: Build-time for their 
 Vite 4: ✓ built in 40.20s
 Vite 5: ✓ built in 24.32s
 ```
-
-### Rollup Visualizer
-
-A plugin that can visualize package sizes in your bundle:
-https://github.com/btd/rollup-plugin-visualizer
 
 ---
 transition: slide-up
