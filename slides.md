@@ -30,36 +30,19 @@ transition: slide-up
 * Talk!
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
-For details, see Slack: *#builders-core*
-
-Keep the constructive feedback flowing! <twemoji-red-heart /> (or even a PR!).
+For details, see Slack: *#builders-core* - Keep the constructive feedback flowing! <twemoji-red-heart />
 
 ## Releases
-* 0.6.1 - Latest release
 
-PS. And wow, [look at them docs](https://www.gjensidige.builders/docs/core/))! <twemoji-red-heart class="animate-ping" />
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core - new friends
-
-## `<Flex>`
-
-https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex--about
-
-Migration-guide from Grid to Flex:  
-https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex-migrate-from-grid-to-flex--about
-
-## `<Card>`
-
-https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-card--about 
+### 0.6.4
+* Latest release
+* **Flex** is now stable (breaking upgrade).
+* Related: core-analytics 16.0.5 is out, way slimmer than before. 
 
 ---
 transition: slide-up
@@ -67,17 +50,11 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-**WCAG 2.2** released a this autumn - https://www.w3.org/TR/WCAG22/ 
-
 ## A11y framework
 
-Gjensidige and the design-community just kickstarted a new accessibility initiative, with the goal to make Gjensidige's digital services more accessible. The purpose is to raise general awarness on accessibility for everyone, and create a framework in Figma that designers can use to annotate for landmarks, roles, aria labels, and more.
+Gjensidige now has [an a11y framework and annotation kit](https://www.figma.com/file/X2B6wvS6Q6iSr3aiMVLNZe/A11y-Anotaion-kit--GJENSIDIGE?type=design&node-id=3-616&mode=design&t=O0GU4jakruTeMk09-0)! We have started opperationalizing the framework with teams, working our way through DD.
 
-Presentation and more info - https://miro.com/app/board/uXjVMil89dM=/
-
-This was launched for employees, but will be spread to consultants. **WCAG 2.0** is a legal requirement for all public services in Norway, and it's the minimal spec each FE-developer must follow ([even includes old apps](https://www.uutilsynet.no/regelverk/gjeldende-regelverk-og-krav/746)).
-
-Some details we've collected: https://www.gjensidige.builders/learn/universal-design/code
+Like Form Patterns this is a start and we'll collaboratively grow the quality of our a11y work.
 
 ---
 transition: slide-left
@@ -87,21 +64,9 @@ transition: slide-left
 
 ## State of React
 
-No end to the "State of"-polls ... here's another (after JS, CSS, and HTML):
+The poll closed last week, hope you had time to pitch in on your use of React!
 
 https://survey.devographics.com/en-US/survey/state-of-react/2023
-
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> FE News
-
-## <twemoji-onion/> Bun 1.0.13
-
-https://bun.sh/blog
-
-PS. These slides now run with Bun.
 
 ---
 transition: slide-up
@@ -109,17 +74,17 @@ transition: slide-up
 
 # <twemoji-rolled-up-newspaper/> FE News
 
-### Vite 5.0 is out
+* **Vite 5.0 is out**
+  * https://vitejs.dev/blog/announcing-vite5
 
-https://vitejs.dev/blog/announcing-vite5
+* **Vitest 1.0 is in Beta (v5)**
+  * https://github.com/vitest-dev/vitest/releases
 
-### Vitest 1.0 is in Beta (v5)
+* **Rollup 4.5**
+  * https://github.com/rollup/rollup/releases/tag/v4.5.0
 
-https://github.com/vitest-dev/vitest/releases
-
-### Rollup 4.5
-
-https://github.com/rollup/rollup/releases/tag/v4.5.0
+* **<twemoji-onion/> Bun 1.0.13**
+  * https://bun.sh/blog
 
 ---
 transition: slide-up
@@ -127,21 +92,19 @@ transition: slide-up
 
 # <twemoji-cherry-blossom/> FE Inspiration
 
-### Github inspo
+### Vite 5
 
-Many teams still live in the Jira-world (and Confluence), for many reasons, but here's an inspirational use of Github wiki from Team Builders: https://github.com/gjensidige/builders-platform/wiki/How-we-label-pull-requests
-
-### Vite 5-beta
-
-Private sales is playing around with beta of Vite 5. Build-time on their enormous repo went from 40s to 24s!!!
+Private Sales is now running Vite 5 in production. Result: Build-time for their 130 000 lines of code improved:
 
 ```
 Vite 4: ✓ built in 40.20s
 Vite 5: ✓ built in 24.32s
 ```
 
-### Repeat your CSS selectors
-https://fffuel.co/css-selectors/
+### Rollup Visualizer
+
+A plugin that can visualize package sizes in your bundle:
+https://github.com/btd/rollup-plugin-visualizer
 
 ---
 transition: slide-up
@@ -149,7 +112,11 @@ transition: slide-up
 
 # Next FEF
 
-Next FEF is planned for **6th of December** ... **but** on another time, since me and Thorstein will present our "platform" at a developer meetup in the morning.
+Next FEF is planned for **6th of December** ...
+
+... **but** on another time *(since me and Thorstein will present our website platform at a developer meetup in the morning)*.
+
+12:30 to 13:30, same place. **Henrik Lillengen** from Sales, and **Sigurd Falk** from Platform, will talk and show what they've done with Grafana Faro.
 
 ---
 transition: slide-up
