@@ -23,6 +23,8 @@ transition: slide-up
 
 # <twemoji-scroll/> FEF Facts
 
+<v-clicks>
+
 * "Re-branded" FEF
   * First ever was held 8th of February
   * For employees and consultants
@@ -34,17 +36,25 @@ transition: slide-up
 * We had a total of 9 guest-speakers
 * Posted on gjensidige.builders first, but now as PDF and recordings
 
+</v-clicks>
+
 ---
-transition: slide-up
+transition: slide-left
 ---
 
-# <twemoji-scroll/> Talk kudos for 2023!
+# <twemoji-scroll/> Talk kudos for 2023 - part 1!
 
 * Bonus: Gaute Meek Olsen for his ES2023 talk, and Hanna Evensen for her A11y-talk even if they were held at the end of 2022.
 
 * **Daniel Mossestad** and **Marius Sørensen Dreyer** from Private Sales presented their proxy component solution for handling updating webshop to NCI design.
 
 * **Eirik Backer** from Team Builders gave a talk on browser rendering and how they render webpages and how we can affect this, positively and negatively.
+
+---
+transition: slide-up
+---
+
+# <twemoji-scroll/> Talk kudos for 2023 - part 2!
 
 * <twemoji-flag-slovakia/> **Katarina Matysova** introduced us to the Treatment insurance app, and how a claim registration process looks like.
 
@@ -65,7 +75,7 @@ transition: slide-up
 # <twemoji-scroll/> Big events in Gjensidige
 
 * Our "first" Global Navigation was made.
-* Team Builders finilized the NCI-version of all components.
+* Team Builders finilized the NCI-version of all components - known as "Core 30".
 * All teams began implementing NCI.
 * Builders Core made its introduction, with compound component patterns, es-modules, tree-shaking, and enormous cleanups and improvements, moving FE at Gjensidige into the modern era of development.
 * Team structure was changed, then divisions were change, and many got new leaders
