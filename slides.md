@@ -12,7 +12,7 @@ transition: fade-out
 
 # Front-end Forum
 
-## 6th of December
+## 2023 summary
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -21,69 +21,71 @@ transition: fade-out
 transition: slide-up
 ---
 
-# <twemoji-scroll/> Agenda
+# <twemoji-scroll/> FEF Facts
 
-* Builders Core
-* End-of-year
-* Talk!
-
----
-transition: slide-up
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-For details, see Slack: *#builders-core* - Keep the constructive feedback flowing! <twemoji-red-heart />
-
-## Releases
-
-### @gjensidige/builders-components@0.6.7
-
-### @gjensidige/builders-components@0.6.6
-### @gjensidige/builders-icons@0.1.12
-### @gjensidige/core-navigation@3.1.0
+* "Re-branded" FEF
+  * First ever was held 8th of February
+  * For employees and consultants
+  * For Oslo, Pension, Sweden, Denmark, Poland and Slovakia!
+  * From two locations - Bratislava and Oslo!
+* 9 + 7 = 16 "pure" FEFs in 2023
+  * Plus 3 collab sessions on Form Patterns
+* That's almost 20 hours of front-end!
+* Posted on gjensidige.builders first, but now as PDF and recordings
 
 ---
 transition: slide-up
 ---
 
-# End-of-year
+# <twemoji-scroll/> Big events in Gjensidige
 
-Thank you for a year of Front-end Forum!
-
-**Jan - June**: we tried once a week (summaries found on Builders website).  
-**Aug - Dec**: we tried bi-weekly and half-an-hour later, and recorded sessions.
-
-Hopefully I'll get a written "2023 recap" out before Christmas. And perhaps also a little poll on what you wish to see for next year.
-
-As always, a joy having you all!
-
-## Next FEF
-
-Next FEF is in 2024 - **17th of January** ...
+* Our "first" Global Navigation was made.
+* Team Builders finilized the NCI-version of all components.
+* All teams began implementing NCI.
+* Builders Core made its introduction, with compound component patterns, es-modules, tree-shaking, and enormous cleanups and improvements, moving FE at Gjensidige into the modern era of development.
+* Team structure was changed, then divisions were change, and many got new leaders
+* Builders Core got the Flex and Card components
 
 ---
 transition: slide-up
-layout: center
 ---
 
-# Time for talks!
+# <twemoji-scroll/> Ecosystem
 
-That's all for me, time for talks!
-
-<twemoji-red-heart class="animate-ping"/>
+* Bun 1.0 was released - aiming to replace Node, NPM, Webpack, Babel, Jest, and more!
+* Vite 4 and Vite 5 was released
+* Node 21, Node 20 LTS
 
 ---
 transition: slide-up
-layout: center
 ---
 
-# Henrik Lillengen & Sigurd Falk
+# <twemoji-scroll/> Our teams
 
-Two legends - **Henrik Lillengen** from Team Private Sales and **Sigurd Falk** from Team Platform will bring you to the age of the Faro <twemoji-desert/>
+* Dev department did a hackathon on Next.JS
+* Many have finished or are planning migrating to Vite
+* Many have migrated to Vitest, or are planning on it
+* Many teams put extra focus on tech debt
+* Improving accessibility awarness and quality
+* Dev department did a fullday hackathon on Astro
 
-* What is Faro?
-* How to implement it in React/JavaScript?
-* Demo of the Faro dashboard, WebVitals, ++
-* How to search logs in Grafana Loki?
-* Future within Application Portal?
+---
+transition: slide-up
+---
+
+# <twemoji-scroll/> The people
+
+* <twemoji-new-button/> Joakim and Alexandra joined us in Sweden
+* <twemoji-check-box-with-check/> Daniel went from consultant to employee for Sales, Private
+* <twemoji-check-box-with-check/> Yamini went from consultant to employee for Sweden
+* <twemoji-new-button/> Magnus and Marie joined Claims
+* <twemoji-new-button/> Yan joined Service, Private
+* <twemoji-check-mark-button/> Eirik joined Builders
+* <twemoji-new-button/> Sander joined Builders, Sigmund joined Mobile App
+* <twemoji-check-mark-button/> Carl Magnus and Adam joined Commercial Sales
+* <twemoji-new-button/> Andreas joined Claims
+* <twemoji-new-button/> Quang (Claims) and Dung (Private Sales) graduated reskill program!
+* <twemoji-check-mark-button/> Erlend joined us on an internship
+* <twemoji-check-box-with-check/> Odne went from consultant to employee for Claims
+* <twemoji-check-mark-button/> Solveig joined Private Sales
+* _And many more (sooo many, very hard to keep track)_
