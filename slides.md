@@ -51,16 +51,16 @@ transition: slide-up
 # Bobby Westberg
 
 ## Front-end
-* Wrote my first webpage 1996, been working proffesionally since 2006
+* Wrote my first webpage 1996, been working professionally since 2006
 * Gjensidige since 2019 (this role since 2022)
 * Done alot of everything (Java, ASP.NET, MySQL, webdesign, ++)
 * Passion for front-end (vanilla, VueJS, React, Next.JS ++)
 * Loves CSS, and the interaction that CMSes gives
 
 ## Private
-* Swedish, 42yo, 2 kids (7yo & 5yo), cat (9yo)
+* Swedish, 42yo, 2 kids (8yo & 5yo), cat (10yo)
 * Norway since 2010
-* Love craft beer, socks, old games, and to draw & write
+* Love craft beer, old games, and to draw & write
 
 ---
 transition: slide-left
@@ -92,7 +92,7 @@ transition: slide-left
 
 We just say "T&I", or "T, I", in normal conversations.
 
-The director for T&I is **Sverre Johan Rostoft**. 
+The director for T&I is **Johan Rostoft**. 
 
 Digitalisation & Design is "our" area. Our director is **Kristian Vige**.
 
@@ -131,6 +131,24 @@ graph TD;
 ```
 
 \* Only contains employees, not consultants, for its corresponding disciplines. Each one "lended out" to a specific delivery team. A bit like our own in-house consultant agency.
+
+---
+transition: slide-up
+---
+
+# Gjensidige.Builders
+
+Gjensidige employee's own website. Most of it open. Reach out if you want to contribute.
+
+Contains best practice, guidelines, team overview (not open to the public), news, and more.
+
+Short way to designsystem-documentation, and more.
+
+Front-end has its own `/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
+https://www.gjensidige.builders/frontend 
+
+Read our "Principles for building web applications" (18 rules):
+https://www.gjensidige.builders/blog/principles
 
 ---
 transition: slide-left
@@ -187,7 +205,7 @@ transition: slide-up
 * Also on Teams
 * Starts 09:30, usually lasts 30-45 minutes
 * Recorded, saved for 30 days
-* Open for you to talk/share/show, and request!
+* Open for you to talk/share/show, and requests!
 
 https://www.gjensidige.builders/community/frontend-forum
 
@@ -220,7 +238,7 @@ This is worth a session of its own. But accessability (often called "UU" in Norw
 
 WCAG 2.0 is the minimum in Norway, enforced legally. But in near future WCAG 2.1 will be the standard.
 
-It is expected that when working for Gjensidige you can develop accordingly, and/or update yourself using available online resources.
+It is expected that when working for Gjensidige you can develop accordingly, and/or update yourself using available online resources, or using resources from your employee (if you're a consultant).
 
 Read more: https://www.gjensidige.builders/learn/universal-design/universal-design-dev
 
@@ -248,29 +266,11 @@ Use `/platform-github ...` to "talk" to the bot, that will open up dialogs for y
 
 Ask your team for naming-conventions and overiew of your repos. Some use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-#team-platform "owns" the Github service at us, they can assist with anything.
+#team-platform "owns" our Github service, they can assist with anything.
 
 https://www.github.com/gjensidige/
 
 Currently only closed source ='(
-
----
-transition: slide-up
----
-
-# Gjensidige.Builders
-
-Gjensidige employee's own website. Most of it open. Reach out if you want to contribute.
-
-Contains best practice, guidelines, team overview (not open to the public), news, and more.
-
-Short way to Builders Core-documentation, and more.
-
-Front-end has its own `/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
-https://www.gjensidige.builders/frontend 
-
-Read our "Principles for building web applications" (18 rules):
-https://www.gjensidige.builders/blog/principles
 
 ---
 transition: slide-up
@@ -289,7 +289,7 @@ Remember, we're the experts on our area, implications that design, changes, feat
 
 We should suggest different solutions when suitable, we should inform early when features take more time (or have bigger implications) than first known. Sometimes we should even suggest a feature not be implemented because of the technical difficulties.
 
-Remember, we as developers are partners to the business and design, not just a one-stop-shop.
+We as developers are partners to the business and design, not just a one-stop-shop.
 
 ---
 transition: slide-up
