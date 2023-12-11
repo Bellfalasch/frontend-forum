@@ -31,7 +31,32 @@ transition: slide-up
 * 9 + 7 = 16 "pure" FEFs in 2023
   * Plus 3 collab sessions on Form Patterns
 * That's almost 20 hours of front-end!
+* We had a total of 9 guest-speakers
 * Posted on gjensidige.builders first, but now as PDF and recordings
+
+---
+transition: slide-up
+---
+
+# <twemoji-scroll/> Talk kudos for 2023!
+
+* Bonus: Gaute Meek Olsen for his ES2023 talk, and Hanna Evensen for her A11y-talk even if they were held at the end of 2022.
+
+* **Daniel Mossestad** and **Marius Sørensen Dreyer** from Private Sales presented their proxy component solution for handling updating webshop to NCI design.
+
+* **Eirik Backer** from Team Builders gave a talk on browser rendering and how they render webpages and how we can affect this, positively and negatively.
+
+* <twemoji-flag-slovakia/> **Katarina Matysova** introduced us to the Treatment insurance app, and how a claim registration process looks like.
+
+* <twemoji-flag-slovakia/> **Peter Jezik** gave an overview of the GPluss application tech-stack and challenges.
+
+* <twemoji-flag-slovakia/> **Pavol Repka** showed a few hands-on examples on how new Builders components helps developers life.
+
+* **Lubomir Labaj** from Team Mobile App, took us for a dive into React Native and how similar it is for the desktop-developer, and how it is not.
+
+* **Eirik Backer** from Team Builders, gave us an introduction to Custom Elements in HTML, and experience using them.
+
+* **Henrik Lillengen** from Team Private Sales and **Sigurd Falk** from Team Platform talk about front-end metrics and Faro <twemoji-desert/>
 
 ---
 transition: slide-up
