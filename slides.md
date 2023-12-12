@@ -44,6 +44,8 @@ transition: slide-left
 
 # <twemoji-scroll/> Talk kudos for 2023 - part 1!
 
+<v-clicks>
+
 * Bonus: **Gaute Meek Olsen** for his ES2023 talk, and **Hanna Evensen** for her A11y-talk (even if they were held at the end of 2022).
 
 * **Daniel Mossestad** and **Marius Sørensen Dreyer** from Private Sales presented their proxy component solution for handling updating webshop to NCI design.
@@ -54,11 +56,15 @@ transition: slide-left
 
 * **Peter Jezik** gave an overview of the GPluss application tech-stack and challenges.
 
+</v-clicks>
+
 ---
 transition: slide-up
 ---
 
 # <twemoji-scroll/> Talk kudos for 2023 - part 2!
+
+<v-clicks>
 
 * **Pavol Repka** showed a few hands-on examples on how new Builders components helps developers life.
 
@@ -68,18 +74,27 @@ transition: slide-up
 
 * **Henrik Lillengen** from Team Private Sales and **Sigurd Falk** from Team Platform talk about front-end metrics and Faro <twemoji-desert/>
 
+</v-clicks>
+
 ---
 transition: slide-up
 ---
 
 # <twemoji-scroll/> Big events in Gjensidige
 
+<v-clicks>
+
 * Our "first" Global Navigation was made.
 * Team Builders finilized the NCI-version of all components - known as "Core 30".
-* All teams began implementing NCI.
+* All teams began implementing NCI (many launched).
 * Builders Core made its introduction, with compound component patterns, es-modules, tree-shaking, and enormous cleanups and improvements, moving FE at Gjensidige into the modern era of development.
 * Team structure was changed, then divisions were change, and many got new leaders
 * Builders Core got the Flex and Card components
+* DK and SE on NCI
+* Gjensidige.no on NCI and new Builders Platform
+* We got a new website for corporate info, gjensidige.com
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -87,15 +102,21 @@ transition: slide-up
 
 # <twemoji-scroll/> Ecosystem
 
+<v-clicks>
+
 * Bun 1.0 was released - aiming to replace Node, NPM, Webpack, Babel, Jest, and more!
 * Vite 4 and Vite 5 was released
 * Node 21, Node 20 LTS
+
+</v-clicks>
 
 ---
 transition: slide-up
 ---
 
 # <twemoji-scroll/> Our teams
+
+<v-clicks>
 
 * Dev department did a hackathon on Next.JS
 * Many have finished or are planning migrating to Vite
@@ -104,11 +125,15 @@ transition: slide-up
 * Improving accessibility awarness and quality
 * Dev department did a fullday hackathon on Astro
 
+</v-clicks>
+
 ---
 transition: slide-up
 ---
 
 # <twemoji-scroll/> The people
+
+<v-clicks>
 
 * <twemoji-new-button/> Joakim and Alexandra joined us in Sweden
 * <twemoji-check-box-with-check/> Daniel went from consultant to employee for Sales, Private
@@ -124,3 +149,16 @@ transition: slide-up
 * <twemoji-check-box-with-check/> Odne went from consultant to employee for Claims
 * <twemoji-check-mark-button/> Solveig joined Private Sales
 * _And many more (sooo many, very hard to keep track)_
+
+</v-clicks>
+
+---
+transition: slide-up
+layout: center
+---
+
+# The end
+
+Thanks for a great year!
+
+<twemoji-red-heart class="animate-ping"/>
