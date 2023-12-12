@@ -21,7 +21,7 @@ transition: fade-out
 transition: slide-up
 ---
 
-# <twemoji-scroll/> FEF Facts
+# <twemoji-scroll/> FEF Facts - 2023
 
 <v-clicks>
 
@@ -44,11 +44,15 @@ transition: slide-left
 
 # <twemoji-scroll/> Talk kudos for 2023 - part 1!
 
-* Bonus: Gaute Meek Olsen for his ES2023 talk, and Hanna Evensen for her A11y-talk even if they were held at the end of 2022.
+* Bonus: **Gaute Meek Olsen** for his ES2023 talk, and **Hanna Evensen** for her A11y-talk (even if they were held at the end of 2022).
 
 * **Daniel Mossestad** and **Marius Sørensen Dreyer** from Private Sales presented their proxy component solution for handling updating webshop to NCI design.
 
 * **Eirik Backer** from Team Builders gave a talk on browser rendering and how they render webpages and how we can affect this, positively and negatively.
+
+* **Katarina Matysova** introduced us to the Treatment insurance app, and how a claim registration process looks like.
+
+* **Peter Jezik** gave an overview of the GPluss application tech-stack and challenges.
 
 ---
 transition: slide-up
@@ -56,11 +60,7 @@ transition: slide-up
 
 # <twemoji-scroll/> Talk kudos for 2023 - part 2!
 
-* <twemoji-flag-slovakia/> **Katarina Matysova** introduced us to the Treatment insurance app, and how a claim registration process looks like.
-
-* <twemoji-flag-slovakia/> **Peter Jezik** gave an overview of the GPluss application tech-stack and challenges.
-
-* <twemoji-flag-slovakia/> **Pavol Repka** showed a few hands-on examples on how new Builders components helps developers life.
+* **Pavol Repka** showed a few hands-on examples on how new Builders components helps developers life.
 
 * **Lubomir Labaj** from Team Mobile App, took us for a dive into React Native and how similar it is for the desktop-developer, and how it is not.
 
