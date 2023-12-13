@@ -144,11 +144,11 @@ Contains best practice, guidelines, team overview (not open to the public), news
 
 Short way to designsystem-documentation, and more.
 
-Front-end has its own `/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
-https://www.gjensidige.builders/frontend 
+Front-end has its own `/learn/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
+https://www.gjensidige.builders/learn/frontend 
 
 Read our "Principles for building web applications" (18 rules):
-https://www.gjensidige.builders/blog/principles
+https://www.gjensidige.builders/community/blog/principles
 
 ---
 transition: slide-left
@@ -220,12 +220,13 @@ We use Slack as our go-to tool for internal communication. Use it rather than bi
 Some guidance in how Gjensidige uses Slack:
 * **Openness** - don't let valuable information die in private messages.
 * **Oppeness 2** - don't create private channels, unless absolutely necessary.
-* **Threading** - alsways answer questions as a thread.
+* **Threading** - always answer questions as a thread.
 
 Some nice channels to watch:
-* #general
+* #general #random
 * #gap #team-platform #team-security
 * #team-builders #builders-core #builders-platform
+* #digitalization-and-design
 * #frontend #design #content
 
 ---
@@ -236,11 +237,13 @@ transition: slide-up
 
 This is worth a session of its own. But accessability (often called "UU" in Norway) is of high importance in our digital products.
 
-WCAG 2.0 is the minimum in Norway, enforced legally. But in near future WCAG 2.1 will be the standard.
+WCAG 2.0 is the minimum in Norway, enforced legally. But in near future WCAG 2.1 will be the standard. In 2023 we saw WCAG 2.2 being released.
 
-It is expected that when working for Gjensidige you can develop accordingly, and/or update yourself using available online resources, or using resources from your employee (if you're a consultant).
+It is expected that when working for Gjensidige you can develop accordingly, and/or update yourself using available online resources, or using resources from your employer (if you're a consultant).
 
-Read more: https://www.gjensidige.builders/learn/universal-design/universal-design-dev
+Read more: https://www.gjensidige.builders/learn/universal-design/code
+
+Slack: #accessibility
 
 ---
 transition: slide-up
