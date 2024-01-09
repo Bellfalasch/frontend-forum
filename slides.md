@@ -1,13 +1,16 @@
 ---
-# try also 'default' to start simple
 theme: the-unnamed
 
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# show line numbers in code blocks
+# show line numbers in code blocks?
 lineNumbers: true
-# page transition
+# default page transition
 transition: fade-out
+
+favicon: './public/favicon.png'
+
+layout: cover
 ---
 
 # Front-end Forum
