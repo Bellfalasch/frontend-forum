@@ -3,7 +3,7 @@
 theme: the-unnamed
 
 # https://sli.dev/custom/highlighters.html
-#highlighter: prism
+highlighter: shiki
 # show line numbers in code blocks
 lineNumbers: true
 # page transition
@@ -12,7 +12,7 @@ transition: fade-out
 
 # Front-end Forum
 
-## 2023 summary
+## 17th of January
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -21,20 +21,78 @@ transition: fade-out
 transition: slide-up
 ---
 
-# <twemoji-scroll/> FEF Facts - 2023
+# <twemoji-scroll/> Agenda
+
+* Hi 2024, bye 2023
+* Builders Core
+* FE News
+* FE Inspiration
+
+---
+transition: slide-left
+---
+
+# <twemoji-fireworks/> 2024
+
+A full year of Front-end Forums have come to pass. Hope I'll see you for 15-some FeF this year.
 
 <v-clicks>
 
-* "Re-branded" FEF
-  * First ever was held 8th of February
-  * For employees and consultants
-  * For Oslo, Pension, Sweden, Denmark, Poland and Slovakia!
-  * From two locations - Bratislava and Oslo!
-* 9 + 7 = 16 "pure" FEFs in 2023
-  * Plus 3 collab sessions on Form Patterns
-* That's almost 20 hours of front-end!
-* We had a total of 9 guest-speakers
-* Posted on gjensidige.builders first, but now as PDF and recordings
+If there's any suggestions, wishes, let me know. Otherwise I'll stick to the winning concept.
+
+</v-clicks>
+
+---
+transition: slide-up
+layout: test
+---
+
+# Test
+
+Testing custom layouts
+
+---
+transition: slide-up
+---
+
+# <twemoji-wrapped-gift/> 2023 wrapped
+
+Hope you checked the **2023 Wrapped** I did before Christmas?
+
+https://bellfalasch.github.io/frontend-wrapped/
+
+<v-clicks>
+
+### Key facts
+* 111 slides created!
+* 19 forums (3 collabs)
+* 12 talkers
+
+### Source code
+
+It's using **Bun**, simple **Biome**, some **Three.js** and loads of CSS animations. Wanna see the source:
+
+https://github.com/Bellfalasch/frontend-wrapped
+
+</v-clicks>
+
+---
+transition: slide-up
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+For details, see Slack: *#builders-core* - Keep the constructive feedback flowing! <twemoji-red-heart />
+
+<v-clicks>
+
+## Releases
+
+#### @gjensidige/builders-components@0.7.0
+
+Introduces breaking changes to how Analytics works, read up on Slack.
+
+https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-tracking--about
 
 </v-clicks>
 
@@ -42,115 +100,71 @@ transition: slide-up
 transition: slide-left
 ---
 
-# <twemoji-scroll/> Talk kudos for 2023 - part 1!
+# <twemoji-rolled-up-newspaper/> FE News & inspiration
 
-<v-clicks>
+## Biome
+<twemoji-globe-with-meridians/> https://biomejs.dev/
+Its a fast formatter for JavaScript, TypeScript, JSX, and JSON that scores 97% compatibility with Prettier, saving CI and developer time. It's also a linter! One tool to rule them all.
+* Biome 1.5 is out (new logo and website too) - https://biomejs.dev/blog/biome-v1-5/
+* Wins the 25k USD bounty on "a faster Rust-based prettier" - https://biomejs.dev/blog/biome-wins-prettier-challenge/
+* Even more speed, and prettier-migration scripts in 2024 - https://biomejs.dev/blog/roadmap-2024/
 
-* Bonus: **Gaute Meek Olsen** for his ES2023 talk, and **Hanna Evensen** for her A11y-talk (even if they were held at the end of 2022).
+---
+transition: slide-left
+---
 
-* **Daniel Mossestad** and **Marius Sørensen Dreyer** from Private Sales presented their proxy component solution for handling updating webshop to NCI design.
+# <twemoji-rolled-up-newspaper/> FE News & inspiration
 
-* **Eirik Backer** from Team Builders gave a talk on browser rendering and how they render webpages and how we can affect this, positively and negatively.
+## Qwik
+<twemoji-globe-with-meridians/> https://qwik.builder.io/
+With a new approach they (former Angular inventor) claim to have solved true instant apps in a new way. It eliminates the hydration-step, introducing something called "resumability". It codes almost just like React.
+* 1.3.2 released two weeks ago - https://github.com/BuilderIO/qwik/releases/tag/v1.3.2
+* Try the tutorial - https://qwik.builder.io/tutorial/welcome/overview/
 
-* **Katarina Matysova** introduced us to the Treatment insurance app, and how a claim registration process looks like.
+---
+transition: slide-left
+---
 
-* **Peter Jezik** gave an overview of the GPluss application tech-stack and challenges.
+# <twemoji-rolled-up-newspaper/> FE News & inspiration
 
-</v-clicks>
+## Next.js
+<twemoji-globe-with-meridians/> https://nextjs.org/
+* 14.0.4 is out since December, .5 is around the corder.
+
+## Astro
+<twemoji-globe-with-meridians/> https://astro.build/
+* 4.1 is out since two weeks - https://astro.build/blog/astro-410/
+
+## Bun
+<twemoji-globe-with-meridians/> https://bun.sh/
+* 1.0.21 released recently
 
 ---
 transition: slide-up
+layout: two-cols-header
 ---
 
-# <twemoji-scroll/> Talk kudos for 2023 - part 2!
+# <twemoji-package/> Stuff we actually use
 
-<v-clicks>
+::left::
 
-* **Pavol Repka** showed a few hands-on examples on how new Builders components helps developers life.
+## Vite
+<twemoji-globe-with-meridians/> https://vitejs.dev/
+* 5.0.11 two weeks ago
 
-* **Lubomir Labaj** from Team Mobile App, took us for a dive into React Native and how similar it is for the desktop-developer, and how it is not.
+## Vitest
+<twemoji-globe-with-meridians/> https://vitest.dev/
+* 1.1.3 is the latest, 1.1 release just before x-mas
 
-* **Eirik Backer** from Team Builders, gave us an introduction to Custom Elements in HTML, and experience using them.
+::right::
 
-* **Henrik Lillengen** from Team Private Sales and **Sigurd Falk** from Team Platform talk about front-end metrics and Faro <twemoji-desert/>
+## Yarn
+<twemoji-globe-with-meridians/> https://yarnpkg.com/
+* 4.0.2 is stable
 
-</v-clicks>
-
----
-transition: slide-up
----
-
-# <twemoji-scroll/> Big events in Gjensidige
-
-<v-clicks>
-
-* Our "first" Global Navigation was made.
-* Team Builders finilized the NCI-version of all components - known as "Core 30".
-* All teams began implementing NCI (many launched).
-* Builders Core made its introduction, with compound component patterns, es-modules, tree-shaking, and enormous cleanups and improvements, moving FE at Gjensidige into the modern era of development.
-* Team structure was changed, then divisions were change, and many got new leaders
-* Builders Core got the Flex and Card components
-* DK and SE on NCI
-* Gjensidige.no on NCI and new Builders Platform
-* We got a new website for corporate info, gjensidige.com
-
-</v-clicks>
-
----
-transition: slide-up
----
-
-# <twemoji-scroll/> Ecosystem
-
-<v-clicks>
-
-* Bun 1.0 was released - aiming to replace Node, NPM, Webpack, Babel, Jest, and more!
-* Vite 4 and Vite 5 was released
-* Node 21, Node 20 LTS
-
-</v-clicks>
-
----
-transition: slide-up
----
-
-# <twemoji-scroll/> Our teams
-
-<v-clicks>
-
-* Dev department did a hackathon on Next.JS
-* Many have finished or are planning migrating to Vite
-* Many have migrated to Vitest, or are planning on it
-* Many teams put extra focus on tech debt
-* Improving accessibility awarness and quality
-* Dev department did a fullday hackathon on Astro
-
-</v-clicks>
-
----
-transition: slide-up
----
-
-# <twemoji-scroll/> The people
-
-<v-clicks>
-
-* <twemoji-new-button/> Joakim and Alexandra joined us in Sweden
-* <twemoji-check-box-with-check/> Daniel went from consultant to employee for Sales, Private
-* <twemoji-check-box-with-check/> Yamini went from consultant to employee for Sweden
-* <twemoji-new-button/> Magnus and Marie joined Claims
-* <twemoji-new-button/> Yan joined Service, Private
-* <twemoji-check-mark-button/> Eirik joined Builders
-* <twemoji-new-button/> Sander joined Builders, Sigmund joined Mobile App
-* <twemoji-check-mark-button/> Carl Magnus and Adam joined Commercial Sales
-* <twemoji-new-button/> Andreas joined Claims
-* <twemoji-new-button/> Quang (Claims) and Dung (Private Sales) graduated reskill program!
-* <twemoji-check-mark-button/> Erlend joined us on an internship
-* <twemoji-check-box-with-check/> Odne went from consultant to employee for Claims
-* <twemoji-check-mark-button/> Solveig joined Private Sales
-* _And many more (sooo many, very hard to keep track)_
-
-</v-clicks>
+## Node.JS
+<twemoji-globe-with-meridians/> https://nodejs.org/en
+* 20.10.0 LTS - latest 21.5.0
 
 ---
 transition: slide-up
@@ -159,6 +173,6 @@ layout: center
 
 # The end
 
-Thanks for a great year!
+That's all for me!
 
 <twemoji-red-heart class="animate-ping"/>
