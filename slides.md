@@ -66,6 +66,8 @@ https://bellfalasch.github.io/frontend-wrapped/
 
 <v-clicks>
 
+<Arrow x1="400" y1="350" x2="350" y2="230" />
+
 ### Key facts
 * 111 slides created!
 * 19 forums (3 collabs)
