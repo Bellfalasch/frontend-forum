@@ -92,7 +92,7 @@ https://github.com/Bellfalasch/frontend-wrapped
 </v-clicks>
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
@@ -101,13 +101,52 @@ For details, see Slack: *#builders-core* - Keep the constructive feedback flowin
 
 <v-clicks>
 
+Read their "2023 Wrapped" - https://www.gjensidige.builders/community/blog/2023-wrapped
+
 ## Releases
 
 #### @gjensidige/builders-components@0.7.0
 
-Introduces breaking changes to how Analytics works, read up on Slack.
+Introduces breaking changes to how Analytics works.
 
 https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-tracking--about
+
+</v-clicks>
+
+---
+transition: slide-up
+---
+
+# Analytics with Builders Core 0.6.8 +
+
+<v-clicks>
+
+#### Prior to upgrade
+
+```js
+import { Tracker, TrackingProvider } from '@gjensidige/core-analytics';
+
+const tracker = new Tracker({ ...tracker options here });
+
+<TrackingProvider options={{ options: tracker.options }}>
+  ...your app here
+</TrackerProvider>
+```
+
+#### After upgrading
+
+```js{2,6,10}
+import { Tracker, TrackingProvider } from '@gjensidige/core-analytics';
+import { BuildersComponentsTrackingProvider } from '@gjensidige/builders-components';
+
+const tracker = new Tracker({ ...tracker options here });
+
+<BuildersComponentsTrackingProvider options={{ options: tracker.options }}>
+  <TrackingProvider options={{ options: tracker.options }}>
+    ...your app here
+  </TrackerProvider>
+</BuildersComponentsTrackingProvider>
+```
 
 </v-clicks>
 
@@ -119,10 +158,10 @@ transition: slide-left
 
 ## Biome
 <twemoji-globe-with-meridians/> https://biomejs.dev/
-Its a fast formatter for JavaScript, TypeScript, JSX, and JSON that scores 97% compatibility with Prettier, saving CI and developer time. It's also a linter! One tool to rule them all.
+It's a fast formatter for JavaScript, TypeScript, JSX, and JSON that scores 97% compatibility with Prettier, saving CI and developer time. It's also a linter! One tool to rule them all.
 * Biome 1.5 is out (new logo and website too) - https://biomejs.dev/blog/biome-v1-5/
 * Wins the 25k USD bounty on "a faster Rust-based prettier" - https://biomejs.dev/blog/biome-wins-prettier-challenge/
-* Even more speed, and prettier-migration scripts in 2024 - https://biomejs.dev/blog/roadmap-2024/
+* 2024 promises even more speed, prettier-migration scripts - https://biomejs.dev/blog/roadmap-2024/
 
 ---
 transition: slide-left
@@ -132,7 +171,7 @@ transition: slide-left
 
 ## Qwik
 <twemoji-globe-with-meridians/> https://qwik.builder.io/
-With a new approach they (former Angular inventor) claim to have solved true instant apps in a new way. It eliminates the hydration-step, introducing something called "resumability". It codes almost just like React.
+With a new approach they (former Angular inventor) claim to have solved true instant apps. It eliminates the hydration-step, introducing something called "resumability". The code looks almost like React.
 * 1.3.2 released two weeks ago - https://github.com/BuilderIO/qwik/releases/tag/v1.3.2
 * Try the tutorial - https://qwik.builder.io/tutorial/welcome/overview/
 
@@ -147,7 +186,7 @@ layout: two-cols-header
 
 ## Next.js
 <twemoji-globe-with-meridians/> https://nextjs.org/
-* 14.0.4 is out since December, .5 is around the corner.
+* 14.0.4 is out since December (.5 comes soon)
 
 ## Astro
 <twemoji-globe-with-meridians/> https://astro.build/
@@ -188,7 +227,7 @@ layout: two-cols-header
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
-* 20.10.0 LTS - latest 21.5.0
+* 20.11.0 LTS - latest 21.5.0
 
 ---
 transition: slide-up
