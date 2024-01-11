@@ -33,29 +33,34 @@ transition: slide-up
 
 ---
 transition: slide-left
+layout: test
 ---
 
 # <twemoji-fireworks/> 2024
 
-A full year of Front-end Forums have come to pass. Hope I'll see you for 15-some FeF this year.
+A full year of Front-end Forums have come to pass.
 
 <v-clicks>
 
-If there's any suggestions, wishes, let me know. Otherwise I'll stick to the winning concept.
+Hope I'll see you for 15-some FeF this year.
+
+If there's any suggestions, wishes, let me know. Otherwise I'll stick to the winning concept:
+
+</v-clicks>
+
+<v-clicks>
+
+* Samhandlingssonen (and on Teams)
+* Starts at 09:30
+* Bi-weekly (odd-numbered weeks)
+* 30-60 minutes
+* Open for you to share
 
 </v-clicks>
 
 ---
 transition: slide-up
-layout: test
----
-
-# Test
-
-Testing custom layouts
-
----
-transition: slide-up
+background: ./images/2024-01-17/wrapped.png
 ---
 
 # <twemoji-wrapped-gift/> 2023 wrapped
@@ -69,14 +74,19 @@ https://bellfalasch.github.io/frontend-wrapped/
 <Arrow x1="400" y1="350" x2="350" y2="230" />
 
 ### Key facts
+
+</v-clicks>
+<v-clicks>
+
 * 111 slides created!
 * 19 forums (3 collabs)
 * 12 talkers
 
+</v-clicks>
+<v-clicks>
+
 ### Source code
-
-It's using **Bun**, simple **Biome**, some **Three.js** and loads of CSS animations. Wanna see the source:
-
+It's using **Bun**, **Vite 5**, simple **Biome**, some **Three.js** ... and loads of CSS animations. Wanna see the source:
 https://github.com/Bellfalasch/frontend-wrapped
 
 </v-clicks>
@@ -128,21 +138,30 @@ With a new approach they (former Angular inventor) claim to have solved true ins
 
 ---
 transition: slide-left
+layout: two-cols-header
 ---
 
-# <twemoji-rolled-up-newspaper/> FE News & inspiration
+# <twemoji-package/> Updates
+
+::left::
 
 ## Next.js
 <twemoji-globe-with-meridians/> https://nextjs.org/
-* 14.0.4 is out since December, .5 is around the corder.
+* 14.0.4 is out since December, .5 is around the corner.
 
 ## Astro
 <twemoji-globe-with-meridians/> https://astro.build/
 * 4.1 is out since two weeks - https://astro.build/blog/astro-410/
 
+::right::
+
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
 * 1.0.21 released recently
+
+## Remix
+<twemoji-globe-with-meridians/> https://remix.run/
+* 2.4.1 (now using vite)
 
 ---
 transition: slide-up
