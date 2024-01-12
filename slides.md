@@ -202,6 +202,10 @@ layout: two-cols-header
 <twemoji-globe-with-meridians/> https://remix.run/
 * 2.4.1 (now using vite)
 
+## Vue.JS
+<twemoji-globe-with-meridians/> https://vuejs.org/
+* 3.4 just out before end of 2023
+
 ---
 transition: slide-up
 layout: two-cols-header
