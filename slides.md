@@ -8,7 +8,7 @@ lineNumbers: true
 # default page transition
 transition: fade-out
 
-favicon: './public/favicon.png'
+favicon: './favicon.png'
 
 layout: cover
 ---
