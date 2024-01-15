@@ -30,6 +30,7 @@ transition: slide-up
 * Builders Core
 * FE News
 * FE Inspiration
+* Talk
 
 ---
 transition: slide-left
@@ -86,7 +87,7 @@ https://bellfalasch.github.io/frontend-wrapped/
 <v-clicks>
 
 ### Source code
-It's using **Bun**, **Vite 5**, simple **Biome**, some **Three.js** ... and loads of CSS animations. Wanna see the source:
+It's using **Bun**, **Vite 5**, simple **Biome**, some **Three.js** ... and loads of CSS animations. Here's the source:
 https://github.com/Bellfalasch/frontend-wrapped
 
 </v-clicks>
@@ -172,7 +173,7 @@ transition: slide-left
 ## Qwik
 <twemoji-globe-with-meridians/> https://qwik.builder.io/
 With a new approach they (former Angular inventor) claim to have solved true instant apps. It eliminates the hydration-step, introducing something called "resumability". The code looks almost like React.
-* 1.3.2 released two weeks ago - https://github.com/BuilderIO/qwik/releases/tag/v1.3.2
+* 1.3.5 released this weekend - https://github.com/BuilderIO/qwik/releases/tag/v1.3.5
 * Try the tutorial - https://qwik.builder.io/tutorial/welcome/overview/
 
 ---
@@ -196,7 +197,7 @@ layout: two-cols-header
 
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
-* 1.0.21 released recently
+* 1.0.22 released recently
 
 ## Remix
 <twemoji-globe-with-meridians/> https://remix.run/
@@ -232,6 +233,30 @@ layout: two-cols-header
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
 * 20.11.0 LTS - latest 21.5.0
+
+---
+transition: slide-up
+---
+
+# Next FEF
+
+Next FEF will be the **31st of January**, held from our **Stockholm** offices.
+
+Feel free to use Samhandlingssonen in Oslo (but you need to dial up the meeting).
+
+---
+transition: slide-up
+---
+
+# Talk
+
+<v-clicks>
+
+## "RR6 and Remix"
+> What's the deal with React Router 6 (and Remix)? Experiences from the norwegian webshop and their plans moving forward  
+-- Henrik Lillengen & Jan Ove Kjærland
+
+</v-clicks>
 
 ---
 transition: slide-up
