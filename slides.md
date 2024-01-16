@@ -114,6 +114,30 @@ https://github.com/Bellfalasch/frontend-wrapped
 </v-clicks>
 
 ---
+transition: slide-up
+---
+
+# <twemoji-wheelchair-symbol/> Accessability
+
+Many teams started actively working on improving accessability in 2023.
+
+Awerness is a lot higher now!
+
+More will be done in 2024.
+
+---
+transition: slide-up
+---
+
+# <twemoji-bug/> Tech debt
+
+Many teams also began investigating and improve tech debt in 2023.
+
+Moving away from CRA, updating old Node, updating old React, etc.
+
+Keep it up! <twemoji-flexed-biceps/>
+
+---
 transition: slide-left
 ---
 
