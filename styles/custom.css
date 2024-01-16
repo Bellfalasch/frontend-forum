@@ -1,8 +1,9 @@
-/*
+
 .slidev-layout[layout="test"] {
-  background-image: linear-gradient(320deg, white, transparent) !important;
+  background-color: #161c2c;
+  background: linear-gradient(to right, #4947b7, #9c3750);
 }
-*/
+
 
 /* POC on how to use :has() */
 /*
