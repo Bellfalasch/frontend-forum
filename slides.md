@@ -33,6 +33,27 @@ transition: slide-up
 * Talk
 
 ---
+transition: slide-up
+---
+
+# Quick Welcome
+
+Before we start, let's welcome a few new faces in our floor in Oslo.
+
+<v-clicks>
+
+* Welcome **Solveig** - Private, sales (since Dec)
+
+* Welcome **Oscar** - Private, service (since Jan)
+
+</v-clicks>
+<v-clicks>
+
+Elise posted a bit of info on them in the #digitalization-and-design Slack-channel.
+
+</v-clicks>
+
+---
 transition: slide-left
 layout: test
 ---
@@ -290,6 +311,8 @@ section:has(> *:nth-child(3n)) {
 ```
 
 More examples: https://twitter.com/wesbos/status/1737148340322652632
+
+**Warning** <twemoji-warning/> :has() is "only" slightly > 90% coverage: https://caniuse.com/css-has
 
 </v-clicks>
 
