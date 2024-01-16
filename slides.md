@@ -24,7 +24,7 @@ layout: cover
 transition: slide-up
 ---
 
-# <twemoji-scroll/> Agenda
+# <twemoji-spiral-notepad/> Agenda
 
 * Hi 2024, bye 2023
 * Builders Core
@@ -36,7 +36,7 @@ transition: slide-up
 transition: slide-up
 ---
 
-# Quick Welcome
+## <twemoji-waving-hand/> Quick Welcome
 
 Before we start, let's welcome a few new faces in our floor in Oslo.
 
@@ -201,7 +201,7 @@ With a new approach they (former Angular inventor) claim to have solved true ins
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> FE Inspiration
+# <twemoji-cherry-blossom/> Inspiration
 
 <img src="/images/2024-01-17/devtools.png" class="rounded shadow" style="max-width:60%;" alt="" />
 
@@ -210,7 +210,7 @@ transition: slide-left
 layout: test
 ---
 
-# <twemoji-cherry-blossom/> FE inspiration
+# <twemoji-cherry-blossom/> Inspiration
 
 ## :has()
 
@@ -231,7 +231,7 @@ transition: slide-left
 layout: test
 ---
 
-# <twemoji-cherry-blossom/> FE inspiration
+# <twemoji-cherry-blossom/> Inspiration
 
 ## :has() - basic example
 
@@ -262,7 +262,7 @@ transition: slide-left
 layout: test
 ---
 
-# <twemoji-cherry-blossom/> FE inspiration
+# <twemoji-cherry-blossom/> Inspiration
 
 ## :has() - more examples
 
@@ -296,7 +296,7 @@ transition: slide-left
 layout: test
 ---
 
-# <twemoji-cherry-blossom/> FE inspiration
+# <twemoji-cherry-blossom/> Inspiration
 
 ## :has() - advanced examples
 
