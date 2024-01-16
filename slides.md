@@ -42,14 +42,16 @@ Before we start, let's welcome a few new faces in our floor in Oslo.
 
 <v-clicks>
 
-* Welcome **Solveig** - Private, sales (since Dec)
+* Welcome **Solveig Hergot Langås** - Private, sales (since Dec)
 
-* Welcome **Oscar** - Private, service (since Jan)
+* Welcome **Oscar Selnes Bognæs** - Service, private (since Jan)
+
+* Welcome **Forat Al-Hellali** - Service, private (just started)
 
 </v-clicks>
 <v-clicks>
 
-Elise posted a bit of info on them in the #digitalization-and-design Slack-channel.
+Elise posted a bit of info on Solveig and Oscar in the #digitalization-and-design Slack-channel.
 
 </v-clicks>
 
@@ -76,7 +78,7 @@ If there's any suggestions, wishes, let me know. Otherwise I'll stick to the win
 * Starts at 09:30
 * Bi-weekly (odd-numbered weeks)
 * 30-60 minutes
-* Open for you to share
+* Open arena for anyone to share
 
 </v-clicks>
 
