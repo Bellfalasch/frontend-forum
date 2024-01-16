@@ -66,7 +66,7 @@ background: ./images/2024-01-17/wrapped.png
 
 # <twemoji-wrapped-gift/> 2023 wrapped
 
-Hope you checked the **2023 Wrapped** I did before Christmas?
+Hope you checked the **2023 Wrapped** I did before Christmas!
 
 https://bellfalasch.github.io/frontend-wrapped/
 
@@ -87,7 +87,7 @@ https://bellfalasch.github.io/frontend-wrapped/
 <v-clicks>
 
 ### Source code
-It's using **Bun**, **Vite 5**, simple **Biome**, some **Three.js** ... and loads of CSS animations. Here's the source:
+It's using **Bun**, **Vite 5**, simple **Biome**, some **Three.js** ... and loads of CSS animations.
 https://github.com/Bellfalasch/frontend-wrapped
 
 </v-clicks>
@@ -178,6 +178,131 @@ With a new approach they (former Angular inventor) claim to have solved true ins
 
 ---
 transition: slide-left
+layout: test
+---
+
+# <twemoji-rolled-up-newspaper/> FE inspiration
+
+## :has()
+
+It's a CSS selector that allows you to select elements that contain a specific element as a child, it's often referred to as the parent selector. It's been in the works for a long time, and is somewhat of a CSS game changer.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+
+* It's now in every modern major browser.
+* Just before Christmas it landed in Firefox:
+  * https://www.mozilla.org/en-US/firefox/121.0/releasenotes/
+  * https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/121
+* Bonus: it has lower specificity than many other selectors.
+
+---
+transition: slide-left
+layout: test
+---
+
+# <twemoji-rolled-up-newspaper/> FE inspiration
+
+## :has() ... continued
+
+<v-clicks>
+
+Recommended 14-minute video (also covers **:where()** and **:is()**):  
+https://www.youtube.com/watch?v=3ncFpP8GP4g
+
+```html
+<section>Section 1 <aside>bonus content</aside></section>
+<section>Section 2</section>
+```
+
+```css
+section:has(aside) {
+  color: red;
+}
+```
+
+<section style="color:red">Section 1 <aside>bonus content</aside></section>
+<section>Section 2</section>
+
+```js
+// Result: Entire h1 saying "Heading 1" turns red because it contains a span.
+```
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: test
+---
+
+# <twemoji-rolled-up-newspaper/> FE inspiration
+
+## :has() ... continued
+
+Some more examples ...
+
+<v-clicks>
+
+```css
+/* Target sections containing both aside and h4 elements */
+section:has(aside):has(h4) {
+  color: red;
+}
+```
+
+```css
+/* Target sections containing an aside, or h4,or both elements */
+section:has(aside, h4) {
+  color: red;
+}
+```
+
+```css
+/* Target sections NOT containing an aside */
+section:not(:has(aside)) {
+  color: red;
+}
+```
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: test
+---
+
+# <twemoji-rolled-up-newspaper/> FE inspiration
+
+## :has() ... continued
+
+<v-clicks>
+
+```css
+/* Target sections containing any type cihld-elements both aside and h4 elements */
+section:has(> *:nth-child(3n)) {
+  color: red;
+}
+```
+
+```css
+/* Target sections child-element "h4", if the section contains an aside */
+section:has(aside) h4 {
+  color: red;
+}
+```
+
+```css
+/* Target sections with aside NOT being hovered */
+section:has(aside:hover) aside:not(:hover) {
+  color: red;
+}
+```
+
+More examples: https://twitter.com/wesbos/status/1737148340322652632
+
+</v-clicks>
+
+---
+transition: slide-left
 layout: two-cols-header
 ---
 
@@ -250,13 +375,10 @@ transition: slide-up
 
 # Talk
 
-<v-clicks>
-
 ## "RR6 and Remix"
+
 > What's the deal with React Router 6 (and Remix)? Experiences from the norwegian webshop and their plans moving forward  
 -- Henrik Lillengen & Jan Ove Kjærland
-
-</v-clicks>
 
 ---
 transition: slide-up
