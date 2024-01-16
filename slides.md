@@ -28,8 +28,8 @@ transition: slide-up
 
 * Hi 2024, bye 2023
 * Builders Core
-* FE News
-* FE Inspiration
+* News
+* Inspiration
 * Talk
 
 ---
@@ -176,7 +176,7 @@ const tracker = new Tracker({ ...tracker options here });
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> FE News & inspiration
+# <twemoji-building-construction/> Frameworks etc.
 
 ## Biome
 <twemoji-globe-with-meridians/> https://biomejs.dev/
@@ -189,7 +189,7 @@ It's a fast formatter for JavaScript, TypeScript, JSX, and JSON that scores 97% 
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> FE News & inspiration
+# <twemoji-building-construction/> Frameworks etc.
 
 ## Qwik
 <twemoji-globe-with-meridians/> https://qwik.builder.io/
@@ -199,10 +199,18 @@ With a new approach they (former Angular inventor) claim to have solved true ins
 
 ---
 transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> FE Inspiration
+
+<img src="/images/2024-01-17/devtools.png" class="rounded shadow" style="max-width:60%;" alt="" />
+
+---
+transition: slide-left
 layout: test
 ---
 
-# <twemoji-rolled-up-newspaper/> FE inspiration
+# <twemoji-cherry-blossom/> FE inspiration
 
 ## :has()
 
@@ -223,7 +231,7 @@ transition: slide-left
 layout: test
 ---
 
-# <twemoji-rolled-up-newspaper/> FE inspiration
+# <twemoji-cherry-blossom/> FE inspiration
 
 ## :has() - basic example
 
@@ -254,7 +262,7 @@ transition: slide-left
 layout: test
 ---
 
-# <twemoji-rolled-up-newspaper/> FE inspiration
+# <twemoji-cherry-blossom/> FE inspiration
 
 ## :has() - more examples
 
@@ -288,7 +296,7 @@ transition: slide-left
 layout: test
 ---
 
-# <twemoji-rolled-up-newspaper/> FE inspiration
+# <twemoji-cherry-blossom/> FE inspiration
 
 ## :has() - advanced examples
 
@@ -321,7 +329,7 @@ transition: slide-left
 layout: two-cols-header
 ---
 
-# <twemoji-package/> Updates
+# <twemoji-package/> Updates ...
 
 ::left::
 
@@ -352,7 +360,7 @@ transition: slide-up
 layout: two-cols-header
 ---
 
-# <twemoji-package/> Stuff we actually use
+# <twemoji-package/> Updates on what we actually use
 
 ::left::
 
@@ -372,13 +380,13 @@ layout: two-cols-header
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
-* 20.11.0 LTS - latest 21.5.0
+* 20.11.0 LTS - latest 21.6.0 (yesterday)
 
 ---
 transition: slide-up
 ---
 
-# Next FEF
+# <twemoji-spiral-calendar/> Next FEF
 
 Next FEF will be the **31st of January**, held from our **Stockholm** offices.
 
@@ -388,7 +396,7 @@ Feel free to use Samhandlingssonen in Oslo (but you need to dial up the meeting)
 transition: slide-up
 ---
 
-# Talk
+# <twemoji-studio-microphone/> Talk
 
 ## "RR6 and Remix"
 
