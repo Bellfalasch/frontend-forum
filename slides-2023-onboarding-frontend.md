@@ -55,12 +55,12 @@ transition: slide-up
 * Gjensidige since 2019 (this role since 2022)
 * Done alot of everything (Java, ASP.NET, MySQL, webdesign, ++)
 * Passion for front-end (vanilla, VueJS, React, Next.JS ++)
-* Loves CSS, and the interaction that CMSes gives
+* Loves CSS, and CMS-integrations
 
 ## Private
 * Swedish, 42yo, 2 kids (8yo & 5yo), cat (10yo)
 * Norway since 2010
-* Love craft beer, old games, and to draw & write
+* Love hockey, craft beer, old games, and drawing
 
 ---
 transition: slide-left
@@ -92,9 +92,9 @@ transition: slide-left
 
 We just say "T&I", or "T, I", in normal conversations.
 
-The director for T&I is **Johan Rostoft**. 
+The director for T&I is **Johan Rostoft**. Roughly 350 people work here.
 
-Digitalisation & Design is "our" area. Our director is **Kristian Vige**.
+Digitalisation & Design is "our" area.
 
 ```mermaid
 graph TD;
@@ -112,9 +112,9 @@ transition: slide-up
 
 # Digitalisation & Design
 
-We just say "DD" (D, D) in normal conversations.
+We just say "DD" (D, D) in normal conversations. Our director is **Kristian Vige**.
 
-The disciplinary leaders are a shared resource for all of DD.
+The disciplinary leaders are a shared resource for all of DD, that employees 70+ people.
 
 You are a part of a team organized in one of these delivery areas:
 
@@ -218,8 +218,8 @@ transition: slide-up
 We use Slack as our go-to tool for internal communication. Use it rather than big meetings, or sending e-mails.
 
 Some guidance in how Gjensidige uses Slack:
-* **Openness** - don't let valuable information die in private messages.
-* **Oppeness 2** - don't create private channels, unless absolutely necessary.
+* **"No" PMs** - don't let valuable information die in private messages.
+* **Oppeness** - don't create private channels, unless absolutely necessary.
 * **Threading** - always answer questions as a thread.
 
 Some nice channels to watch:
