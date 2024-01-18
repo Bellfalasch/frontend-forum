@@ -1,9 +1,9 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Front-end Forum's for Gjensidige
 
-To start the slide show:
+This project uses bun. To start the slide show:
 
-- `npm install`
-- `npm run dev`
+- `bun i`
+- `bun run dev`
 - visit http://localhost:3030
 
 Edit the [slides.md](./slides.md) to see the changes.
