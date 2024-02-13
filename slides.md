@@ -29,18 +29,19 @@ transition: slide-up
 * Accessibility
 * Builders Core
 * Figma Dev-mode
-* Github Copilot
+* Misc news
+* GitHub Copilot
 * Updates (packages/tools)
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
 ## #accessibility-code
 
-New channel to at least start dicussing the coding-part of accessibility.
+New channel for focused dicussion around accessibility-code.
 
 ## Future of UU at Gjensidige?
 
@@ -49,6 +50,24 @@ We are working on the hypothesis that we will need a Champion-role (like Securit
 Role is not established yet, we're still working on the details, and pitching the idea to DD leaders in a few hours.
 
 This "gang" of UU-champs will get special training and be the go-to-person for UU in their team.
+
+---
+transition: slide-up
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## What to start with?
+
+The biggest jump (and "easiest") in a11y improving you can do: upgrade to latest builders-components, everything in Builders Core is of a very high a11y-standard.
+
+**Use our design-system, use it right, and you're 80% there.**
+
+## Already on latest?
+
+Try navigating your application just using the keyboard. Were does it stop?
+
+Then start with the "easy" stuff, `alt` to images, and `aria-hidden` to elements that are not meant to be read by screen-readers.
 
 ---
 transition: slide-left
@@ -104,7 +123,43 @@ transition: slide-up
 <img src="/images/2024-02-14/core1_fix.png" class="rounded shadow" style="max-width:70%;" alt="" />
 
 ---
-transition: slide-up
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## <twemoji-headstone/> /api-tools
+
+<img src="/images/2024-02-14/api-tools.png" class="rounded shadow" style="max-width:70%;" alt="" />
+
+R.I.P.
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## The future is Faro <twemoji-desert/>
+
+<img src="/images/2024-02-14/faro.png" class="rounded shadow" style="max-width:70%;" alt="" />
+
+Builders and Denmark are using it. Examples shared in #frontend
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## /service-customer-feedback
+
+<img src="/images/2024-02-14/service-customer-feedback.png" class="rounded shadow" style="max-width:70%;" alt="" />
+
+Work not finished for NCI, so users need to change to the new package to escape conflicts.
+
+---
+transition: slide-left
 ---
 
 # <twemoji-rolled-up-newspaper/> News
@@ -122,13 +177,19 @@ The open/free beta for Dev-mode is over. The feature will only be available for 
 
 * <twemoji-raised-hand/> not sure ...
 
+<v-clicks>
+
 All I can say is we're looking into costs, but need to know the needs.
+
+**Dislaimer**: getting funding for tools in Gjensidige is very complicated ...
+
+</v-clicks>
 
 ---
 transition: slide-up
 ---
 
-# <twemoji-robot/> Github Copilot
+# <twemoji-robot/> GitHub Copilot
 
 Copilot can complete your code, suggest new lines, and even whole functions. You can chat with it and have it generate entire applications, refactor your code, debug your code, or explain complicated code.
 
@@ -141,7 +202,13 @@ Copilot can complete your code, suggest new lines, and even whole functions. You
 
 * <twemoji-raised-hand/> who couldn't be bothered?
 
+<v-clicks>
+
 Also this is being looked into, and I personally see huge savings on having it and see it as a no-brainer that all should have it ... but I don't sit on the <twemoji-money-bag/>
+
+**Dislaimer**: getting funding for tools in Gjensidige is very complicated ...
+
+</v-clicks>
 
 ---
 transition: slide-up
