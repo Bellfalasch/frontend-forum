@@ -13,9 +13,9 @@ favicon: './favicon.png'
 layout: cover
 ---
 
-# <twemoji-flag-sweden/> Front-end Forum
+# <twemoji-red-heart/> Front-end Forum
 
-## 31st of January
+## 14th of February
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -26,35 +26,11 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
+* Accessibility
 * Builders Core
-* News
-* Inspiration
-* Talk
-
----
-transition: slide-up
----
-
-## <twemoji-waving-hand/> Quick Welcome
-
-Repeating this from last FEF because none of them were here then ...
-
-Let's welcome a few new faces on our floor in Oslo:
-
-<v-clicks>
-
-* Welcome **Solveig Hergot Langås** - Private, sales (since Dec)
-
-* Welcome **Oscar Selnes Bognæs** - Service, private (since Jan)
-
-* Welcome **Forat Al-Hellali** - Service, private (just started)
-
-</v-clicks>
-<v-clicks>
-
-Elise posted a bit of info on them in the #digitalization-and-design Slack-channel.
-
-</v-clicks>
+* Figma Dev-mode
+* Github Copilot
+* Updates (packages/tools)
 
 ---
 transition: slide-up
@@ -64,31 +40,68 @@ transition: slide-up
 
 ## #accessibility-code
 
-<twemoji-baby/> New channel to at least start dicussing the coding-part of accessibility.
+New channel to at least start dicussing the coding-part of accessibility.
 
-Please share, ask, etc. I'll try to re-post stuff I find elsewhere that is relevant.
+## Future of UU at Gjensidige?
+
+We are working on the hypothesis that we will need a Champion-role (like Security and GAP) for a11y, placed in a few teams for starters (before expanded).
+
+Role is not established yet, we're still working on the details, and pitching the idea to DD leaders in a few hours.
+
+This "gang" of UU-champs will get special training and be the go-to-person for UU in their team.
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+For details, see Slack: *#builders-core* - Keep bringing feedback! <twemoji-red-heart />
+
+<v-clicks>
+
+## builders-components 1.0(.2) is out
+
+> @gjensidige/builders-components@1.0.2
+
+Upgrade notes:
+https://www.gjensidige.builders/docs/core/?path=/docs/upgrading-builders-core--about
+
+Short and detailed instructions, with some handy migration scripts.
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core: builders-components 1.0
+
+<img src="/images/2024-02-14/core1_features.png" class="rounded shadow" style="max-width:40%;" alt="" />
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core: builders-components 1.0
+
+<img src="/images/2024-02-14/core1_other.png" class="rounded shadow" style="max-width:60%;" alt="" />
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core: builders-components 1.0
+
+<img src="/images/2024-02-14/core1_migration.png" class="rounded shadow" style="max-width:70%;" alt="" />
 
 ---
 transition: slide-up
 ---
 
-# <twemoji-notebook-with-decorative-cover/> Builders Core
+# <twemoji-notebook-with-decorative-cover/> Builders Core: builders-components 1.0.2
 
-For details, see Slack: *#builders-core* - Keep the constructive feedback flowing! <twemoji-red-heart />
-
-<v-clicks>
-
-## Releases
-
-* Latest is still *@gjensidige/builders-components@0.7.0*
-* They're working on 1.0 to be released any day now:
-  * Changes to icon naming (breaking)
-  * Error -> Status
-  * ButtonGroup deprecated (use Flex)
-  * Migration script for many of the changes
-  * And more ...
-
-</v-clicks>
+<img src="/images/2024-02-14/core1_fix.png" class="rounded shadow" style="max-width:70%;" alt="" />
 
 ---
 transition: slide-up
@@ -96,17 +109,39 @@ transition: slide-up
 
 # <twemoji-rolled-up-newspaper/> News
 
-## Figma beta for devs is over
+## Figma dev-mode
 
-Dev-mode will now be available only for subscribers. It was previously available in an open beta.
+The open/free beta for Dev-mode is over. The feature will only be available for subscribers.
 
-No news yet if we will buy licenses or not, but it is being investigated.
+**Quick poll**:
+* <twemoji-raised-hand/> who uses it  
 
-...
+* <twemoji-raised-hand/> who depends on it  
 
-Sidenote: Some Figma dev-mode tips (in Norwegian):
+* <twemoji-raised-hand/> who couldn't be bothered?
 
-https://uxnorge.no/figma-for-utviklere/
+* <twemoji-raised-hand/> not sure ...
+
+All I can say is we're looking into costs, but need to know the needs.
+
+---
+transition: slide-up
+---
+
+# <twemoji-robot/> Github Copilot
+
+Copilot can complete your code, suggest new lines, and even whole functions. You can chat with it and have it generate entire applications, refactor your code, debug your code, or explain complicated code.
+
+**Quick poll**:
+* <twemoji-raised-hand/> who uses it  
+
+* <twemoji-raised-hand/> who loves it  
+
+* <twemoji-raised-hand/> who doesn't have it, but wanna know more  
+
+* <twemoji-raised-hand/> who couldn't be bothered?
+
+Also this is being looked into, and I personally see huge savings on having it and see it as a no-brainer that all should have it ... but I don't sit on the <twemoji-money-bag/>
 
 ---
 transition: slide-up
@@ -119,121 +154,29 @@ layout: two-cols-header
 
 ## Biome
 <twemoji-globe-with-meridians/> https://biomejs.dev/
-* 1.5.3
+* 1.5.3 (no change since last FEF)
 
 ## Vite
 <twemoji-globe-with-meridians/> https://vitejs.dev/
-* 5.0.12 (5.1 in beta)
+* 5.1 out last week - https://vitejs.dev/blog/announcing-vite5-1
 
 ## Vitest
 <twemoji-globe-with-meridians/> https://vitest.dev/
-* 1.2.2
+* 1.2.2 (no change since last FEF)
 
 ::right::
 
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
-* 1.0.25
+* 1.0.26
 
 ## Remix
 <twemoji-globe-with-meridians/> https://remix.run/
-* 2.5.1
+* 2.6.0 two weeks ago
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
-* 20.11.0 LTS - latest 21.6.1
-
----
-transition: slide-left
----
-
-# <twemoji-cherry-blossom/> Inspiration
-
-## Flex-less vertical alignment
-
-This Webkit-feature snuck in under the radar in December:
-
-<img src="/images/2024-01-31/github-webkit.png" class="rounded shadow" alt="" />
-
----
-transition: slide-left
----
-
-# <twemoji-cherry-blossom/> Inspiration
-
-## Flex-less vertical alignment
-
-This will now vertically align the contents in Webkit-based browsers. Without flex!
-
-```css{all}
-.container {
-  display: block;
-  align-content: center;
-}
-```
-
-The PR to Webkit: https://github.com/WebKit/WebKit/pull/21522
-
----
-transition: slide-left
----
-
-# <twemoji-cherry-blossom/> Inspiration
-
-## Entry and exit-animations
-
-From *Johan Lindkvist*: Came in Chrome 116 and 117. Not that many animations in our solutions, but still:
-
-```css{all}
-@starting-style {
-    .my-element {
-        opacity: 0;
-  }
-}
-```
-
-And animating to `display: none` will behave that it is applied after, for example, opacity has reached 0.
-
-<twemoji-link/> https://developer.chrome.com/blog/entry-exit-animations
-
----
-transition: slide-up
-layout: two-cols
----
-
-# <twemoji-cherry-blossom/> Inspiration
-
-## react-animate-height
-
-Animating to `height: auto` using the [npm package react-animate-height](https://www.npmjs.com/package/react-animate-height)? Replace it with pure CSS:
-
-Details: https://keithjgrant.com/posts/2023/04/transitioning-to-height-auto/
-
-One less package off your bundle size =)
-
-::right:: 
-
-```css
-.wrapper {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.5s ease-out;
-}
-
-.wrapper.is-open {
-  grid-template-rows: 1fr;
-}
-
-.inner {
-  overflow: hidden;
-}
-```
-
-```html
-<div class="wrapper">
-  <div class="inner">Expandable content</div>
-</div>
-```
+* 20.11.0 LTS - latest 21.6.1 (no changes since last FEF)
 
 ---
 transition: slide-up
@@ -241,18 +184,7 @@ transition: slide-up
 
 # <twemoji-spiral-calendar/> Next FEF
 
-Next FEF will be the <twemoji-red-heart/> <twemoji-red-heart/> **14th of February** <twemoji-red-heart/> <twemoji-red-heart/> (from Oslo).
-
----
-transition: slide-up
----
-
-# <twemoji-studio-microphone/> Talk
-
-## "Automation and internal tools in Sweden"
-
-> Building simple but high-impact tools that automate old manual process for claim handlers in Sweden.
--- Adam Hassan
+This will be the <twemoji-flag-denmark/> **28th of February** hosted in our Copenhagen office.
 
 ---
 transition: slide-up
