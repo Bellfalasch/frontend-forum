@@ -13,7 +13,7 @@ favicon: './favicon.png'
 layout: cover
 ---
 
-# Front-end Forum
+# <twemoji-flag-denmark/> Front-end Forum
 
 ## 28th of February
 
@@ -39,7 +39,7 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-## Status UU at Gjensidige
+## Status at Gjensidige
 
 Me and one of the *discipline leaders for design* - **Marlene Garred** - have been hard at work on the state of accessibility at Gjensidige the last few months.
 
@@ -55,7 +55,7 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-## UU-responsibles
+## A11y-responsibles
 
 We believe there needs to be a smaller group of a11y experts at Gjensidige. Preferably one in each team.
 
@@ -143,12 +143,16 @@ Worth repeating, but installing Chrome extensions (especially for Mac) is a fast
 
 Built-in **Lighthouse** for **Chrome**, and the DevTools' **Accessibility Tree**, are great for starting out.
 
+<v-clicks>
+
 More tools:
 
 * [IBM Equal Access Accessibility Checker](https://www.ibm.com/able/toolkit/equal-access-accessibility-checker)
 * [Stark Accessibility Checker](https://chromewebstore.google.com/detail/stark-accessibility-check/fkfaapnmfippddbeemjjbclenphooipm)
 * [Wave Evaluation Tool](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
 * **SiteImprove** (more for editors and open pages)
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -160,16 +164,21 @@ transition: slide-up
 
 GitHub copilot is approved for extended trial! We have already begun rolling it out to employees that work daily with development.
 
+<v-clicks>
+
 Yesterday we also opened up for consultants working daily with development.
 
 Used copilot privately? Make sure to save a few bucks by using Gjensidige's license instead.
 
 More information in #general
 
-## Copilot Enteprise
 
-Just in from Sigurd Falk: https://github.blog/changelog/2024-02-27-copilot-enterprise-is-now-generally-available/
-TLDR; Copilot now uses your enterprise codebase (and docs) to give better suggestions.
+## Copilot Enterprise
+
+Just in from **Sigurd Falk**:
+[TLDR; Copilot now uses your enterprise codebase (and docs)](https://github.blog/changelog/2024-02-27-copilot-enterprise-is-now-generally-available/)
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -214,7 +223,21 @@ It is closed source, and very expensive.
 
 The replacer is **Loki** - an open source equivalent, part of the Grafana stack.
 
-#team-platform has more
+#team-platform has more information
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Call for Faro-users! <twemoji-desert/>
+
+Many weeks have passed since **Sigurd Falk** and **Henrik Lilleengen** showcased **Faro** and using it for Front-end logging/monitoring.
+
+### Still no new users!!
+
+Friendly reminder that other "home-made" solutions like /api-tools will not live forever.
 
 ---
 transition: slide-up
