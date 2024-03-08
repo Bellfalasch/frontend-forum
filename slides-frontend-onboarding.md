@@ -245,6 +245,8 @@ Read more: https://www.gjensidige.builders/learn/universal-design/code
 
 Slack: #accessibility
 
+Slack: #accessibility-code
+
 ---
 transition: slide-up
 ---
@@ -267,7 +269,7 @@ We use Github, but repos and secret are not created in the web gui. Instead head
 
 Use `/platform-github ...` to "talk" to the bot, that will open up dialogs for you to use when interacting with Github.
 
-Ask your team for naming-conventions and overiew of your repos. Some use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+Ask your team for naming-conventions and overview of your repos. Some use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 #team-platform "owns" our Github service, they can assist with anything.
 
