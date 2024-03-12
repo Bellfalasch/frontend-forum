@@ -33,6 +33,7 @@ transition: slide-up
 
 ---
 transition: slide-up
+layout: test
 ---
 
 ## <twemoji-waving-hand/> Quick Welcome
@@ -66,15 +67,6 @@ transition: slide-up
 * sli.dev released v 0.48 and exporting PDFs are now back on track =)
 
 ---
-transition: slide-up
----
-
-# TODOs
-
-* Next GAP in progress
-
-
----
 transition: slide-left
 ---
 
@@ -84,7 +76,7 @@ transition: slide-left
 
 April - June we'll hire an expert a11y advisor here in Oslo.
 
-One full day each week, one team per slot, cross-disciplinary.
+One full day, once a week, one team per slot, cross-disciplinary.
 
 Many (but not all) teams are now scheduled.
 
@@ -98,13 +90,13 @@ transition: slide-left
 
 ## Accessibility Champions
 
-Most Oslo-teams now have these for Front-end and UX respectively. 
+Most Oslo-teams now have champions, for Front-end and UX respectively. 
 
 Plan for Denmark, Sweden and Bratislava is under construction.
 
 This is an added role. Each with this role will meet at regular intervals, and share experiences and learnings.
 
-They are not experts on a11y, neither am I, but with one single person per team to communicate, it will be easier to get the message across. If they need help, it will be easier to assist.
+They are not experts on a11y, neither am I, but with one single person per team to communicate, it will be easier to get moving. If they need help, it will be easier to assist.
 
 ---
 transition: slide-left
@@ -119,6 +111,7 @@ transition: slide-left
   * [Semantic HTML at web.dev](https://web.dev/learn/html/semantic-html?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fhtml%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fhtml%2Fsemantic-html)
 * The core building blocks of any website carries a lot of native features that are a11y-friendly
 * [Learn Accessibility at web.dev](https://web.dev/learn/accessibility)
+* Beware: just because it just landed in Chrome, it might not behave as expected in assistive tools yet.
 * See bullets from last FEF
 
 ---
@@ -138,7 +131,6 @@ Perhaps not the easiest documents to digest:
 * https://www.w3.org/TR/WCAG20/
 * https://www.w3.org/TR/WCAG21/
 
-
 ---
 transition: slide-left
 ---
@@ -148,6 +140,19 @@ transition: slide-left
 <img src="/images/2024-03-13/core1-2.png" class="rounded shadow" alt="" />
 
 ---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+With so many new features, perhaps something can be spring-cleaned away in your custom components?
+
+* `<Loader variant="spinner">` can now cycle messages based on elapsed milliseconds
+* `<Numberpicker>` is here
+
+Take a dive!
+
+---
 transition: slide-up
 ---
 
@@ -155,9 +160,7 @@ transition: slide-up
 
 For details, see Slack: *#builders-core* 
 
-Team Builders <twemoji-red-heart />
-
-<v-clicks>
+Team Builders love:
 
 * questions
 * bug reports
@@ -166,7 +169,17 @@ Team Builders <twemoji-red-heart />
 * discussions
 * pull requests
 
-</v-clicks>
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Next generation GAP
+
+Team Platform brainstorming about next iteration of GAP.
+
+See *#gap* and make your voice heard.
 
 ---
 transition: slide-left
@@ -174,7 +187,21 @@ transition: slide-left
 
 # <twemoji-cherry-blossom/> Inspiration
 
-## TODO
+## Resources
+
+Thorstein in Team Builders posted this nice guide.
+
+Excellent, detailed, and easy on the eyes, guides for getting into web development.
+
+Still relevant for many of us, especially if you're more of an React-expert than a vanilla-expert.
+
+https://developer.mozilla.org/en-US/curriculum/
+
+Highlights:
+
+* [Semantic HTML](https://developer.mozilla.org/en-US/curriculum/core/semantic-html/)
+
+* [Accessibility](https://developer.mozilla.org/en-US/curriculum/core/accessibility/)
 
 ---
 transition: slide-up
@@ -187,8 +214,7 @@ layout: two-cols-header
 
 ## Biome
 <twemoji-globe-with-meridians/> https://biomejs.dev/
-* 1.6.0
-* [first big release in 2 months](https://biomejs.dev/blog/biome-v1-6/)
+* 1.6.0 - [first big release in 2 months](https://biomejs.dev/blog/biome-v1-6/)
 
 ## Vite
 <twemoji-globe-with-meridians/> https://vitejs.dev/
@@ -204,10 +230,6 @@ layout: two-cols-header
 <twemoji-globe-with-meridians/> https://bun.sh/
 * 1.0.30
 
-## Remix
-<twemoji-globe-with-meridians/> https://remix.run/
-* 2.7 - [now stable Vite-support](https://remix.run/blog/remix-vite-stable)
-
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
 * 20.11.1 LTS - latest 21.7.1
@@ -220,7 +242,7 @@ transition: slide-up
 
 In two weeks there's Easter <twemoji-hatching-chick/>
 
-Next FEF will be held the **13th of March**.
+Next FEF will be held the **10th of April**.
 
 ---
 transition: slide-up

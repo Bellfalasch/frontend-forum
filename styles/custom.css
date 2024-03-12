@@ -1,11 +1,11 @@
 
-.slidev-layout[layout="test"] {
+.slidev-layout.test {
   background-color: #161c2c;
   background: linear-gradient(to right, #4947b7, #9c3750);
 }
 
 /* Fix a bug in two-cols-header layout with h1 not getting correct style */
-.slidev-layout[layout="two-cols-header"] h1 {
+.slidev-layout.two-cols-header h1 {
   color: var(--slidev-theme-default-headingColor);
   display: inline-block;
   padding: 0.25em;
@@ -13,7 +13,7 @@
   margin-bottom: 1em;
   z-index: 1;
 }
-.slidev-layout[layout="two-cols-header"] h1::before {
+.slidev-layout.two-cols-header h1::before {
   background: var(--slidev-theme-default-headingBg);
   box-shadow: var(--slidev-theme-header-shadow);
   content: " ";
@@ -43,7 +43,7 @@ section:has(aside, h4) {
   background-color: #f0f0f0;
 }
 */
-.slidev-layout[layout="cover"] {
+.slidev-layout.cover {
   background-color: #161c2c;
   background: linear-gradient(to right, #161c2c, #61045f);
 }
