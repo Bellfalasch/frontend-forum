@@ -32,32 +32,120 @@ transition: slide-up
 * Inspiration
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
-# <twemoji-wheelchair-symbol/> Accessibility
+## <twemoji-waving-hand/> Quick Welcome
 
-## Expert help
+Let's welcome a few new faces on our floor in Oslo:
 
-April through June we'll hire in expert advisor. One day a week, one team per slot, will get the oppertunity to get advice and help on a11y.
+<v-clicks>
 
-Consultants should talk to their managers (Itera, Capra, etc).
+* Welcome **Kaja H. Kristiansen** - Claims, Norway
+
+* Welcome **Adam Martiska** - Claims, Bratislava
+
+</v-clicks>
+
+<v-clicks>
+
+And, a bit overdue but also welcome to:
+
+* **Gurudutt Verma** - Fullstacker at Team Security
+
+</v-clicks>
 
 ---
 transition: slide-up
 ---
 
+# Misc.
+
+## Exports are back!
+
+* sli.dev released v 0.48 and exporting PDFs are now back on track =)
+
+---
+transition: slide-up
+---
+
+# TODOs
+
+* Next GAP in progress
+
+
+---
+transition: slide-left
+---
+
 # <twemoji-wheelchair-symbol/> Accessibility
 
-## A11y-responsibles
+## Inklud is coming
 
-**Accessibility Champions** are now in Oslo teams. 
+April - June we'll hire an expert a11y advisor here in Oslo.
 
-This group will themself decide how to improve a11y in their teams, and will be the go-to-person for a11y in their team.
+One full day each week, one team per slot, cross-disciplinary.
 
-They are not experts on a11y, neither am I, but with one single person per team to communicate, it will be easier to get the message across. If they need help, it will be easier to assist. And what they learn, and what they need advice on, the group can benefit.
+Many (but not all) teams are now scheduled.
 
-Slack: *#accessibility* and *#accessibility-code*
+Consultants should talk to their mother company (Itera, Capra, etc) if they feel they need upskilling in this area.
+
+---
+transition: slide-left
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## Accessibility Champions
+
+Most Oslo-teams now have these for Front-end and UX respectively. 
+
+Plan for Denmark, Sweden and Bratislava is under construction.
+
+This is an added role. Each with this role will meet at regular intervals, and share experiences and learnings.
+
+They are not experts on a11y, neither am I, but with one single person per team to communicate, it will be easier to get the message across. If they need help, it will be easier to assist.
+
+---
+transition: slide-left
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## Basic tips & tricks
+
+* Do **not** underestimate the power of pure HTML
+  * [Welcome to HTML at web.dev](https://web.dev/learn/html/welcome?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fhtml%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fhtml%2Fwelcome)
+  * [Semantic HTML at web.dev](https://web.dev/learn/html/semantic-html?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fhtml%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fhtml%2Fsemantic-html)
+* The core building blocks of any website carries a lot of native features that are a11y-friendly
+* [Learn Accessibility at web.dev](https://web.dev/learn/accessibility)
+* See bullets from last FEF
+
+---
+transition: slide-up
+layout: image-right
+image: /images/2024-03-13/a11y.png
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## Handy tool
+
+A more approachable checklist I like is this:
+* https://www.a11yproject.com/checklist/
+
+Perhaps not the easiest documents to digest:
+* https://www.w3.org/TR/WCAG20/
+* https://www.w3.org/TR/WCAG21/
+
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+<img src="/images/2024-03-13/core1-2.png" class="rounded shadow" alt="" />
 
 ---
 transition: slide-up
