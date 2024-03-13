@@ -38,7 +38,7 @@ layout: test
 
 ## <twemoji-waving-hand/> Quick Welcome
 
-Let's welcome a few new faces on our floor in Oslo:
+Let's welcome a few new faces on our FE-community:
 
 <v-clicks>
 
@@ -68,6 +68,13 @@ transition: slide-up
 
 ---
 transition: slide-left
+layout: center
+---
+
+# Accessibility
+
+---
+transition: slide-left
 ---
 
 # <twemoji-wheelchair-symbol/> Accessibility
@@ -79,8 +86,6 @@ April - June we'll hire an expert a11y advisor here in Oslo.
 One full day, once a week, one team per slot, cross-disciplinary.
 
 Many (but not all) teams are now scheduled.
-
-Consultants should talk to their mother company (Itera, Capra, etc) if they feel they need upskilling in this area.
 
 ---
 transition: slide-left
@@ -133,6 +138,30 @@ Perhaps not the easiest documents to digest:
 
 ---
 transition: slide-left
+layout: center
+---
+
+# Builders Core
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+## Latest: 1.2.2
+
+**@gjensidige/builders-components@1.2.2**
+
+A slew of new features, fixes, improvements and whatnot! Perhaps something can be spring-cleaned away in your repoes of *custom components*?
+
+* `<Loader variant="spinner">` can now cycle messages based on elapsed milliseconds
+* `<Numberpicker>` is here
+
+Take a dive in *#builders-core* for details!
+
+---
+transition: slide-left
 ---
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
@@ -140,37 +169,15 @@ transition: slide-left
 <img src="/images/2024-03-13/core1-2.png" class="rounded shadow" alt="" />
 
 ---
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-With so many new features, perhaps something can be spring-cleaned away in your custom components?
-
-* `<Loader variant="spinner">` can now cycle messages based on elapsed milliseconds
-* `<Numberpicker>` is here
-
-Take a dive!
-
----
 transition: slide-up
 ---
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
-For details, see Slack: *#builders-core* 
-
-Team Builders love:
-
-* questions
-* bug reports
-* feature suggestions
-* comments/questions on the docs
-* discussions
-* pull requests
+<img src="/images/2024-03-13/core1-1.png" class="rounded shadow" alt="" />
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 # <twemoji-rolled-up-newspaper/> News
@@ -182,7 +189,7 @@ Team Platform brainstorming about next iteration of GAP.
 See *#gap* and make your voice heard.
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 # <twemoji-cherry-blossom/> Inspiration
