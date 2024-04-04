@@ -124,14 +124,97 @@ transition: slide-up
 * Added a few handy bookmarks
 
 ---
+transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> Inspiration
+
+## Trying GitHub Actions (GHA) locally
+
+[Article on getting started](https://www.freecodecamp.org/news/how-to-run-github-actions-locally/)
+
+This is a common pain. Not all areas can be covered, but some can be tested locally using `act`.
+
+`act` has some GHA features, but far from all, so the benefit here is on testing the other parts of your actions.
+
+Might assist you in leveling up your GHA game.
+
+---
 transition: slide-up
 ---
 
 # <twemoji-cherry-blossom/> Inspiration
 
-## Resources
+## Scroll-driven animations in pure CSS
 
-xxx
+* [Nice intro-article](https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/)
+* The native support is not awesome ... (Chromimium only)
+* Forget this in Firefox and Safari
+* Slightly above 70% support globally
+* You do animation as usual, but with added features/functions
+
+---
+transition: slide-left
+---
+
+# 1. The animation
+
+The normal way of creating and applying an animation to something. Will be played after load, and never end.
+
+```css
+/* First create the animation: rotate something around the Y-axis 5 times */
+@keyframes spin {
+  to {
+    transform: rotateY(5turn);
+  }
+}
+
+/* Add this animation to an element, animate for 5 seconds, then loop it forever */
+@media (prefers-reduced-motion: no-preference) {
+  div {
+    animation: spin 5s ease infinite;
+  }
+}
+```
+
+---
+transition: slide-left
+---
+
+# 2. The scroll-driven part
+
+This is how to do it only as you scroll passed it.
+
+```css
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    div {
+      animation: spin linear both;
+      animation-timeline: view(); /* Here's the new thing */
+      animation-range: contain; /* Make sure to start after ENTIRE element is in view */
+    }
+  }
+}
+```
+
+---
+transition: slide-left
+---
+
+## scroll()
+
+* `scroll()` function contains the animation to the actual act of scrolling.
+* Just scrolling starts the animation, going up reverses it - regardless if within viewport
+* 0% is the top of the scrollbar
+* 100% is the bottom of the scrollbar
+* Thus, full animation is not played until you scroll to the bottom
+
+## view()
+
+* `view()` function contains the animation to crossing of a scrollport.
+* 0% is when objects very bottom enters the viewport
+* 100% is when the top exits the viewport
+* `animation-range: contain` can be used to start after the entire element is in view
 
 ---
 transition: slide-up
@@ -142,14 +225,17 @@ layout: two-cols-header
 
 ::left::
 
-### [Biome](https://biomejs.dev/)
+#### [Biome](https://biomejs.dev/)
 * 1.6.4 - [more on 1.6](https://biomejs.dev/blog/biome-v1-6/)
 
-### [Vite](https://vitejs.dev/)
+#### [Vite](https://vitejs.dev/)
 * 5.2.8 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.8/packages/vite/CHANGELOG.md)
 
-### [Vitest](https://vitest.dev/)
-* 1.4.0 - [Out in March](https://github.com/vitest-dev/vitest/releases/tag/v1.4.0)
+#### [Vitest](https://vitest.dev/)
+* 1.4.0 - [out since March](https://github.com/vitest-dev/vitest/releases/tag/v1.4.0)
+
+#### [TypeScript](https://www.typescriptlang.org/)
+* 5.4 - [released in March](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)
 
 ::right::
 
@@ -184,7 +270,7 @@ transition: slide-up
 
 ## "How to build a Kahoot-clone in VueJS"
 
-> Technical overview of how I built a open Kahoot-clone in VueJS. Wrapping up with a live demo with a FE-quiz.
+> Technical overview of how I built a open Kahoot-clone in VueJS. Wrapping up with a live demo with a FE community-quiz.
 -- Gaute Meek Olsen & Bobby Westberg
 
 ---
