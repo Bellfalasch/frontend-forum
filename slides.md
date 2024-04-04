@@ -45,43 +45,33 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
+## Slack-changes
+
 * #accessibility-code merged into #accessibility
 
-## Inklud is coming
+## Expert advisor
 
-April - June we'll hire an expert a11y advisor here in Oslo.
+Inklud, experts on accessibility in Norway, is here today! Joining Team Builders the entire day.
 
-One full day, once a week, one team per slot, cross-disciplinary.
+They'll return one day each week until end of June, to support our teams in Oslo.
 
-Many (but not all) teams are now scheduled.
+The expert will do a lot of hands-on testing using screen readers, keyboard navigation and other tools. As well as discussing WCAG rules and active laws.
+
+The goal is to strengthen our a11y *confidence*, and make our products more accessible in the process.
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
 ## Accessibility Champions
 
-Most Oslo-teams now have champions, for Front-end and UX respectively. 
+All Oslo-teams now have champions, one for Front-end and one for UX respectively. 
 
-Plan for Denmark, Sweden and Bratislava is under construction.
+We also have these in Denmark and Sweden, while we haven't worked out details for the Polish or Slovakian staff yet.
 
-This is an added role. Each with this role will meet at regular intervals, and share experiences and learnings.
-
-They are not experts on a11y, neither am I, but with one single person per team to communicate, it will be easier to get moving. If they need help, it will be easier to assist.
-
----
-transition: slide-up
-layout: image-right
-image: /images/2024-03-13/a11y.png
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## xx
-
-xxx
+Champions are not experts, but the go-to person for each team to focus on a11y and elevate questions in the bi-weekly Accessibility Champions forum. Here they share experiences and learnings, as well as discuss shared topics and issues.
 
 ---
 transition: slide-left
@@ -96,23 +86,15 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
-## Latest: 1.2.2
+## Latest: 1.3.0
 
-**@gjensidige/builders-components@1.2.2**
+**@gjensidige/builders-components@1.3.0**
 
-A slew of new features, fixes, improvements and whatnot!
+**@gjensidige/core-navigation@3.3.0**
 
-* xxx
+A few handy improvements, fixes, and features!
 
 Take a dive in *#builders-core* for details!
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-<img src="/images/2024-03-13/core1-2.png" class="rounded shadow" alt="" />
 
 ---
 transition: slide-up
@@ -120,7 +102,7 @@ transition: slide-up
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
-<img src="/images/2024-03-13/core1-1.png" class="rounded shadow" alt="" />
+<img src="/images/2024-04-10/core1-3.png" class="rounded shadow" alt="" />
 
 ---
 transition: slide-left
@@ -135,11 +117,11 @@ transition: slide-up
 
 # <twemoji-rolled-up-newspaper/> News
 
-* Tiny cleanup in #frontend
+## Slack #frontend
 
-## Xxx
-
-xxx
+* Added a topic with quicklink to our sister-channel #accessibility
+* Added a description
+* Added a few handy bookmarks
 
 ---
 transition: slide-up
@@ -160,27 +142,24 @@ layout: two-cols-header
 
 ::left::
 
-## Biome
-<twemoji-globe-with-meridians/> https://biomejs.dev/
-* 1.6.0 - [first big release in 2 months](https://biomejs.dev/blog/biome-v1-6/)
+### [Biome](https://biomejs.dev/)
+* 1.6.4 - [more on 1.6](https://biomejs.dev/blog/biome-v1-6/)
 
-## Vite
-<twemoji-globe-with-meridians/> https://vitejs.dev/
-* 5.2.6 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.6/packages/vite/CHANGELOG.md)
+### [Vite](https://vitejs.dev/)
+* 5.2.8 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.8/packages/vite/CHANGELOG.md)
 
-## Vitest
-<twemoji-globe-with-meridians/> https://vitest.dev/
-* 1.3.1
+### [Vitest](https://vitest.dev/)
+* 1.4.0 - [Out in March](https://github.com/vitest-dev/vitest/releases/tag/v1.4.0)
 
 ::right::
 
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
-* 1.0.34
+* 1.1 - [out last week](https://bun.sh/blog/bun-v1.1)
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
-* 20.11.1 LTS - latest 21.7.1
+* 20.12.1 LTS - latest 21.7.2 - Also: **new website**
 
 ---
 transition: slide-left
