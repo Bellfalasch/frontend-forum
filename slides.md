@@ -51,11 +51,11 @@ transition: slide-left
 
 ## Expert advisor
 
-Inklud, experts on accessibility in Norway, is here today! Joining Team Builders the entire day.
+**Inklud**, experts on accessibility in Norway, is here today! Joining **Team Builders** the entire day.
 
-They'll return one day each week until end of June, to support our teams in Oslo.
+They'll return one day each week until **end of June**, to support our **teams in Oslo**.
 
-The expert will do a lot of hands-on testing using screen readers, keyboard navigation and other tools. As well as discussing WCAG rules and active laws.
+The expert will do a lot of hands-on testing using screen readers, keyboard navigation and other tools. As well as discussing WCAG rules and active laws. They can also help with the code-part of it.
 
 The goal is to strengthen our a11y *confidence*, and make our products more accessible in the process.
 
@@ -67,11 +67,11 @@ transition: slide-up
 
 ## Accessibility Champions
 
-All Oslo-teams now have champions, one for Front-end and one for UX respectively. 
+All Oslo-teams now have champions, one for **Front-end** and one for **UX** respectively. 
 
 We also have these in Denmark and Sweden, while we haven't worked out details for the Polish or Slovakian staff yet.
 
-Champions are not experts, but the go-to person for each team to focus on a11y and elevate questions in the bi-weekly Accessibility Champions forum. Here they share experiences and learnings, as well as discuss shared topics and issues.
+Champions are *not experts*, but the go-to person for each team to focus on a11y and elevate questions in the bi-weekly Accessibility Champions forum. Here they share experiences and learnings, as well as discuss shared topics and issues.
 
 ---
 transition: slide-left
@@ -94,7 +94,12 @@ transition: slide-left
 
 A few handy improvements, fixes, and features!
 
-Take a dive in *#builders-core* for details!
+Take a dive in *#builders-core* for details
+
+## Around the corner: 1.4.0
+
+* Fixes and improvements
+* New `<Divider>` component
 
 ---
 transition: slide-up
@@ -123,6 +128,8 @@ transition: slide-up
 * Added a description
 * Added a few handy bookmarks
 
+<img src="/images/2024-04-10/slack-frontend.png" class="rounded shadow" alt="" />
+
 ---
 transition: slide-left
 ---
@@ -131,13 +138,13 @@ transition: slide-left
 
 ## Trying GitHub Actions (GHA) locally
 
-[Article on getting started](https://www.freecodecamp.org/news/how-to-run-github-actions-locally/)
-
 This is a common pain. Not all areas can be covered, but some can be tested locally using `act`.
 
-`act` has some GHA features, but far from all, so the benefit here is on testing the other parts of your actions.
+`act` has some GHA features, but not all, but worth trying out. Might assist you in leveling up your GHA game and speeding up getting your actions right.
 
-Might assist you in leveling up your GHA game.
+* <twemoji-rolled-up-newspaper/> [Article on getting started](https://www.freecodecamp.org/news/how-to-run-github-actions-locally/)  
+
+* <twemoji-globe-with-meridians/> [Here's the act docs](https://nektosact.com/)
 
 ---
 transition: slide-up
@@ -147,11 +154,17 @@ transition: slide-up
 
 ## Scroll-driven animations in pure CSS
 
-* [Nice intro-article](https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/)
-* The native support is not awesome ... (Chromimium only)
-* Forget this in Firefox and Safari
-* Slightly above 70% support globally
+<v-clicks>
+
+* New in vanilla CSS =D
+* Bye-bye dependencies and libraries
+* Relies on two new CSS-functions, `scroll()` and `view()`
+* Native support is not awesome yet ... (Chromimium only)
+* Still slightly above 70% support globally
 * You do animation as usual, but with added features/functions
+* <twemoji-rolled-up-newspaper/> [Nice intro-article](https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/)
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -161,7 +174,7 @@ transition: slide-left
 
 The normal way of creating and applying an animation to something. Will be played after load, and never end.
 
-```css
+```css{all|1-6|8-14}
 /* First create the animation: rotate something around the Y-axis 5 times */
 @keyframes spin {
   to {
@@ -173,6 +186,7 @@ The normal way of creating and applying an animation to something. Will be playe
 @media (prefers-reduced-motion: no-preference) {
   div {
     animation: spin 5s ease infinite;
+    /* TODO: New fancy code will be inserted here */
   }
 }
 ```
@@ -183,9 +197,9 @@ transition: slide-left
 
 # 2. The scroll-driven part
 
-This is how to do it only as you scroll passed it.
+This is how to do it only as you scroll passed it (replacing the TODO-part in prev. slide).
 
-```css
+```css{all|5-6|2}
 @media (prefers-reduced-motion: no-preference) {
   @supports (animation-timeline: view()) {
     div {
@@ -201,7 +215,11 @@ This is how to do it only as you scroll passed it.
 transition: slide-left
 ---
 
-## scroll()
+# 3. The functions
+
+<v-clicks>
+
+### scroll()
 
 * `scroll()` function contains the animation to the actual act of scrolling.
 * Just scrolling starts the animation, going up reverses it - regardless if within viewport
@@ -209,12 +227,14 @@ transition: slide-left
 * 100% is the bottom of the scrollbar
 * Thus, full animation is not played until you scroll to the bottom
 
-## view()
+### view()
 
 * `view()` function contains the animation to crossing of a scrollport.
 * 0% is when objects very bottom enters the viewport
 * 100% is when the top exits the viewport
 * `animation-range: contain` can be used to start after the entire element is in view
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -252,7 +272,7 @@ transition: slide-left
 layout: center
 ---
 
-# Wrapup
+# Closing words
 
 ---
 transition: slide-up
