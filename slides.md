@@ -117,7 +117,7 @@ layout: center
 # News, Inspiration, Updates
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # <twemoji-rolled-up-newspaper/> News
@@ -129,6 +129,25 @@ transition: slide-up
 * Added a few handy bookmarks
 
 <img src="/images/2024-04-10/slack-frontend.png" class="rounded shadow" alt="" />
+
+---
+transition: slide-up
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Figma dev-mode
+
+<v-clicks>
+
+* As you know we've stopped giving out licenses to developers ...
+* ... to focus on a more dedicated trial-period
+* I've hand-picked 7 developers to get dev-mode
+* They are testing it, sharing pros and cons
+* After April + May we'll see if we can pitch more licenses to managers 
+* It's sadly not cheap, at 350 EUR per user/year
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -261,7 +280,7 @@ layout: two-cols-header
 
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
-* 1.1 - [out last week](https://bun.sh/blog/bun-v1.1)
+* 1.1.3 - [out last week](https://bun.sh/blog/bun-v1.1)
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
@@ -272,15 +291,7 @@ transition: slide-left
 layout: center
 ---
 
-# Closing words
-
----
-transition: slide-up
----
-
-# <twemoji-spiral-calendar/> Next FEF
-
-Next FEF will be held the **24th of April**.
+# Talk-time
 
 ---
 transition: slide-up
@@ -290,8 +301,38 @@ transition: slide-up
 
 ## "How to build a Kahoot-clone in VueJS"
 
-> Technical overview of how I built a open Kahoot-clone in VueJS. Wrapping up with a live demo with a FE community-quiz.
--- Gaute Meek Olsen & Bobby Westberg
+> Technical overview of how I built an open source Kahoot-clone in VueJS.
+
+-- Gaute Meek Olsen
+
+## Quiz-time!
+
+> Wrapping up with a live demo with a FE community-quiz.
+
+-- Bobby Westberg
+
+
+---
+transition: slide-up
+layout: center
+---
+
+# Quiz Time
+
+Test your Front-end Forum, and front-end in general, related knowledge. 12 questions!
+
+1. Go to URL: [https://kuizzi.app](https://kuizzi.app/) (use any device)
+2. Enter PIN: XXX
+3. Create a user
+4. Play!
+
+---
+transition: slide-up
+---
+
+# <twemoji-spiral-calendar/> Next FEF
+
+Next FEF will be held the **24th of April**.
 
 ---
 transition: slide-up
