@@ -167,7 +167,6 @@ transition: slide-left
 
 </v-clicks>
 
-
 ---
 transition: slide-left
 ---
@@ -210,7 +209,7 @@ transition: slide-left
 
 # 1. The animation
 
-The normal way of creating and applying an animation to something. Will be played after load, and never end.
+The normal way of creating an animation to something. Will be played after load, and never end.
 
 ```css{all|1-6|8-14}
 /* First create the animation: rotate something around the Y-axis 5 times */
@@ -228,6 +227,16 @@ The normal way of creating and applying an animation to something. Will be playe
   }
 }
 ```
+
+**Note**: Respect users that don't want a lot of motion using:
+`@media (prefers-reduced-motion: no-preference) {`
+
+---
+layout: animation-1
+transition: slide-left
+---
+
+# Spin me round, round, baby right round
 
 ---
 transition: slide-left
@@ -248,6 +257,13 @@ This is how to do it only as you scroll passed it (replacing the TODO-part in pr
   }
 }
 ```
+
+---
+layout: animation-2
+transition: slide-left
+---
+
+# Scroll me round, using view()
 
 ---
 transition: slide-left
@@ -273,6 +289,13 @@ transition: slide-left
 * `animation-range: contain` can be used to start after the entire element is in view
 
 </v-clicks>
+
+---
+layout: animation-3
+transition: slide-left
+---
+
+# Scroll me round, using scroll()
 
 ---
 transition: slide-up
