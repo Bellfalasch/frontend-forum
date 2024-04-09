@@ -71,7 +71,7 @@ All Oslo-teams now have champions, one for **Front-end** and one for **UX** resp
 
 We also have these in Denmark and Sweden, while we haven't worked out details for the Polish or Slovakian staff yet.
 
-Champions are *not experts*, but the go-to person for each team to focus on a11y and elevate questions in the bi-weekly Accessibility Champions forum. Here they share experiences and learnings, as well as discuss shared topics and issues.
+Champions are *not experts*, but the go-to person for each team to focus on a11y and elevate questions in **the bi-weekly Accessibility Champions forum**. Here they share experiences and learnings, as well as discuss shared topics and issues.
 
 ---
 transition: slide-left
@@ -131,7 +131,7 @@ transition: slide-left
 <img src="/images/2024-04-10/slack-frontend.png" class="rounded shadow" alt="" />
 
 ---
-transition: slide-up
+transition: slide-left
 ---
 
 # <twemoji-rolled-up-newspaper/> News
@@ -148,6 +148,25 @@ transition: slide-up
 * It's sadly not cheap, at 350 EUR per user/year
 
 </v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Vite 6 - planning begun
+
+<v-clicks>
+
+* First three alphas are already out
+* Aiming for release this year (instead of waiting for Node 18 reaching EOL)
+* **Feature**: [Vite Runtime API](https://vitejs.dev/guide/api-vite-runtime.html) out of beta
+* **Feature**: Maybe (a very weak maybe) Rolldown to replace esbuild
+* More details: [Milestone in GitHub](https://github.com/vitejs/vite/milestone/17)
+
+</v-clicks>
+
 
 ---
 transition: slide-left
@@ -280,7 +299,7 @@ layout: two-cols-header
 
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
-* 1.1.3 - [out last week](https://bun.sh/blog/bun-v1.1)
+* 1.1.3 - [1.1 out last week](https://bun.sh/blog/bun-v1.1)
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
@@ -319,20 +338,12 @@ layout: center
 
 # Quiz Time
 
-Test your Front-end Forum, and front-end in general, related knowledge. 12 questions!
+Test your Front-end Forum (and front-end in general) knowledge. 12 questions!
 
 1. Go to URL: [https://kuizzi.app](https://kuizzi.app/) (use any device)
 2. Enter PIN: XXX
 3. Create a user
 4. Play!
-
----
-transition: slide-up
----
-
-# <twemoji-spiral-calendar/> Next FEF
-
-Next FEF will be held the **24th of April**.
 
 ---
 transition: slide-up
@@ -344,3 +355,7 @@ layout: center
 That's all for now!
 
 <twemoji-red-heart class="animate-ping"/>
+
+--
+
+<twemoji-spiral-calendar/> Next FEF will be held the **24th of April**
