@@ -200,6 +200,7 @@ transition: slide-up
 * Still slightly above 70% support globally
 * You do animation as usual, but with added features/functions
 * <twemoji-rolled-up-newspaper/> [Nice intro-article](https://tympanus.net/codrops/2024/01/17/a-practical-introduction-to-scroll-driven-animations-with-css-scroll-and-view/)
+* [Chrome Docs](https://developer.chrome.com/docs/css-ui/scroll-driven-animations) on the topic
 
 </v-clicks>
 
