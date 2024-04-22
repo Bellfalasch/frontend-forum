@@ -141,6 +141,7 @@ transition: slide-left
 * VoiceOver is most common on Apple
 * For Android users they use Talkback
 * JAWS is not that common in Norway, it costs money, yearly
+  * But it is very big globally
 * NVDA is the most used on Windows (globally too)
 * [Full survey](https://webaim.org/projects/screenreadersurvey10/#used)
 
@@ -196,4 +197,4 @@ That's all for now!
 
 --
 
-<twemoji-spiral-calendar/> Next ACF will be held the **24th of April**
+<twemoji-spiral-calendar/> Next ACF will be held in two weeks.
