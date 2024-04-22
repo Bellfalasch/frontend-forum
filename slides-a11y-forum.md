@@ -56,7 +56,7 @@ transition: slide-left
 
 ### What is best practice for forms "remembering" information provided by the user when the user navigates away without submitting (like using browser back button)?
 
-We will get back to this as a separate session, as it is not a11y-specific it will be in a different forum.
+This would be nice if we could align more across teams, perhaps discuss this as a separate session as this is not only for a11y. But Inklud strongly suggest all forms should always save and let you move back and forward in any way.
 
 ---
 transition: slide-left
@@ -88,9 +88,9 @@ transition: slide-left
 
 ### What is best practice on long dynamic forms: should answered questions always be visible?
 
-Yes - questions must be visible so that you alswyas have possibility to go back and edit. In a multistep form must be possible to go back in the form. It should be possible to change answers.
+Yes - questions must be visible so that you always have possibility to go back and edit. In a multistep form it must be possible to go back in the form. It should be possible to change answers.
 
-Front-end tip: Wrapping all fields in an `aria-live="polite"` would announce any new elements (fields) added to that area.
+Front-end tip: Wrapping all fields in an `aria-live="polite"` would announce any new elements (fields) added to that area. It doesn't help to add this attribute to a field that is injected/added to the DOM.
 
 ---
 transition: slide-left
@@ -99,8 +99,9 @@ transition: slide-left
 # <twemoji-wheelchair-symbol/> Our first sessions with Inklud
 
 * Time with a certified a11y expert sure helps
-* He had one session with Builders first (they will share shortly)
-* Last week he had two sessions, one with sales commercial and one with sales private
+* Three teams are "done", the will share their findings
+* He had one session with Builders first
+* Last week he had one with sales commercial and one with sales private
 * We learn a lot in general too
 
 ---
