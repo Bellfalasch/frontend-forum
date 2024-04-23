@@ -161,13 +161,13 @@ We are far from worst in class, but some feedback/issues can be worth for everyo
 
 * Test with real screen readers - extensions and tools are good, but not the same, don't skip it
 * Only testing VoiceOver (Mac), as it behaves a lot different from other tools
-* Breaking the logical flow of things, for example expandables that expand upwards
-* Putting actionable elements within actionable elements (checkbox within button, button within link)
-  * [More details on interactive/actionable elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#interactive_content)
+* Don't break the logical flow of things, for example expandables that expand upwards
+* Don't put [actionable elements within actionable elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#interactive_content) (checkbox within button, button within link)
 * Breaking the "Jump to content"-functionality (no `#content`, or HashRouter overwriting it)
 * Miss-using `aria`, for example adding a `role` then also adding `aria` that the role added already
 * Adding aria/roles to already semantic HTML, like `<main role="main">`,  `<button role="button">`
 * We should [visually hide information](https://webaim.org/techniques/css/invisiblecontent/) about "This opens a modal", "opens a tab", "calls this number", etc
+* Search doesn't have an HTML-tag, but is a landmark. Put `role="search"` on the `<input>`
 
 </v-clicks>
 
