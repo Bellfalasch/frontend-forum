@@ -26,10 +26,50 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
+* Talk
 * Accessibility
 * Builders Core
-* News/updates
-* Inspiration
+
+---
+transition: slide-left
+layout: center
+---
+
+# Talk-time
+
+---
+transition: slide-up
+---
+
+# <twemoji-studio-microphone/> Talk
+
+## "Grafana superfueled with sourcemaps"
+
+> Solving the hard-to-diggest wall of stacktrace in Grafana using sourcemaps while still making it secure.
+
+-- Henrik Lilleengen from Sales, Private
+
+---
+transition: slide-left
+layout: center
+---
+
+# Welcome
+
+---
+transition: slide-up
+layout: test
+---
+
+## <twemoji-waving-hand/> Quick Welcome
+
+Missed this the last forum ... 
+
+<v-clicks>
+
+* Welcome **Stine Hauge Danielsen** - Digitalization and Design / re-skill
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -46,13 +86,18 @@ transition: slide-left
 
 ## Expert advisor
 
+<v-clicks>
+
 * **Inklud**, experts on accessibility in Norway
-* Service Private has visit today
+* Certified in accessibility
 * Builders had the first visit two weeks ago
 * Last week, Private and Commercial Sales had one day each
+* Service Private has visit today
 * More sessions to come
+* I sit on for all of these sessions, I will do my best to share some things ...
+* ... so here's 30+ hands-on tips from the expert!
 
-I sit on for all of these sessions, and the stuff we learn ... I don't even know where to begin.
+</v-clicks>
 
 ---
 transition: slide-left
@@ -66,12 +111,15 @@ They have a lot of general feedback to us, and here are some things they find ve
 
 <v-clicks>
 
-* The overall quality of the design system
-* Excellent documentation
+* The overall quality of the design system and documentation
 * That teams use it, and update it
-* It's easy and welcome to contribute to the design system
-* Strong community with many motivated and skilled people
+* Our focus on accessibility goes beyond just FE or UX
 * Good sharing-culture
+* The numeric inputs he tested did not allow letters
+* Autocomplete on the forms he tested was defined
+* Navigation on website was very accessible on desktop
+* Signaling with `aria-expanded="true|false"` the state of toggable elements on screen
+* ... and a lot more!
 
 </v-clicks>
 
@@ -81,42 +129,104 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-## Common errors/mistakes
+## Info worth sharing
 
-We are far from worst in class, but some feedback/issues repeats:
-
-<v-clicks>
-
-* Putting actionable elements within actionable elements (checkbox within button, button within link)
-* Not testing with real screen readers
-* Only testing VoiceOver (Mac), as it behaves a lot different from other tools
-* Breaking the "Jump to content"-functionality
-* Miss-using `aria`, for example adding a `role` then also adding `aria` that the role added already
-* Adding aria/roles to already semantic HTML, like `<main role="main">`
-* If more than one `<nav>` exists on a page, each need a unique `aria-label` or `aria-labelledby`
-* Introducing an element with `aria-live` into the DOM will **not** announce it
-* Wrapping `<label>` around a `<HelpText>` is practically, but will announce A LOT in screen readers
-* Breaking the logical flow of things, for example expandables that expand upwards
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Other info worth sharing
-
-...
+So, some general things we learned, that all should know.
 
 <v-clicks>
 
 * Aria is very powerful, if used right. Very destructive if used wrong.
 * Assistive technology market is complex, "vendor + device + OS + browser" mix gives different results.
-* On Windows, "everyone" uses NVDA.
+  * [Good overview](https://a11ysupport.io/) (like a "caniuse" for a11y)
+* On Windows, "everyone" uses NVDA
+* VoiceOver on Mac tries to be more clever than others, it will accept more errors in code
+* Valid HTML has its own WCAG-rule, [4.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) - When did you check yours last? [Use a validator](https://validator.w3.org/#validate_by_input)!
+  * **(1)** Correctly opened and closed  
+  **(2)** Nested in a valid way  
+  **(3)** Unique IDs **(4)** No duplicate attributes
 
 </v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## Stuff we can learn/improve - part 1
+
+We are far from worst in class, but some feedback/issues can be worth for everyone to pick up on:
+
+<v-clicks>
+
+* Test with real screen readers - extensions and tools are good, but not the same, don't skip it
+* Only testing VoiceOver (Mac), as it behaves a lot different from other tools
+* Breaking the logical flow of things, for example expandables that expand upwards
+* Putting actionable elements within actionable elements (checkbox within button, button within link)
+  * [More details on interactive/actionable elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#interactive_content)
+* Breaking the "Jump to content"-functionality (no `#content`, or HashRouter overwriting it)
+* Miss-using `aria`, for example adding a `role` then also adding `aria` that the role added already
+* Adding aria/roles to already semantic HTML, like `<main role="main">`,  `<button role="button">`
+* We should [visually hide information](https://webaim.org/techniques/css/invisiblecontent/) about "This opens a modal", "opens a tab", "calls this number", etc
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## Stuff we can learn/improve - part 2
+
+<v-clicks>
+
+* When a page is loading something using client, long waiting-time should be announced
+  * We have both `aria-busy` on buttons and `aria-live` as tools here
+* Table headings need to specify `scope="row"` or `scope="column"` to signal direction
+* Tables should have a `<caption>` to explain the table - [element spec](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)
+* If more than one `<nav>` exists on a page, each need a unique `aria-label` or `aria-labelledby`
+* Introducing an element with `aria-live` into the DOM will **not** announce it
+  * You must insert an empty `aria-live` from first render, then dynamically inject new DOM into it
+* Wrapping `<label>` around a `<HelpText>` is practical, but will announce A LOT in screen readers
+  * Use the `for="${id}"` pattern - `<label for="myUniqueId">` + `<input id="myUniqueId">`
+* Search-fields should use `aria-live="polite"` to announce hits in result as you type
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## Stuff we can learn/improve - part 3
+
+<v-clicks>
+
+* `aria-labelledby` is very handy, use it to re-use existing DOM-content as a label
+  * `<x aria-labelledby="myUniqueId">` + `<y id="myUniqueId">`
+* [Turn off spellchecking](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/spellcheck) with `spellcheck="false"` on inputs/textarea/forms if not needed
+* Using `inputmode="x"` on inputs to [control character ranges for input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#inputmode), like `numeric`, `email`, etc
+* Using landmarks wrong, *too much to go over here but check* [the W3C examples](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/banner.html).
+  * `<section>` is not a landmark unless it has a accessible name (using `aria-label` etc)
+* The old semantic HTML `<dl>`, `<dt>`, `<dd>` has very poor support
+* The `<footer>` is more or less useless within `<article>`, and other nested elements
+* On errors in a form, put the focus on the first field with error
+* The concept of tabs is a big problem for blind users - they are not familiar with the concept
+
+</v-clicks>
+---
+transition: slide-left
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+## Stuff we can learn/improve - closure
+
+* All these nice attributes etc work as expected on the latest builder components ...
+* **Very old components might not support all attributes and aria**  
+* The expert dared to state that lifting your app up to required legal standards is impossible without using the latest components. And if you managed without you'd be wasting a lot of time.
 
 ---
 transition: slide-left
@@ -140,70 +250,6 @@ transition: slide-left
 Many handy improvements, fixes, and features!
 
 Details in `#builders-core`
-
----
-transition: slide-left
-layout: center
----
-
-# News, Inspiration, Updates
-
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> News
-
-## Vite 6 - planning begun
-
-<v-clicks>
-
-* First three alphas are already out
-* Aiming for release this year (instead of waiting for Node 18 reaching EOL)
-* **Feature**: [Vite Runtime API](https://vitejs.dev/guide/api-vite-runtime.html) out of beta
-* **Feature**: Maybe (a very weak maybe) Rolldown to replace esbuild
-* More details: [Milestone in GitHub](https://github.com/vitejs/vite/milestone/17)
-
-</v-clicks>
-
----
-transition: slide-up
----
-
-# <twemoji-cherry-blossom/> Inspiration
-
-## xxx
-
----
-transition: slide-up
-layout: two-cols-header
----
-
-# <twemoji-package/> Updates
-
-::left::
-
-#### [Biome](https://biomejs.dev/)
-* 1.6.4 - [more on 1.6](https://biomejs.dev/blog/biome-v1-6/)
-
-#### [Vite](https://vitejs.dev/)
-* 5.2.8 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.8/packages/vite/CHANGELOG.md)
-
-#### [Vitest](https://vitest.dev/)
-* 1.4.0 - [out since March](https://github.com/vitest-dev/vitest/releases/tag/v1.4.0)
-
-#### [TypeScript](https://www.typescriptlang.org/)
-* 5.4 - [released in March](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)
-
-::right::
-
-## Bun
-<twemoji-globe-with-meridians/> https://bun.sh/
-* 1.1.3 - [1.1 out last week](https://bun.sh/blog/bun-v1.1)
-
-## Node.JS
-<twemoji-globe-with-meridians/> https://nodejs.org/en
-* 20.12.1 LTS - latest 21.7.2 - Also: **new website**
 
 ---
 transition: slide-left
