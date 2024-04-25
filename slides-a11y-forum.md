@@ -54,7 +54,7 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Questions last forum
 
-### What is best practice for forms "remembering" information provided by the user when the user navigates away without submitting (like using browser back button)?
+## What is best practice for forms "remembering" information provided by the user when the user navigates away without submitting (like using browser back button)?
 
 This would be nice if we could align more across teams, perhaps discuss this as a separate session as this is not only for a11y. But Inklud strongly suggest all forms should always save and let you move back and forward in any way.
 
@@ -64,7 +64,7 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Questions last forum (cont.)
 
-### What is best practice for forms with error in one/some fields?
+## What is best practice for forms with error in one/some fields?
 
 Move the focus to the first field with "error".
 
@@ -76,7 +76,7 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Questions last forum (cont.)
 
-### What is best practice in setting focus while navigating to next step/page of a form?
+## What is best practice in setting focus while navigating to next step/page of a form?
 
 Suggestion from Inklud: Heading / Progress bar step (orient the user, where are they).
 
@@ -86,7 +86,7 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> Questions last forum (cont.)
 
-### What is best practice on long dynamic forms: should answered questions always be visible?
+## What is best practice on long dynamic forms: should answered questions always be visible?
 
 Yes - questions must be visible so that you always have possibility to go back and edit. In a multistep form it must be possible to go back in the form. It should be possible to change answers.
 
@@ -110,7 +110,7 @@ transition: slide-left
 
 # <twemoji-wheelchair-symbol/> What did we learn that all can benefit from?
 
-### He uses HTML validation from W3C a lot.
+## He uses HTML validation from W3C a lot.
 1. As broken HTML-code will create huge a11y-problems.
 1. https://validator.w3.org/#validate_by_input
 1. He used this in a specific way 
