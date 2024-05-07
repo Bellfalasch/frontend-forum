@@ -15,7 +15,7 @@ layout: cover
 
 # Front-end Forum
 
-## 24th of April
+## 8th of May
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -26,9 +26,187 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
-* Talk
 * Accessibility
 * Builders Core
+* News (Node 22, React 19, ++)
+* Topic: Release notes from Builders
+* Talk: Builders sharing
+
+---
+transition: slide-left
+layout: center
+---
+
+# Accessibility
+
+---
+transition: slide-up
+---
+
+# <twemoji-wheelchair-symbol/> Accessibility
+
+* Keep an eye on #accessibility for tips and tricks
+* Last FEF contained a list of 30+ hands-on a11y tips
+* Intention is to collect things in Storybook in different forms
+* I'm collecting learnings from all teams
+* [Work in progress document in Confluence](https://gjensidige.atlassian.net/wiki/spaces/DIGKUN/pages/102827206/Front-end+code+tips+trix)
+
+---
+transition: slide-left
+layout: center
+---
+
+# Builders Core
+
+---
+transition: slide-up
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+## Latest: 1.7.0
+
+**@gjensidige/builders-components@1.7.0**
+
+Many handy improvements, fixes, and features!
+
+Take a dive in *#builders-core* for details
+
+---
+transition: slide-left
+layout: center
+---
+
+# News, Inspiration, Updates
+
+---
+transition: slide-left
+layout: image-right
+image: /images/2024-05-08/cdn-loading.png
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Faro-loading
+
+<v-clicks>
+
+* Occassional hickups with external CDNs
+* Best pattern is to always install packages with your bundle
+* Saves one request from the client - better speed
+* Better security, better control
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Node 22!
+
+<v-clicks depth="2">
+
+* Not LTS (until after Node 20 retires)
+* **Features:**
+  * [Blog about the features](https://dev.to/andreas_herz/exploring-the-exciting-new-features-in-nodejs-22-1j90)
+  * [Detailed list](https://nodejs.org/en/blog/announcements/v22-release-announce)
+  * V8-engine updated to 12.4
+  * Require()ing ESM will just work
+  * Running package.json scripts with `node --run xx`
+  * Watch Mode (node --watch)
+  * And more!
+* [Shape Node's next 10 years](https://linuxfoundation.surveymonkey.com/r/nodenext10survey24)
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## React 19 beta
+
+<v-clicks depth="2">
+
+* Beta - (*do not use these for customer/user facing apps*) - [Extensive release-notes](https://react.dev/blog/2024/04/25/react-19)
+* **Many new features**:
+  * [Nice article explaining it all, with examples](https://www.freecodecamp.org/news/new-react-19-features/)
+  * Many features inspired by Next.JS, Astro, etc
+  * React compiler! Makes your code faster build-time, for your convinience
+  * New `use()` hook, makes you write less boilerplate-code with `useState` and `useEffect`
+  * Easier to put more stuff on the server (form action, `use server`)
+  * Improved speed, simpler APIs (bye-bye `useMemo()` etc)
+  * Way easier to work with Web Components
+  * Document Metadata is easier
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: two-cols
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## React at Gjensidige
+
+So, what versions of React are we running? Using GitHub search, I get some data.
+
+Stats based on `257` repoes configuring React using `package.json`, somewhere in their repos. Excluding archived repoes.
+
+Will count `"react": "17.x || 18.x",` as 17
+
+### Good news:
+
+* Over 60% are on React 18.2
+* No one are on React 14
+* Only one stuck on React 15
+
+::right::
+
+.  
+.  
+
+```mermaid
+pie showData title Gjensidige React-landscape
+    "18.*" : 152
+    "17.*" : 73
+    "16.*" : 27
+    "15.*" : 1
+```
+
+* Meassured on the 6th of May.
+
+---
+transition: slide-up
+layout: two-cols-header
+---
+
+# <twemoji-package/> Updates
+
+::left::
+
+#### [Biome](https://biomejs.dev/)
+* 1.7.2 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
+
+#### [Vite](https://vitejs.dev/)
+* 5.2.11 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.11/packages/vite/CHANGELOG.md)
+
+#### [Vitest](https://vitest.dev/)
+* 1.5.3 - [out since April](https://github.com/vitest-dev/vitest/releases/tag/v1.5.0)
+
+::right::
+
+## Node.JS
+<twemoji-globe-with-meridians/> https://nodejs.org/en
+* 20.12.2 LTS - latest 22.1.0 (new!)
+
+## Bun
+<twemoji-globe-with-meridians/> https://bun.sh/
+* 1.1.7
 
 ---
 transition: slide-left
@@ -43,216 +221,16 @@ transition: slide-up
 
 # <twemoji-studio-microphone/> Talk
 
-## "Grafana superfueled with sourcemaps"
+## Team Builders-"hour"
 
-> Solving the hard-to-diggest wall of stacktrace in Grafana using sourcemaps while still making it secure.
+> * Release frequency and release notes strategy.
+> * The way forward addressing adjustments following the accessibility review.
+> * The way forward addressing needs identified during work-swap in other teams (such as "Patterns," "Flex," and "InputField")
 
--- Henrik Lilleengen from Sales, Private
-
----
-transition: slide-left
-layout: center
----
-
-# Welcome
+-- Team Builders
 
 ---
 transition: slide-up
-layout: test
----
-
-## <twemoji-waving-hand/> Quick Welcome
-
-Missed this the last forum ... 
-
-<v-clicks>
-
-* Welcome **Stine Hauge Danielsen** - Digitalization and Design / re-skill
-
-</v-clicks>
-
----
-transition: slide-left
-layout: center
----
-
-# Accessibility
-
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Expert advisor
-
-<v-clicks>
-
-* **Inklud**, experts on accessibility in Norway
-* Certified in accessibility
-* Builders had the first visit two weeks ago
-* Last week, Private and Commercial Sales had one day each
-* Service Private has visit today
-* More sessions to come
-* I sit on for all of these sessions, I will do my best to share some things ...
-* ... so here's 30+ hands-on tips from the expert!
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Good patterns
-
-They have a lot of general feedback to us, and here are some things they find very positive with Gjensidige:
-
-<v-clicks>
-
-* The overall quality of the design system and documentation
-* That teams use it, and update it
-* Our focus on accessibility goes beyond just FE or UX
-* Good sharing-culture
-* The numeric inputs he tested did not allow letters
-* Autocomplete on the forms he tested was defined
-* Navigation on website was very accessible on desktop
-* Signaling with `aria-expanded="true|false"` the state of toggable elements on screen
-* ... and a lot more!
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Info worth sharing
-
-So, some general things we learned, that all should know.
-
-<v-clicks>
-
-* Aria is very powerful, if used right. Very destructive if used wrong.
-* Assistive technology market is complex, "vendor + device + OS + browser" mix gives different results.
-  * [Good overview](https://a11ysupport.io/) (like a "caniuse" for a11y)
-* On Windows, "everyone" uses NVDA
-* VoiceOver on Mac tries to be more clever than others, it will accept more errors in code
-* Valid HTML has its own WCAG-rule, [4.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) - When did you check yours last? [Use a validator](https://validator.w3.org/#validate_by_input)!
-  * **(1)** Correctly opened and closed  
-  **(2)** Nested in a valid way  
-  **(3)** Unique IDs **(4)** No duplicate attributes
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Stuff we can learn/improve - part 1
-
-We are far from worst in class, but some feedback/issues can be worth for everyone to pick up on:
-
-<v-clicks>
-
-* Test with real screen readers - extensions and tools are good, but not the same, don't skip it
-* Only testing VoiceOver (Mac), as it behaves a lot different from other tools
-* Don't break the logical flow of things, for example expandables that expand upwards
-* Don't put [actionable elements within actionable elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories#interactive_content) (checkbox within button, button within link)
-* Breaking the "Jump to content"-functionality (no `#content`, or HashRouter overwriting it)
-* Miss-using `aria`, for example adding a `role` then also adding `aria` that the role added already
-* Adding aria/roles to already semantic HTML, like `<main role="main">`,  `<button role="button">`
-* We should [visually hide information](https://webaim.org/techniques/css/invisiblecontent/) about "This opens a modal", "opens a tab", "calls this number", etc
-* Search doesn't have an HTML-tag, but is a landmark. Put `role="search"` on the `<input>`
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Stuff we can learn/improve - part 2
-
-<v-clicks>
-
-* When a page is loading something using client, long waiting-time should be announced
-  * We have both `aria-busy` on buttons and `aria-live` as tools here
-* Table headings need to specify `scope="row"` or `scope="column"` to signal direction
-* Tables should have a `<caption>` to explain the table - [element spec](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)
-* If more than one `<nav>` exists on a page, each need a unique `aria-label` or `aria-labelledby`
-* Introducing an element with `aria-live` into the DOM will **not** announce it
-  * You must insert an empty `aria-live` from first render, then dynamically inject new DOM into it
-* Wrapping `<label>` around a `<HelpText>` is practical, but will announce A LOT in screen readers
-  * Use the `for="${id}"` pattern - `<label for="myUniqueId">` + `<input id="myUniqueId">`
-* Search-fields should use `aria-live="polite"` to announce hits in result as you type
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Stuff we can learn/improve - part 3
-
-<v-clicks>
-
-* `aria-labelledby` is very handy, use it to re-use existing DOM-content as a label
-  * `<x aria-labelledby="myUniqueId">` + `<y id="myUniqueId">`
-* [Turn off spellchecking](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/spellcheck) with `spellcheck="false"` on inputs/textarea/forms if not needed
-* Using `inputmode="x"` on inputs to [control character ranges for input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#inputmode), like `numeric`, `email`, etc
-* Using landmarks wrong, *too much to go over here but check* [the W3C examples](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/banner.html).
-  * `<section>` is not a landmark unless it has a accessible name (using `aria-label` etc)
-* The old semantic HTML `<dl>`, `<dt>`, `<dd>` has very poor support
-* The `<footer>` is more or less useless within `<article>`, and other nested elements
-* On errors in a form, put the focus on the first field with error
-* The concept of tabs is a big problem for blind users - they are not familiar with the concept
-
-</v-clicks>
----
-transition: slide-left
----
-
-# <twemoji-wheelchair-symbol/> Accessibility
-
-## Stuff we can learn/improve - closure
-
-* All these nice attributes etc work as expected on the latest builder components ...
-* **Very old components might not support all attributes and aria**  
-* The expert dared to state that lifting your app up to required legal standards is impossible without using the latest components. And if you managed without you'd be wasting a lot of time.
-
----
-transition: slide-left
-layout: center
----
-
-# Builders Core
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Latest releases:
-
-**@gjensidige/builders-components@1.4.1**  
-**@gjensidige/builders-icons@1.2.0**  
-**@gjensidige/core-navigation@3.3.3**  
-
-Many handy improvements, fixes, and features!
-
-Details in `#builders-core`
-
----
-transition: slide-left
 layout: center
 ---
 
@@ -264,4 +242,4 @@ That's all for now!
 
 --
 
-<twemoji-spiral-calendar/> Next FEF will be held the **8th of May**
+<twemoji-spiral-calendar/> Next FEF will be held the **22th of May**
