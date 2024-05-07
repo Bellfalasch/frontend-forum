@@ -74,6 +74,14 @@ Take a dive in *#builders-core* for details
 
 ---
 transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> builders-components 1.7
+
+<img src="/images/2024-05-08/core1-7.png" class="rounded shadow" style="max-width:85%;" alt="" />
+
+---
+transition: slide-left
 layout: center
 ---
 
@@ -110,14 +118,15 @@ transition: slide-left
 
 * Not LTS (until after Node 20 retires)
 * **Features:**
-  * [Blog about the features](https://dev.to/andreas_herz/exploring-the-exciting-new-features-in-nodejs-22-1j90)
-  * [Detailed list](https://nodejs.org/en/blog/announcements/v22-release-announce)
   * V8-engine updated to 12.4
   * Require()ing ESM will just work
-  * Running package.json scripts with `node --run xx`
-  * Watch Mode (node --watch)
+  * Native WebSocket client
+  * Running package.json scripts with `node --run xx` (experimental)
   * And more!
-* [Shape Node's next 10 years](https://linuxfoundation.surveymonkey.com/r/nodenext10survey24)
+* [Detailed list](https://nodejs.org/en/blog/announcements/v22-release-announce)
+* [Blog about the features](https://dev.to/andreas_herz/exploring-the-exciting-new-features-in-nodejs-22-1j90)
+
+Don't miss: [Shape Node's next 10 years](https://linuxfoundation.surveymonkey.com/r/nodenext10survey24)
 
 </v-clicks>
 
@@ -153,6 +162,8 @@ layout: two-cols
 
 ## React at Gjensidige
 
+<v-clicks>
+
 So, what versions of React are we running? Using GitHub search, I get some data.
 
 Stats based on `257` repoes configuring React using `package.json`, somewhere in their repos. Excluding archived repoes.
@@ -161,14 +172,18 @@ Will count `"react": "17.x || 18.x",` as 17
 
 ### Good news:
 
-* Over 60% are on React 18.2
+* Over 60% are on React 18.2 (double to 17)
 * No one are on React 14
 * Only one stuck on React 15
+
+</v-clicks>
 
 ::right::
 
 .  
 .  
+
+<v-clicks after>
 
 ```mermaid
 pie showData title Gjensidige React-landscape
@@ -178,7 +193,9 @@ pie showData title Gjensidige React-landscape
     "15.*" : 1
 ```
 
-* Meassured on the 6th of May.
+_Meassured on the 6th of May._
+
+</v-clicks>
 
 ---
 transition: slide-up
