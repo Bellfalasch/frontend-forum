@@ -29,8 +29,7 @@ transition: slide-up
 * Accessibility
 * Builders Core
 * News (Node 22, React 19, ++)
-* Topic: Release notes from Builders
-* Talk: Builders sharing
+* Talk: Builders sharing, release notes ++
 
 ---
 transition: slide-left
@@ -59,26 +58,24 @@ layout: center
 # Builders Core
 
 ---
-transition: slide-up
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Latest: 1.7.0
-
-**@gjensidige/builders-components@1.7.0**
-
-Many handy improvements, fixes, and features!
-
-Take a dive in *#builders-core* for details
-
----
 transition: slide-left
 ---
 
 # <twemoji-notebook-with-decorative-cover/> builders-components 1.7
 
 <img src="/images/2024-05-08/core1-7.png" class="rounded shadow" style="max-width:85%;" alt="" />
+
+---
+transition: slide-up
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+**@gjensidige/builders-components@1.7.0**
+
+Many handy improvements, fixes, and features!
+
+Take a dive in *#builders-core* for details
 
 ---
 transition: slide-left
@@ -93,7 +90,7 @@ layout: image-right
 image: /images/2024-05-08/cdn-loading.png
 ---
 
-# <twemoji-rolled-up-newspaper/> News
+# <twemoji-test-tube/> Gjensidige
 
 ## Faro-loading
 
@@ -126,9 +123,14 @@ transition: slide-left
 * [Detailed list](https://nodejs.org/en/blog/announcements/v22-release-announce)
 * [Blog about the features](https://dev.to/andreas_herz/exploring-the-exciting-new-features-in-nodejs-22-1j90)
 
+</v-clicks>
+
+<v-clicks after>
+
 Don't miss: [Shape Node's next 10 years](https://linuxfoundation.surveymonkey.com/r/nodenext10survey24)
 
 </v-clicks>
+
 
 ---
 transition: slide-left
@@ -158,7 +160,7 @@ transition: slide-left
 layout: two-cols
 ---
 
-# <twemoji-rolled-up-newspaper/> News
+# <twemoji-chart-increasing/> Gjensidige
 
 ## React at Gjensidige
 
@@ -207,7 +209,7 @@ layout: two-cols-header
 ::left::
 
 #### [Biome](https://biomejs.dev/)
-* 1.7.2 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
+* 1.7.3 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
 
 #### [Vite](https://vitejs.dev/)
 * 5.2.11 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.11/packages/vite/CHANGELOG.md)
