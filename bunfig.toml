@@ -1,0 +1,2 @@
+[install.scopes]
+"@gjensidige" = { token = "$npm_token", url = "https://npm.pkg.github.com" }

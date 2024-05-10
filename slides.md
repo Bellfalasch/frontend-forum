@@ -160,7 +160,7 @@ transition: slide-left
 layout: two-cols
 ---
 
-# <twemoji-chart-increasing/> Gjensidige
+# <LogoGjensidige/> Gjensidige
 
 ## React at Gjensidige
 
@@ -208,14 +208,17 @@ layout: two-cols-header
 
 ::left::
 
-#### [Biome](https://biomejs.dev/)
-* 1.7.3 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
+**[Biome](https://biomejs.dev/)**  
+1.7.3 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
 
-#### [Vite](https://vitejs.dev/)
-* 5.2.11 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.11/packages/vite/CHANGELOG.md)
+**[Vite](https://vitejs.dev/)**  
+5.2.11 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.11/packages/vite/CHANGELOG.md)
 
-#### [Vitest](https://vitest.dev/)
-* 1.5.3 - [out since April](https://github.com/vitest-dev/vitest/releases/tag/v1.5.0)
+**[Vitest](https://vitest.dev/)**  
+1.5.3 - [out since April](https://github.com/vitest-dev/vitest/releases/tag/v1.5.0)
+
+**[React](https://react.dev)**  
+18.3.1 - out since April
 
 ::right::
 

@@ -12,6 +12,7 @@
 		"lint:check": "biome check ./* --apply"
 	},
 	"dependencies": {
+		"@gjensidige/builders-icons": "1.2.1",
 		"@slidev/cli": "0.48.9",
 		"@slidev/theme-default": "^0.25.0",
 		"slidev-theme-dracula": "^0.2.0",
