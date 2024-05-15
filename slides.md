@@ -15,7 +15,7 @@ layout: cover
 
 # Front-end Forum
 
-## 8th of May
+## 22th of May
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -28,8 +28,8 @@ transition: slide-up
 
 * Accessibility
 * Builders Core
-* News (Node 22, React 19, ++)
-* Talk: Builders sharing, release notes ++
+* Poll/vote results
+* Other news
 
 ---
 transition: slide-left
@@ -44,11 +44,7 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-* Keep an eye on #accessibility for tips and tricks
-* Last FEF contained a list of 30+ hands-on a11y tips
-* Intention is to collect things in Storybook in different forms
-* I'm collecting learnings from all teams
-* [Work in progress document in Confluence](https://gjensidige.atlassian.net/wiki/spaces/DIGKUN/pages/102827206/Front-end+code+tips+trix)
+* TODO...
 
 ---
 transition: slide-left
@@ -61,21 +57,92 @@ layout: center
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> builders-components 1.7
+# <twemoji-notebook-with-decorative-cover/> builders-components 1.8
 
-<img src="/images/2024-05-08/core1-7.png" class="rounded shadow" style="max-width:85%;" alt="" />
+TODO ...
+
+Many handy improvements, fixes, and features!
+
+Take a dive in *#builders-core* for details
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+## Polls
+
+We ran two polls in #frontend for two weeks. Here's the results ...
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+## Breaking changes
+
+Vote using emojis, stick to one vote per person, comment in the thread.
+
+* <twemoji-unicorn/> - We expect a perfect product that never changes
+* <twemoji-stop-sign/> - Break 1-2 times a year, collect as much as possible for each break (= fewer but bigger breaks)
+* <twemoji-warning/> - Break 4-6 times a year, collecting a few breaking changes and grouping them together so we don't need to change the code too often or much.
+* <twemoji-green-heart/> - For all I care you could break stuff in every release, I handle stuff like that for breakfast, just let me know the details (edited) 
+
+---
+transition: slide-left
+---
+
+```mermaid
+pie showData title Breaking changes
+    "Never" : 0
+    "1-2 times" : 4
+    "4-6 times" : 4
+    "Bring it!" : 5
+```
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+## Release notes
+
+* I prefer finding release notes collected for all releases in one place - for me that's Storybook (like today)
+* I prefer finding release notes for all releases in one place - for me that's Github and the releases-section
+* I would like to read a blog/article with release notes and some more information on gjensidige.builders
+* Spawn a changelog.md (or similar) file with every package, I'll dig into it if needed
+* Break down the release using beautiful emojis highlighting the updates in Slack (like today, but in a separate channel)
+* It would be nice with additional guides and more code examples on certain components, or upgrade jobs
+* It would be nice with short videos on certain components, or upgrade jobs
+* More information about the releases on Front-end Forum
 
 ---
 transition: slide-up
 ---
 
-# <twemoji-notebook-with-decorative-cover/> Builders Core
+```mermaid
+pie showData title Release notes
+    "Storybook" : 1
+    "Github" : 3
+    "Blog" : 0
+    "Changelog.md" : 3
+    "Slack-channel" : 12
+    "More guides" : 4
+    "Videos" : 0
+    "FEF" : 0
+```
 
-**@gjensidige/builders-components@1.7.0**
+---
+transition: slide-left
+layout: center
+---
 
-Many handy improvements, fixes, and features!
+# Gjensidige-related
 
-Take a dive in *#builders-core* for details
+<LogoGjensidige/>
 
 ---
 transition: slide-left
@@ -86,118 +153,11 @@ layout: center
 
 ---
 transition: slide-left
-layout: image-right
-image: /images/2024-05-08/cdn-loading.png
----
-
-# <twemoji-test-tube/> Gjensidige
-
-## Faro-loading
-
-<v-clicks>
-
-* Occassional hickups with external CDNs
-* Best pattern is to always install packages with your bundle
-* Saves one request from the client - better speed
-* Better security, better control
-
-</v-clicks>
-
----
-transition: slide-left
 ---
 
 # <twemoji-rolled-up-newspaper/> News
 
-## Node 22!
-
-<v-clicks depth="2">
-
-* Not LTS (until after Node 20 retires)
-* **Features:**
-  * V8-engine updated to 12.4
-  * Require()ing ESM will just work
-  * Native WebSocket client
-  * Running package.json scripts with `node --run xx` (experimental)
-  * And more!
-* [Detailed list](https://nodejs.org/en/blog/announcements/v22-release-announce)
-* [Blog about the features](https://dev.to/andreas_herz/exploring-the-exciting-new-features-in-nodejs-22-1j90)
-
-</v-clicks>
-
-<v-clicks after>
-
-Don't miss: [Shape Node's next 10 years](https://linuxfoundation.surveymonkey.com/r/nodenext10survey24)
-
-</v-clicks>
-
-
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> News
-
-## React 19 beta
-
-<v-clicks depth="2">
-
-* Beta - (*do not use these for customer/user facing apps*) - [Extensive release-notes](https://react.dev/blog/2024/04/25/react-19)
-* **Many new features**:
-  * [Nice article explaining it all, with examples](https://www.freecodecamp.org/news/new-react-19-features/)
-  * Many features inspired by Next.JS, Astro, etc
-  * React compiler! Makes your code faster build-time, for your convinience
-  * New `use()` hook, makes you write less boilerplate-code with `useState` and `useEffect`
-  * Easier to put more stuff on the server (form action, `use server`)
-  * Improved speed, simpler APIs (bye-bye `useMemo()` etc)
-  * Way easier to work with Web Components
-  * Document Metadata is easier
-
-</v-clicks>
-
----
-transition: slide-left
-layout: two-cols
----
-
-# <LogoGjensidige/> Gjensidige
-
-## React at Gjensidige
-
-<v-clicks>
-
-So, what versions of React are we running? Using GitHub search, I get some data.
-
-Stats based on `257` repoes configuring React using `package.json`, somewhere in their repos. Excluding archived repoes.
-
-Will count `"react": "17.x || 18.x",` as 17
-
-### Good news:
-
-* Over 60% are on React 18.2 (double to 17)
-* No one are on React 14
-* Only one stuck on React 15
-
-</v-clicks>
-
-::right::
-
-.  
-.  
-
-<v-clicks after>
-
-```mermaid
-pie showData title Gjensidige React-landscape
-    "18.*" : 152
-    "17.*" : 73
-    "16.*" : 27
-    "15.*" : 1
-```
-
-_Meassured on the 6th of May._
-
-</v-clicks>
+## Xxx
 
 ---
 transition: slide-up
@@ -208,48 +168,27 @@ layout: two-cols-header
 
 ::left::
 
-**[Biome](https://biomejs.dev/)**  
-1.7.3 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
+**[React](https://react.dev)**  
+18.3.1 - [out since April](https://github.com/facebook/react/releases)
 
 **[Vite](https://vitejs.dev/)**  
-5.2.11 - [see full changelog](https://github.com/vitejs/vite/blob/v5.2.11/packages/vite/CHANGELOG.md)
+5.2.11 - [see full changelog](https://github.com/vitejs/vite/releases)
 
 **[Vitest](https://vitest.dev/)**  
-1.5.3 - [out since April](https://github.com/vitest-dev/vitest/releases/tag/v1.5.0)
+1.6.0 - [also 2.0 beta](https://github.com/vitest-dev/vitest/releases)
 
-**[React](https://react.dev)**  
-18.3.1 - out since April
+**[Biome](https://biomejs.dev/)**  
+1.7.3 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
 
 ::right::
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
-* 20.12.2 LTS - latest 22.1.0 (new!)
+* 20.13.1 LTS - latest 22.1.0 (new!)
 
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
-* 1.1.7
-
----
-transition: slide-left
-layout: center
----
-
-# Talk-time
-
----
-transition: slide-up
----
-
-# <twemoji-studio-microphone/> Talk
-
-## Team Builders-"hour"
-
-> * Release frequency and release notes strategy.
-> * The way forward addressing adjustments following the accessibility review.
-> * The way forward addressing needs identified during work-swap in other teams (such as "Patterns," "Flex," and "InputField")
-
--- Team Builders
+* 1.1.8
 
 ---
 transition: slide-up
@@ -264,4 +203,6 @@ That's all for now!
 
 --
 
-<twemoji-spiral-calendar/> Next FEF will be held the **22th of May**
+<twemoji-spiral-calendar/> Next FEF will be held the **5th of June**
+
+_Next after that will be **19th of June**, last before summer holidays July-Aug_
