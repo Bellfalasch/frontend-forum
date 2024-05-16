@@ -69,6 +69,22 @@ Take a dive in *#builders-core* for details
 transition: slide-left
 ---
 
+# <twemoji-notebook-with-decorative-cover/> builders-components 1.8
+
+TODO: lægg in bild
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> builders-components 1.8
+
+> **Note:** Moving forward, both **ValidationMessage** and **HelpText** should be moved outside label elements for better accessibility. This is changed in all documentation, all components will add a console.warn about the change if used incorrectly, but the update is visually backwards compatible so you can do updates gradually
+
+---
+transition: slide-left
+---
+
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
 ## Polls
@@ -99,7 +115,7 @@ pie showData title Breaking changes
     "Never" : 0
     "1-2 times" : 4
     "4-6 times" : 4
-    "Bring it!" : 5
+    "Bring it!" : 6
 ```
 
 ---
@@ -125,14 +141,14 @@ transition: slide-up
 
 ```mermaid
 pie showData title Release notes
-    "Storybook" : 1
-    "Github" : 3
+    "Storybook" : 2
+    "Github" : 5
     "Blog" : 0
     "Changelog.md" : 3
-    "Slack-channel" : 12
+    "Slack-channel" : 16
     "More guides" : 4
     "Videos" : 0
-    "FEF" : 0
+    "FEF" : 1
 ```
 
 ---
@@ -175,7 +191,7 @@ layout: two-cols-header
 5.2.11 - [see full changelog](https://github.com/vitejs/vite/releases)
 
 **[Vitest](https://vitest.dev/)**  
-1.6.0 - [also 2.0 beta](https://github.com/vitest-dev/vitest/releases)
+1.6.0 - [also working on 2.0 beta](https://github.com/vitest-dev/vitest/releases)
 
 **[Biome](https://biomejs.dev/)**  
 1.7.3 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
@@ -184,7 +200,7 @@ layout: two-cols-header
 
 ## Node.JS
 <twemoji-globe-with-meridians/> https://nodejs.org/en
-* 20.13.1 LTS - latest 22.1.0 (new!)
+* 20.13.1 LTS - latest 22.2.0
 
 ## Bun
 <twemoji-globe-with-meridians/> https://bun.sh/
