@@ -59,8 +59,6 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> builders-components 1.8
 
-TODO ...
-
 Many handy improvements, fixes, and features!
 
 Take a dive in *#builders-core* for details
@@ -71,7 +69,7 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> builders-components 1.8
 
-TODO: lægg in bild
+<img src="/images/2024-05-22/core1-8.png" class="rounded shadow" style="max-width:85%;" alt="" />
 
 ---
 transition: slide-left
