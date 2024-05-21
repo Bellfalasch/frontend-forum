@@ -29,7 +29,7 @@ transition: slide-up
 * Accessibility
 * Builders Core
 * Poll/vote results
-* Other news
+* Other news, updates
 
 ---
 transition: slide-left
@@ -44,7 +44,9 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-* TODO...
+* Many builders-components improvements done, more to come
+* Separate notes in many component docs, like `<Cards/>`
+* More docs to come
 
 ---
 transition: slide-left
@@ -57,11 +59,16 @@ layout: center
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> builders-components 1.8
+# <twemoji-notebook-with-decorative-cover/> Latest components
 
-Many handy improvements, fixes, and features!
+## builders-components
 
-Take a dive in *#builders-core* for details
+* 1.10 released yesterday
+* 1.9 released just before 17th of May
+* 1.8 released soon after last FEF
+* Many handy improvements, fixes, and features!
+* Many accessibility <twemoji-wheelchair-symbol/> improvements
+* Take a dive in *#builders-core* for details
 
 ---
 transition: slide-left
@@ -78,6 +85,21 @@ transition: slide-left
 # <twemoji-notebook-with-decorative-cover/> builders-components 1.8
 
 > **Note:** Moving forward, both **ValidationMessage** and **HelpText** should be moved outside label elements for better accessibility. This is changed in all documentation, all components will add a console.warn about the change if used incorrectly, but the update is visually backwards compatible so you can do updates gradually
+
+
+```js
+// Recommended way of explicitly binding labels and helptexts to an input:
+const uniqueId = 'MySuperUniqueID';
+<Label htmlFor={uniqueId}>Label text</Label>
+<HelpText htmlFor={uniqueId}>Help text</HelpText>
+<Input id={uniqueId} />
+
+// Stop using implicit binding using wrapping, example:
+<Label>
+  <HelpText/>
+  <Input/>
+</Label>
+```
 
 ---
 transition: slide-left
@@ -112,8 +134,8 @@ transition: slide-left
 pie showData title Breaking changes
     "Never" : 0
     "1-2 times" : 4
-    "4-6 times" : 4
-    "Bring it!" : 6
+    "4-6 times" : 6
+    "Bring it!" : 7
 ```
 
 ---
@@ -128,8 +150,8 @@ transition: slide-left
 * I prefer finding release notes for all releases in one place - for me that's Github and the releases-section
 * I would like to read a blog/article with release notes and some more information on gjensidige.builders
 * Spawn a changelog.md (or similar) file with every package, I'll dig into it if needed
-* Break down the release using beautiful emojis highlighting the updates in Slack (like today, but in a separate channel)
-* It would be nice with additional guides and more code examples on certain components, or upgrade jobs
+* Break down the release using beautiful emojis highlighting the updates in Slack (separate channel)
+* Additional guides and more code examples on certain components, or upgrade jobs
 * It would be nice with short videos on certain components, or upgrade jobs
 * More information about the releases on Front-end Forum
 
@@ -140,10 +162,10 @@ transition: slide-up
 ```mermaid
 pie showData title Release notes
     "Storybook" : 2
-    "Github" : 5
+    "Github" : 6
     "Blog" : 0
-    "Changelog.md" : 3
-    "Slack-channel" : 16
+    "Changelog.md" : 4
+    "Slack-channel" : 20
     "More guides" : 4
     "Videos" : 0
     "FEF" : 1
@@ -160,10 +182,24 @@ layout: center
 
 ---
 transition: slide-left
+---
+
+# Application Portal
+
+Using **Application Portal**? You can now activate **Faro**!
+
+[Release notes](https://github.com/gjensidige/application-portal/releases/tag/v20240516122201-cfff3fcb)
+
+<img src="/images/2024-05-22/ap-faro.png" class="rounded shadow" style="max-width:85%;" alt="" />
+
+
+---
+transition: slide-left
 layout: center
 ---
 
 # News, Inspiration, Updates
+
 
 ---
 transition: slide-left
@@ -171,7 +207,49 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> News
 
-## Xxx
+## State of HTML 2023
+
+[State of HTML 2023](https://2023.stateofhtml.com/en-US)
+
+* Less than 175 Norwegians voted
+* Ran Sept - Oct 2023
+* Close to 21k responses
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Google I/O 2024
+
+[10 highlights from the conference](https://developer.chrome.com/blog/web-at-io24)
+
+* A lot of AI
+* AI-powered DevTools for debugging 
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> News
+
+## Safari's webkit 17.5
+
+[Release notes](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)
+
+* `text-wrap: balance` now works
+* `light-dark()` function for easier light-dark mode
+
+```css
+:root {
+  color-scheme: light dark;
+  --background: light-dark(black, white);
+}
+body {
+  background: var(--background);
+}
+```
 
 ---
 transition: slide-up
@@ -218,5 +296,11 @@ That's all for now!
 --
 
 <twemoji-spiral-calendar/> Next FEF will be held the **5th of June**
+
+**Temporary location change**: Claims stole Samhandlingssonen, so I have booked two rooms:
+* *Jenterommet* - Sales Private, Service Private, Claims
+* *Musikkrommet* - Builders & App, Sales Commercial, Service Commercial  
+
+Use the TV in the room to tune into the show.
 
 _Next after that will be **19th of June**, last before summer holidays July-Aug_
