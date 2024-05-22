@@ -17,6 +17,8 @@ layout: cover
 
 ## 22th of May
 
+_PDF-only edition_
+
 ...
 <twemoji-man-technologist/> Bobby Westberg
 
@@ -55,15 +57,18 @@ layout: center
 
 # Builders Core
 
+<LogoGjensidige/>
+
 ---
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> Latest components
+# <twemoji-notebook-with-decorative-cover/> Releases
 
 ## builders-components
 
 * 1.10 released yesterday
+    * [ComboBox](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-combobox--about) is no longer experimental
 * 1.9 released just before 17th of May
 * 1.8 released soon after last FEF
 * Many handy improvements, fixes, and features!
@@ -76,13 +81,16 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> builders-components 1.8
 
+_(Not the latest version, but the latest changelog posted in #builders-core - [See Storybook for all releasenotes](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-release-notes--about) were they for the time being are auto-generated.)_
 <img src="/images/2024-05-22/core1-8.png" class="rounded shadow" style="max-width:85%;" alt="" />
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> builders-components 1.8
+# <twemoji-notebook-with-decorative-cover/> builders-components
+
+## Important from 1.8 onwards
 
 > **Note:** Moving forward, both **ValidationMessage** and **HelpText** should be moved outside label elements for better accessibility. This is changed in all documentation, all components will add a console.warn about the change if used incorrectly, but the update is visually backwards compatible so you can do updates gradually
 
@@ -109,7 +117,7 @@ transition: slide-left
 
 ## Polls
 
-We ran two polls in #frontend for two weeks. Here's the results ...
+We ran two polls in #frontend for two weeks. Here are the results ...
 
 ---
 transition: slide-left
@@ -144,6 +152,21 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
+## Breaking changes
+
+### Conclusion?
+
+* Break more often than not (most have no problems handling breaking changes)
+* Clearly communicate breaking changes
+* Upgrade/migration guides and scripts
+* Releasing all new "mirror"-components, like with `<ComboBox>` was liked
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
 ## Release notes
 
 * I prefer finding release notes collected for all releases in one place - for me that's Storybook (like today)
@@ -170,6 +193,21 @@ pie showData title Release notes
     "Videos" : 0
     "FEF" : 1
 ```
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Builders Core
+
+## Release notes
+
+### Conclusion?
+
+* Users are loving the Slack-notes
+* But collect them in a separate `announcement`-channel, for easier overview
+* Some people would like release notes elsewhere, like Github, Storybook or changelog.md, but not many enough, but worth keeping in mind.
+* Most likely zero worries with Builders dropping the auto-generated release-notes
+* Some voices on "more guides", bigger pictures, not only one component using different props
 
 ---
 transition: slide-left
@@ -181,75 +219,103 @@ layout: center
 <LogoGjensidige/>
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 # Application Portal
 
 Using **Application Portal**? You can now activate **Faro**!
 
-[Release notes](https://github.com/gjensidige/application-portal/releases/tag/v20240516122201-cfff3fcb)
+```js{2-3}
+  },
+  "userMonitoring": {
+    "enabled": true
+  }
+```
 
-<img src="/images/2024-05-22/ap-faro.png" class="rounded shadow" style="max-width:85%;" alt="" />
+<img src="/images/2024-05-22/ap-faro.png" class="rounded shadow" style="max-width:50%; margin-bottom:1.5rem;" alt="" />
 
+<IconsWebsite/> [Release notes](https://github.com/gjensidige/application-portal/releases/tag/v20240516122201-cfff3fcb)
 
 ---
 transition: slide-left
 layout: center
 ---
 
-# News, Inspiration, Updates
-
+# <twemoji-rolled-up-newspaper/> News, <twemoji-cherry-blossom/> Inspiration, <twemoji-package/> Updates
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> News
+# <twemoji-rolled-up-newspaper/> State of HTML 2023
 
-## State of HTML 2023
+A new "State of"-survey targeting the ever growing area of HTML, and related topics.
 
-[State of HTML 2023](https://2023.stateofhtml.com/en-US)
-
-* Less than 175 Norwegians voted
 * Ran Sept - Oct 2023
-* Close to 21k responses
+* Close to 21k total responses
+* Less than 175 Norwegians voted
+* Less than 300 Swedes voted
+* Less than 350 Poles voted
+* Denmark and Slovakia didn't make it to the "top 20" list of voters
+    * But Czechia did ...
+
+<IconsWebsite/> [State of HTML 2023](https://2023.stateofhtml.com/en-US)
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> News
-
-## Google I/O 2024
-
-[10 highlights from the conference](https://developer.chrome.com/blog/web-at-io24)
+# <twemoji-rolled-up-newspaper/> Google I/O 2024
 
 * A lot of AI
-* AI-powered DevTools for debugging 
+* AI-powered DevTools for debugging
+* Check article for more:
+
+<IconsWebsite/> [10 highlights from the conference](https://developer.chrome.com/blog/web-at-io24)
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> News
 
-## Safari's webkit 17.5
+# <twemoji-rolled-up-newspaper/> Safari's webkit 17.5
 
-[Release notes](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)
+Webkit is the rendering-engine used only by Safari. Here's some news in the less than two week old version.
 
 * `text-wrap: balance` now works
-* `light-dark()` function for easier light-dark mode
+    * makes a chunk of text balance its lines evenly (see article for examples)
+    * expensive to use, so use with care, disabled on many lines in Firefox and Chrome
+* `@starting-style {}` now works
+    * give an element a starting style, useful for animations and transitions
+* `light-dark()` now works
+    * function for easier light-dark mode
 
 ```css
-:root {
-  color-scheme: light dark;
-  --background: light-dark(black, white);
-}
-body {
-  background: var(--background);
-}
+:root { --background: light-dark(#000, #fff); }
+body { background: var(--background); } /* Dark-mode? Variable is now #000 */
 ```
+
+<IconsWebsite/> [Full release notes](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> Wake Lock API
+
+A new API have landed in most browsers, it let's you control the screen from dimming og turning off while you run the app/website. This makes the web even more app-like.
+
+* Landed in Chrome, Safari and Firefox
+* Presentation web-apps, like Google Slides, can now stop screen from dimming
+* Let web-apps that contain recepies not dim while you cook
+
+```js
+wakeLock = await navigator.wakeLock.request(); // Request a wake lock
+wakeLock.release(); // Return to normal when done
+```
+
+<IconsWebsite/> [More on Wake Lock API](https://web.dev/blog/screen-wake-lock-supported-in-all-browsers)
 
 ---
 transition: slide-up
@@ -275,12 +341,27 @@ layout: two-cols-header
 ::right::
 
 ## Node.JS
-<twemoji-globe-with-meridians/> https://nodejs.org/en
+<IconsWebsite/> https://nodejs.org/en
 * 20.13.1 LTS - latest 22.2.0
 
 ## Bun
-<twemoji-globe-with-meridians/> https://bun.sh/
-* 1.1.8
+<IconsWebsite/> https://bun.sh/
+* 1.1.9
+
+---
+transition: slide-up
+layout: center
+---
+
+# Next FEF
+
+## Will be held the **5th of June**
+
+**Temporary location change**: Claims "stole" Samhandlingssonen, so I have booked two replacement rooms. Use any one of them, but perhaps the ones sitting closest to a room should go there, so we spread people:
+* *Jenterommet* - Sales Private, Service Private, Service Commercial
+* *Musikkrommet* - Builders & App, Sales Commercial, Claims  
+
+Use the TV in the room to tune into the show using your Mac/PC, or call the meeting using the video room device. You'll figure it out =) I'll join one of the rooms physically.
 
 ---
 transition: slide-up
@@ -293,14 +374,6 @@ That's all for now!
 
 <twemoji-red-heart class="animate-ping"/>
 
---
+_Only two more FEF before the summer holidays July-Aug!_
 
-<twemoji-spiral-calendar/> Next FEF will be held the **5th of June**
-
-**Temporary location change**: Claims stole Samhandlingssonen, so I have booked two rooms:
-* *Jenterommet* - Sales Private, Service Private, Claims
-* *Musikkrommet* - Builders & App, Sales Commercial, Service Commercial  
-
-Use the TV in the room to tune into the show.
-
-_Next after that will be **19th of June**, last before summer holidays July-Aug_
+_**5th of June** and then **19th of June**_
