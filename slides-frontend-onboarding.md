@@ -23,19 +23,24 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
+<v-clicks>
+
 * What's a "Discipline Leader Front-end"?
 * Who am I?
-* Gjensidige, what you need to know
 * Our front-end community and arenas
 * Our designsystem
 * Slack and other useful tools for front-enders
-* Accessibility
+* Accessibility, Security, GitHub, ++
+
+</v-clicks>
 
 ---
 transition: slide-left
 ---
 
 # Discipline Leader Front-end
+
+<v-clicks>
 
 * I don't belong to any specific team
 * I'm passionate about sharing, and helping
@@ -44,6 +49,8 @@ transition: slide-left
 * My time is dedicated to our employees and our community
 * Use me for getting to know the community, finding the right persons, tools, etc
 
+</v-clicks>
+
 ---
 transition: slide-up
 ---
@@ -51,104 +58,72 @@ transition: slide-up
 # Bobby Westberg
 
 ## Front-end
+
+<v-clicks>
+
 * Wrote my first webpage 1996, been working professionally since 2006
 * Gjensidige since 2019 (this role since 2022)
 * Done alot of everything (Java, ASP.NET, MySQL, webdesign, ++)
 * Passion for front-end (vanilla, VueJS, React, Next.JS ++)
 * Loves CSS, and CMS-integrations
 
+</v-clicks>
+
+<v-clicks after>
+
 ## Private
-* Swedish, 42yo, 2 kids (8yo & 5yo), cat (10yo)
+
+</v-clicks>
+
+
+<v-clicks after>
+
+* Swedish, 42yo, 2 kids (8yo & 6yo), cat (10yo)
 * Norway since 2010
 * Love hockey, craft beer, old games, and drawing
 
----
-transition: slide-left
----
-
-# Gjensidige for a front-ender
-
-## Gjensidige
-
-You probably know some of our history, operating countries, markets, etc.
-
-But where are you in this mix?
-
-```mermaid
-graph TD;
-    Gjensidige-->Private;
-    Gjensidige-->Commercial;
-    Gjensidige-->Claims;
-    Gjensidige-->People;
-    Gjensidige-->TI(Technology & Insight)
-    Gjensidige-->...;
-```
-
----
-transition: slide-left
----
-
-# Technology & Insights
-
-We just say "T&I", or "T, I", in normal conversations.
-
-The director for T&I is **Johan Rostoft**. Roughly 350 people work here.
-
-Digitalisation & Design is "our" area.
-
-```mermaid
-graph TD;
-    TI(T&I)-->DD(Digitalisation & Design);
-    TI(T&I)-->Security;
-    TI(T&I)-->Strategy;
-    TI(T&I)-->Architecture;
-    TI(T&I)-->BI(Business Intelligence & Analytics);
-    TI(T&I)-->...;
-```
+</v-clicks>
 
 ---
 transition: slide-up
 ---
 
-# Digitalisation & Design
+# Front-end Forum
 
-We just say "DD" (D, D) in normal conversations. Our director is **Kristian Vige**.
+<v-clicks depth="2">
 
-The disciplinary leaders are a shared resource for all of DD, that employees 70+ people.
+* For everyone (so it's in English)
+* Not mandatory
+* Bi-weekly on Wednesdays
+* Starts 09:30, usually lasts 30-60 minutes
+* On Teams and physical
+    * 4th floor in "Samhandlingssonen", main office in Oslo
+* Recorded, saved for 30-90 days
+* Open for you to talk/share/show, and requests!
 
-You are a part of a team organized in one of these delivery areas:
+</v-clicks>
 
-```mermaid
-graph TD;
-    DD-->Builders++;
-    DD-->Private;
-    DD-->Commercial;
-    DD-->Claims;
-    DD-->Sweden;
-    DD-->Devs(Developers*);
-    DD-->Design(Designers*);
-    DD-->Content(Content*);
-```
-
-\* Only contains employees, not consultants, for its corresponding disciplines. Each one "lended out" to a specific delivery team. A bit like our own in-house consultant agency.
+https://www.gjensidige.builders/community/frontend-forum
 
 ---
 transition: slide-up
 ---
 
-# Gjensidige.Builders
+# Slack for a front-ender
 
-Gjensidige employee's own website. Most of it open. Reach out if you want to contribute.
+We use Slack as our go-to tool for internal communication. Use it rather than big meetings, or sending e-mails.
 
-Contains best practice, guidelines, team overview (not open to the public), news, and more.
+Some guidance on how Gjensidige uses Slack:
+* **"No" PMs** - don't let valuable information die in private messages.
+* **Oppeness** - don't create private channels, unless absolutely necessary.
+* **Threading** - always answer questions as a thread.
 
-Short way to designsystem-documentation, and more.
-
-Front-end has its own `/learn/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
-https://www.gjensidige.builders/learn/frontend 
-
-Read our "Principles for building web applications" (18 rules):
-https://www.gjensidige.builders/community/blog/principles
+Some nice channels to watch:
+* **#frontend** #design #content
+* #team-builders **#builders-core** #builders-platform
+* #general #random
+* #gap #team-platform #team-security
+* #digitalization-and-design
 
 ---
 transition: slide-left
@@ -195,39 +170,19 @@ https://www.gjensidige.builders/docs/core/
 transition: slide-up
 ---
 
-# Front-end Forum
+# Gjensidige.Builders
 
-* For everyone!
-* In English
-* Not mandatory
-* Bi-weekly
-* Physical (4th floor in "Samhandlingssonen", main office in Oslo)
-* Also on Teams
-* Starts 09:30, usually lasts 30-45 minutes
-* Recorded, saved for 30 days
-* Open for you to talk/share/show, and requests!
+Gjensidige employee's own website. Most of it open. Reach out if you want to contribute.
 
-https://www.gjensidige.builders/community/frontend-forum
+Contains best practice, guidelines, team overview (not open to the public), news, and more.
 
----
-transition: slide-up
----
+Short way to designsystem-documentation, and more.
 
-# Slack for a front-ender
+Front-end has its own `/learn/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
+https://www.gjensidige.builders/learn/frontend 
 
-We use Slack as our go-to tool for internal communication. Use it rather than big meetings, or sending e-mails.
-
-Some guidance in how Gjensidige uses Slack:
-* **"No" PMs** - don't let valuable information die in private messages.
-* **Oppeness** - don't create private channels, unless absolutely necessary.
-* **Threading** - always answer questions as a thread.
-
-Some nice channels to watch:
-* #general #random
-* #gap #team-platform #team-security
-* #team-builders #builders-core #builders-platform
-* #digitalization-and-design
-* #frontend #design #content
+Read our "Principles for building web applications" (18 rules):
+https://www.gjensidige.builders/community/blog/principles
 
 ---
 transition: slide-up
@@ -244,8 +199,6 @@ It is expected that when working for Gjensidige you can develop accordingly, and
 Read more: https://www.gjensidige.builders/learn/universal-design/code
 
 Slack: #accessibility
-
-Slack: #accessibility-code
 
 ---
 transition: slide-up
@@ -333,6 +286,6 @@ layout: center
 ...
 <twemoji-red-heart class="animate-ping"/>
 
-Welcome to the Gjensidige family!
+Welcome to Gjensidige!
 
 Don't be afraid to reach out
