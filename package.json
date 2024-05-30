@@ -4,11 +4,9 @@
 	"scripts": {
 		"dev": "slidev",
 		"dev:onboarding": "slidev slides-frontend-onboarding.md",
-		"dev:a11y": "slidev slides-a11y-forum.md",
 		"build": "slidev build",
 		"export": "slidev export --per-slide --format pdf",
 		"export:onboarding": "slidev export slides-frontend-onboarding.md --output frontend-onboarding.pdf --per-slide --format pdf",
-		"export:a11y": "slidev export slides-frontend-onboarding.md --output frontend-a11y-forum.pdf --per-slide --format pdf",
 		"lint:check": "biome check ./* --apply"
 	},
 	"dependencies": {
