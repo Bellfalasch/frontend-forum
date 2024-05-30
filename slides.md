@@ -28,7 +28,6 @@ transition: slide-up
 
 * Accessibility
 * Builders Core
-* Poll/vote results
 * Other news, updates
 
 ---
@@ -44,9 +43,7 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-* Many builders-components improvements done, more to come
-* Separate notes in many component docs, like `<Cards/>`
-* More docs to come
+* TODO ...
 
 ---
 transition: slide-left
@@ -65,10 +62,9 @@ transition: slide-left
 
 ## builders-components
 
-* 1.10 released yesterday
-    * [ComboBox](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-combobox--about) is no longer experimental
-* 1.9 released just before 17th of May
-* 1.8 released soon after last FEF
+
+TODO ...
+* 1.11.x ...
 * Many handy improvements, fixes, and features!
 * Many accessibility <twemoji-wheelchair-symbol/> improvements
 * Take a dive in *#builders-core* for details
@@ -79,7 +75,8 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> builders-components 1.8
 
-_(Not the latest version, but the latest changelog posted in #builders-core - [See Storybook for all releasenotes](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-release-notes--about) were they for the time being are auto-generated.)_
+TODO ...
+
 <img src="/images/2024-05-22/core1-8.png" class="rounded shadow" style="max-width:85%;" alt="" />
 
 ---
@@ -88,24 +85,9 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> builders-components
 
-## Important from 1.8 onwards
+## Important 1.11.2 fix
 
-> **Note:** Moving forward, both **ValidationMessage** and **HelpText** should be moved outside label elements for better accessibility. This is changed in all documentation, all components will add a console.warn about the change if used incorrectly, but the update is visually backwards compatible so you can do updates gradually
-
-
-```js
-// Recommended way of explicitly binding labels and helptexts to an input:
-const uniqueId = 'MySuperUniqueID';
-<Label htmlFor={uniqueId}>Label text</Label>
-<HelpText htmlFor={uniqueId}>Help text</HelpText>
-<Input id={uniqueId} />
-
-// Stop using implicit binding using wrapping, example:
-<Label>
-  <HelpText/>
-  <Input/>
-</Label>
-```
+> **Note:** ...
 
 ---
 transition: slide-left
@@ -113,99 +95,11 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
-## Polls
+## Slack-channel
 
-We ran two polls in #frontend for two weeks. Here are the results ...
+Interested in only releases of our components?
 
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Breaking changes
-
-Vote using emojis, stick to one vote per person, comment in the thread.
-
-* <twemoji-unicorn/> - We expect a perfect product that never changes
-* <twemoji-stop-sign/> - Break 1-2 times a year, collect as much as possible for each break (= fewer but bigger breaks)
-* <twemoji-warning/> - Break 4-6 times a year, collecting a few breaking changes and grouping them together so we don't need to change the code too often or much.
-* <twemoji-green-heart/> - For all I care you could break stuff in every release, I handle stuff like that for breakfast, just let me know the details (edited) 
-
----
-transition: slide-left
----
-
-```mermaid
-pie showData title Breaking changes
-    "Never" : 0
-    "1-2 times" : 4
-    "4-6 times" : 6
-    "Bring it!" : 7
-```
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Breaking changes
-
-### Conclusion?
-
-* Break more often than not (most have no problems handling breaking changes)
-* Clearly communicate breaking changes
-* Upgrade/migration guides and scripts
-* Releasing all new "mirror"-components, like with `<ComboBox>` was liked
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Release notes
-
-* I prefer finding release notes collected for all releases in one place - for me that's Storybook (like today)
-* I prefer finding release notes for all releases in one place - for me that's Github and the releases-section
-* I would like to read a blog/article with release notes and some more information on gjensidige.builders
-* Spawn a changelog.md (or similar) file with every package, I'll dig into it if needed
-* Break down the release using beautiful emojis highlighting the updates in Slack (separate channel)
-* Additional guides and more code examples on certain components, or upgrade jobs
-* It would be nice with short videos on certain components, or upgrade jobs
-* More information about the releases on Front-end Forum
-
----
-transition: slide-up
----
-
-```mermaid
-pie showData title Release notes
-    "Storybook" : 2
-    "Github" : 6
-    "Blog" : 0
-    "Changelog.md" : 4
-    "Slack-channel" : 20
-    "More guides" : 4
-    "Videos" : 0
-    "FEF" : 1
-```
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Release notes
-
-### Conclusion?
-
-* Users are loving the Slack-notes
-* But collect them in a separate `announcement`-channel, for easier overview
-* Some people would like release notes elsewhere, like Github, Storybook or changelog.md, but not many enough, but worth keeping in mind.
-* Most likely zero worries with Builders dropping the auto-generated release-notes
-* Some voices on "more guides", bigger pictures, not only one component using different props
+Follow *#builders-core-announcements*
 
 ---
 transition: slide-left
@@ -220,20 +114,9 @@ layout: center
 transition: slide-up
 ---
 
-# Application Portal
+# Feedback App
 
-Using **Application Portal**? You can now activate **Faro**!
-
-```js
-  ,
-  "userMonitoring": {
-    "enabled": true
-  }
-```
-
-<img src="/images/2024-05-22/ap-faro.png" class="rounded shadow" style="max-width:50%; margin-bottom:1.5rem;" alt="" />
-
-<IconsWebsite/> [Release notes](https://github.com/gjensidige/application-portal/releases/tag/v20240516122201-cfff3fcb)
+Previously owned and developed by **Team Service**, it will now move over and be remade by **Team Builders**.
 
 ---
 transition: slide-left
@@ -248,72 +131,73 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> State of HTML 2023
 
-A new "State of"-survey targeting the ever growing area of HTML, and related topics.
+If you didn't click around the stats from the survey results announced on last FEF, perhaps a summary article can interest you?
 
-* Ran Sept - Oct 2023
-* Close to 21k total responses
-* Less than 175 Norwegians voted
-* Less than 300 Swedes voted
-* Less than 350 Poles voted
-* Denmark and Slovakia didn't make it to the "top 20" list of voters
-    * But Czechia did ...
-
-<IconsWebsite/> [State of HTML 2023](https://2023.stateofhtml.com/en-US)
+<IconsWebsite/> [Sacha Greif's key takeaways from the State of HTML survey](https://frontendmasters.com/blog/state-of-html-2023-results-2/)  
+.  
+<IconsWebsite/> [Woops, I forgot to check the survey ... State of HTML 2023](https://2023.stateofhtml.com/en-US)
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> Google I/O 2024
+# <twemoji-rolled-up-newspaper/> Faster Edge
 
-* A lot of AI
-* AI-powered DevTools for debugging
-* Check article for more:
+Microsoft wanna win more users over, obviously, makes Edge even faster \*
 
-<IconsWebsite/> [10 highlights from the conference](https://developer.chrome.com/blog/web-at-io24)
+**Edge 122** released last week.
 
----
-transition: slide-left
----
+<IconsWebsite/> [Edge 122 summary](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/)
 
-
-# <twemoji-rolled-up-newspaper/> Safari's webkit 17.5
-
-Webkit is the rendering-engine used only by Safari. Here's some news in the less than two week old version.
-
-* `text-wrap: balance` now works
-    * makes a chunk of text balance its lines evenly (see article for examples)
-    * expensive to use, so use with care, disabled on many lines in Firefox and Chrome
-* `@starting-style {}` now works
-    * give an element a starting style, useful for animations and transitions
-* `light-dark()` now works
-    * function for easier light-dark mode
-
-```css
-:root { --background: light-dark(#000, #fff); }
-body { background: var(--background); } /* Dark-mode? Variable is now #000 */
-```
-
-<IconsWebsite/> [Full release notes](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)
+\* Well ... only the UI of Edge ...
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> Wake Lock API
+# <twemoji-rolled-up-newspaper/> React Conference 2024
 
-A new API have landed in most browsers, it let's you control the screen from dimming og turning off while you run the app/website. This makes the web even more app-like.
+This was big this year ...
 
-* Landed in Chrome, Safari and Firefox
-* Presentation web-apps, like Google Slides, can now stop screen from dimming
-* Let web-apps that contain recepies not dim while you cook
+* First physical conference since 2019
+* In 2023 React was downloaded ... 1 billion times
+* Also a lot of React Native coverage
+* React 19 release candidate!
+* The react compiler now open source
+* All talks shared on Youtube
 
-```js
-wakeLock = await navigator.wakeLock.request(); // Request a wake lock
-wakeLock.release(); // Return to normal when done
-```
+<IconsWebsite/> [Official recap](https://react.dev/blog/2024/05/22/react-conf-2024-recap)
 
-<IconsWebsite/> [More on Wake Lock API](https://web.dev/blog/screen-wake-lock-supported-in-all-browsers)
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> WCAG 3.0
+
+**Global Accessibility Awarness day** was the **16th of May**, **W3C** celebrated this by publishing their **latest draft** on **WCAG 3.0**.
+
+* Early early stages
+* Worked on by W3C
+* Details the unspoken information, like tone of voice etc
+* Based on 174 "outcomes", moving away from the established "success criterias"
+* This is up from translatable 78 found in WCAG 2.1 (A, AA and AAA)
+* Focuses on "what did we miss in WCAG 2.x?"
+
+<IconsWebsite/> [Deque's article on it](https://www.deque.com/blog/w3c-unveils-174-new-outcomes-for-wcag-3-0/)
+
+---
+transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> Curious on layers?
+
+Two weeks ago on **Smashing Magazine**, inspiring article on "do you really need that framework for that design", covering basically how powerful CSS have become as of late.
+
+Not everything is ready for production, but if you wanna sneak peek into the CSS future using layers, have a read!
+
+Many will, by old habits, boilerplate a new project using some standard packages and frameworks. CSS wanna eliminate the need for a lot of them.
+
+<IconsWebsite/> [Complex layouts using only pure CSS](https://www.smashingmagazine.com/2024/05/modern-css-layouts-no-framework-needed/)
 
 ---
 transition: slide-up
@@ -322,13 +206,15 @@ layout: two-cols-header
 
 # <twemoji-package/> Updates
 
+TODO: as of 2023-05-30 
+
 ::left::
 
 **[React](https://react.dev)**  
 18.3.1 - [out since April](https://github.com/facebook/react/releases)
 
 **[Vite](https://vitejs.dev/)**  
-5.2.11 - [see full changelog](https://github.com/vitejs/vite/releases)
+5.2.12 - [see full changelog, also 6.0 alpha](https://github.com/vitejs/vite/releases)
 
 **[Vitest](https://vitest.dev/)**  
 1.6.0 - [also working on 2.0 beta](https://github.com/vitest-dev/vitest/releases)
@@ -340,26 +226,11 @@ layout: two-cols-header
 
 ## Node.JS
 <IconsWebsite/> https://nodejs.org/en
-* 20.13.1 LTS - latest 22.2.0
+* 20.14.0 LTS - latest 22.2.0
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
-* 1.1.9
-
----
-transition: slide-up
-layout: center
----
-
-# Next FEF
-
-## Will be held the **5th of June**
-
-**Temporary location change**: Claims "stole" Samhandlingssonen, so I have booked two replacement rooms. Use any one of them, but perhaps the ones sitting closest to a room should go there, so we spread people:
-* *Jenterommet* - Sales Private, Service Private, Service Commercial
-* *Musikkrommet* - Builders & App, Sales Commercial, Claims  
-
-Use the TV in the room to tune into the show using your Mac/PC, or call the meeting using the video room device. You'll figure it out =) I'll join one of the rooms physically.
+* 1.1.10
 
 ---
 transition: slide-up
@@ -372,6 +243,6 @@ That's all for now!
 
 <twemoji-red-heart class="animate-ping"/>
 
-_Only two more FEF before the summer holidays July-Aug!_
+_Only one more FEF before the summer holidays July-Aug!_
 
-_**5th of June** and then **19th of June**_
+_**19th of June**_
