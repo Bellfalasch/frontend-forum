@@ -149,7 +149,7 @@ Microsoft wanna win more users over, obviously, makes Edge even faster \*
 
 <IconsWebsite/> [Edge 122 summary](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/)
 
-\* Well ... only the UI of Edge ...
+_\* Well ... only the UI of Edge ..._
 
 ---
 transition: slide-left
@@ -188,7 +188,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> Curious on layers?
+# <twemoji-cherry-blossom/> Curious on CSS layers?
 
 Two weeks ago on **Smashing Magazine**, inspiring article on "do you really need that framework for that design", covering basically how powerful CSS have become as of late.
 
