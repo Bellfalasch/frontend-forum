@@ -43,7 +43,21 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-* TODO ...
+<v-clicks>
+
+* Inklud specialist have the final session with Claim teams today
+* Only two sessions with Pension remains
+* Accessibility Champion Forum to be our meeting ground now
+* There's been some changes in the champion ranks
+* Slovakia have trained and are now adding their own champions
+* Storybook page, under principles, is on the way
+
+</v-clicks>
+<v-clicks after>
+
+<img src="/images/2024-06-05/storybook-a11y.png" class="rounded shadow" style="max-width:85%;" alt="" />
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -62,32 +76,18 @@ transition: slide-left
 
 ## builders-components
 
-
-TODO ...
-* 1.11.x ...
-* Many handy improvements, fixes, and features!
+* **1.12.0** out Friday
+* And many other releases
 * Many accessibility <twemoji-wheelchair-symbol/> improvements
-* Take a dive in *#builders-core* for details
+* Take a dive in *#builders-core-announcements* for details
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> builders-components 1.8
+# <twemoji-notebook-with-decorative-cover/> builders-components 1.12
 
-TODO ...
-
-<img src="/images/2024-05-22/core1-8.png" class="rounded shadow" style="max-width:85%;" alt="" />
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> builders-components
-
-## Important 1.11.2 fix
-
-> **Note:** ...
+<img src="/images/2024-06-05/core1-12.png" class="rounded shadow" style="max-width:85%;" alt="" />
 
 ---
 transition: slide-left
@@ -99,7 +99,9 @@ transition: slide-left
 
 Interested in only releases of our components?
 
-Follow *#builders-core-announcements*
+This is the new place to keep track on to be first on the latest fixes and features.
+
+Follow **#builders-core-announcements**
 
 ---
 transition: slide-left
@@ -117,6 +119,8 @@ transition: slide-up
 # Feedback App
 
 Previously owned and developed by **Team Service**, it will now move over and be remade by **Team Builders**.
+
+<img src="/images/2024-06-05/feedback.png" class="rounded shadow" style="max-width:30%;" alt="" />
 
 ---
 transition: slide-left
@@ -173,10 +177,11 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> WCAG 3.0
 
-**Global Accessibility Awarness day** was the **16th of May**, **W3C** celebrated this by publishing their **latest draft** on **WCAG 3.0**.
+**Global Accessibility Awarness day** was the **16th of May**.
+
+**W3C** celebrated this by publishing their **latest draft** on **WCAG 3.0**.
 
 * Early early stages
-* Worked on by W3C
 * Details the unspoken information, like tone of voice etc
 * Based on 174 "outcomes", moving away from the established "success criterias"
 * This is up from translatable 78 found in WCAG 2.1 (A, AA and AAA)
