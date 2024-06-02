@@ -135,7 +135,7 @@ If you didn't click around the stats from the survey results announced on last F
 
 <IconsWebsite/> [Sacha Greif's key takeaways from the State of HTML survey](https://frontendmasters.com/blog/state-of-html-2023-results-2/)  
 .  
-<IconsWebsite/> [Woops, I forgot to check the survey ... State of HTML 2023](https://2023.stateofhtml.com/en-US)
+<IconsWebsite/> [Forgot to check the survey? Browse the state of HTML 2023](https://2023.stateofhtml.com/en-US)
 
 ---
 transition: slide-left
@@ -157,16 +157,15 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> React Conference 2024
 
-This was big this year ...
+This was a big conference for React. First physical conference since 2019!
 
-* First physical conference since 2019
 * In 2023 React was downloaded ... 1 billion times
-* Also a lot of React Native coverage
 * React 19 release candidate!
 * The react compiler now open source
+* Also a lot of React Native coverage
 * All talks shared on Youtube
 
-<IconsWebsite/> [Official recap](https://react.dev/blog/2024/05/22/react-conf-2024-recap)
+<IconsWebsite/> [Official recap (with link to all talks)](https://react.dev/blog/2024/05/22/react-conf-2024-recap)
 
 ---
 transition: slide-left
@@ -230,7 +229,7 @@ TODO: as of 2023-05-30
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
-* 1.1.10
+* 1.1.12
 
 ---
 transition: slide-up
