@@ -97,6 +97,14 @@ transition: slide-left
 transition: slide-left
 ---
 
+# <twemoji-notebook-with-decorative-cover/> builders-components 1.11.2
+
+* **Fix:** `Textarea` always track only label - not value
+
+---
+transition: slide-left
+---
+
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
 ## New Slack-channel
