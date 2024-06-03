@@ -74,12 +74,16 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Releases
 
-## builders-components
+## @gjensidige/builders-components
+
+<v-clicks>
 
 * **1.12.0** out Friday
+* **1.12.1** out Monday
 * And many other releases
 * Many accessibility <twemoji-wheelchair-symbol/> improvements
-* Take a dive in *#builders-core-announcements* for details
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -95,13 +99,11 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
-## Slack-channel
+## New Slack-channel
 
-Interested in only releases of our components?
+Follow **#builders-core-announcements** for release notes!
 
-This is the new place to keep track on to be first on the latest fixes and features.
-
-Follow **#builders-core-announcements**
+This is the new place to keep track on to be first on the latest fixes and features. Based on community/user feedback.
 
 ---
 transition: slide-left
@@ -138,8 +140,10 @@ transition: slide-left
 If you didn't click around the stats from the survey results announced on last FEF, perhaps a summary article can interest you?
 
 <IconsWebsite/> [Sacha Greif's key takeaways from the State of HTML survey](https://frontendmasters.com/blog/state-of-html-2023-results-2/)  
-.  
-<IconsWebsite/> [Forgot to check the survey? Browse the state of HTML 2023](https://2023.stateofhtml.com/en-US)
+
+Forgot to check the survey? The full stats are still there!
+
+<IconsWebsite/> [Browse the state of HTML 2023](https://2023.stateofhtml.com/en-US)
 
 ---
 transition: slide-left
@@ -149,9 +153,7 @@ transition: slide-left
 
 Microsoft wanna win more users over, obviously, makes Edge even faster \*
 
-**Edge 122** released last week.
-
-<IconsWebsite/> [Edge 122 summary](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/)
+<IconsWebsite/> [Edge 122 released last week - summary](https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/)
 
 _\* Well ... only the UI of Edge ..._
 
@@ -163,13 +165,21 @@ transition: slide-left
 
 This was a big conference for React. First physical conference since 2019!
 
+
+<v-clicks>
+
 * In 2023 React was downloaded ... 1 billion times
 * React 19 release candidate!
 * The react compiler now open source
 * Also a lot of React Native coverage
 * All talks shared on Youtube
 
+</v-clicks>
+<v-clicks after>
+
 <IconsWebsite/> [Official recap (with link to all talks)](https://react.dev/blog/2024/05/22/react-conf-2024-recap)
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -177,9 +187,15 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> WCAG 3.0
 
+<v-clicks>
+
 **Global Accessibility Awarness day** was the **16th of May**.
 
 **W3C** celebrated this by publishing their **latest draft** on **WCAG 3.0**.
+
+</v-clicks>
+
+<v-clicks after>
 
 * Early early stages
 * Details the unspoken information, like tone of voice etc
@@ -187,7 +203,20 @@ transition: slide-left
 * This is up from translatable 78 found in WCAG 2.1 (A, AA and AAA)
 * Focuses on "what did we miss in WCAG 2.x?"
 
+</v-clicks>
+<v-clicks after>
+
 <IconsWebsite/> [Deque's article on it](https://www.deque.com/blog/w3c-unveils-174-new-outcomes-for-wcag-3-0/)
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> May 29th - Wordpress turned 21
+
+<Tweet id="1795196552048173268" />
 
 ---
 transition: slide-left
@@ -197,11 +226,20 @@ transition: slide-left
 
 Two weeks ago on **Smashing Magazine**, inspiring article on "do you really need that framework for that design", covering basically how powerful CSS have become as of late.
 
-Not everything is ready for production, but if you wanna sneak peek into the CSS future using layers, have a read!
-
 Many will, by old habits, boilerplate a new project using some standard packages and frameworks. CSS wanna eliminate the need for a lot of them.
 
+Layers are not ready for production, but if you wanna peek into the future of CSS using layers, have a read!
+
 <IconsWebsite/> [Complex layouts using only pure CSS](https://www.smashingmagazine.com/2024/05/modern-css-layouts-no-framework-needed/)
+
+```css
+@layer theme {
+  :root {
+    --some-color: #fff;
+    --other-color: #bbb;
+  }
+}
+```
 
 ---
 transition: slide-up
@@ -210,7 +248,7 @@ layout: two-cols-header
 
 # <twemoji-package/> Updates
 
-TODO: as of 2023-05-30 
+TODO: as of 2023-06-03
 
 ::left::
 
