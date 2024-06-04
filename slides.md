@@ -43,10 +43,11 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> Accessibility
 
-<v-clicks>
+<v-clicks depth="2">
 
 * Inklud specialist have the final session with Claim teams today
-* Only two sessions with Pension remains
+  * Only two sessions with Pension remains
+  * They are good, but have pointed out some false alarms + things still up for debate
 * Accessibility Champion Forum to be our meeting ground now
 * There's been some changes in the champion ranks
 * Slovakia have trained and are now adding their own champions
@@ -97,7 +98,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> builders-components 1.11.2
+# <twemoji-warning/> builders-components 1.11.2
 
 * **Fix:** `Textarea` always track only label - not value
 
@@ -174,10 +175,12 @@ transition: slide-left
 This was a big conference for React. First physical conference since 2019!
 
 
-<v-clicks>
+<v-clicks depth="2">
 
-* In 2023 React was downloaded ... 1 billion times
-* React 19 release candidate!
+* In 2023 React was downloaded ...
+  * 1 billion times
+* React 19 **release candidate**!
+  * Meaning a stable release is not far
 * The react compiler now open source
 * Also a lot of React Native coverage
 * All talks shared on Youtube
@@ -230,6 +233,14 @@ transition: slide-left
 transition: slide-left
 ---
 
+# <twemoji-rolled-up-newspaper/> Sidenote: "our" CMS turned 24
+
+**Enonic** was founded in 2000 ... in a garage.
+
+---
+transition: slide-left
+---
+
 # <twemoji-cherry-blossom/> Curious on CSS layers?
 
 Two weeks ago on **Smashing Magazine**, inspiring article on "do you really need that framework for that design", covering basically how powerful CSS have become as of late.
@@ -256,8 +267,6 @@ layout: two-cols-header
 
 # <twemoji-package/> Updates
 
-TODO: as of 2023-06-03
-
 ::left::
 
 **[React](https://react.dev)**  
@@ -270,7 +279,7 @@ TODO: as of 2023-06-03
 1.6.0 - [also working on 2.0 beta](https://github.com/vitest-dev/vitest/releases)
 
 **[Biome](https://biomejs.dev/)**  
-1.7.3 - [1.7 released in April](https://biomejs.dev/blog/biome-v1-7/)
+1.8.0 - [1.8 released 20 hours ago](https://biomejs.dev/blog/biome-v1-8/)
 
 ::right::
 
