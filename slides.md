@@ -181,6 +181,7 @@ This was a big conference for React. First physical conference since 2019!
   * 1 billion times
 * React 19 **release candidate**!
   * Meaning a stable release is not far
+  * [Read-tip on Server Components and Actions](https://www.mux.com/blog/react-19-server-components-and-actions)
 * The react compiler now open source
 * Also a lot of React Native coverage
 * All talks shared on Youtube
@@ -305,3 +306,19 @@ That's all for now!
 _Only one more FEF before the summer holidays July-Aug!_
 
 _**19th of June**_
+
+---
+transition: slide-left
+---
+
+# <twemoji-red-heart/> What's on your mind?!
+
+Could we go out with a bang?
+
+Have anything you want to show? Talk about? Discuss?
+
+A side-project, a Gjensidige-pain, something smart you did, some tech you drool at.
+
+No slides required, just connect your Mac/PC and talk.
+
+_Let me know as soon as possible._
