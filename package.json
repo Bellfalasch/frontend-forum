@@ -15,7 +15,7 @@
 		"@slidev/theme-default": "^0.25.0",
 		"slidev-theme-dracula": "^0.2.0",
 		"slidev-theme-penguin": "^2.2.0",
-		"slidev-theme-the-unnamed": "^0.0.16"
+		"slidev-theme-the-unnamed": "^0.0.20"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.0",
