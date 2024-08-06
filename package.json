@@ -10,18 +10,18 @@
 		"lint:check": "biome check ./* --apply"
 	},
 	"dependencies": {
-		"@gjensidige/builders-icons": "1.2.5",
-		"@slidev/cli": "0.49.23",
+		"@gjensidige/builders-icons": "1.4.0",
+		"@slidev/cli": "0.49.24",
 		"@slidev/theme-default": "^0.25.0",
 		"slidev-theme-dracula": "^0.2.0",
 		"slidev-theme-penguin": "^2.2.0",
 		"slidev-theme-the-unnamed": "^0.0.20"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.8.0",
+		"@biomejs/biome": "1.8.3",
 		"@iconify-json/la": "^1.1.9",
 		"@iconify-json/logos": "^1.1.44",
 		"@iconify-json/twemoji": "^1.1.16",
-		"playwright-chromium": "1.44.0"
+		"playwright-chromium": "1.46.0"
 	}
 }
