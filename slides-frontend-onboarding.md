@@ -65,7 +65,7 @@ transition: slide-up
 * Gjensidige since 2019 (this role since 2022)
 * Done alot of everything (Java, ASP.NET, MySQL, webdesign, ++)
 * Passion for front-end (vanilla, VueJS, React, Next.JS ++)
-* Loves CSS, and CMS-integrations
+* Loves CSS, vanilla code, and CMS-integrations
 
 </v-clicks>
 
@@ -78,7 +78,7 @@ transition: slide-up
 
 <v-clicks after>
 
-* Swedish, 42yo, 2 kids (8yo & 6yo), cat (10yo)
+* Swedish, 43yo, two kids (8yo & 6yo), cat (10yo)
 * Norway since 2010
 * Love hockey, craft beer, old games, and drawing
 
