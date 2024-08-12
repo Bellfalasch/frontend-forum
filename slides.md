@@ -61,23 +61,6 @@ transition: slide-up
 </v-clicks>
 
 ---
-transition: slide-up
----
-
-# <twemoji-palm-tree/> Summer!
-
-## FEF takes a summer break
-
-<v-clicks depth="2">
-
-* Taking a break July and August
-* New invites series will be set up, sent out sometimes in Aug
-* Always open for feedback
-  * New day of week? New time?
-
-</v-clicks>
-
----
 transition: slide-left
 layout: center
 ---
@@ -352,20 +335,35 @@ layout: two-cols-header
 18.3.1 - [out since April](https://github.com/facebook/react/releases)
 
 **[Vite](https://vitejs.dev/)**  
-5.2.12 - [see full changelog, also 6.0 alpha](https://github.com/vitejs/vite/releases)
+5.4.0 - [5.4 early August](https://github.com/vitejs/vite/blob/v5.4.0/packages/vite/CHANGELOG.md)
 
 **[Vitest](https://vitest.dev/)**  
-1.6.0 - [also working on 2.0 beta](https://github.com/vitest-dev/vitest/releases)
+2.0.1 - [2.0 is out of beta](https://github.com/vitest-dev/vitest/releases)
 
 **[Biome](https://biomejs.dev/)**  
-1.8.0 - [1.8 released 20 hours ago](https://biomejs.dev/blog/biome-v1-8/)
+1.8.3
 
 ::right::
 
 ## Node.JS
 <IconsWebsite/> https://nodejs.org/en
-* 20.14.0 LTS - latest 22.2.0
+* 20.16.0 LTS - latest 22.6.0
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
 * 1.1.22
+
+---
+transition: slide-up
+layout: center
+---
+
+# The end
+
+That's all for now!
+
+<twemoji-red-heart class="animate-ping"/>
+
+--
+
+<twemoji-spiral-calendar/> Next FEF will be held the **11th of September**
