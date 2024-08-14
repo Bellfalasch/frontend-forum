@@ -53,7 +53,7 @@ transition: slide-up
 </v-clicks>
 <v-clicks after>
 
-<img src="/images/2024-06-05/storybook-a11y.png" class="rounded shadow" style="max-width:85%;" alt="" />
+<img src="/images/2024-08-28/a11y-guide.png" class="rounded shadow" style="max-width:85%;" alt="" />
 
 </v-clicks>
 
@@ -81,14 +81,6 @@ transition: slide-left
 * Their work on accessibility <twemoji-wheelchair-symbol/> improvements based on Inklud and team feedback is now complete!
 
 </v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> builders-components 1.12
-
-<img src="/images/2024-06-05/core1-12.png" class="rounded shadow" style="max-width:85%;" alt="" />
 
 ---
 transition: slide-left
@@ -138,25 +130,60 @@ layout: center
 transition: slide-left
 ---
 
-# Clever things / worth mentioning
+# GitHub copilot
 
-## Smaller Faro tracing
-
-### Henrik Lillengen
-
-If anyone want tracing in grafana, but dont want to pull down the huge @grafana/faro-web-tracing -lib (think it increases our bundle size with about 7% in a already huge app), i have an example implementation here where i'm doing tracing manually: https://github.com/gjensidige/salg-core/pull/365/files
+* Reminder to request it, and use it in VScode, etc
+  * Request access role [GitHub Team: Copilot Users](https://myaccess.microsoft.com/@Gjensidige.onmicrosoft.com#/access-packages/49fd29da-f4ad-4527-8457-7d026e1dfb24)
+* Employees will have many AI-session throughout the year
+  * Meaning there will be more AI used, by all disciplines
 
 ---
 transition: slide-left
 ---
 
-# Clever things / worth mentioning
+# Microsoft Copilot
+## Not same as GitHub copilot ;P
+
+* Reminder that you can use Microsofts AI "Copilot" for free
+* Just go to https://copilot.microsoft.com/
+* Log in with your Gjensidige-email (SSO) for full access
+* Use it to get ideas, summaries, rewrites, suggestions, texts, images, whatnot
+
+---
+transition: slide-left
+---
+
+# Figma dev-mode
+
+* Before summer we did a trial on dev mode, with the help of 8 persons from 8 teams across Gjensidige
+* It was evaluated to not be an essential tool, but a helpful one, for some
+* So, not everyone using Figma needs it, but if you feel limited - request dev mode
+* These licneces are for devs
+* If you have "full seat" (like designers), you already have dev mode
+* We got a total of 20+ licences for Dev-mode
+* Just request it from Figma and it will be up for considerations
+
+---
+transition: slide-left
+---
+
+# Worth sharing
+
+## Smaller Faro tracing
+
+### Henrik Lillengen
+
+If anyone want tracing in grafana, but dont want to pull down the huge @grafana/faro-web-tracing -lib (think it increases our bundle size with about 7% in a already huge app), I have an example implementation here where i'm doing tracing manually: https://github.com/gjensidige/salg-core/pull/365/files
+
+---
+transition: slide-left
+---
+
+# Worth sharing
 
 ## Unified Session ID
 
 ### Sigurd Falk
-
-About `session_id` on our web portals <twemoji-thinking-face/>
 
 Today, several apps are generating a Session ID when a user is navigating around on our web portals. Fex:
 
@@ -178,11 +205,11 @@ https://github.com/gjensidige/service/tree/main/packages/client-identification
 transition: slide-left
 ---
 
-# Clever things / worth mentioning
-
-## Updated Front-end-pages
+# Updated Front-end-pages
 
 [Our front-end pages](https://www.gjensidige.builders/learn/frontend) have been updated!
+
+<v-clicks depth="2">
 
 * More relevant links and information on the [landing page](https://www.gjensidige.builders/learn/frontend), and in the main navigation.
 * [Principles for building web applications](https://www.gjensidige.builders/community/blog/principles) (new order, new items - now 26 in total, improved texts)
@@ -190,6 +217,8 @@ transition: slide-left
 * Rewrote the page [Supported browsers](https://www.gjensidige.builders/community/blog/supported-browsers) to assist you a bit better, while also giving some sane pointers.
 * Created a brand new page dedicated to [automated testing](https://www.gjensidige.builders/community/blog/testing-principles) at Gjensidige, since this has been asked about for a while. With this being a new page, we're eager to hear your feedback.
 * Updated the [universal design for developers](https://www.gjensidige.builders/learn/universal-design/code) page, refreshing some tips, and pointing readers to the brand new [accessibility guidelines in Storybook](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about) instead.
+
+</v-clicks>
 
 All changes are based on discussions, questions, comments, and requests, made by *you* - the community.
 
@@ -241,22 +270,6 @@ Many years ago, a few persons wanted to explore FT, and created a proof of conce
 We now have many users, and teams, using this, without it ever being intended for more than a one-user PoC.
 
 Hence, we must see the true need and do a proper evaluation, and then properly buy it, with giving it an owner, a budget, and so on. Software must be owned at Gjensidige, like GitHub is owned by Team Platform.
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Release notes
-
-### Conclusion?
-
-* Users are loving the Slack-notes
-* But collect them in a separate `announcement`-channel, for easier overview
-* Some people would like release notes elsewhere, like Github, Storybook or changelog.md, but not many enough, but worth keeping in mind.
-* Most likely zero worries with Builders dropping the auto-generated release-notes
-* Some voices on "more guides", bigger pictures, not only one component using different props
 
 ---
 transition: slide-left
