@@ -45,7 +45,7 @@ transition: slide-left
 * I don't belong to any specific team
 * I'm passionate about sharing, and helping
 * I love collabs; cross-team, cross-discipline, cross-country
-* Reusability, efficiency, smoothness, accessability, is important for me
+* Reusability, efficiency, smoothness, accessibility, is important for me
 * My time is dedicated to our employees and our community
 * Use me for getting to know the community, finding the right persons, tools, etc
 
@@ -75,7 +75,6 @@ transition: slide-up
 
 </v-clicks>
 
-
 <v-clicks after>
 
 * Swedish, 43yo, two kids (8yo & 6yo), cat (10yo)
@@ -88,22 +87,41 @@ transition: slide-up
 transition: slide-up
 ---
 
+# Front-end at Gjensidige
+
+* Gjensidige has many teams
+* Usally cross-disciplinary and autonomous
+* Organised mostly on 4th floor
+* Sales, Service (logged in pages) - split on Commercial and Private
+* Claims, many teams, most in Bratislava
+* Builders and Mobile App
+* All NO teams are coupled with DK
+* SE team is alone
+* We work often with Team Platform for getting stuff online
+* We work often with Team Security for logged in things, ++
+
+---
+transition: slide-up
+---
+
 # Front-end Forum
 
 <v-clicks depth="2">
 
+* Talk about what affects FE-devs in Gjensidige, and general
+  * New tech, new constraints, smart stuff worth sharing, new updates, ++
 * For everyone (so it's in English)
 * Not mandatory
 * Bi-weekly on Wednesdays
 * Starts 09:30, usually lasts 30-60 minutes
 * On Teams and physical
-    * 4th floor in "Samhandlingssonen", main office in Oslo
+  * 4th floor in "Samhandlingssonen", main office in Oslo
 * Recorded, saved for 30-90 days
 * Open for you to talk/share/show, and requests!
+* https://www.gjensidige.builders/community/frontend-forum
 
 </v-clicks>
 
-https://www.gjensidige.builders/community/frontend-forum
 
 ---
 transition: slide-up
@@ -111,11 +129,19 @@ transition: slide-up
 
 # Routing
 
+How do a webpage get to our users?
+
 ## Webseal
 
 We have **IBM Webseal** as firewall/proxy in the very front of all we have on the web in production. This software is handled mostly by Team Security together with TietoEvry. These two also take care of **ISAM** (also from IBM) that handles identity and access.
 
 Webseal uses something called *junctions* to direct different URLs to different internal servers.
+
+---
+transition: slide-up
+---
+
+# Routing (cont.)
 
 ## Enonic XP
 
@@ -125,6 +151,12 @@ Gjensidige.no-traffic will first go to our CMS, this area is refered to as "Open
 
 At certain URLs, specified in Webseal, we will not go to the CMS but send traffic to another router, that Team Service owns. This one is known as **Application Portal**. Here each team defines a URL they want to "mount" on, and then what app to mount.
 
+---
+transition: slide-up
+---
+
+# Routing (cont.)
+
 ## Mounting apps within open pages
 
 There's also something called *Custom Parts*, a way for editors to mount micro-apps within editorial content of open pages. This is not done a lot, but nice to be aware of the possibilities. These micro-apps are essentially React-apps, with a manifest-file listing all resources, that the CMS can load and display. These micro-apps can accept any number of key-value pair configs from the editorial interface.
@@ -132,26 +164,6 @@ There's also something called *Custom Parts*, a way for editors to mount micro-a
 ## Logged in pages
 
 This is the opposite of "open pages". These are delivered by our digital teams, they are mounted to a URL using Application Portal, and nothing comes from the CMS. Team Service (handle your insurrances) and the Claims teams, work in this domain.
-
----
-transition: slide-up
----
-
-# Slack for a front-ender
-
-We use Slack as our go-to tool for internal communication. Use it rather than big meetings, or sending e-mails.
-
-Some guidance on how Gjensidige uses Slack:
-* **"No" PMs** - don't let valuable information die in private messages.
-* **Oppeness** - don't create private channels, unless absolutely necessary.
-* **Threading** - always answer questions as a thread.
-
-Some nice channels to watch:
-* **#frontend** #design #content
-* #team-builders **#builders-core** #builders-platform
-* #general #random
-* #gap #team-platform #team-security
-* #digitalization-and-design
 
 ---
 transition: slide-left
@@ -188,11 +200,13 @@ Builders Core is "open source", it is not available for the general public (yet 
 
 It is *maintained* by **Team Builders**, closely working with Gjensidige's marketing department. Still, it's a community product, you can use it and are more than welcome to fix it and extend it!
 
-We highly appriciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in #builders-core, or with me.
+We highly appriciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in **#builders-core**, or with me.
 
 The extensive documentation (wich is easily editable on Github) is open for everyone:
 
 https://www.gjensidige.builders/docs/core/
+
+Follow **#builders-core-announcements** for release notes!
 
 ---
 transition: slide-up
@@ -209,8 +223,12 @@ Short way to designsystem-documentation, and more.
 Front-end has its own `/learn/frontend` discipline hub here. As well as `/onboarding` and `/community` are of interest.
 https://www.gjensidige.builders/learn/frontend 
 
-Read our "Principles for building web applications" (18 rules):
+Read our "Principles for building web applications" (26 of them):
 https://www.gjensidige.builders/community/blog/principles
+
+https://www.gjensidige.builders/community/blog/testing-principles
+
+https://www.gjensidige.builders/community/blog/supported-browsers
 
 ---
 transition: slide-up
@@ -218,15 +236,18 @@ transition: slide-up
 
 # Accessibility
 
-This is worth a session of its own. But accessability (often called "UU" in Norway) is of high importance in our digital products.
+This is worth a session of its own. But accessibility (often called "UU" in Norway, or a11y internationally) is of high importance in our digital products.
 
-WCAG 2.0 is the minimum in Norway, enforced legally. But in near future WCAG 2.1 will be the standard. In 2023 we saw WCAG 2.2 being released.
+WCAG 2.0 is the minimum in Norway, enforced legally. But in near future WCAG 2.1 will be the standard. In 2023 we saw WCAG 2.2 being released. Gjensidige aims for 2.1, and AA, if possible AAA.
 
 It is expected that when working for Gjensidige you can develop accordingly, and/or update yourself using available online resources, or using resources from your employer (if you're a consultant).
 
-Read more: https://www.gjensidige.builders/learn/universal-design/code
+Slack: **#accessibility**
 
-Slack: #accessibility
+Read more: https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about
+
+Mostly a short summary here:
+https://www.gjensidige.builders/learn/universal-design/code
 
 ---
 transition: slide-up
@@ -234,9 +255,9 @@ transition: slide-up
 
 # Security
 
-Working in fin-tech, security is of highest importance. We have our own #security channel in Slack, and our own #team-security governing this.
+Working in fin-tech, security is of highest importance. We have our own **#security** channel in Slack, and our own **#team-security** governing this.
 
-To assist teams, Team Platform have developed the handy **Security Score** website. Here you can quickly overview all repoes in Gjensidige, divided by teams and more. Each getting a score based on multiple parameters that you can easily dig into and use to strenghten your own security.
+To assist teams, we have the handy **Security Score** website. Here you can quickly overview all repoes in Gjensidige, divided by teams and more. Each getting a score based on multiple parameters that you can easily dig into and use to strenghten your own security.
 
 https://security-score.gjensidige.io/
 
@@ -244,9 +265,28 @@ https://security-score.gjensidige.io/
 transition: slide-up
 ---
 
+# Slack for a front-ender
+
+We use Slack as our go-to tool for internal communication. Use it rather than big meetings, or sending e-mails. Some guidance on how Gjensidige uses Slack:
+
+* **"No" PMs** - don't let valuable information die in private messages.
+* **Oppeness** - don't create private channels, unless absolutely necessary.
+* **Threading** - always answer questions as a thread.
+
+Some nice channels to watch:
+* **#frontend** #design #content
+* #team-builders **#builders-core** #builders-platform
+* #general #random
+* #gap #team-platform #team-security
+* #digitalization-and-design
+
+---
+transition: slide-up
+---
+
 # Github
 
-We use Github, but repos and secret are not created in the web gui. Instead head to our Slack-channel **#github-at-gjensidige**
+We use Github, but repos and secrets are not created in the web gui. Instead head to our Slack-channel **#github-at-gjensidige**
 
 Use `/platform-github ...` to "talk" to the bot, that will open up dialogs for you to use when interacting with Github.
 
@@ -282,6 +322,9 @@ transition: slide-up
 ---
 
 # Additional resources
+
+## GitHub copilot
+[Request "GitHub Team: Copilot Users"](https://myaccess.microsoft.com/@Gjensidige.onmicrosoft.com#/access-packages/49fd29da-f4ad-4527-8457-7d026e1dfb24)
 
 ## Our general developer checklist
 https://www.gjensidige.builders/onboarding/developer-checklist

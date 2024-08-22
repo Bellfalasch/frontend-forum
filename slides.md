@@ -46,7 +46,7 @@ transition: slide-up
 
 <v-clicks depth="2">
 
-* Just before the summer we went live with our first take on an a11y-doc
+* Just before the summer, we went live with our [first take on an a11y-doc](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
   * (I've been asked to explain that a11y is short for accessibility, "a + 11 characters + y")
 * Hoping to get some feedback, help with missing parts
 * Contains an intro from Builders, WCAG-overview, help with testing, front-end code cheat sheet.
@@ -77,9 +77,9 @@ transition: slide-left
 
 <v-clicks>
 
-* **1.15.0** came this summer (June 17th)
-* **1.15.18** is the latest
-* Their work on accessibility <twemoji-wheelchair-symbol/> improvements based on Inklud and team feedback is now complete!
+* **1.15.0** came this summer (17th of June)
+* **1.15.18** is the latest (2nd of August)
+* Their work on accessibility <twemoji-wheelchair-symbol/> improvements based on Inklud and team feedback is now **complete**!
 
 </v-clicks>
 
@@ -112,10 +112,11 @@ transition: slide-left
 
 <v-clicks depth="2">
 
-* Reminder to request it, and use it in VScode, etc
+* Reminder to request it, and use it in VScode/YourTool
   * Request access role [GitHub Team: Copilot Users](https://myaccess.microsoft.com/@Gjensidige.onmicrosoft.com#/access-packages/49fd29da-f4ad-4527-8457-7d026e1dfb24)
-* Employees will have many AI-session throughout the year
-  * Meaning there will be more AI used, by all disciplines
+* Employees will have many AI-session (workshops, hackathons, talks) throughout the year
+  * Collaboration with our partners **Itera** and **Microsoft**
+  * Meaning, all disciplines will be using more and more AI-tools
 
 </v-clicks>
 
@@ -143,7 +144,7 @@ transition: slide-left
 
 <v-clicks>
 
-* Before summer we did a trial on dev mode, with the help of 8 persons from 8 teams across Gjensidige
+* Before summer we did a trial on **dev mode**, with the help of 8 persons from 8 teams across Gjensidige
 * It was evaluated to not be an essential tool, but a helpful one, for some
 * So, not everyone using Figma needs it, but if you feel limited - request dev mode
 * These licences are for devs
@@ -175,7 +176,7 @@ transition: slide-left
 
 ### Sigurd Falk (with help from Henrik)
 
-Today, several apps are generating a Session ID when a user is navigating around on our web portals.
+Several apps generate a Session ID when a user is navigating around on our web portals.
 
 This makes it hard to track user journeys across our apps and across open and logged in pages.
 
@@ -191,7 +192,7 @@ transition: slide-left
 
 # Updated Front-end-pages
 
-[Our front-end pages](https://www.gjensidige.builders/learn/frontend) have been updated!
+Our front-end pages have been updated!
 
 <v-clicks depth="2">
 
@@ -199,7 +200,8 @@ transition: slide-left
 * [Principles for building web applications](https://www.gjensidige.builders/community/blog/principles) (new order, new items - now 26 in total, improved texts)
 * Added some "candidate principles" to said page, things we're considering. What's your input?
 * Rewrote the page [Supported browsers](https://www.gjensidige.builders/community/blog/supported-browsers) to assist you a bit better, while also giving some sane pointers.
-* Created a brand new page dedicated to [automated testing](https://www.gjensidige.builders/community/blog/testing-principles) at Gjensidige, since this has been asked about for a while. With this being a new page, we're eager to hear your feedback.
+* Created a brand new page dedicated to [automated testing](https://www.gjensidige.builders/community/blog/testing-principles) at Gjensidige, since this has been asked about for a while. With this being a new page, we're eager to hear your feedback
+  * _Thank you Katarina Matysova for valuable feedback during writing._
 * Updated the [universal design for developers](https://www.gjensidige.builders/learn/universal-design/code) page, refreshing some tips, and pointing readers to the brand new [accessibility guidelines in Storybook](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about) instead.
 
 </v-clicks>
