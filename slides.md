@@ -286,6 +286,30 @@ Big tech-voices are starting to ask for a new CSS-version, and they want to jump
 transition: slide-left
 ---
 
+# State of CSS 2024
+
+Speaking of ... new survey out!
+
+https://survey.devographics.com/en-US/survey/state-of-css/2024
+
+---
+transition: slide-left
+---
+
+# React 19
+
+Still in beta, no news since April/May.
+
+Moving more logic to the server (components and actions), making it more of a fullstack framework than before. Introducing compiler. And more.
+
+https://19.react.dev/
+
+Recomendation: Don't be early adopters, but keep an eye on it. It will - if fully utilized - change a lot on how you structure and code your apps.
+
+---
+transition: slide-left
+---
+
 # <twemoji-rolled-up-newspaper/> jQuery 4 in beta
 
 Some things never die. First beta was in February, second one came this summer.
@@ -311,20 +335,6 @@ Convert between `font-size: 12px;` (CSS-style) to `fontSize: "12px"` (JS-style) 
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> Websites
-
-## Hate bad bug reports?
-
-This website might assist in training POs, TLs, designers, to write better bug reports.
-
-And it looks cool.
-
-<IconsWebsite/> [Perfect Bug Report](https://www.perfectbugreport.io)
-
----
-transition: slide-left
----
-
 # <twemoji-cherry-blossom/> Link tips
 
 ## Browser baseline
@@ -336,6 +346,7 @@ transition: slide-left
 ## Other
 
 * <IconsWebsite/> [Third-party cookies have to go](https://www.w3.org/blog/2024/third-party-cookies-have-got-to-go/)
+* <IconsWebsite/> [Perfect Bug Report](https://www.perfectbugreport.io)
 
 ---
 transition: slide-up
@@ -350,10 +361,10 @@ layout: two-cols-header
 18.3.1 - [out since April](https://github.com/facebook/react/releases)
 
 **[Vite](https://vitejs.dev/)**  
-5.4.0 - [5.4 early August](https://github.com/vitejs/vite/blob/v5.4.0/packages/vite/CHANGELOG.md)
+5.4.2 - [5.4 early August](https://github.com/vitejs/vite/blob/v5.4.2/packages/vite/CHANGELOG.md)
 
 **[Vitest](https://vitest.dev/)**  
-2.0.1 - [2.0 is out of beta](https://github.com/vitest-dev/vitest/releases)
+2.0.5 - [2.0 is out of beta](https://github.com/vitest-dev/vitest/releases)
 
 **[Biome](https://biomejs.dev/)**  
 1.8.3
@@ -362,11 +373,11 @@ layout: two-cols-header
 
 ## Node.JS
 <IconsWebsite/> https://nodejs.org/en
-* 20.16.0 LTS - latest 22.6.0
+* 20.17.0 LTS - latest 22.7.0
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
-* 1.1.22
+* 1.1.25
 
 ---
 transition: slide-up
