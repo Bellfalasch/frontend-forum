@@ -25,6 +25,7 @@ transition: slide-up
 
 <v-clicks>
 
+* First: Welcome, how are you?
 * What's a "Discipline Leader Front-end"?
 * Who am I?
 * Our front-end community and arenas
@@ -48,6 +49,7 @@ transition: slide-left
 * Reusability, efficiency, smoothness, accessibility, is important for me
 * My time is dedicated to our employees and our community
 * Use me for getting to know the community, finding the right persons, tools, etc
+* I run "Front-end Forum", "Let's talk front-end", and co-run "Accessibility forum"
 
 </v-clicks>
 
@@ -121,7 +123,6 @@ transition: slide-up
 * https://www.gjensidige.builders/community/frontend-forum
 
 </v-clicks>
-
 
 ---
 transition: slide-up
