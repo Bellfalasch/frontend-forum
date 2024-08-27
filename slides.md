@@ -26,10 +26,42 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
-* Accessibility
-* Builders Core
-* Gjensidige-stuff
-* Other news, updates
+* Intro
+* Let's get all up to speed on:
+  * Accessibility
+  * Builders Core
+  * Gjensidige-stuff
+  * Other news, updates
+
+---
+transition: slide-up
+layout: test
+---
+
+# Quick intro
+
+<v-clicks>
+
+Welcome back from a long summer break for FEF.
+
+Hope you had a good vacation!
+
+We'll continue the same format, same time <twemoji-nine-thirty/>, same day <twemoji-calendar/>, same place <twemoji-globe-showing-europe-africa/>, same host <twemoji-man-technologist/>.
+
+## <twemoji-waving-hand/> Welcome
+
+We can happily greet three new faces in Oslo:
+
+</v-clicks>
+<v-clicks>
+
+* Welcome **Per Allan Johansson** - Sales, private
+
+* Welcome **Samuel Mukunga Bakke** - Sales, private
+
+* Welcome **Ulrik Røsby** - Claims
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -49,7 +81,7 @@ transition: slide-up
 * Just before the summer, we went live with our [first take on an a11y-doc](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
   * (I've been asked to explain that a11y is short for accessibility, "a + 11 characters + y")
 * Hoping to get some feedback, help with missing parts
-* Contains an intro from Builders, WCAG-overview, help with testing, front-end code cheat sheet.
+* Contains four pages: intro from Builders, WCAG-overview, tips on testing, code cheat sheet.
 
 </v-clicks>
 <v-clicks after>
@@ -75,13 +107,17 @@ transition: slide-left
 
 ## @gjensidige/builders-components
 
+
 <v-clicks>
 
 * **1.15.0** came this summer (17th of June)
 * **1.15.18** is the latest (2nd of August)
+* Follow **#builders-core-announcements** for release notes.
 * Their work on accessibility <twemoji-wheelchair-symbol/> improvements based on Inklud and team feedback is now **complete**!
+* Use **#builders-core** for questions, bug reports, etc.
 
 </v-clicks>
+
 
 ---
 transition: slide-up
@@ -151,40 +187,9 @@ transition: slide-left
 * If you have "full seat" (like designers), you already have dev mode
 * We got a total of 20+ licences for Dev-mode
 * Just request it from Figma and it will be up for considerations
+* Unsure? Don't need it no more? PM me as I maintain the dev-licences
 
 </v-clicks>
-
----
-transition: slide-left
----
-
-# Worth sharing
-
-## Smaller Faro tracing
-
-### Henrik Lillengen
-
-If anyone want tracing in grafana, but dont want to pull down the huge @grafana/faro-web-tracing -lib (think it increases our bundle size with about 7% in a already huge app), I have an example implementation here where i'm doing tracing manually: https://github.com/gjensidige/salg-core/pull/365/files
-
----
-transition: slide-left
----
-
-# Worth sharing
-
-## Unified Session ID
-
-### Sigurd Falk (with help from Henrik)
-
-Several apps generate a Session ID when a user is navigating around on our web portals.
-
-This makes it hard to track user journeys across our apps and across open and logged in pages.
-
-They came up with this solution everyone can use, as a best practice for session ids:
-https://github.com/gjensidige/service/tree/main/packages/client-identification 
-
-Example on consuming it:
-https://github.com/gjensidige/service-oversikt-forsikring-privat/pull/33/files
 
 ---
 transition: slide-left
@@ -266,45 +271,98 @@ transition: slide-left
 layout: center
 ---
 
+# <twemoji-recycling-symbol/> Worth sharing
+
+<LogoGjensidige/>
+
+---
+transition: slide-left
+---
+
+# <twemoji-recycling-symbol/> Worth sharing
+
+## Smaller Faro tracing
+
+### Henrik Lillengen
+
+If anyone want tracing in grafana, but dont want to pull down the huge @grafana/faro-web-tracing -lib (think it increases our bundle size with about 7% in a already huge app), I have an example implementation here where i'm doing tracing manually: https://github.com/gjensidige/salg-core/pull/365/files
+
+---
+transition: slide-left
+---
+
+# <twemoji-recycling-symbol/> Worth sharing
+
+## Unified Session ID
+
+### Sigurd Falk (with help from Henrik)
+
+Several apps generate a Session ID when a user is navigating around on our web portals.
+
+This makes it hard to track user journeys across our apps and across open and logged in pages.
+
+They came up with this solution everyone can use, as a best practice for session ids:
+https://github.com/gjensidige/service/tree/main/packages/client-identification 
+
+Example on consuming it:
+https://github.com/gjensidige/service-oversikt-forsikring-privat/pull/33/files
+
+---
+transition: slide-left
+layout: center
+---
+
 # <twemoji-rolled-up-newspaper/> News, <twemoji-cherry-blossom/> Inspiration, <twemoji-package/> Updates
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> CSS5
+# <twemoji-rolled-up-newspaper/> CSS5 ... five!
 
-## Let's talk about CSS5
+**Let's talk about CSS5**
 
-CSS3 came ... in 2009! It has since grown a lot. But with this liquid version, it is hard to know if you are doing CSS3 anno 2009 or CSS3 anno 2024, which are vastly different.
+<v-clicks>
+
+CSS3 came out in ...
+
+2009!
+
+It has since grown a lot. But with this liquid version, it is hard to know if you are doing CSS3 anno 2009, or CSS3 anno 2024, which are vastly different.
 
 Big tech-voices are starting to ask for a new CSS-version, and they want to jump directly to 5.
 
 <IconsWebsite/> [Debate started on CSS5](https://www.smashingmagazine.com/2024/08/time-to-talk-about-css5/)
 
----
-transition: slide-left
----
-
-# State of CSS 2024
-
-Speaking of ... new survey out!
-
-https://survey.devographics.com/en-US/survey/state-of-css/2024
+</v-clicks>
 
 ---
 transition: slide-left
 ---
 
-# React 19
+# <twemoji-rolled-up-newspaper/> State of CSS 2024
+
+Speaking of CSS ... new survey out on the state of CSS!
+
+Fun way to learn more on what is trending "out there", and help shape the future.
+
+<IconsWebsite/> [Check out the State of CSS 2024 survey](https://survey.devographics.com/en-US/survey/state-of-css/2024)
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> React 19
 
 Still in beta, no news since April/May.
 
+**What's it about?**
+
 Moving more logic to the server (components and actions), making it more of a fullstack framework than before. Introducing compiler. And more.
 
-https://19.react.dev/
+<IconsWebsite/> [Official React 19 website](https://19.react.dev/)
 
-Recomendation: Don't be early adopters, but keep an eye on it. It will - if fully utilized - change a lot on how you structure and code your apps.
+_Recommendation: Don't be early adopters, but keep an eye on it. It will - if fully utilized - change a lot on how you structure and code your apps._
 
 ---
 transition: slide-left
@@ -314,10 +372,10 @@ transition: slide-left
 
 Some things never die. First beta was in February, second one came this summer.
 
+<IconsWebsite/> [Beta 2 of jQuery 4](https://blog.jquery.com/2024/07/17/second-beta-of-jquery-4-0-0/)
+
 > I thought jQuery was dead  
 > _- The Internet_
-
-<IconsWebsite/> [Beta 2 of jQuery 4](https://blog.jquery.com/2024/07/17/second-beta-of-jquery-4-0-0/)
 
 ---
 transition: slide-left
@@ -325,17 +383,19 @@ transition: slide-left
 
 # <twemoji-cherry-blossom/> Extensions
 
-## CSS-converter
+## VSCode: CSS-converter
 
-Convert between `font-size: 12px;` (CSS-style) to `fontSize: "12px"` (JS-style) with a click.
+Convert between `font-size: 12px;` (CSS-style) and `fontSize: "12px"` (JS-style) with a click.
 
 <IconsWebsite/> [CSS Converter](https://marketplace.visualstudio.com/items?itemName=Lakkannawalikar.css-converter#css-converter)
+
+<img src="/images/2024-08-28/demo-kebab-camel.gif" class="rounded shadow" style="max-width:75%;" alt="" />
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> Link tips
+# <twemoji-cherry-blossom/> Worth reading
 
 ## Browser baseline
 
@@ -364,7 +424,7 @@ layout: two-cols-header
 5.4.2 - [5.4 early August](https://github.com/vitejs/vite/blob/v5.4.2/packages/vite/CHANGELOG.md)
 
 **[Vitest](https://vitest.dev/)**  
-2.0.5 - [2.0 is out of beta](https://github.com/vitest-dev/vitest/releases)
+2.0.5 - [2.0 is out of beta, new beta: 2.1](https://github.com/vitest-dev/vitest/releases)
 
 **[Biome](https://biomejs.dev/)**  
 1.8.3
@@ -377,7 +437,15 @@ layout: two-cols-header
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
-* 1.1.25
+* 1.1.26
+
+---
+transition: slide-up
+layout: image
+image: /images/2024-08-28/bun-outdated.jpeg
+---
+
+`bun outdated`
 
 ---
 transition: slide-up
