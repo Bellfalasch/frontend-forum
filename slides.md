@@ -108,10 +108,14 @@ transition: slide-left
 ## @gjensidige/builders-components
 
 
-<v-clicks>
+<v-clicks depth="2">
 
 * **1.15.0** came this summer (17th of June)
-* **1.15.18** is the latest (2nd of August)
+* ~~**1.15.18** is the latest (2nd of August)~~
+* **1.16.0** yesterday! **Loads of improvements!**
+  * Multiple `<Datepicker>` improvements
+  * New `<Breadcrumbs>` components
+  * And more!
 * Follow **#builders-core-announcements** for release notes.
 * Their work on accessibility <twemoji-wheelchair-symbol/> improvements based on Inklud and team feedback is now **complete**!
 * Use **#builders-core** for questions, bug reports, etc.
@@ -241,7 +245,7 @@ _Gjensidige currently have no official tooling or policy for this, but depending
 transition: slide-left
 ---
 
-```mermaid
+```mermaid {theme: 'dark'}
 pie showData title Feature Toggling
     "1. Currently" : 12
     "2. Did, want to" : 4
