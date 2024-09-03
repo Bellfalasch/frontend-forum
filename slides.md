@@ -103,10 +103,14 @@ layout: center
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> Releases
+# <twemoji-notebook-with-decorative-cover/> Builders Core
 
-## @gjensidige/builders-components
+## Releases
 
+<IconsSlack/> Follow **#builders-core-announcements** for release notes!
+. 
+
+### @gjensidige/builders-components
 
 <v-clicks depth="2">
 
@@ -116,24 +120,10 @@ transition: slide-left
   * Multiple `<Datepicker>` improvements
   * New `<Breadcrumbs>` components
   * And more!
-* Follow **#builders-core-announcements** for release notes.
-* Their work on accessibility <twemoji-wheelchair-symbol/> improvements based on Inklud and team feedback is now **complete**!
-* Use **#builders-core** for questions, bug reports, etc.
+
+<IconsSlack/> Use **#builders-core** for questions, bug reports, etc.
 
 </v-clicks>
-
-
----
-transition: slide-up
----
-
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## Reminder: "new" announcement-channel
-
-Follow **#builders-core-announcements** for release notes!
-
-The place to keep track on to be first on the latest fixes and features.
 
 ---
 transition: slide-left
@@ -157,22 +147,6 @@ transition: slide-left
 * Employees will have many AI-session (workshops, hackathons, talks) throughout the year
   * Collaboration with our partners **Itera** and **Microsoft**
   * Meaning, all disciplines will be using more and more AI-tools
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# Microsoft Copilot
-## Not same as GitHub copilot ;P
-
-<v-clicks>
-
-* Reminder that you can use Microsofts AI "Copilot" for free
-* Just go to https://copilot.microsoft.com/
-* Log in with your Gjensidige-email (SSO) for full access
-* Use it to get ideas, summaries, rewrites, suggestions, texts, images, whatnot
 
 </v-clicks>
 
@@ -223,55 +197,6 @@ All changes are based on discussions, questions, comments, and requests, made by
 
 ---
 transition: slide-left
----
-
-# Community poll
-
-## Feature Toggling
-
-Are you using (or used to use) feature toggling in your web applications?
-
-* <twemoji-keycap-1/> I am currently using it at Gjensidige - using external tools, our something we built ourselves
-* <twemoji-keycap-2/> I did in previous jobs, loved it, would use again but are not using it here today
-* <twemoji-keycap-3/> I did in previous jobs, didn't love it and won't use here
-* <twemoji-keycap-4/> I would love to use it, but have no experience with it
-* <twemoji-keycap-5/> Isch, a bit of A/B-testing here and there, but could probably do more if we had tools
-* <twemoji-keycap-6/> I know what it is but see no point in using it, we ship fast :boat:
-* <twemoji-keycap-0/> What is feature toggling?
-
-_Gjensidige currently have no official tooling or policy for this, but depending on needs and wants with the teams we can investigate further._
-
----
-transition: slide-left
----
-
-```mermaid {theme: 'dark'}
-pie showData title Feature Toggling
-    "1. Currently" : 12
-    "2. Did, want to" : 4
-    "3. Did, no like" : 0
-    "4. Sounds cool" : 1
-    "5. A/B-testing" : 3
-    "6. Nah, meh" : 2
-    "0. What is this?" : 3
-```
-
----
-transition: slide-up
----
-
-# Feature Toggling
-
-So, some context ...
-
-Many years ago, a few persons wanted to explore FT, and created a proof of concept by buying one license for Unleash. These persons quit, but the admin-user remained. Teams found it, heard about it, or read about it in confluence.
-
-We now have many users, and teams, using this, without it ever being intended for more than a one-user PoC.
-
-Hence, we must see the true need and do a proper evaluation, and then properly buy it, with giving it an owner, a budget, and so on. Software must be owned at Gjensidige, like GitHub is owned by Team Platform.
-
----
-transition: slide-left
 layout: center
 ---
 
@@ -287,9 +212,11 @@ transition: slide-left
 
 ## Smaller Faro tracing
 
-### Henrik Lillengen
+<IconsStar/> Henrik Lillengen
 
-If anyone want tracing in grafana, but dont want to pull down the huge @grafana/faro-web-tracing -lib (think it increases our bundle size with about 7% in a already huge app), I have an example implementation here where i'm doing tracing manually: https://github.com/gjensidige/salg-core/pull/365/files
+If anyone want tracing in grafana, but dont want to pull down the huge @grafana/faro-web-tracing -lib (think it increases our bundle size with about 7% in a already huge app), I have an example implementation here where i'm doing tracing manually
+
+<IconsWebsite/> https://github.com/gjensidige/salg-core/pull/365/files
 
 ---
 transition: slide-left
@@ -299,17 +226,17 @@ transition: slide-left
 
 ## Unified Session ID
 
-### Sigurd Falk (with help from Henrik)
+<IconsStar/> Sigurd Falk (with help from Henrik)
 
 Several apps generate a Session ID when a user is navigating around on our web portals.
 
 This makes it hard to track user journeys across our apps and across open and logged in pages.
 
 They came up with this solution everyone can use, as a best practice for session ids:
-https://github.com/gjensidige/service/tree/main/packages/client-identification 
+<IconsWebsite/> https://github.com/gjensidige/service/tree/main/packages/client-identification 
 
 Example on consuming it:
-https://github.com/gjensidige/service-oversikt-forsikring-privat/pull/33/files
+<IconsWebsite/> https://github.com/gjensidige/service-oversikt-forsikring-privat/pull/33/files
 
 ---
 transition: slide-left
@@ -344,18 +271,6 @@ Big tech-voices are starting to ask for a new CSS-version, and they want to jump
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> State of CSS 2024
-
-Speaking of CSS ... new survey out on the state of CSS!
-
-Fun way to learn more on what is trending "out there", and help shape the future.
-
-<IconsWebsite/> [Check out the State of CSS 2024 survey](https://survey.devographics.com/en-US/survey/state-of-css/2024)
-
----
-transition: slide-left
----
-
 # <twemoji-rolled-up-newspaper/> React 19
 
 Still in beta, no news since April/May.
@@ -367,19 +282,6 @@ Moving more logic to the server (components and actions), making it more of a fu
 <IconsWebsite/> [Official React 19 website](https://19.react.dev/)
 
 _Recommendation: Don't be early adopters, but keep an eye on it. It will - if fully utilized - change a lot on how you structure and code your apps._
-
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> jQuery 4 in beta
-
-Some things never die. First beta was in February, second one came this summer.
-
-<IconsWebsite/> [Beta 2 of jQuery 4](https://blog.jquery.com/2024/07/17/second-beta-of-jquery-4-0-0/)
-
-> I thought jQuery was dead  
-> _- The Internet_
 
 ---
 transition: slide-left
@@ -445,14 +347,6 @@ layout: two-cols-header
 
 ---
 transition: slide-up
-layout: image
-image: /images/2024-08-28/bun-outdated.jpeg
----
-
-`bun outdated`
-
----
-transition: slide-up
 layout: center
 ---
 
@@ -464,4 +358,4 @@ That's all for now!
 
 --
 
-<twemoji-spiral-calendar/> Next FEF will be held the **11th of September**
+<twemoji-spiral-calendar/> Next FEF will be held the **25th of September**

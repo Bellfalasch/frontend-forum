@@ -1,5 +1,5 @@
 <script setup>
-  import iconSvgUrl from "@gjensidige/builders-icons/website.svg";
+  import iconSvgUrl from "@gjensidige/builders-icons/slack.svg";
 </script>
 
 <template>
@@ -12,8 +12,7 @@ img {
   background-color: white;
   border-radius: 50%;
   border: .2rem solid white;
-  margin-right: .8rem;
-  float: left; /* No worky...*/
-  display: inline; /* No worky...*/
+  margin-right: .6rem;
+  display: inline;
 }
 </style>
