@@ -108,7 +108,8 @@ transition: slide-left
 ## Releases
 
 <IconsSlack/> Follow **#builders-core-announcements** for release notes!
-. 
+
+<Spacer/>
 
 ### @gjensidige/builders-components
 
@@ -121,7 +122,13 @@ transition: slide-left
   * New `<Breadcrumbs>` components
   * And more!
 
-<IconsSlack/> Use **#builders-core** for questions, bug reports, etc.
+<Spacer/>
+
+</v-clicks>
+
+<v-clicks after>
+
+<IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
 
 </v-clicks>
 
