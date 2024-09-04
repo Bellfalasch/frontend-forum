@@ -49,6 +49,9 @@ transition: slide-left
 * Reusability, efficiency, smoothness, accessibility, is important for me
 * My time is dedicated to our employees and our community
 * Use me for getting to know the community, finding the right persons, tools, etc
+* Find clever solutions, share them
+* Engage in common problems, and solutions
+* Help where people are stuck
 * I run "Front-end Forum", "Let's talk front-end", and co-run "Accessibility forum"
 
 </v-clicks>
@@ -65,7 +68,7 @@ transition: slide-up
 
 * Wrote my first webpage 1996, been working professionally since 2006
 * Gjensidige since 2019 (this role since 2022)
-* Done alot of everything (Java, ASP.NET, MySQL, webdesign, ++)
+* Done a lot of everything (Java, ASP.NET, MySQL, webdesign, ++)
 * Passion for front-end (vanilla, VueJS, React, Next.JS ++)
 * Loves CSS, vanilla code, and CMS-integrations
 
@@ -97,8 +100,9 @@ transition: slide-up
 * Sales, Service (logged in pages) - split on Commercial and Private
 * Claims, many teams, most in Bratislava
 * Builders and Mobile App
-* All NO teams are coupled with DK
-* SE team is alone
+* All NO teams are coupled with DK, but also many in DK (and some in Poland)
+* SE team is alone (here and in Stockholm)
+* Pension sits across the street, their own AS, but share a lot
 * We work often with Team Platform for getting stuff online
 * We work often with Team Security for logged in things, ++
 
@@ -201,7 +205,7 @@ Builders Core is "open source", it is not available for the general public (yet 
 
 It is *maintained* by **Team Builders**, closely working with Gjensidige's marketing department. Still, it's a community product, you can use it and are more than welcome to fix it and extend it!
 
-We highly appriciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in **#builders-core**, or with me.
+We highly appreciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in **#builders-core**, or with me.
 
 The extensive documentation (wich is easily editable on Github) is open for everyone:
 
@@ -285,15 +289,15 @@ Some nice channels to watch:
 transition: slide-up
 ---
 
-# Github
+# GitHub
 
-We use Github, but repos and secrets are not created in the web gui. Instead head to our Slack-channel **#github-at-gjensidige**
+We use GitHub, but repos and secrets are not created in the web gui. Instead head to our Slack-channel **#github-at-gjensidige**
 
 Use `/platform-github ...` to "talk" to the bot, that will open up dialogs for you to use when interacting with Github.
 
 Ask your team for naming-conventions and overview of your repos. Some use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-#team-platform "owns" our Github service, they can assist with anything.
+#team-platform "owns" our GitHub service, they can assist with anything.
 
 https://www.github.com/gjensidige/
 
