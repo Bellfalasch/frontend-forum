@@ -15,7 +15,7 @@ layout: cover
 
 # Front-end Forum
 
-## 28th of August
+## 11th of September
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -26,42 +26,10 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
-* Intro
-* Let's get all up to speed on:
-  * Accessibility
-  * Builders Core
-  * Gjensidige-stuff
-  * Other news, updates
-
----
-transition: slide-up
-layout: test
----
-
-# Quick intro
-
-<v-clicks>
-
-Welcome back from a long summer break for FEF.
-
-Hope you had a good vacation!
-
-We'll continue the same format, same time <twemoji-nine-thirty/>, same day <twemoji-calendar/>, same place <twemoji-globe-showing-europe-africa/>, same host <twemoji-man-technologist/>.
-
-## <twemoji-waving-hand/> Welcome
-
-We can happily greet three new faces in Oslo:
-
-</v-clicks>
-<v-clicks>
-
-* Welcome **Per Allan Johansson** - Sales, private
-
-* Welcome **Samuel Mukunga Bakke** - Sales, private
-
-* Welcome **Ulrik Røsby** - Claims
-
-</v-clicks>
+* Accessibility
+* Builders Core
+* Gjensidige-stuff
+* Other news, updates
 
 ---
 transition: slide-left
@@ -78,10 +46,8 @@ transition: slide-up
 
 <v-clicks depth="2">
 
-* Just before the summer, we went live with our [first take on an a11y-doc](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
-  * (I've been asked to explain that a11y is short for accessibility, "a + 11 characters + y")
-* Hoping to get some feedback, help with missing parts
-* Contains four pages: intro from Builders, WCAG-overview, tips on testing, code cheat sheet.
+* Again, [check our a11y-doc](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
+* See something missing, typo, whatnot - [create a PR](https://github.com/gjensidige/builders-core/blob/next/docs/a11y/frontend.mdx)!
 
 </v-clicks>
 <v-clicks after>
@@ -129,6 +95,8 @@ transition: slide-left
 <v-clicks after>
 
 <IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
+
+
 
 </v-clicks>
 
