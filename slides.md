@@ -42,12 +42,27 @@ layout: center
 transition: slide-up
 ---
 
-# <twemoji-wheelchair-symbol/> Accessibility-docs!
+# <twemoji-wheelchair-symbol/> Accessibility
 
-<v-clicks depth="2">
+<v-clicks>
+
+## a11y
+
+</v-clicks>
+<v-clicks after>
+
+* Loads of PRs and issues being worked on by all teams <twemoji-flexed-biceps />
+
+</v-clicks>
+<v-clicks after>
+
+## Docs!
+
+</v-clicks>
+<v-clicks after>
 
 * Again, [check our a11y-doc](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
-* See something missing, typo, whatnot - [create a PR](https://github.com/gjensidige/builders-core/blob/next/docs/a11y/frontend.mdx)!
+* See something missing, typo, whatnot - [create a PR](https://github.com/gjensidige/builders-core/blob/next/docs/a11y/frontend.mdx) <twemoji-red-heart />
 
 </v-clicks>
 <v-clicks after>
@@ -71,19 +86,18 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
+<v-clicks>
+
 ## Releases
-
-<IconsSlack/> Follow **#builders-core-announcements** for release notes!
-
-<Spacer/>
 
 ### @gjensidige/builders-components
 
+</v-clicks>
 <v-clicks depth="2">
 
-* **1.15.0** came this summer (17th of June)
-* ~~**1.15.18** is the latest (2nd of August)~~
-* **1.16.0** yesterday! **Loads of improvements!**
+* **1.15.18** is the latest of the 1.15 (2nd of August)
+* **1.16.0** came two weeks ago
+  * **Loads of improvements!**
   * Multiple `<Datepicker>` improvements
   * New `<Breadcrumbs>` components
   * And more!
@@ -94,9 +108,8 @@ transition: slide-left
 
 <v-clicks after>
 
-<IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
-
-
+* <IconsSlack/>Follow **#builders-core-announcements** for release notes!
+* <IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
 
 </v-clicks>
 
@@ -113,60 +126,25 @@ layout: center
 transition: slide-left
 ---
 
-# GitHub copilot
-
-<v-clicks depth="2">
-
-* Reminder to request it, and use it in VScode/YourTool
-  * Request access role [GitHub Team: Copilot Users](https://myaccess.microsoft.com/@Gjensidige.onmicrosoft.com#/access-packages/49fd29da-f4ad-4527-8457-7d026e1dfb24)
-* Employees will have many AI-session (workshops, hackathons, talks) throughout the year
-  * Collaboration with our partners **Itera** and **Microsoft**
-  * Meaning, all disciplines will be using more and more AI-tools
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# Figma dev-mode
-
-<v-clicks>
-
-* Before summer we did a trial on **dev mode**, with the help of 8 persons from 8 teams across Gjensidige
-* It was evaluated to not be an essential tool, but a helpful one, for some
-* So, not everyone using Figma needs it, but if you feel limited - request dev mode
-* These licences are for devs
-* If you have "full seat" (like designers), you already have dev mode
-* We got a total of 20+ licences for Dev-mode
-* Just request it from Figma and it will be up for considerations
-* Unsure? Don't need it no more? PM me as I maintain the dev-licences
-
-</v-clicks>
-
----
-transition: slide-left
----
-
 # Updated Front-end-pages
 
-Our front-end pages have been updated!
+Front-end pages adjusted slightly after last forum.
 
 <v-clicks depth="2">
 
-* More relevant links and information on the [landing page](https://www.gjensidige.builders/learn/frontend), and in the main navigation.
-* [Principles for building web applications](https://www.gjensidige.builders/community/blog/principles) (new order, new items - now 26 in total, improved texts)
-* Added some "candidate principles" to said page, things we're considering. What's your input?
-* Rewrote the page [Supported browsers](https://www.gjensidige.builders/community/blog/supported-browsers) to assist you a bit better, while also giving some sane pointers.
-* Created a brand new page dedicated to [automated testing](https://www.gjensidige.builders/community/blog/testing-principles) at Gjensidige, since this has been asked about for a while. With this being a new page, we're eager to hear your feedback
-  * _Thank you Katarina Matysova for valuable feedback during writing._
-* Updated the [universal design for developers](https://www.gjensidige.builders/learn/universal-design/code) page, refreshing some tips, and pointing readers to the brand new [accessibility guidelines in Storybook](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about) instead.
+* [Principles for building web applications](https://www.gjensidige.builders/community/blog/principles)
+  * Added a bullet on "Consider [Preact](https://preactjs.com/)" (smaller and faster), used by Team Builders.
+  * State-paragraph was missed, got an update mentioning [Zustand](https://zustand-demo.pmnd.rs/) and Valtio.
+* [Principles on Automated testing](https://www.gjensidige.builders/community/blog/testing-principles)
+  * Remove emphasis on Cypress, put [Playwright](https://playwright.dev/) in front.
+  * Also worth mentioning [Puppeteer](https://pptr.dev/)
+  * The choice is not given, they do close to same things, differently
 
 </v-clicks>
 
 <v-clicks after>
 
-All changes are based on discussions, questions, comments, and requests, made by *you* - the community.
+Thanks for feedback! Keep it coming!
 
 </v-clicks>
 
@@ -185,13 +163,15 @@ transition: slide-left
 
 # <twemoji-recycling-symbol/> Worth sharing
 
-## Smaller Faro tracing
+## CSS > SCSS
 
-<IconsStar/> Henrik Lillengen
+<IconsStar/> Per Allan Johansson
 
-If anyone want tracing in grafana, but dont want to pull down the huge @grafana/faro-web-tracing -lib (think it increases our bundle size with about 7% in a already huge app), I have an example implementation here where i'm doing tracing manually
+As vanilla CSS grows stronger, and Builders Core-support is going the same way, replacing as much Sass as possible with CSS makes sense.
 
-<IconsWebsite/> https://github.com/gjensidige/salg-core/pull/365/files
+Still some issues with nesting, &, mixins, etc, to fully remove Sass. So handle with care!
+
+<IconsWebsite/> https://github.com/gjensidige/salg-nettbutikk/pull/5754
 
 ---
 transition: slide-left
@@ -199,19 +179,15 @@ transition: slide-left
 
 # <twemoji-recycling-symbol/> Worth sharing
 
-## Unified Session ID
+## postcss-nesting
 
-<IconsStar/> Sigurd Falk (with help from Henrik)
+<IconsStar/> Maria Lilleberg Holm
 
-Several apps generate a Session ID when a user is navigating around on our web portals.
+With this package used in your Vite-config, you can use native CSS nesting.
 
-This makes it hard to track user journeys across our apps and across open and logged in pages.
+This work shows them removing less all together (and old Grid).
 
-They came up with this solution everyone can use, as a best practice for session ids:
-<IconsWebsite/> https://github.com/gjensidige/service/tree/main/packages/client-identification 
-
-Example on consuming it:
-<IconsWebsite/> https://github.com/gjensidige/service-oversikt-forsikring-privat/pull/33/files
+<IconsWebsite/> https://github.com/gjensidige/builders-ir-download-center/pull/95/files
 
 ---
 transition: slide-left
@@ -224,21 +200,17 @@ layout: center
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> CSS5 ... five!
-
-**Let's talk about CSS5**
+# <twemoji-cherry-blossom/> oxc
 
 <v-clicks>
 
-CSS3 came out in ...
+Large, slow and hard-to-maintain ... tired of **eslint** and **prettier** (390 hits)?
 
-2009!
+[BiomeJS](https://biomejs.dev/) (6 repoes) wasn't for you? Maybe [oxc](https://oxc.rs/) (0 repoes) and their **oxlint** is!
 
-It has since grown a lot. But with this liquid version, it is hard to know if you are doing CSS3 anno 2009, or CSS3 anno 2024, which are vastly different.
+Built on Rust, it is crazy fast. And it does both linting and formatting.
 
-Big tech-voices are starting to ask for a new CSS-version, and they want to jump directly to 5.
-
-<IconsWebsite/> [Debate started on CSS5](https://www.smashingmagazine.com/2024/08/time-to-talk-about-css5/)
+<img src="/images/2024-09-11/oxlint.png" class="rounded shadow" style="max-width:75%;" alt="" />
 
 </v-clicks>
 
@@ -246,48 +218,94 @@ Big tech-voices are starting to ask for a new CSS-version, and they want to jump
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> React 19
+# <twemoji-cherry-blossom/> Zustand
 
-Still in beta, no news since April/May.
+## Want less pain in state-handling?
 
-**What's it about?**
+Do you have pains with state, especially with **Redux / Redux Toolkit**? (80+ repoes using it)
 
-Moving more logic to the server (components and actions), making it more of a fullstack framework than before. Introducing compiler. And more.
+Two repoes already using [Zustand](https://zustand-demo.pmnd.rs/).
 
-<IconsWebsite/> [Official React 19 website](https://19.react.dev/)
+Zustand is lighter, faster, and many say [way more easy to work with](https://zustand.docs.pmnd.rs/getting-started/comparison#render-optimization-(vs-redux)) = less pain.
 
-_Recommendation: Don't be early adopters, but keep an eye on it. It will - if fully utilized - change a lot on how you structure and code your apps._
+This spring it [passed Redux-toolkit in downloads](https://npm-stat.com/charts.html?package=zustand&package=jotai&package=valtio&package=%40reduxjs%2Ftoolkit&package=recoil).
+
+1. Create a `store.ts` for [your state and their actions](https://zustand.docs.pmnd.rs/guides/updating-state)
+2. Import the store, and just use it - no context providers
+3. The rest just works
+
+---
+transition: slide-left
+layout: two-cols
+---
+
+# <twemoji-cherry-blossom/> Zod
+
+[Zod](https://zod.dev/) is being adopted by some teams (6 repoes so far).
+
+It takes the schema type-checking to next level (beyond TypeScript) -  Define type of fields in a form, say what data to expect, required/optional, and more.
+
+Zod takes care of validating it for you, throwing errors, messages, and more.
+
+Full of utils/libs that can convert to from TS to Zod, for instance.
+
+https://github.com/gjensidige/salg-nettbutikk/pull/5764/files
+
+::right::
+
+```js
+import { z } from 'zod';
+
+const ansatteSchema = z.object({
+  intent: z.literal('calculate'),
+  antallAnsatte: z.coerce.number().max(10),
+  arbeidsdyktighet: z
+    .object({
+      isWorking: z.union([z.literal('EVERYONE'), z.literal('SOME')]),
+      inactiveEmployees: z.coerce.number().min(1).optional(),
+    })
+    .refine(
+      (data) =>
+        data.isWorking !== 'SOME' || data.inactiveEmployees !== undefined,
+      {
+        path: ['inactiveEmployees'],
+      },
+    ),
+  ansatte: z
+    .array(
+      z.object({
+        fodselsnummer: z.string().refine((val) => validateSsn(val)),
+        firstName: z.string(),
+        lastName: z.string(),
+      }),
+    )
+    .nonempty(),
+});
+```
 
 ---
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> Extensions
+# <twemoji-cherry-blossom/> GitHub copilot
 
-## VSCode: CSS-converter
+<v-clicks depth="3">
 
-Convert between `font-size: 12px;` (CSS-style) and `fontSize: "12px"` (JS-style) with a click.
+* Reminder to request [GitHub Team: Copilot Users](https://myaccess.microsoft.com/@Gjensidige.onmicrosoft.com#/access-packages/49fd29da-f4ad-4527-8457-7d026e1dfb24), and use it in VScode/YourTool
+  * Also install both copilot and the chat extensions
+* As Microsoft showed us two weeks ago, many different features:
+  * As-you-type suggestions in code, relevant to that file, complete with `TAB`
+    * Write the name of a function or const and it will try and generate code for you
+    * Or just write a comment or two
+  * `Cmd + Shift + I` to chat within your code
+  * Current tab, and tab next to it, filename, are super important context for the AI
+  * Using `@workspace` to address entire list of files open
+  * `/explain` something, or `/new` to scaffold new files
+  * `Cmd + I` to open a chat within your VSCode Terminal
+  * And the side extension for chatting
+  * Improve your prompt, or give more context and instructions = better results
 
-<IconsWebsite/> [CSS Converter](https://marketplace.visualstudio.com/items?itemName=Lakkannawalikar.css-converter#css-converter)
-
-<img src="/images/2024-08-28/demo-kebab-camel.gif" class="rounded shadow" style="max-width:75%;" alt="" />
-
----
-transition: slide-left
----
-
-# <twemoji-cherry-blossom/> Worth reading
-
-## Browser baseline
-
-* <IconsWebsite/> [CSS font-size-adjust is now in Baseline](https://web.dev/blog/font-size-adjust)
-* <IconsWebsite/> [Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API#browser_compatibility)
-* <IconsWebsite/> [Popover API 101](https://www.amitmerchant.com/popover-api-101/)
-
-## Other
-
-* <IconsWebsite/> [Third-party cookies have to go](https://www.w3.org/blog/2024/third-party-cookies-have-got-to-go/)
-* <IconsWebsite/> [Perfect Bug Report](https://www.perfectbugreport.io)
+</v-clicks>
 
 ---
 transition: slide-up
@@ -302,23 +320,23 @@ layout: two-cols-header
 18.3.1 - [out since April](https://github.com/facebook/react/releases)
 
 **[Vite](https://vitejs.dev/)**  
-5.4.2 - [5.4 early August](https://github.com/vitejs/vite/blob/v5.4.2/packages/vite/CHANGELOG.md)
+5.4.3 - [Last week](https://github.com/vitejs/vite/blob/v5.4.3/packages/vite/CHANGELOG.md)
 
 **[Vitest](https://vitest.dev/)**  
 2.0.5 - [2.0 is out of beta, new beta: 2.1](https://github.com/vitest-dev/vitest/releases)
 
-**[Biome](https://biomejs.dev/)**  
+**[BiomeJS](https://biomejs.dev/)**  
 1.8.3
 
 ::right::
 
 ## Node.JS
 <IconsWebsite/> https://nodejs.org/en
-* 20.17.0 LTS - latest 22.7.0
+* 20.17.0 LTS - latest 22.8.0
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
-* 1.1.26
+* 1.1.27
 
 ---
 transition: slide-up

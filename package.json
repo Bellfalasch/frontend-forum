@@ -22,6 +22,6 @@
 		"@iconify-json/la": "^1.2.0",
 		"@iconify-json/logos": "^1.2.0",
 		"@iconify-json/twemoji": "^1.2.0",
-		"playwright-chromium": "^1.46.1"
+		"playwright-chromium": "^1.47.0"
 	}
 }
