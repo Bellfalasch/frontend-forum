@@ -28,8 +28,8 @@ transition: slide-up
 
 * Accessibility
 * Builders Core
-* Gjensidige-stuff
-* Other news, updates
+* Worth sharing
+* Inspiration, etc
 
 ---
 transition: slide-left
@@ -171,7 +171,9 @@ As vanilla CSS grows stronger, and Builders Core-support is going the same way, 
 
 Still some issues with nesting, &, mixins, etc, to fully remove Sass. So handle with care!
 
-<IconsWebsite/> https://github.com/gjensidige/salg-nettbutikk/pull/5754
+What you don't see: he have begun using code AI to assist with this task. And he breaks it into smaller PRs, not doing all the migration in one big chunk, but smaller diggestable pieces, one by one, fixing issues as they move.
+
+<IconsWebsite/> [Example PR of one of the jobs](https://github.com/gjensidige/salg-nettbutikk/pull/5754)
 
 ---
 transition: slide-left
@@ -183,11 +185,88 @@ transition: slide-left
 
 <IconsStar/> Maria Lilleberg Holm
 
-With this package used in your Vite-config, you can use native CSS nesting.
+With this package used in your Vite-config, you can use native CSS nesting, ironing out all the issues some smaller browsers still have with it.
 
-This work shows them removing less all together (and old Grid).
+This work allowed them to remove **less** all together (and old Core's Grid).
 
-<IconsWebsite/> https://github.com/gjensidige/builders-ir-download-center/pull/95/files
+<IconsWebsite/> [Example PR on app running on gjensidige.com](https://github.com/gjensidige/builders-ir-download-center/pull/95/files)
+
+---
+transition: slide-left
+---
+
+# <twemoji-recycling-symbol/> Worth sharing
+
+## Big rewrite of claims chat and follow
+
+<IconsStar/> Team Newton
+
+The Gjensidige famous "slow chat" is getting a visual and technical lift.
+
+Deleted 24,000 lines of code and written 12,300 new ones. Improved stack.
+
+<IconsWebsite/> [Read more #team-claims](https://gjensidige.slack.com/archives/CT52GULG2/p1725628881124629)
+
+---
+transition: slide-left
+---
+
+# <twemoji-recycling-symbol/> Worth sharing
+
+## Preact is faster and smaller than React
+
+<IconsStar/> Team Builders
+
+All our public facing websites run on the CMS **Enonic XP** and what is called the **Builders Platform**.
+
+Builders Platform fully uses our design system, just like other teams' apps.
+
+Some time ago the team decided that they don't need the full React, it contains to many features they never use, it supports too much legacy code they don't need.
+
+So they tossed it out and went for Preact (with the React compat-package) instead. Without losing anything but a lot of build-time and bundle-size.
+
+So far they are [the first and only team using Preact](https://github.com/search?q=org%3Agjensidige+%22preact%22+path%3Apackage.json&type=code).
+
+* <IconsWebsite/> [Check the repo out](https://github.com/gjensidige/builders-platform/blob/main/views-api/package.json)
+* <IconsWebsite/> [Read on migrating React to Preact](https://preactjs.com/guide/v10/switching-to-preact/)
+
+---
+transition: slide-left
+layout: two-cols
+---
+
+# <twemoji-recycling-symbol/> Worth sharing
+
+## You can "draw" in readme.md!
+
+Markdown for GitHub has native [support for mermaid](https://mermaid.js.org/intro/getting-started.html) (that I also use in my slides). Have you used it?
+
+Create pie charts, db-design, flow-charts, whatnot.
+
+<img src="/images/2024-09-11/mermaid.png" class="rounded shadow" style="max-width:95%;" alt="" />
+
+::right::
+
+```js
+\`\`\`mermaid
+sequenceDiagram
+    participant Enonic XP
+    participant SSR
+    participant React
+    participant Storybook
+    Enonic XP->>Enonic XP: Data is stored in XP
+    Enonic XP->>SSR: Controller specifies Component name
+    Enonic XP->>SSR: Controller passes data as props
+    SSR->>React: Node packages of component is used
+    React->>SSR: Pre-rendered component is returned
+    SSR->>SSR: Server stores all needed files
+    Storybook->>React: Uses components directly
+    SSR->>Enonic XP: Returns path to all files to XP
+    Enonic XP->>Enonic XP: Returns HTML, JS and CSS to browser
+\`\`\`
+```
+
+[See example usage](https://github.com/gjensidige/builders-platform/blob/next/README.md)
 
 ---
 transition: slide-left
@@ -195,6 +274,23 @@ layout: center
 ---
 
 # <twemoji-rolled-up-newspaper/> News, <twemoji-cherry-blossom/> Inspiration, <twemoji-package/> Updates
+
+---
+transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> Cloud-less API-testing
+
+Using **Postman** and **Insomnia** for API-testing?
+
+They're are storing a lot in the cloud, and they like it.
+
+**Bruno** stores all as code, in your own repo, for the entire teams joy and benefit.
+
+<IconsWebsite/> [Use Bruno](https://www.usebruno.com/)!
+<Spacer/>
+
+<IconsStar/> Thanks **Magnus Kjelland** for the tip!
 
 ---
 transition: slide-left
@@ -249,7 +345,7 @@ Zod takes care of validating it for you, throwing errors, messages, and more.
 
 Full of utils/libs that can convert to from TS to Zod, for instance.
 
-https://github.com/gjensidige/salg-nettbutikk/pull/5764/files
+<IconsWebsite/> [Example PR by Stine](https://github.com/gjensidige/salg-nettbutikk/pull/5764/files)
 
 ::right::
 
@@ -292,13 +388,12 @@ transition: slide-left
 <v-clicks depth="3">
 
 * Reminder to request [GitHub Team: Copilot Users](https://myaccess.microsoft.com/@Gjensidige.onmicrosoft.com#/access-packages/49fd29da-f4ad-4527-8457-7d026e1dfb24), and use it in VScode/YourTool
-  * Also install both copilot and the chat extensions
+  * Also install both [copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and the [chat extensions](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 * As Microsoft showed us two weeks ago, many different features:
   * As-you-type suggestions in code, relevant to that file, complete with `TAB`
-    * Write the name of a function or const and it will try and generate code for you
-    * Or just write a comment or two
+    * Write the name of a **function**, **const**, or a **comment**, and it will try and generate code for you
   * `Cmd + Shift + I` to chat within your code
-  * Current tab, and tab next to it, filename, are super important context for the AI
+  * Current tab, tab next to it, other tabs, filename = super important context for the AI
   * Using `@workspace` to address entire list of files open
   * `/explain` something, or `/new` to scaffold new files
   * `Cmd + I` to open a chat within your VSCode Terminal
