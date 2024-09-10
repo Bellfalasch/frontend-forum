@@ -296,6 +296,25 @@ They're are storing a lot in the cloud, and they like it.
 transition: slide-left
 ---
 
+# <twemoji-cherry-blossom/> Cleaning inspiration?
+
+## Killing moment.js
+
+For the last **four years**, [not even developers of moment.js want you to use moment](https://momentjs.com/docs/#/-project-status/)!
+
+<img src="/images/2024-09-11/moment.png" class="rounded shadow" style="max-width:95%;" alt="" />
+
+* Gjensidige [still have 75 uses](https://github.com/search?q=org%3Agjensidige+%22%5C%22moment%5C%22%3A%22+path%3Apackage.json++NOT+is%3Aarchived&type=code) of `moment.js` (and one of these on `moment-mini.js`).
+
+* [I did a mini-cleanup](https://github.com/gjensidige/claims-follow/pull/937) in `claims-follow`. It used `date-fns`, `moment-mini`, and a lot of string-based custom date functions. Replaced it all with [date-fns](https://date-fns.org/), for sanity.
+
+* _Not fan of `date-fns`? Try [luxon](https://moment.github.io/luxon/#/) or [day.js](https://day.js.org/) ... or just [go vanilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)!_
+
+
+---
+transition: slide-left
+---
+
 # <twemoji-cherry-blossom/> oxc
 
 <v-clicks>
