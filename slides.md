@@ -33,6 +33,90 @@ transition: slide-up
 
 ---
 transition: slide-left
+---
+
+# Gjensidige
+
+## React at Gjensidige
+
+Remember the research in May? **Let's compare with today!**
+
+So, using GitHub search, I get some data across our repoes. The search is textual, requires there is a `package.json` or more in the repo.
+
+Will count the rare config `"react": "17.x || 18.x",` as React 17.
+
+All searches excludes archived repoes.
+
+---
+transition: slide-left
+layout: two-cols
+---
+
+# Gjensidige
+
+## React in May
+
+* Meassured on the **6th of May**.
+* We found `257` repoes
+* Over 60% are on React 18.2 (double to 17)
+* No one are on React 14
+* Only one stuck on React 15
+
+::right::
+
+.  
+.  
+
+```mermaid
+pie showData title Gjensidige React-landscape
+    "18.*" : 152
+    "17.*" : 73
+    "16.*" : 27
+    "15.*" : 1
+```
+
+---
+transition: slide-left
+layout: two-cols
+---
+
+# Gjensidige
+
+## React in October
+
+<v-clicks>
+
+* Meassured on the **9th of October**.
+* We found `257` repoes
+* We've managed to delete/archive over 30 apps since May
+* Over **60%** are on **React 18** (over double to 17)
+* We have stuff on **React 19**!
+* **8** R17-apps gone
+* **2** R16-apps gone
+
+</v-clicks>
+
+::right::
+
+.  
+.  
+
+<v-clicks after>
+
+```mermaid
+pie showData title Gjensidige React-landscape
+    "18.*" : 145
+    "17.*" : 65
+    "16.*" : 25
+    "15.*" : 1
+```
+
+_Meassured on the 9th of October._
+
+</v-clicks>
+
+---
+transition: slide-left
 layout: center
 ---
 
