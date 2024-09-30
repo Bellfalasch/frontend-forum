@@ -87,12 +87,12 @@ layout: two-cols
 <v-clicks>
 
 * Meassured on the **9th of October**.
-* We found `245` repoes
-* We've managed to delete/archive over **10 apps** since May
+* We found `224` repoes
+* We've managed to delete/archive over **30 apps** since May
 * Over **60%** are on **React 18** (over double to 17)
 * We have stuff on **React 19**!
-* **8** of React 17-apps are gone
-* **2** of React 16-apps are gone
+* **9** of React 17-apps are gone <twemoji-party-popper/>
+* **2** of React 16-apps are gone <twemoji-party-popper/>
 
 </v-clicks>
 
@@ -106,8 +106,8 @@ layout: two-cols
 ```mermaid
 pie showData title Gjensidige React-landscape
     "19.*" : 2
-    "18.*" : 145
-    "17.*" : 65
+    "18.*" : 154
+    "17.*" : 64
     "16.*" : 25
     "15.*" : 1
 ```
