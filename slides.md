@@ -306,12 +306,14 @@ Here's an almost [ancient but very good article on an approach that actually wor
 
 > Clean up where you work, clean out the weeds implementing your feature, leave the rest (for now).
 
+Another good article on [what it is, and why it happens](https://netgen.io/blog/how-to-cope-with-legacy-code-and-technical-debt).
+
 ::right::
 
-**What tech debt looks like**:
-<img src="/images/2024-10-09/tech-debt.jpg" class="rounded shadow" style="max-width:65%;" alt="" />
+**Tech debt versus working in it**:
+<img src="/images/2024-10-09/tech-debt.jpg" class="rounded shadow" style="max-width:50%;float:left" alt="" /><img src="/images/2024-10-09/tech-debt-workaround.jpg" class="rounded shadow" style="max-width:50%;" alt="" />
 
-**A way of approaching it**:
+**A better way of approaching it**:
 <img src="/images/2024-10-09/refactoring.jpg" class="rounded shadow" style="max-width:65%;" alt="" />
 
 ---
