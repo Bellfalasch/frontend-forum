@@ -311,7 +311,7 @@ layout: two-cols-header
 2.0.5 - [2.0 is out of beta, new beta: 2.1](https://github.com/vitest-dev/vitest/releases)
 
 **[BiomeJS](https://biomejs.dev/)**  
-1.8.3
+1.9.0
 
 ::right::
 
