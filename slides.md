@@ -33,6 +33,15 @@ transition: slide-up
 
 ---
 transition: slide-left
+layout: center
+---
+
+# Gjensidige updates
+
+<LogoGjensidige/>
+
+---
+transition: slide-left
 ---
 
 # Gjensidige
@@ -118,8 +127,6 @@ pie showData title Gjensidige React-landscape
 transition: slide-left
 ---
 
-# Gjensidige
-
 ```mermaid
 pie showData title React, detailed
     "19.*" : 2
@@ -147,38 +154,25 @@ transition: slide-left
 layout: center
 ---
 
-# Accessibility
+# <twemoji-wheelchair-symbol/> Accessibility
 
 ---
 transition: slide-up
 ---
 
-# <twemoji-wheelchair-symbol/> Accessibility
+# <twemoji-wheelchair-symbol/> A11y docs
 
 <v-clicks>
 
-## a11y
+* Champions are now tasked at improving [our docs](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
+* Make sure to ask questions and throw ideas out in the open: **#accessibility**
+* One change is [the new "a11y hub" on gjensidige.builders](https://www.gjensidige.builders/learn/accessibility), our own "Learn" hub
+* We will create some new guides for teams testing and/or prioritizing tasks
 
 </v-clicks>
 <v-clicks after>
 
-* Loads of PRs and issues being worked on by all teams <twemoji-flexed-biceps />
-
-</v-clicks>
-<v-clicks after>
-
-## Docs!
-
-</v-clicks>
-<v-clicks after>
-
-* Again, [check our a11y-doc](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
-* See something missing, typo, whatnot - [create a PR](https://github.com/gjensidige/builders-core/blob/next/docs/a11y/frontend.mdx) <twemoji-red-heart />
-
-</v-clicks>
-<v-clicks after>
-
-<img src="/images/2024-08-28/a11y-guide.png" class="rounded shadow" style="max-width:85%;" alt="" />
+<img src="/images/2024-10-09/a11y-testing.png" class="rounded shadow" style="max-width:75%;" alt="" />
 
 </v-clicks>
 
@@ -206,29 +200,33 @@ transition: slide-left
 </v-clicks>
 <v-clicks depth="2">
 
-* **1.16.1** came three weeks ago
+* **1.16.1** - three weeks ago
   * **Loads of improvements!**
-  * Make sure to not run 1.16.0 though
+  * Potential breaking change in `ComboBox`
+  * Make sure to *not* run 1.16.0 though
 
-<Spacer/>
+### @gjensidige/builders-icons
 
-</v-clicks>
+* **1.6.0** - three weeks ago
+* *Breaking*, changes names on multiple icons
 
-<v-clicks after>
-
-* <IconsSlack/>Follow **#builders-core-announcements** for release notes!
-* <IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
+### @gjensidige/builders-tokens@1.0.15
+### @gjensidige/core-navigation@3.6.20
 
 </v-clicks>
 
 ---
 transition: slide-left
-layout: center
 ---
 
-# Gjensidige updates
+# <twemoji-notebook-with-decorative-cover/> Builders Core
 
-<LogoGjensidige/>
+<v-clicks>
+
+* <IconsSlack/>Follow **#builders-core-announcements** for release notes!
+* <IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -259,6 +257,15 @@ layout: center
 ---
 
 # <twemoji-rolled-up-newspaper/> News, <twemoji-cherry-blossom/> Inspiration, <twemoji-package/> Updates
+
+---
+transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> Reading tips
+
+* [Ever in need to win an argument for your a11y-efforts?](https://www.smashingmagazine.com/2024/06/how-make-strong-case-accessibility/)
+* [We don't have many images, but in general web, a few tips on defering their loading](https://www.debugbear.com/blog/defer-offscreen-images)
 
 ---
 transition: slide-left
