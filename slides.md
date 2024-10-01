@@ -165,7 +165,7 @@ transition: slide-up
 <v-clicks>
 
 * Champions are now tasked at improving [our docs](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
-* Make sure to ask questions and throw ideas out in the open: **#accessibility**
+* Make sure to ask questions and throw ideas out in the open: <IconsSlack/>**#accessibility**
 * One change is [the new "a11y hub" on gjensidige.builders](https://www.gjensidige.builders/learn/accessibility), our own "Learn" hub
 * We will create some new guides for teams testing and/or prioritizing tasks
 
@@ -262,15 +262,6 @@ layout: center
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> Reading tips
-
-* [Ever in need to win an argument for your a11y-efforts?](https://www.smashingmagazine.com/2024/06/how-make-strong-case-accessibility/)
-* [We don't have many images, but in general web, a few tips on defering their loading](https://www.debugbear.com/blog/defer-offscreen-images)
-
----
-transition: slide-left
----
-
 # <twemoji-cherry-blossom/> Cleaning inspiration?
 
 ## Killing moment.js
@@ -297,7 +288,42 @@ transition: slide-left
 
 ### For Sweden
 
-* [I then tried to repeat this for Sweden](https://github.com/gjensidige/sweden-parts/pull/558) in `sweden-parts` (a mono-repo). It used `date-fns`, `moment`, and a lot of string-based custom date functions. Replaced a lot of moment ... until I found that it is also passed on to shared libraries in it's entirety, so had to keep it for now.
+* [I then tried to repeat this for Sweden](https://github.com/gjensidige/sweden-parts/pull/558) in `sweden-parts` (a mono-repo). It used `date-fns`, `moment`, and a lot of string-based custom date functions.
+  *  Replaced a lot of moment ... 
+  *  ... until I found that it is required by dependencies, so had to keep it for now.
+  *  Killed `date-fns` though, and a localization package for moment.
+
+---
+transition: slide-left
+layout: two-cols
+---
+
+# <twemoji-cherry-blossom/> Tech debt
+
+Refactoring, and working with tech debt is close to never in the backlog.
+
+Here's an almost [ancient but very good article on an approach that actually works](https://ronjeffries.com/xprog/articles/refactoring-not-on-the-backlog/). Written by no other than Ron Jeffries, one of the founders of eXtreme Programming, and more.
+
+> Clean up where you work, clean out the weeds implementing your feature, leave the rest (for now).
+
+::right::
+
+**What tech debt looks like**:
+<img src="/images/2024-10-09/tech-debt.jpg" class="rounded shadow" style="max-width:65%;" alt="" />
+
+**A way of approaching it**:
+<img src="/images/2024-10-09/refactoring.jpg" class="rounded shadow" style="max-width:65%;" alt="" />
+
+---
+transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> Reading tips
+
+* [Ever in need to win an argument for your a11y-efforts?](https://www.smashingmagazine.com/2024/06/how-make-strong-case-accessibility/)
+* [We don't have many images, but in general web, a few tips on defering their loading](https://www.debugbear.com/blog/defer-offscreen-images)
+* [Improve performance of pages using content-visibility](https://nolanlawson.com/2024/09/18/improving-rendering-performance-with-css-content-visibility/) (more [on web.dev](https://web.dev/articles/content-visibility))
+* [Native CSS Masonry working draft by W3C](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)
 
 ---
 transition: slide-up
