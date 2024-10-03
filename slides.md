@@ -302,20 +302,6 @@ layout: center
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> Deno 2
-
-Developers of Node got tired some years ago and broke out, started on the anagram Deno.
-
-They're now working on 2.0.
-
-<IconsWebsite/> [Release Candidate notes on Deno 2](https://deno.com/blog/v2.0-release-candidate)
-
-(None at Gjensidige is currently using Deno)
-
----
-transition: slide-left
----
-
 # <twemoji-rolled-up-newspaper/> CSS Grid Level 3 spec
 
 Native CSS "Masonry", first public working draft by W3C.
@@ -331,7 +317,16 @@ transition: slide-left
 
 # <twemoji-rolled-up-newspaper/> Misc news
 
-* [W3C organization turned 30 years old two weeks ago](https://www.youtube.com/watch?v=0TfUBuIZkmQ)
+<v-clicks>
+
+* <IconsWebsite/> [W3C organization turned 30 years old two weeks ago](https://www.youtube.com/watch?v=0TfUBuIZkmQ)
+* <IconsWebsite/> [VoidZero Inc is born, will own and drive Vite, Vitest, oxc and Rolldown](https://voidzero.dev/posts/announcing-voidzero-inc)
+* <IconsWebsite/> [Deno 2 Release Candidate out not long ago](https://deno.com/blog/v2.0-release-candidate)
+* <IconsWebsite/> [BiomeJS turned 1 years old, release 1.9](https://biomejs.dev/blog/biome-v1-9/)
+* <IconsWebsite/> [ExpressJS, version 5 just around the corner](https://expressjs.com/en/guide/migrating-5.html)
+* <IconsWebsite/> [Stae of HTML survey, check it out](https://survey.devographics.com/en-US/survey/state-of-html/2024)
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -415,10 +410,14 @@ transition: slide-left
 
 # <twemoji-cherry-blossom/> Reading tips
 
+<v-clicks>
+
 * [Ever in need to win an argument for your a11y-efforts?](https://www.smashingmagazine.com/2024/06/how-make-strong-case-accessibility/)
 * [We don't have many images, but in general web, a few tips on defering their loading](https://www.debugbear.com/blog/defer-offscreen-images)
 * [Improve performance of pages using content-visibility](https://nolanlawson.com/2024/09/18/improving-rendering-performance-with-css-content-visibility/) (more [on web.dev](https://web.dev/articles/content-visibility))
 * [CSS so big even Wes Bos just found out about display: contents](https://www.instagram.com/p/DAbU5YoqMux/)
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -429,23 +428,33 @@ layout: two-cols-header
 
 ::left::
 
-**[React](https://react.dev)**  
-18.3.1 - [out since April](https://github.com/facebook/react/releases)
-
 **[Vite](https://vitejs.dev/)**  
-5.4.3 - [Last week](https://github.com/vitejs/vite/blob/v5.4.3/packages/vite/CHANGELOG.md)
+5.4.8 - [Last week](https://github.com/vitejs/vite/blob/v5.4.8/packages/vite/CHANGELOG.md)
 
 **[Vitest](https://vitest.dev/)**  
-2.0.5 - [2.0 is out of beta, new beta: 2.1](https://github.com/vitest-dev/vitest/releases)
+2.1.2 - [2.1 is out of beta](https://github.com/vitest-dev/vitest/releases)
 
-**[BiomeJS](https://biomejs.dev/)**  
-1.9.0
+**[Prettier](https://prettier.io/)**  
+3.3.3 - [latest stable](https://prettier.io/versions)
+
+**[Eslint](https://eslint.org/)**  
+9.11.1 - [v8 just hit EOL](https://eslint.org/version-support/)
+
+**[TypeScript](https://www.typescriptlang.org/)**  
+5.6.2 - [5.6 out a few weeks back](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/)
+
+**[clsx](https://github.com/lukeed/clsx?tab=readme-ov-file#readme)**  
+2.1.1 - Same old clsx, still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames`
 
 ::right::
 
+## React  
+<IconsWebsite/> https://react.dev
+* 18.3.1 - [v19 still in beta](https://19.react.dev/)
+
 ## Node.JS
 <IconsWebsite/> https://nodejs.org/en
-* 20.17.0 LTS - latest 22.8.0
+* 20.17.0 LTS - latest 22.9.0
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
