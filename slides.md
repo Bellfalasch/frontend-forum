@@ -26,10 +26,10 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
+* React stats, revisited
 * Accessibility
 * Builders Core
-* Worth sharing
-* Inspiration, etc
+* Inspiration
 
 ---
 transition: slide-left
@@ -67,7 +67,7 @@ layout: two-cols
 
 * Meassured on the **6th of May**.
 * We found `257` repoes
-* Over 60% are on React 18.2 (double to 17)
+* 60% are on React 18 (double to 17)
 * No one are on React 14
 * Only one stuck on React 15
 
@@ -149,6 +149,34 @@ pie showData title React, detailed
     "0.14.2" : 1
 ```
 
+
+---
+transition: slide-left
+---
+
+# Gjensidige
+
+## Agile ...
+
+<v-clicks>
+
+**Oh noe, not here too**
+
+But just a short official word, since many have asked me in person:
+
+</v-clicks>
+<v-clicks after>
+
+* My role lives on
+* It changes name to reflect the `guild` lingo
+* Front-end forum, and all my other forums, will remain unchanged
+* I will get a new manager and will be placed inside the new **Designsystem Team**
+* Most likely nobody will notice any change at all
+* But I hope we can get more guild-synergies with other guilds that will come
+* That's all
+
+</v-clicks>
+
 ---
 transition: slide-left
 layout: center
@@ -167,6 +195,7 @@ transition: slide-up
 * Champions are now tasked at improving [our docs](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
 * Make sure to ask questions and throw ideas out in the open: <IconsSlack/>**#accessibility**
 * One change is [the new "a11y hub" on gjensidige.builders](https://www.gjensidige.builders/learn/accessibility), our own "Learn" hub
+* Methodology department will now list a11y as an official requirement
 * We will create some new guides for teams testing and/or prioritizing tasks
 
 </v-clicks>
@@ -200,18 +229,15 @@ transition: slide-left
 </v-clicks>
 <v-clicks depth="2">
 
+* **1.16.3** - last week
+  * Misc improvements
+  * Breaking change for those using `internal="small"` variant on input
+  * Make sure to *not* run 1.16.2
+
 * **1.16.1** - three weeks ago
   * **Loads of improvements!**
   * Potential breaking change in `ComboBox`
   * Make sure to *not* run 1.16.0 though
-
-### @gjensidige/builders-icons
-
-* **1.6.0** - three weeks ago
-* *Breaking*, changes names on multiple icons
-
-### @gjensidige/builders-tokens@1.0.15
-### @gjensidige/core-navigation@3.6.20
 
 </v-clicks>
 
@@ -221,7 +247,21 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
+## More releases
+
 <v-clicks>
+
+### @gjensidige/builders-icons
+
+* **1.6.0** - three weeks ago
+* *Breaking*, changes names on multiple icons
+
+<Spacer/>
+
+### @gjensidige/builders-tokens@1.0.15
+### @gjensidige/core-navigation@3.6.20
+
+<Spacer/>
 
 * <IconsSlack/>Follow **#builders-core-announcements** for release notes!
 * <IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
@@ -262,6 +302,41 @@ layout: center
 transition: slide-left
 ---
 
+# <twemoji-rolled-up-newspaper/> Deno 2
+
+Developers of Node got tired some years ago and broke out, started on the anagram Deno.
+
+They're now working on 2.0.
+
+<IconsWebsite/> [Release Candidate notes on Deno 2](https://deno.com/blog/v2.0-release-candidate)
+
+(None at Gjensidige is currently using Deno)
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> CSS Grid Level 3 spec
+
+Native CSS "Masonry", first public working draft by W3C.
+
+* <IconsWebsite/> [The spec for CSS Grid Level 3](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)
+
+* <IconsWebsite/> [Article diving into the topic](https://css-tricks.com/css-masonry-css-grid/)
+
+
+---
+transition: slide-left
+---
+
+# <twemoji-rolled-up-newspaper/> Misc news
+
+* [W3C organization turned 30 years old two weeks ago](https://www.youtube.com/watch?v=0TfUBuIZkmQ)
+
+---
+transition: slide-left
+---
+
 # <twemoji-cherry-blossom/> Cleaning inspiration?
 
 ## Killing moment.js
@@ -295,6 +370,24 @@ transition: slide-left
 
 ---
 transition: slide-left
+---
+
+# <twemoji-cherry-blossom/> Monorepo 2.0?
+
+## Turborepo
+
+**Commercial DK** and Pavol Repka tried out the old trusted "go-to" tools `lerna` and `nx` (same thing now since nx took over lerna years ago).
+
+They failed to deliver the speed they needed.
+
+So they tried [Turborepo](https://turbo.build/repo/docs) (from Vercel) which does monorepos smarter and faster.
+
+It does rely on a remote cache mechanism, so you should be fully aware of what your app contains, does, and that it ends up in the cloud outside of Gjensidige.
+
+PS: This team is already doing *React 19* ...
+
+---
+transition: slide-left
 layout: two-cols
 ---
 
@@ -325,7 +418,7 @@ transition: slide-left
 * [Ever in need to win an argument for your a11y-efforts?](https://www.smashingmagazine.com/2024/06/how-make-strong-case-accessibility/)
 * [We don't have many images, but in general web, a few tips on defering their loading](https://www.debugbear.com/blog/defer-offscreen-images)
 * [Improve performance of pages using content-visibility](https://nolanlawson.com/2024/09/18/improving-rendering-performance-with-css-content-visibility/) (more [on web.dev](https://web.dev/articles/content-visibility))
-* [Native CSS Masonry working draft by W3C](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)
+* [CSS so big even Wes Bos just found out about display: contents](https://www.instagram.com/p/DAbU5YoqMux/)
 
 ---
 transition: slide-up
