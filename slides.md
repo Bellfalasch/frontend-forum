@@ -169,10 +169,10 @@ But just a short official word, since many have asked me in person:
 
 * My role lives on
 * It changes name to reflect the `guild` lingo
-* Front-end forum, and all my other forums, will remain unchanged
+* Front-end forum, and all my other forums, will remain more or less unchanged
 * I will get a new manager and will be placed inside the new **Designsystem Team**
-* Most likely nobody will notice any change at all
-* But I hope we can get more guild-synergies with other guilds that will come
+* All **Chapter Leads** will now have community-work as part of their work description
+* And I hope we can get more guild-synergies with other guilds that will come
 * That's all
 
 </v-clicks>
@@ -324,7 +324,12 @@ transition: slide-left
 * <IconsWebsite/> [Deno 2 Release Candidate out not long ago](https://deno.com/blog/v2.0-release-candidate)
 * <IconsWebsite/> [BiomeJS turned 1 years old, release 1.9](https://biomejs.dev/blog/biome-v1-9/)
 * <IconsWebsite/> [ExpressJS, version 5 just around the corner](https://expressjs.com/en/guide/migrating-5.html)
-* <IconsWebsite/> [Stae of HTML survey, check it out](https://survey.devographics.com/en-US/survey/state-of-html/2024)
+* <IconsWebsite/> [State of HTML survey, check it out](https://survey.devographics.com/en-US/survey/state-of-html/2024)
+* <IconsWebsite/> [React Router annonuces pre-release of v7, will merge with Remix](https://reactrouter.com/dev/guides)
+* <IconsWebsite/> [Evan You announce VoidZero Inc, combining the best JS-tools](https://github.com/voidzero-dev/)
+* <IconsWebsite/> [Evan You announce Rolldown (Rollup competitor) pushing for being done](https://rolldown.rs/)
+* <IconsWebsite/> [Legal battle between WordPress and WP Engine](https://automattic.com/2024/10/03/meritless/)
+* <IconsWebsite/> [OpenAI shifts from Next.JS to Remix for their website](https://dev.to/vuelancer/openais-transition-from-nextjs-to-remix-a-deep-dive-3dpl)
 
 </v-clicks>
 
@@ -412,10 +417,13 @@ transition: slide-left
 
 <v-clicks>
 
-* [Ever in need to win an argument for your a11y-efforts?](https://www.smashingmagazine.com/2024/06/how-make-strong-case-accessibility/)
-* [We don't have many images, but in general web, a few tips on defering their loading](https://www.debugbear.com/blog/defer-offscreen-images)
-* [Improve performance of pages using content-visibility](https://nolanlawson.com/2024/09/18/improving-rendering-performance-with-css-content-visibility/) (more [on web.dev](https://web.dev/articles/content-visibility))
-* [CSS so big even Wes Bos just found out about display: contents](https://www.instagram.com/p/DAbU5YoqMux/)
+* <IconsWebsite/> [Ever in need to win an argument for your a11y-efforts?](https://www.smashingmagazine.com/2024/06/how-make-strong-case-accessibility/)
+* <IconsWebsite/> [We don't have many images, but in general web, a few tips on defering their loading](https://www.debugbear.com/blog/defer-offscreen-images)
+* <IconsWebsite/> [Improve performance of pages using content-visibility](https://nolanlawson.com/2024/09/18/improving-rendering-performance-with-css-content-visibility/) (more [on web.dev](https://web.dev/articles/content-visibility))
+* <IconsWebsite/> [CSS so big even Wes Bos just found out about display: contents](https://www.instagram.com/p/DAbU5YoqMux/)
+* <IconsWebsite/> [Guide to everything-Anchors in CSS](https://css-tricks.com/css-anchor-positioning-guide/)
+* <IconsWebsite/> [Kent C. Dodds' cheat sheet for React 19](https://www.epicreact.dev/react-19-cheatsheet)
+* <IconsWebsite/> [Article on refactoring, and when it can be bad](https://www.builder.io/blog/good-vs-bad-refactoring)
 
 </v-clicks>
 
@@ -444,7 +452,7 @@ layout: two-cols-header
 5.6.2 - [5.6 out a few weeks back](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/)
 
 **[clsx](https://github.com/lukeed/clsx?tab=readme-ov-file#readme)**  
-2.1.1 - Same old clsx, still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames`
+2.1.1 - Same clsx, still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames` ([50 repoes](https://github.com/search?q=org%3Agjensidige+%22%5C%22classnames%5C%22%3A+%5C%22%5E%22+path%3Apackage.json++NOT+is%3Aarchived&type=code))
 
 ::right::
 
