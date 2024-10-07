@@ -295,13 +295,13 @@ transition: slide-left
 </v-clicks>
 <v-clicks after>
 
-For [their commercial DK apps repo](https://github.com/gjensidige/commercial-dk-apps) they tried the old trusted "go-to" tools `lerna` and `nx` (same thing now since nx took over lerna years ago).
+For [their commercial DK apps repo](https://github.com/gjensidige/commercial-dk-apps) they tried the old trusted "go-to" tools `lerna` and `nx` (close to same thing since nx took over lerna years ago).
 
 This failed to deliver the speed and size they needed. It also did a lot they didn't need.
 
-So they tried [Turborepo](https://turbo.build/repo/docs) (from Vercel) which does monorepos smarter and faster and smaller (doesn't require loads of plugins etc), and works extra smooth with Vite-apps.
+So they tried [Turborepo](https://turbo.build/repo/docs) (from Vercel) which does monorepos smarter ... and faster ... and smaller (doesn't require loads of plugins etc), and works extra smooth with Vite-apps.
 
-It does rely on a remote cache-mechanism (cloud outside Gjensidige) but the repo shows how to do it without, so check this out in [their shared](https://github.com/gjensidige/commercial-denmark-reusable-workflows/tree/main/.github/workflows) `.github/`-workflows.
+It does rely on a remote cache-mechanism (cloud outside Gjensidige) but their repo shows how to do it without, so check this out in [their shared](https://github.com/gjensidige/commercial-denmark-reusable-workflows/tree/main/.github/workflows) `.github/`-workflows.
 
 PS: This team is also doing *BiomeJS*, and are already doing *React 19* ...
 
