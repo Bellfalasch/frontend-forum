@@ -283,13 +283,31 @@ transition: slide-left
 
 # <twemoji-recycling-symbol/> Worth sharing
 
-## XXX
+<v-clicks>
 
-<IconsStar/> XX
+##  Monorepo 2.0? Turborepo
 
-XXX
+</v-clicks>
+<v-clicks after>
 
-<IconsWebsite/> [Example PR of one of the jobs](https://github.com/gjensidige/salg-nettbutikk/pull/5754)
+<IconsStar/> **Commercial DK, Pavol Repka**
+
+</v-clicks>
+<v-clicks after>
+
+For [their commercial DK apps repo](https://github.com/gjensidige/commercial-dk-apps) they tried the old trusted "go-to" tools `lerna` and `nx` (same thing now since nx took over lerna years ago).
+
+This failed to deliver the speed and size they needed. It also did a lot they didn't need.
+
+So they tried [Turborepo](https://turbo.build/repo/docs) (from Vercel) which does monorepos smarter and faster and smaller (doesn't require loads of plugins etc), and works extra smooth with Vite-apps.
+
+It does rely on a remote cache-mechanism (cloud outside Gjensidige) but the repo shows how to do it without, so check this out in [their shared](https://github.com/gjensidige/commercial-denmark-reusable-workflows/tree/main/.github/workflows) `.github/`-workflows.
+
+PS: This team is also doing *BiomeJS*, and are already doing *React 19* ...
+
+PS2: [@gjensidige/service-code-quality](https://github.com/gjensidige/service/tree/main/packages/code-quality) contains a BiomeJS-config being 1:1 to service eslint config.
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -309,7 +327,6 @@ Native CSS "Masonry", first public working draft by W3C.
 * <IconsWebsite/> [The spec for CSS Grid Level 3](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)
 
 * <IconsWebsite/> [Article diving into the topic](https://css-tricks.com/css-masonry-css-grid/)
-
 
 ---
 transition: slide-left
@@ -372,21 +389,29 @@ transition: slide-left
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> The slide I thought I'd never create ...
+# <twemoji-cherry-blossom/> The slide I thought I'd never create
+
+<v-clicks>
 
 ## The state of Gjensidige package.json is ... horrible
 
-It looks like many struggle with `dependencies` and `devDependencies`
+It looks like many struggle with the basic difference between `dependencies` and `devDependencies`.
 
 ### Repeated mistakes
 
+</v-clicks>
+<v-clicks depth="2">
+
 1. Not using `devDependencies` at all, everything goes into `deps`
 2. Many repoes have same package, in both!
-  * Locally, running `npm i` installs `deps` and `devDeps`*, 
-  * In production (`NODE_ENV=production`) all `devDeps` are skipped
-  * This opens for unforseen issues
+    * Locally, running `npm i` installs `deps` *and* `devDeps`
+    * In production (`NODE_ENV=production`) all `devDeps` are ignored
+    * This opens for unforseen issues
 3. Adding same packages to both `devDeps` and `deps`, but with different versions 
-  * This will install only the highest version, but for production `devDeps` are skipped.
+    * This will install only the highest version, but for production `devDeps` are skipped.
+    * So, what is really running in production?
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -394,58 +419,64 @@ transition: slide-left
 
 # devDependencies or dependencies?
 
+## Cheat sheet
+
+<v-clicks after>
+
 * `eslint`, `estlint-*`, `prettier` - all **linting** things = `devDependencies`
 * `typescript`, `@types/*` - all **typing** in your editor = `devDependencies`
 * `vitest`, `cypress`, `playwright` - everything **testing** = `devDependencies`
-* `sass`, `loader-*` - everything **build**-releated = `devDependencies`
+* `sass`, `loader-*`, `babel`, `webpack` - everything **build**-releated = `devDependencies`
 * With a few exceptions ...
-* Unsure? Check package npm-page/docs (`--save` = deps, `--save-dev` = devDeps)
 
-## Does it matter?
+</v-clicks>
+<v-clicks after>
+
+<Spacer />
+
+### Does it matter?
+
+</v-clicks>
+<v-clicks after>
 
 * Treeshaking does a lot, hopefully, but it cannot fix everything
 * Commonly leads to confusion later, updates to the wrong package, etc
 * Higher risk of inconsistencies/bugs between localhost and production
 * Risky policy to rely on something wrong solving itself down the line
 
+</v-clicks>
+
 ---
 transition: slide-left
 ---
 
 # devDependencies or dependencies?
 
-## Fun (more sad, tbh) examples
+## More
 
-* **@types/node** is installed as a dep in over 40 repoes (180 doing it right)
-* **typescript** is installed as a dep in over 60 repoes
-* **prettier** is installed as a dep in 10 repoes
+<v-clicks>
 
-## Side note
-
-* In 2024 I would suggest avoiding `peerDependencies` all together (for your own apps).
-
-## Read more
-
+* Unsure? Check package npm-page/docs (`--save` = deps, `--save-dev` = devDeps)
+* In 2024 I would suggest avoiding `peerDependencies` for your own apps (except for react in libs).
 * <IconsWebsite/> [Stackoverflow explains this very well](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencie).
 * <IconsWebsite/> [dev.to](https://dev.to/writech/a-complete-guide-to-regular-dev-and-peer-dependencies-in-npm-57j9) (and [thousands more](https://dev.to/jha/save-and-save-dev-why-you-should-know-the-difference-j7p)) writes a blog on this.
 
----
-transition: slide-left
----
+</v-clicks>
+<v-clicks after>
 
-# <twemoji-cherry-blossom/> Monorepo 2.0?
+<Spacer/>
 
-## Turborepo
+### Fun (or sad, tbh) examples:
 
-**Commercial DK** and Pavol Repka tried out the old trusted "go-to" tools `lerna` and `nx` (same thing now since nx took over lerna years ago).
+</v-clicks>
+<v-clicks after>
 
-They failed to deliver the speed they needed.
+* **@types/node** is installed as a dep in over **40 repoes** (180 doing it right)
+* **typescript** is installed as a dep in over **60 repoes**
+* **eslint** is installed as a dep in over **40 repoes**
+* **prettier** is installed as a dep in **10 repoes**
 
-So they tried [Turborepo](https://turbo.build/repo/docs) (from Vercel) which does monorepos smarter and faster.
-
-It does rely on a remote cache mechanism, so you should be fully aware of what your app contains, does, and that it ends up in the cloud outside of Gjensidige.
-
-PS: This team is already doing *React 19* ...
+</v-clicks>
 
 ---
 transition: slide-left
@@ -454,21 +485,31 @@ layout: two-cols
 
 # <twemoji-cherry-blossom/> Tech debt
 
+<v-clicks>
+
 Refactoring, and working with tech debt is close to never in the backlog.
 
-Here's an almost [ancient but very good article on an approach that actually works](https://ronjeffries.com/xprog/articles/refactoring-not-on-the-backlog/). Written by no other than Ron Jeffries, one of the founders of eXtreme Programming, and more.
+Here's an almost [ancient but very good article on an approach that actually works](https://ronjeffries.com/xprog/articles/refactoring-not-on-the-backlog/). Written by no other than Ron Jeffries (one of the founders of eXtreme Programming, and more).
 
 > Clean up where you work, clean out the weeds implementing your feature, leave the rest (for now).
 
 Another good article on [what it is, and why it happens](https://netgen.io/blog/how-to-cope-with-legacy-code-and-technical-debt).
 
+</v-clicks>
+
 ::right::
 
+<v-clicks after>
+
 **Tech debt versus working in it**:
-<img src="/images/2024-10-09/tech-debt.jpg" class="rounded shadow" style="max-width:50%;float:left" alt="" /><img src="/images/2024-10-09/tech-debt-workaround.jpg" class="rounded shadow" style="max-width:50%;" alt="" />
+<img src="/images/2024-10-09/tech-debt.jpg" class="rounded shadow" style="max-width:50%;float:left" alt="" />
+
+<img src="/images/2024-10-09/tech-debt-workaround.jpg" class="rounded shadow" style="max-width:50%;" alt="" />
 
 **A better way of approaching it**:
 <img src="/images/2024-10-09/refactoring.jpg" class="rounded shadow" style="max-width:65%;" alt="" />
+
+</v-clicks>
 
 ---
 transition: slide-left
