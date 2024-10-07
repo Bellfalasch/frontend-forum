@@ -492,9 +492,9 @@ transition: slide-left
     *  (first digit being **Major**, second digit is **Minor**, last digit is **Patch**)
 * `"package": "2.1.1"` = installs exactly version 2.1.1 of this package
 * `"package": "~2.1.1"` = installs version 2.1.1, or newer **patch**-version if available
-    * Like 2.1.3, but never 2.2.x
+    * Like 2.1.3 and 2.1.4, but never 2.2.x
 * `"package": "^2.1.1"` = installs version 2.1.1, or newer **minor**-version if available
-    * Like 2.2.0, but never 3.x.x
+    * Like 2.2.0 and 2.3.0, but never 3.x.x
 * And more, like `<2.1.1`, `<=2.1.1`, `>=2.1.1` and `>2.1.1` - also not common
 * Or even worse: `latest` or `*` instead of any number ...
 * Tip: look into your `-lock,json`-file to see what exactly is installed, as this is stored here.
@@ -549,6 +549,7 @@ transition: slide-left
 * <IconsWebsite/> [Guide to everything-Anchors in CSS](https://css-tricks.com/css-anchor-positioning-guide/)
 * <IconsWebsite/> [Kent C. Dodds' cheat sheet for React 19](https://www.epicreact.dev/react-19-cheatsheet)
 * <IconsWebsite/> [Article on refactoring, and when it can be bad](https://www.builder.io/blog/good-vs-bad-refactoring)
+* <IconsWebsite/> [Why we need a different way of doing colors](https://www.smashingmagazine.com/2024/10/interview-bjorn-ottosson-creator-oklab-color-space/)
 
 </v-clicks>
 
