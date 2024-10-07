@@ -539,7 +539,7 @@ layout: two-cols-header
 ::left::
 
 **[Vite](https://vitejs.dev/)**  
-5.4.8 - [Last week](https://github.com/vitejs/vite/blob/v5.4.8/packages/vite/CHANGELOG.md)
+5.4.8 - [Last week](https://github.com/vitejs/vite/blob/v5.4.8/packages/vite/CHANGELOG.md) (and new website!)
 
 **[Vitest](https://vitest.dev/)**  
 2.1.2 - [2.1 is out of beta](https://github.com/vitest-dev/vitest/releases)
@@ -548,13 +548,13 @@ layout: two-cols-header
 3.3.3 - [latest stable](https://prettier.io/versions)
 
 **[Eslint](https://eslint.org/)**  
-9.11.1 - [v8 just hit EOL](https://eslint.org/version-support/)
+9.11.1 - [v8 just reached EOL](https://eslint.org/version-support/)
 
 **[TypeScript](https://www.typescriptlang.org/)**  
 5.6.2 - [5.6 out a few weeks back](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/)
 
 **[clsx](https://github.com/lukeed/clsx?tab=readme-ov-file#readme)**  
-2.1.1 - Same clsx, still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames` ([50 repoes](https://github.com/search?q=org%3Agjensidige+%22%5C%22classnames%5C%22%3A+%5C%22%5E%22+path%3Apackage.json++NOT+is%3Aarchived&type=code))
+2.1.1 - Still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames` ([50 repoes](https://github.com/search?q=org%3Agjensidige+%22%5C%22classnames%5C%22%3A+%5C%22%5E%22+path%3Apackage.json++NOT+is%3Aarchived&type=code))
 
 ::right::
 
@@ -564,7 +564,7 @@ layout: two-cols-header
 
 ## Node.JS
 <IconsWebsite/> https://nodejs.org/en
-* 20.17.0 LTS - latest 22.9.0
+* 20.18.0 LTS - latest 22.9.0
 
 ## Bun
 <IconsWebsite/> https://bun.sh/
