@@ -167,12 +167,11 @@ But just a short official word, since many have asked me in person:
 </v-clicks>
 <v-clicks after>
 
-* My role lives on
-* It changes name to reflect the `guild` lingo
+* My role lives on but changes name to reflect the `guild` lingo
 * Front-end forum, and all my other forums, will remain more or less unchanged
 * I will get a new manager and will be placed inside the new **Designsystem Team**
 * All **Chapter Leads** will now have community-work as part of their work description
-* And I hope we can get more guild-synergies with other guilds that will come
+* Hoping for more collabs and guild-synergies
 * That's all
 
 </v-clicks>
@@ -196,7 +195,7 @@ transition: slide-up
 * Make sure to ask questions and throw ideas out in the open: <IconsSlack/>**#accessibility**
 * One change is [the new "a11y hub" on gjensidige.builders](https://www.gjensidige.builders/learn/accessibility), our own "Learn" hub
 * Methodology department will now list a11y as an official requirement
-* We will create some new guides for teams testing and/or prioritizing tasks
+* We will create some new guides/charts for teams testing and/or prioritizing tasks
 
 </v-clicks>
 <v-clicks after>
@@ -337,14 +336,13 @@ transition: slide-left
 <v-clicks>
 
 * <IconsWebsite/> [W3C organization turned 30 years old two weeks ago](https://www.youtube.com/watch?v=0TfUBuIZkmQ)
-* <IconsWebsite/> [VoidZero Inc is born, will own and drive Vite, Vitest, oxc and Rolldown](https://voidzero.dev/posts/announcing-voidzero-inc)
+* <IconsWebsite/> [Evan You announce Rolldown (Rollup competitor) pushing for being done](https://rolldown.rs/)
+* <IconsWebsite/> [Evan You announce VoidZero Inc, will own and drive Vite, Vitest, oxc and Rolldown](https://voidzero.dev/posts/announcing-voidzero-inc)
 * <IconsWebsite/> [Deno 2 Release Candidate out not long ago](https://deno.com/blog/v2.0-release-candidate)
 * <IconsWebsite/> [BiomeJS turned 1 years old, release 1.9](https://biomejs.dev/blog/biome-v1-9/)
 * <IconsWebsite/> [ExpressJS, version 5 just around the corner](https://expressjs.com/en/guide/migrating-5.html)
 * <IconsWebsite/> [State of HTML survey, check it out](https://survey.devographics.com/en-US/survey/state-of-html/2024)
-* <IconsWebsite/> [React Router annonuces pre-release of v7, will merge with Remix](https://reactrouter.com/dev/guides)
-* <IconsWebsite/> [Evan You announce VoidZero Inc, combining the best JS-tools](https://github.com/voidzero-dev/)
-* <IconsWebsite/> [Evan You announce Rolldown (Rollup competitor) pushing for being done](https://rolldown.rs/)
+* <IconsWebsite/> [React Router announces pre-release of v7, will merge with Remix](https://reactrouter.com/dev/guides)
 * <IconsWebsite/> [Legal battle between WordPress and WP Engine](https://automattic.com/2024/10/03/meritless/)
 * <IconsWebsite/> [OpenAI shifts from Next.JS to Remix for their website](https://dev.to/vuelancer/openais-transition-from-nextjs-to-remix-a-deep-dive-3dpl)
 
@@ -362,7 +360,7 @@ For the last **four years**, [not even developers of moment.js want you to use m
 
 <img src="/images/2024-10-09/moment.png" class="rounded shadow" style="max-width:95%;" alt="" />
 
-* Gjensidige [still have 74 uses](https://github.com/search?q=org%3Agjensidige+%22%5C%22moment%5C%22%3A%22+path%3Apackage.json++NOT+is%3Aarchived&type=code) of `moment.js` (and two using `moment-mini.js`).
+* Gjensidige [still have 54 uses](https://github.com/search?q=org%3Agjensidige+%22%5C%22moment%5C%22%3A%22+path%3Apackage.json++NOT+is%3Aarchived&type=code) of `moment.js` (and one using `moment-mini.js`).
 
 * _Not fan of `date-fns`? Try [luxon](https://moment.github.io/luxon/#/) or [day.js](https://day.js.org/) ... or just [go vanilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)!_
 
@@ -457,9 +455,9 @@ transition: slide-left
 <v-clicks>
 
 * Unsure? Check package npm-page/docs (`--save` = deps, `--save-dev` = devDeps)
-* In 2024 I would suggest avoiding `peerDependencies` for your own apps (except for react in libs).
-* <IconsWebsite/> [Stackoverflow explains this very well](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencie).
-* <IconsWebsite/> [dev.to](https://dev.to/writech/a-complete-guide-to-regular-dev-and-peer-dependencies-in-npm-57j9) (and [thousands more](https://dev.to/jha/save-and-save-dev-why-you-should-know-the-difference-j7p)) writes a blog on this.
+* In 2024 I would suggest try to avoid `peerDependencies` for your own apps (except for react in libs).
+* <IconsWebsite/> [Stackoverflow explains deps/devdeps very well](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencie).
+* <IconsWebsite/> [dev.to](https://dev.to/writech/a-complete-guide-to-regular-dev-and-peer-dependencies-in-npm-57j9) (and [thousands more](https://dev.to/jha/save-and-save-dev-why-you-should-know-the-difference-j7p)) also writes about this.
 
 </v-clicks>
 <v-clicks after>
