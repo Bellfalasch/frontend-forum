@@ -372,6 +372,67 @@ transition: slide-left
 transition: slide-left
 ---
 
+# <twemoji-cherry-blossom/> The slide I thought I'd never create ...
+
+## The state of Gjensidige package.json is ... horrible
+
+It looks like many struggle with `dependencies` and `devDependencies`
+
+### Repeated mistakes
+
+1. Not using `devDependencies` at all, everything goes into `deps`
+2. Many repoes have same package, in both!
+  * Locally, running `npm i` installs `deps` and `devDeps`*, 
+  * In production (`NODE_ENV=production`) all `devDeps` are skipped
+  * This opens for unforseen issues
+3. Adding same packages to both `devDeps` and `deps`, but with different versions 
+  * This will install only the highest version, but for production `devDeps` are skipped.
+
+---
+transition: slide-left
+---
+
+# devDependencies or dependencies?
+
+* `eslint`, `estlint-*`, `prettier` - all **linting** things = `devDependencies`
+* `typescript`, `@types/*` - all **typing** in your editor = `devDependencies`
+* `vitest`, `cypress`, `playwright` - everything **testing** = `devDependencies`
+* `sass`, `loader-*` - everything **build**-releated = `devDependencies`
+* With a few exceptions ...
+* Unsure? Check package npm-page/docs (`--save` = deps, `--save-dev` = devDeps)
+
+## Does it matter?
+
+* Treeshaking does a lot, hopefully, but it cannot fix everything
+* Commonly leads to confusion later, updates to the wrong package, etc
+* Higher risk of inconsistencies/bugs between localhost and production
+* Risky policy to rely on something wrong solving itself down the line
+
+---
+transition: slide-left
+---
+
+# devDependencies or dependencies?
+
+## Fun (more sad, tbh) examples
+
+* **@types/node** is installed as a dep in over 40 repoes (180 doing it right)
+* **typescript** is installed as a dep in over 60 repoes
+* **prettier** is installed as a dep in 10 repoes
+
+## Side note
+
+* In 2024 I would suggest avoiding `peerDependencies` all together (for your own apps).
+
+## Read more
+
+* <IconsWebsite/> [Stackoverflow explains this very well](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencie).
+* <IconsWebsite/> [dev.to](https://dev.to/writech/a-complete-guide-to-regular-dev-and-peer-dependencies-in-npm-57j9) (and [thousands more](https://dev.to/jha/save-and-save-dev-why-you-should-know-the-difference-j7p)) writes a blog on this.
+
+---
+transition: slide-left
+---
+
 # <twemoji-cherry-blossom/> Monorepo 2.0?
 
 ## Turborepo
