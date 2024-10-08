@@ -29,6 +29,8 @@ transition: slide-up
 * React stats, revisited
 * Accessibility
 * Builders Core
+* Tech debt
+* News
 * Inspiration
 
 ---
@@ -50,11 +52,21 @@ transition: slide-left
 
 Remember the research in May? **Let's compare with today!**
 
-So, using GitHub search, I get some data across our repoes. The search is textual, requires there is a `package.json` or more in the repo.
+So, using GitHub search, I get some data across our repoes.
 
-Will count the rare config `"react": "17.x || 18.x",` as React 17.
+<v-clicks>
 
-All searches excludes archived repoes.
+* The search is textual, requires there is a `package.json` or more in the repo.
+
+* Will count the rare config `"react": "17.x || 18.x",` as React 17.
+
+* Will double-count entries stating `react` version in both `devDependencies` and `peerDependencies` 
+
+* All searches excludes archived repoes.
+
+* GH caches code search, making it a tiny bit unpredictable.
+
+</v-clicks>
 
 ---
 transition: slide-left
@@ -63,7 +75,7 @@ layout: two-cols
 
 # Gjensidige
 
-## React in May
+## Recap: React in May
 
 * Meassured on the **6th of May**.
 * We found `257` repoes
@@ -96,12 +108,12 @@ layout: two-cols
 <v-clicks>
 
 * Meassured on the **9th of October**.
-* We found `224` repoes
-* We've managed to delete/archive over **30 apps** since May
+* We found `237` repoes
+* We've managed to delete/archive **20 repoes** since
 * Over **60%** are on **React 18** (over double to 17)
 * We have stuff on **React 19**!
-* **9** of React 17-apps are gone <twemoji-party-popper/>
-* **2** of React 16-apps are gone <twemoji-party-popper/>
+* **7** of React 17-apps are gone <twemoji-party-popper/>
+* **4** of React 16-apps are gone <twemoji-party-popper/>
 
 </v-clicks>
 
@@ -115,9 +127,9 @@ layout: two-cols
 ```mermaid
 pie showData title Gjensidige React-landscape
     "19.*" : 2
-    "18.*" : 154
-    "17.*" : 64
-    "16.*" : 25
+    "18.*" : 145
+    "17.*" : 66
+    "16.*" : 23
     "15.*" : 1
 ```
 
@@ -130,13 +142,13 @@ transition: slide-left
 ```mermaid
 pie showData title React, detailed
     "19.*" : 2
-    "18.3.1" : 61
-    "18.2.0" : 132
+    "18.3.1" : 66
+    "18.2.0" : 130
     "18.1.0" : 2
     "18.0.0" : 1
     "17.0.2" : 105
     "17.0.1" : 23
-    "16.14.0" : 22
+    "16.14.0" : 20
     "16.13.1" : 8
     "16.10.1" : 1
     "16.9.0" : 2
@@ -149,6 +161,7 @@ pie showData title React, detailed
     "0.14.2" : 1
 ```
 
+Source: [Dependency insights](https://github.com/dependency-insights?query=name%3Areact+ecosystem%3Anpm+org%3Agjensidige+sort%3Apublished-asc), slightly different numbers/totals.
 
 ---
 transition: slide-left
@@ -156,22 +169,30 @@ transition: slide-left
 
 # Gjensidige
 
-## Agile ...
+## Agile and Me ...
 
 <v-clicks>
 
 **Oh noe, not here too**
 
-But just a short official word, since many have asked me in person:
+But just a short official word on what to expect, since many have asked me in person:
 
 </v-clicks>
 <v-clicks after>
 
-* My role lives on but changes name to reflect the `guild` lingo
+> What happens to me, discipline leadership, Front-end Forum, etc?
+
+</v-clicks>
+
+<Spacer/>
+
+<v-clicks after>
+
+* My role lives on but changes title to reflect the *guild* lingo
+* I will get a new manager and will be placed inside the new *enabler* *squad* **Designsystems**
 * Front-end forum, and all my other forums, will remain more or less unchanged
-* I will get a new manager and will be placed inside the new **Designsystem Team**
 * All **Chapter Leads** will now have community-work as part of their work description
-* Hoping for more collabs and guild-synergies
+* New guild-landscape grows and becomes more aligned
 * That's all
 
 </v-clicks>
@@ -230,13 +251,13 @@ transition: slide-left
 
 * **1.16.3** - last week
   * Misc improvements
-  * Breaking change for those using `internal="small"` variant on input
+  * Breaking change for those using `internal="small"` variant on `<Input>`
   * Make sure to *not* run 1.16.2
 
 * **1.16.1** - three weeks ago
   * **Loads of improvements!**
   * Potential breaking change in `ComboBox`
-  * Make sure to *not* run 1.16.0 though
+  * Make sure to *not* run 1.16.0
 
 </v-clicks>
 
@@ -253,7 +274,7 @@ transition: slide-left
 ### @gjensidige/builders-icons
 
 * **1.6.0** - three weeks ago
-* *Breaking*, changes names on multiple icons
+* *Breaking*: changes names on multiple icons
 
 <Spacer/>
 
@@ -345,6 +366,8 @@ transition: slide-left
 * <IconsWebsite/> [React Router announces pre-release of v7, will merge with Remix](https://reactrouter.com/dev/guides)
 * <IconsWebsite/> [Legal battle between WordPress and WP Engine](https://automattic.com/2024/10/03/meritless/)
 * <IconsWebsite/> [OpenAI shifts from Next.JS to Remix for their website](https://dev.to/vuelancer/openais-transition-from-nextjs-to-remix-a-deep-dive-3dpl)
+* <IconsWebsite/> [CSS working group from W3C looking into a new logo](https://github.com/CSS-Next/css-next/issues/105)
+* <IconsWebsite/> [Side note: work on CSS4 and CSS5 feature lists](https://github.com/CSS-Next/css-next/discussions/92)
 
 </v-clicks>
 
@@ -374,12 +397,12 @@ transition: slide-left
 
 ### For Claims
 
-* [I did a mini-cleanup](https://github.com/gjensidige/claims-follow/pull/937) in `claims-follow`. It used `date-fns`, `moment-mini`, and a lot of string-based custom date functions. Replaced it all with [date-fns](https://date-fns.org/), for sanity.
+* [I did a mini-cleanup](https://github.com/gjensidige/claims-follow/pull/937) in `claims-follow`. It used `date-fns`, `moment-mini`, and a lot of string-based functions. Replaced it all with [date-fns](https://date-fns.org/) and native Date, for sanity.
 
 ### For Sweden
 
-* [I then tried to repeat this for Sweden](https://github.com/gjensidige/sweden-parts/pull/558) in `sweden-parts` (a mono-repo). It used `date-fns`, `moment`, and a lot of string-based custom date functions.
-  *  Replaced a lot of moment ... 
+* [I then tried to repeat this for Sweden](https://github.com/gjensidige/sweden-parts/pull/558) in `sweden-parts` (a mono-repo). It used `date-fns`, `moment`, and a lot of string-based functions.
+  *  I replaced a lot of moment ... 
   *  ... until I found that it is required by dependencies, so had to keep it for now.
   *  Killed `date-fns` though, and a localization package for moment.
 
@@ -387,13 +410,13 @@ transition: slide-left
 transition: slide-left
 ---
 
-# <twemoji-cherry-blossom/> The slide I thought I'd never create
+# <twemoji-cherry-blossom/> State of our package.json
 
 <v-clicks>
 
-## The state of Gjensidige package.json is ... horrible
+## Gjensidige's package.json's are ... not too good
 
-It looks like many struggle with the basic difference between `dependencies` and `devDependencies`.
+It looks like many repoes doesn't care for the difference between `dependencies` and `devDependencies`. Even though it is not critical, it doesn't hurt to keep it neat and tidy.
 
 ### Repeated mistakes
 
@@ -401,10 +424,10 @@ It looks like many struggle with the basic difference between `dependencies` and
 <v-clicks depth="2">
 
 1. Not using `devDependencies` at all, everything goes into `deps`
+    * High risk of dev-code getting into production (unless treeshaking is stellar)
 2. Many repoes have same package, in both!
     * Locally, running `npm i` installs `deps` *and* `devDeps`
     * In production (`NODE_ENV=production`) all `devDeps` are ignored
-    * This opens for unforseen issues
 3. Adding same packages to both `devDeps` and `deps`, but with different versions 
     * This will install only the highest version, but for production `devDeps` are skipped.
     * So, what is really running in production?
@@ -438,9 +461,10 @@ transition: slide-left
 <v-clicks after>
 
 * Treeshaking does a lot, hopefully, but it cannot fix everything
-* Commonly leads to confusion later, updates to the wrong package, etc
+* Likely to lead to confusion later, updates to the wrong package, etc
 * Higher risk of inconsistencies/bugs between localhost and production
 * Risky policy to rely on something wrong solving itself down the line
+* Some argue it is not worth the effort
 
 </v-clicks>
 
@@ -455,7 +479,7 @@ transition: slide-left
 <v-clicks>
 
 * Unsure? Check package npm-page/docs (`--save` = deps, `--save-dev` = devDeps)
-* In 2024 I would suggest try to avoid `peerDependencies` for your own apps (except for react in libs).
+* In 2024 I would suggest try to avoid `peerDependencies` for your own apps (except if you build a `module`).
 * <IconsWebsite/> [Stackoverflow explains deps/devdeps very well](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencie).
 * <IconsWebsite/> [dev.to](https://dev.to/writech/a-complete-guide-to-regular-dev-and-peer-dependencies-in-npm-57j9) (and [thousands more](https://dev.to/jha/save-and-save-dev-why-you-should-know-the-difference-j7p)) also writes about this.
 
@@ -464,7 +488,7 @@ transition: slide-left
 
 <Spacer/>
 
-### Fun (or sad, tbh) examples:
+### Some examples:
 
 </v-clicks>
 <v-clicks after>
@@ -473,31 +497,6 @@ transition: slide-left
 * **typescript** is installed as a dep in over **60 repoes**
 * **eslint** is installed as a dep in over **40 repoes**
 * **prettier** is installed as a dep in **10 repoes**
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# devDependencies or dependencies?
-
-## And while we're at it ...
-
-[How versioning *really* works](https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json) in `package.json` with npm.
-
-<v-clicks>
-
-* Using imaginary package `package`, following common [SemVer standard](https://www.baeldung.com/cs/semantic-versioning)
-    *  (first digit being **Major**, second digit is **Minor**, last digit is **Patch**)
-* `"package": "2.1.1"` = installs exactly version 2.1.1 of this package
-* `"package": "~2.1.1"` = installs version 2.1.1, or newer **patch**-version if available
-    * Like 2.1.3 and 2.1.4, but never 2.2.x
-* `"package": "^2.1.1"` = installs version 2.1.1, or newer **minor**-version if available
-    * Like 2.2.0 and 2.3.0, but never 3.x.x
-* And more, like `<2.1.1`, `<=2.1.1`, `>=2.1.1` and `>2.1.1` - also not common
-* Or even worse: `latest` or `*` instead of any number ...
-* Tip: look into your `-lock,json`-file to see what exactly is installed, as this is stored here.
 
 </v-clicks>
 
@@ -524,10 +523,10 @@ Another good article on [what it is, and why it happens](https://netgen.io/blog/
 
 <v-clicks after>
 
-**Tech debt versus working in it**:
+**Tech debt appears ... versus working in it**:
 <img src="/images/2024-10-09/tech-debt.jpg" class="rounded shadow" style="max-width:50%;float:left" alt="" />
 
-<img src="/images/2024-10-09/tech-debt-workaround.jpg" class="rounded shadow" style="max-width:50%;" alt="" />
+<img src="/images/2024-10-09/tech-debt-workaround.jpg" class="rounded shadow" style="max-width:50%;margin-top:-1rem;" alt="" />
 
 **A better way of approaching it**:
 <img src="/images/2024-10-09/refactoring.jpg" class="rounded shadow" style="max-width:65%;" alt="" />
