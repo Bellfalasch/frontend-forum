@@ -15,7 +15,7 @@ layout: cover
 
 # Front-end Forum
 
-## 23rd of October
+## 6th of November
 
 ...
 <twemoji-man-technologist/> Bobby Westberg
@@ -26,7 +26,6 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
-* React stats, revisited
 * Accessibility
 * Builders Core
 * Tech debt
@@ -340,4 +339,4 @@ That's all for now!
 
 --
 
-<twemoji-spiral-calendar/> Next FEF will be held the **6th of November**
+<twemoji-spiral-calendar/> Next FEF will be held the **20th of November**
