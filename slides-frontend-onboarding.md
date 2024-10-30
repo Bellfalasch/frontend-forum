@@ -25,7 +25,7 @@ transition: slide-up
 
 <v-clicks>
 
-* First: Welcome, how are you?
+* First: Welcome, who are you?
 * What's a "Discipline Leader Front-end"?
 * Who am I?
 * Our front-end community and arenas
@@ -43,16 +43,16 @@ transition: slide-left
 
 <v-clicks>
 
-* I don't belong to any specific team
+* I ~~don't belong to any specific team~~ work in the **Designsystem Squad**
 * I'm passionate about sharing, and helping
 * I love collabs; cross-team, cross-discipline, cross-country
 * Reusability, efficiency, smoothness, accessibility, is important for me
 * My time is dedicated to our employees and our community
-* Use me for getting to know the community, finding the right persons, tools, etc
-* Find clever solutions, share them
-* Engage in common problems, and solutions
+* I engage in common problems, and solutions
 * Help where people are stuck
 * I run "Front-end Forum", "Let's talk front-end", and co-run "Accessibility forum"
+* Use me for getting to know the community, finding the right persons, tools, etc
+* Found clever solution? Share them!
 
 </v-clicks>
 
@@ -94,17 +94,21 @@ transition: slide-up
 
 # Front-end at Gjensidige
 
-* Gjensidige has many teams
-* Usally cross-disciplinary and autonomous
+<v-clicks>
+
+* Gjensidige has many ~~teams~~ squads
+* Cross-disciplinary and autonomous
 * Organised mostly on 4th floor
-* Sales, Service (logged in pages) - split on Commercial and Private
-* Claims, many teams, most in Bratislava
-* Builders and Mobile App
-* All NO teams are coupled with DK, but also many in DK (and some in Poland)
+* **Sales**, **Service** (logged in pages) - split on Commercial and Private
+* **Claims**, many teams, most in Bratislava
+* ~~Builders and Mobile App~~ **Mobile and Web Services**, and **Designsystem**
+* NO teams are usually coupled with DK, but also many in DK (and some in Poland)
 * SE team is alone (here and in Stockholm)
-* Pension sits across the street, their own AS, but share a lot
+* "Pensjon" sits across the street, their own AS, but share a lot
 * We work often with Team Platform for getting stuff online
 * We work often with Team Security for logged in things, ++
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -127,48 +131,6 @@ transition: slide-up
 * https://www.gjensidige.builders/community/frontend-forum
 
 </v-clicks>
-
----
-transition: slide-up
----
-
-# Routing
-
-How do a webpage get to our users?
-
-## Webseal
-
-We have **IBM Webseal** as firewall/proxy in the very front of all we have on the web in production. This software is handled mostly by Team Security together with TietoEvry. These two also take care of **ISAM** (also from IBM) that handles identity and access.
-
-Webseal uses something called *junctions* to direct different URLs to different internal servers.
-
----
-transition: slide-up
----
-
-# Routing (cont.)
-
-## Enonic XP
-
-Gjensidige.no-traffic will first go to our CMS, this area is refered to as "Open Pages" ("Åpne sider"). The CMS is the router here (meaning editors must create URLs). These pages are written and designed by content designers at Gjensidige, from the CMS "Enonic XP". The team responsible for developing the different parts of the pages, and maintaining the CMS, is Team Builders.
-
-## Application Portal
-
-At certain URLs, specified in Webseal, we will not go to the CMS but send traffic to another router, that Team Service owns. This one is known as **Application Portal**. Here each team defines a URL they want to "mount" on, and then what app to mount.
-
----
-transition: slide-up
----
-
-# Routing (cont.)
-
-## Mounting apps within open pages
-
-There's also something called *Custom Parts*, a way for editors to mount micro-apps within editorial content of open pages. This is not done a lot, but nice to be aware of the possibilities. These micro-apps are essentially React-apps, with a manifest-file listing all resources, that the CMS can load and display. These micro-apps can accept any number of key-value pair configs from the editorial interface.
-
-## Logged in pages
-
-This is the opposite of "open pages". These are delivered by our digital teams, they are mounted to a URL using Application Portal, and nothing comes from the CMS. Team Service (handle your insurrances) and the Claims teams, work in this domain.
 
 ---
 transition: slide-left
@@ -203,7 +165,7 @@ transition: slide-up
 
 Builders Core is "open source", it is not available for the general public (yet ...), and it is not owned by one team in Gjensidige, it is owned by *everyone* in Gjensidige!
 
-It is *maintained* by **Team Builders**, closely working with Gjensidige's marketing department. Still, it's a community product, you can use it and are more than welcome to fix it and extend it!
+It is *maintained* by **Designsystem Squad**, closely working with Gjensidige's marketing department. Still, it's a community product, you can use it and are more than welcome to fix it and extend it!
 
 We highly appreciate - and encourage - all kinds of contributions. If unsure, feel free to discuss ideas and propositions in **#builders-core**, or with me.
 
@@ -249,10 +211,66 @@ It is expected that when working for Gjensidige you can develop accordingly, and
 
 Slack: **#accessibility**
 
-Read more: https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about
+Our a11y docs: https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about
 
-Mostly a short summary here:
+A short summary here:
 https://www.gjensidige.builders/learn/universal-design/code
+
+---
+transition: slide-up
+---
+
+# Web apps at Gjensidige
+
+* "Open pages" are stuff editors use our CMS for (articles, etc)
+* Other "routes" are shipped as React apps from our CDN
+* Close to all Apps are built using Node and React
+  * Some use Bun
+* Uses our own designsystem
+* Conform to WCAG 2.1 and AA (or more)
+* Teams own their pipeline and release flow, as well as the app in production
+
+---
+transition: slide-up
+---
+
+# Routing
+
+How do a webpage get to our users?
+
+## Webseal
+
+We have **IBM Webseal** as firewall/proxy in the very front of all we have on the web in production. This software is handled mostly by Team Security together with TietoEvry. These two also take care of **ISAM** (also from IBM) that handles identity and access.
+
+Webseal uses something called *junctions* to direct different URLs to different internal servers.
+
+---
+transition: slide-up
+---
+
+# Routing (cont.)
+
+## Enonic XP
+
+Gjensidige.no-traffic will first go to our CMS, this area is refered to as "Open Pages" ("Åpne sider"). The CMS is the router here (meaning editors must create URLs). These pages are written and designed by content designers at Gjensidige, from the CMS "Enonic XP". The team responsible for developing the different parts of the pages, and maintaining the CMS, is Team Builders.
+
+## Application Portal
+
+At certain URLs, specified in Webseal, we will not go to the CMS but send traffic to another router, that Team Service owns. This one is known as **Application Portal**. Here each team defines a URL they want to "mount" on, and then what app to mount.
+
+---
+transition: slide-up
+---
+
+# Routing (cont.)
+
+## Mounting apps within open pages
+
+There's also something called *Custom Parts*, a way for editors to mount micro-apps within editorial content of open pages. This is not done a lot, but nice to be aware of the possibilities. These micro-apps are essentially React-apps, with a manifest-file listing all resources, that the CMS can load and display. These micro-apps can accept any number of key-value pair configs from the editorial interface.
+
+## Logged in pages
+
+This is the opposite of "open pages". These are delivered by our digital teams, they are mounted to a URL using Application Portal, and nothing comes from the CMS. Team Service (handle your insurrances) and the Claims teams, work in this domain.
 
 ---
 transition: slide-up
@@ -280,10 +298,9 @@ We use Slack as our go-to tool for internal communication. Use it rather than bi
 
 Some nice channels to watch:
 * **#frontend** #design #content
-* #team-builders **#builders-core** #builders-platform
-* #general #random
+* **#builders-core**, #builders-core-announcements
 * #gap #team-platform #team-security
-* #digitalization-and-design
+* #general #random
 
 ---
 transition: slide-up

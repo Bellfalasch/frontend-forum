@@ -17,7 +17,7 @@ layout: cover
 
 ## 6th of November
 
-...
+<Spacer/>
 <twemoji-man-technologist/> Bobby Westberg
 
 ---
