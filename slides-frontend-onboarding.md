@@ -27,11 +27,11 @@ transition: slide-up
 
 * First: Welcome, who are you?
 * What's a "Discipline Leader Front-end"?
-* Who am I?
 * Our front-end community and arenas
 * Our designsystem
-* Slack and other useful tools for front-enders
-* Accessibility, Security, GitHub, ++
+* Apps at Gjensidige
+* Accessibility, Security, ++
+* Slack, GitHub, and other tools
 
 </v-clicks>
 
@@ -222,13 +222,19 @@ transition: slide-up
 
 # Web apps at Gjensidige
 
+<v-clicks depth="2">
+
 * "Open pages" are stuff editors use our CMS for (articles, etc)
 * Other "routes" are shipped as React apps from our CDN
 * Close to all Apps are built using Node and React
   * Some use Bun
-* Uses our own designsystem
+* We use github actions to lint, test, build, deploy
+* Apps uses our own designsystem
 * Conform to WCAG 2.1 and AA (or more)
 * Teams own their pipeline and release flow, as well as the app in production
+* Teams pretty much decide on build systems, bundling, repo-structure, etc, on their own.
+
+</v-clicks>
 
 ---
 transition: slide-up
