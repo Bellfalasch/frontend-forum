@@ -54,18 +54,13 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> A11y docs
 
-<v-clicks>
+Ideas, questions, what not? <IconsSlack/>**#accessibility**
 
-* Champions are now tasked at improving [our docs](https://www.gjensidige.builders/docs/core/?path=/docs/accessibility-introduction--about)
-* Make sure to ask questions and throw ideas out in the open: <IconsSlack/>**#accessibility**
-* One change is [the new "a11y hub" on gjensidige.builders](https://www.gjensidige.builders/learn/accessibility), our own "Learn" hub
-* Methodology department will now list a11y as an official requirement
-* We will create some new guides/charts for teams testing and/or prioritizing tasks
+<v-clicks depth="2">
 
-</v-clicks>
-<v-clicks after>
-
-<img src="/images/2024-10-09/a11y-testing.png" class="rounded shadow" style="max-width:75%;" alt="" />
+* Last Accessibility forum we discussed `<Modal/>` in length.
+  * There will be some new recommendations on this, but takes time to research.
+* ...
 
 </v-clicks>
 
@@ -82,26 +77,78 @@ layout: center
 transition: slide-left
 ---
 
+# <twemoji-notebook-with-decorative-cover/> Squad Designsystem
+
+<v-clicks depth="2">
+
+* A brand new **squad** is born <twemoji-baby/> at Gjensidige - **Designsystem**
+* Gjensidige's **Designsystem** is owned by this squad
+* **Team Builders** is no more <twemoji-headstone/>
+* There's 2 developers on this team, me and Maria Lilleberg Holm <twemoji-flexed-biceps/>
+  * But we will start recruiting for a third dev soon ...
+* Slack-channels, documentation, etc, will change *gradually* to reflect new ownership
+* The word **Builders**, as part of naming (packages, domain name, ++), is **not planned** to change
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: two-cols-header
+---
+
 # <twemoji-notebook-with-decorative-cover/> Builders Core
+
+Latest and greatest versions from the **Builders Core** suit of packages:
+
+::left::
+
+## <twemoji-brick/> Components: 1.18.0
+
+`@gjensidige/builders-components` <twemoji-new-button />
+
+## <twemoji-disguised-face/> Icons: 1.0.15
+
+`@gjensidige/builders-tokens`
+
+## <twemoji-bar-chart/> Analytics: 16.0.21
+
+`@gjensidige/core-analytics`
+
+::right::
+
+## <twemoji-world-map/> Navigation: 3.6.23
+
+`@gjensidige/core-navigation` <twemoji-new-button />
+
+## <twemoji-input-latin-letters/> Fonts: 1.0.12
+
+`@gjensidige/builders-fonts`
+
+## <twemoji-japanese-congratulations-button/> Tokens: 1.0.15
+
+`@gjensidige/builders-tokens`
+
+---
+transition: slide-left
+---
+
+# <twemoji-notebook-with-decorative-cover/> Releases: Builders Core
 
 <v-clicks>
 
-## Releases
-
-### @gjensidige/builders-components
+## @gjensidige/builders-components
 
 </v-clicks>
 <v-clicks depth="2">
 
 * **1.18.0** - last week
-  * 
-  * 
-  * 
-
-* **1.16.3** - last week
-  * Misc improvements
-  * Breaking change for those using `internal="small"` variant on `<Input>`
-  * Make sure to *not* run 1.16.2
+  * <twemoji-glowing-star/> `<PopoverMenu/>` now have the possibility to align itself `left` or `right`
+  * <twemoji-glowing-star/> `<Alert/>` can now control if you want to show or hide icon
+  * <twemoji-hammer-and-wrench/> `<Status/>` didn't look good with symbol and text overflow on bigger screens (potential breaking change for styling - added wrapper around children). (thanks @Magnus Kjelland)
+  * <twemoji-hammer-and-wrench/> `<Alert/>`, improvements to styling, especially on mobile.
+  * <twemoji-wheelchair-symbol/> `<Expandable/>` now adds `aria-hidden` on its chevron
+  * <twemoji-notebook-with-decorative-cover/> Added principals for state for `<Button/>` docs
+  * <twemoji-notebook-with-decorative-cover/> [New page](https://www.gjensidige.builders/docs/core/?path=/docs/principles-icons-and-symbols--about) "*Icons and symbols*" under principles (some taken from icons-package, plus added info)
 
 </v-clicks>
 
@@ -109,21 +156,22 @@ transition: slide-left
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> Builders Core
-
-## More releases
+# <twemoji-notebook-with-decorative-cover/> Releases: Builders Core
 
 <v-clicks>
 
-### @gjensidige/core-navigation@3.6.20
+## @gjensidige/core-navigation
+
+</v-clicks>
+<v-clicks depth="2">
 
 * **3.6.23** - last week
-* ...
+  * <twemoji-hammer-and-wrench/> minor styling adjustments in navigation
+  * <twemoji-hammer-and-wrench/> system messages does not show when both _application_ and _location filter_ is set
+  * <twemoji-hammer-and-wrench/> Use correct logo in navigation (thanks @james-christian.rugaard)
 
-<Spacer/>
-
-### @gjensidige/builders-tokens@1.0.15
-### @gjensidige/builders-icons
+</v-clicks>
+<v-clicks after>
 
 <Spacer/>
 
