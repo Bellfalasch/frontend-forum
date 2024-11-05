@@ -8,6 +8,12 @@
   align-content: center;
   text-align: center;
 }
+  .slidev-layout.fin h1 {
+    color: white;
+  }
+  .slidev-layout.fin h1::before {
+    background: #000;
+  }
 .slidev-layout.mid-cover {
   background-color: var(--slidev-theme-center-headingBg);
   background: linear-gradient(132deg, rgb(0, 48, 143) 0.00%, rgb(0, 255, 255) 100.00%);

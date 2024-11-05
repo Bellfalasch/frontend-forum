@@ -64,13 +64,15 @@ transition: slide-up
 
 # <twemoji-wheelchair-symbol/> A11y docs
 
-Ideas, questions, what not? <IconsSlack/>**#accessibility**
+<Spacer/>
+<IconsSlack/>**#accessibility** - For ideas, questions, sharing, what not
+<Spacer/>
 
 <v-clicks depth="2">
 
 * Last Accessibility forum we discussed `<Modal/>` in length.
   * There will be some new recommendations on this, but takes time to research.
-* ...
+* Some mentioned they didn't know about each component having [an accessibility heading](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-card--about) of its own ...
 
 </v-clicks>
 
@@ -90,6 +92,22 @@ transition: slide-up
 </v-clicks>
 
 ---
+transition: fade-out
+---
+
+# <twemoji-people-hugging/> Team Builders? Team Mobile App?
+
+<v-clicks depth="2">
+
+* **Team Builders** is no more <twemoji-headstone/>
+* **Team Mobile App** is no more <twemoji-headstone/>
+* All staff from these teams have been placed into:
+  * Squad **Designsystem** - for all things designsystem
+  * Squad **Mobile and Web Services** - for all services/platforms/integrations
+
+</v-clicks>
+
+---
 transition: slide-left
 ---
 
@@ -105,22 +123,6 @@ transition: slide-left
 * Slack-channels, documentation, etc, will change *gradually* to reflect new ownership
 * The word **Builders**, as part of naming (packages, domain name, ++), is **not planned** to change
   * So, just keep using `builders-components` and whatnot
-
-</v-clicks>
-
----
-transition: fade-out
----
-
-# <twemoji-people-hugging/> Team Builders? Team Mobile App?
-
-<v-clicks depth="2">
-
-* **Team Builders** is no more <twemoji-headstone/>
-* **Team Mobile App** is no more <twemoji-headstone/>
-* All staff from these teams have been placed into:
-  * Squad **Designsystem** - for all things designsystem
-  * Squad **Mobile and Web Services** - for all services/platforms/integrations
 
 </v-clicks>
 
@@ -187,7 +189,7 @@ transition: slide-left
   * <twemoji-hammer-and-wrench/> `<Status/>` didn't look good with symbol and text overflow on bigger screens (potential breaking change for styling - added wrapper around children). (thanks @Magnus Kjelland)
   * <twemoji-hammer-and-wrench/> `<Alert/>`, improvements to styling, especially on mobile.
   * <twemoji-wheelchair-symbol/> `<Expandable/>` now adds `aria-hidden` on its chevron
-  * <twemoji-notebook-with-decorative-cover/> Added principals for state for `<Button/>` docs
+  * <twemoji-notebook-with-decorative-cover/> Added [principals on state](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-button-guidelines--about) for `<Button/>` guidelines
   * <twemoji-notebook-with-decorative-cover/> [New page](https://www.gjensidige.builders/docs/core/?path=/docs/principles-icons-and-symbols--about) "*Icons and symbols*" under principles (some taken from icons-package, plus added info)
 
 </v-clicks>
@@ -226,13 +228,19 @@ transition: slide-left
 
 # <twemoji-bar-chart/> Stats-o-rama: Builders Core
 
+<v-clicks>
+
 Finally, we can easily overview all things Builders Core - 
 Welcome: [The Builders Core usage dashboard](https://www.gjensidige.builders/testing/dashboard)
 
-<v-clicks>
+</v-clicks>
+<v-clicks after>
 
 * Updated daily, looooooads of data to drill into
 * **Latest** = `builders-* && core-*` / **Legacy** = everything else
+
+</v-clicks>
+<v-clicks after>
 
 <img src="/images/2024-11-06/core-dashboard.png" class="rounded shadow" style="max-width:85%;" alt="" />
 
@@ -398,9 +406,10 @@ Loooads of conferences with a lot of shared knowledge, news and updates.
 <v-clicks>
 
 * <IconsWebsite/> [Re-watch any of the talks from ViteConf 2024](https://viteconf.org/24/replay), insane amount of talks on big and new frameworks
-* <IconsWebsite/> [JavaScript Day 2024 from JetBrains](https://lp.jetbrains.com/javascript-day-2024/), many interesting talks
+* <IconsWebsite/> [JavaScript Day 2024 from JetBrains](https://www.youtube.com/playlist?list=PLQ176FUIyIUYPsHqYbLgnQ_9j4Z7q38wY), many interesting talks
 * <IconsWebsite/> [NextConf 2024](https://nextjs.org/conf)
 * <IconsWebsite/> [GitHub Universe](https://githubuniverse.com/)
+* <IconsWebsite/> [Trending video of Wes Bos analyzing a blazingly fast website](https://www.youtube.com/watch?v=-Ln-8QM8KhQ) (close to 1M views)
 
 </v-clicks>
 
@@ -430,10 +439,10 @@ layout: two-cols-header
 3.3.3 - [latest stable](https://prettier.io/versions)
 
 **[Eslint](https://eslint.org/)**  
-9.11.1 - [v8 is EOL](https://eslint.org/version-support/)
+9.14.0 - [v8 is EOL](https://eslint.org/version-support/)
 
 **[TypeScript](https://www.typescriptlang.org/)**  
-5.6.2 - [5.7 beta released last month](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/)
+5.6.3 - [5.7 beta released last month](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/)
 
 **[clsx](https://github.com/lukeed/clsx?tab=readme-ov-file#readme)**  
 2.1.1 - Still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames` ([50 repoes](https://github.com/search?q=org%3Agjensidige+%22%5C%22classnames%5C%22%3A+%5C%22%5E%22+path%3Apackage.json++NOT+is%3Aarchived&type=code))
