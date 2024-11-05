@@ -250,6 +250,60 @@ transition: slide-left
 layout: two-cols-header
 ---
 
+# <twemoji-recycling-symbol/> I love :has
+
+::left::
+
+<v-clicks>
+
+Like my nice new blue cover-slides with headings?
+
+Ooold way would have been to add different class-names into the HTML, compute it beforehand
+
+Thanks to CSS and `:has` there's no need for that
+
+`h1:has(svg)` translate to:
+
+> "If h1 contains a svg, style the h1 like this"
+
+</v-clicks>
+
+::right::
+
+<v-clicks after>
+
+```css
+.mySlideCustomLayout h1 {
+  padding: .8rem;
+}
+/* All types of <h1> on my own custom layout */
+```
+
+Title and SVG (these are big):
+
+```css
+.mySlideCustomLayout h1:has(svg) {
+  padding-right: 1rem;
+}
+/* <h1><svg../>Title</h1>
+```
+
+Title and img (emoji):
+
+```css
+.mySlideCustomLayout h1:has(img) {
+  padding-right: 4.8rem;
+}
+/* <h1><img../>Title</h1>
+```
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: two-cols-header
+---
+
 # <twemoji-recycling-symbol/> Replace nci-grid with Flex
 
 ::left::
