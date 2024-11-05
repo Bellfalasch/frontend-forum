@@ -27,26 +27,36 @@ transition: slide-up
 # <twemoji-spiral-notepad/> Agenda
 
 * Accessibility
+* Gjensidige
 * Builders Core
-* Tech debt
 * News
 * Inspiration
 
 ---
 transition: slide-left
-layout: center
+layout: mid-cover
 ---
 
-# Gjensidige updates
-
-<LogoGjensidige/>
+# <LogoGjensidigeLarge/> Gjensidige
 
 ---
-transition: slide-left
-layout: center
+transition: slide-up
+layout: test
 ---
 
-# <twemoji-wheelchair-symbol/> Accessibility
+## <twemoji-waving-hand/> Welcome
+
+So, probably some of you have seen many new faces on our floor.
+
+**Team Edo** has been reborn, in Norway.
+
+<v-clicks>
+
+* Welcome **Marit Fredrikke Hansen** - Back-end/Fullstack
+* Welcome **Magnus Le** - Front-end/Fullstack 
+* It's a full team, with .NET-devs, agile coach, ++
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -65,31 +75,61 @@ Ideas, questions, what not? <IconsSlack/>**#accessibility**
 </v-clicks>
 
 ---
+transition: slide-up
+---
+
+# <twemoji-busts-in-silhouette/> New squads etc
+
+<v-clicks depth="2">
+
+* New developer landscape for all
+* New leaders, new lingo (chapters ++)
+* Mostly the same
+* But two teams are no more, and two new ones are born ...
+
+</v-clicks>
+
+---
 transition: slide-left
-layout: center
 ---
 
-# Builders Core
-
-<LogoGjensidige/>
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Squad Designsystem
+# <twemoji-busts-in-silhouette/> Squad Designsystem
 
 <v-clicks depth="2">
 
 * A brand new **squad** is born <twemoji-baby/> at Gjensidige - **Designsystem**
 * Gjensidige's **Designsystem** is owned by this squad
-* **Team Builders** is no more <twemoji-headstone/>
+  * Both mobile and web-based
 * There's 2 developers on this team, me and Maria Lilleberg Holm <twemoji-flexed-biceps/>
-  * But we will start recruiting for a third dev soon ...
+  * _But we will start recruiting for a third dev soon ..._
 * Slack-channels, documentation, etc, will change *gradually* to reflect new ownership
 * The word **Builders**, as part of naming (packages, domain name, ++), is **not planned** to change
+  * So, just keep using `builders-components` and whatnot
 
 </v-clicks>
+
+---
+transition: fade-out
+---
+
+# <twemoji-people-hugging/> Team Builders? Team Mobile App?
+
+<v-clicks depth="2">
+
+* **Team Builders** is no more <twemoji-headstone/>
+* **Team Mobile App** is no more <twemoji-headstone/>
+* All staff from these teams have been placed into:
+  * Squad **Designsystem** - for all things designsystem
+  * Squad **Mobile and Web Services** - for all services/platforms/integrations
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: mid-cover
+---
+
+# Builders Core
 
 ---
 transition: slide-left
@@ -108,7 +148,7 @@ Latest and greatest versions from the **Builders Core** suit of packages:
 
 ## <twemoji-disguised-face/> Icons: 1.0.15
 
-`@gjensidige/builders-tokens`
+`@gjensidige/builders-icons`
 
 ## <twemoji-bar-chart/> Analytics: 16.0.21
 
@@ -132,7 +172,7 @@ Latest and greatest versions from the **Builders Core** suit of packages:
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> Releases: Builders Core
+# <twemoji-notebook-with-decorative-cover/> Release notes
 
 <v-clicks>
 
@@ -156,7 +196,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# <twemoji-notebook-with-decorative-cover/> Releases: Builders Core
+# <twemoji-notebook-with-decorative-cover/> Release notes
 
 <v-clicks>
 
@@ -182,12 +222,28 @@ transition: slide-left
 
 ---
 transition: slide-left
-layout: center
+---
+
+# <twemoji-bar-chart/> Stats-o-rama: Builders Core
+
+Finally, we can easily overview all things Builders Core - 
+Welcome: [The Builders Core usage dashboard](https://www.gjensidige.builders/testing/dashboard)
+
+<v-clicks>
+
+* Updated daily, looooooads of data to drill into
+* **Latest** = `builders-* && core-*` / **Legacy** = everything else
+
+<img src="/images/2024-11-06/core-dashboard.png" class="rounded shadow" style="max-width:85%;" alt="" />
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: mid-cover
 ---
 
 # <twemoji-recycling-symbol/> Worth sharing
-
-<LogoGjensidige/>
 
 ---
 transition: slide-left
@@ -215,10 +271,10 @@ xxx
 
 ---
 transition: slide-left
-layout: center
+layout: mid-cover
 ---
 
-# <twemoji-rolled-up-newspaper/> News, <twemoji-cherry-blossom/> Inspiration, <twemoji-package/> Updates
+# <twemoji-rolled-up-newspaper/> News
 
 ---
 transition: slide-left
@@ -244,10 +300,19 @@ Potential news to write:
 * Turborepo "done"
 * Vite pushing for architecture change
 * Node.JS 23 new version, so 22 takes over from 20 as LTS - effective from last week - [Release](https://nodejs.org/en/blog/release/v22.11.0)
+* Team Platform - PAT must expire in 90 days
+* Grafana can now query GitHub
 
 * <IconsWebsite/> [xxx](#)
 
 </v-clicks>
+
+---
+transition: slide-left
+layout: mid-cover
+---
+
+# <twemoji-cherry-blossom/> Inspiration
 
 ---
 transition: slide-left
@@ -262,28 +327,35 @@ transition: slide-left
 </v-clicks>
 
 ---
-transition: slide-up
-layout: two-cols-header
+transition: slide-left
+layout: mid-cover
 ---
 
 # <twemoji-package/> Updates
 
+---
+transition: fade-out
+layout: two-cols-header
+---
+
+# <twemoji-package/> Packages and frameworks
+
 ::left::
 
 **[Vite](https://vitejs.dev/)**  
-5.4.8 - [Last week](https://github.com/vitejs/vite/blob/v5.4.8/packages/vite/CHANGELOG.md) (and new website!)
+5.4.10 - [Last week](https://github.com/vitejs/vite/blob/v5.4.10/packages/vite/CHANGELOG.md) (beta 8 of v6)
 
 **[Vitest](https://vitest.dev/)**  
-2.1.2 - [2.1 is out of beta](https://github.com/vitest-dev/vitest/releases)
+2.1.4 - [Last week](https://github.com/vitest-dev/vitest/releases)
 
 **[Prettier](https://prettier.io/)**  
 3.3.3 - [latest stable](https://prettier.io/versions)
 
 **[Eslint](https://eslint.org/)**  
-9.11.1 - [v8 just reached EOL](https://eslint.org/version-support/)
+9.11.1 - [v8 is EOL](https://eslint.org/version-support/)
 
 **[TypeScript](https://www.typescriptlang.org/)**  
-5.6.2 - [5.6 out a few weeks back](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/)
+5.6.2 - [5.7 beta released last month](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/)
 
 **[clsx](https://github.com/lukeed/clsx?tab=readme-ov-file#readme)**  
 2.1.1 - Still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames` ([50 repoes](https://github.com/search?q=org%3Agjensidige+%22%5C%22classnames%5C%22%3A+%5C%22%5E%22+path%3Apackage.json++NOT+is%3Aarchived&type=code))
@@ -303,8 +375,7 @@ layout: two-cols-header
 * 1.1.34
 
 ---
-transition: slide-up
-layout: center
+layout: fin
 ---
 
 # The end
@@ -313,6 +384,6 @@ That's all for now!
 
 <twemoji-red-heart class="animate-ping"/>
 
---
+<Spacer/>
 
 <twemoji-spiral-calendar/> Next FEF will be held the **20th of November**

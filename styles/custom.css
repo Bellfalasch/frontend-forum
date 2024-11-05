@@ -2,6 +2,51 @@
   background-color: #161c2c;
   background: linear-gradient(to right, #4947b7, #9c3750);
 }
+.slidev-layout.fin {
+  background-color: #161c2c;
+  background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
+  align-content: center;
+  text-align: center;
+}
+.slidev-layout.mid-cover {
+  background-color: var(--slidev-theme-center-headingBg);
+  background: linear-gradient(132deg, rgb(0, 48, 143) 0.00%, rgb(0, 255, 255) 100.00%);
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+  .slidev-layout.mid-cover h1 {
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.8rem;
+    align-items: baseline;
+  }
+  .slidev-layout.mid-cover h1::before {
+    background: var(--slidev-theme-center-headingBg);
+    box-shadow: var(--slidev-theme-header-shadow);
+    content: " ";
+    display: block;
+    position: absolute;
+    width: calc(100%);
+    height: calc(100%);
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+    z-index: -1;
+    transform: rotate(-1deg);
+  }
+    .slidev-layout.mid-cover h1:has(img),
+    .slidev-layout.mid-cover h1:has(svg) {
+      padding: 0.8rem 4.8rem 0.8rem 2.3rem;
+      align-items: center;
+    }
+    .slidev-layout.mid-cover h1:has(svg) {
+      padding-right: 1rem;
+    }
+    .slidev-layout.mid-cover h1 img,
+    .slidev-layout.mid-cover h1 svg {
+      margin-right: 1.2rem;
+    }
 
 /* Fix a bug in two-cols-header layout with h1 not getting correct style */
 .slidev-layout.two-cols-header h1 {

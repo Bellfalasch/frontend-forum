@@ -10,11 +10,6 @@
 
 <style scoped>
 img {
-  margin-top: 10px;
-  max-height: 2.7rem;
-  background-color: white;
-  border-radius: 50%;
-  border: 4px solid white;
-  padding: 2px 0 0 2px;
+  max-height: 4.7rem;
 }
 </style>
