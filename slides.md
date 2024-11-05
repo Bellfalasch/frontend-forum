@@ -247,25 +247,53 @@ layout: mid-cover
 
 ---
 transition: slide-left
+layout: two-cols-header
 ---
 
-# <twemoji-recycling-symbol/> Worth sharing
+# <twemoji-recycling-symbol/> Replace nci-grid with Flex
 
-<v-clicks>
+::left::
 
-##  Monorepo 2.0? Turborepo
+* <IconsStar/> **Designsystem: Maria, me**
+* <IconsStar/> **Claims (team New): Kristin**
+
+<v-clicks depth="2">
+
+* A few PRs and just a few hours of work
+* Simple examples, but still, now we have a few less users of legacy `nci-grid`
+  * [PR11 @ claims-commercial-forms](https://github.com/gjensidige/claims-commercial-forms/pull/11)
+  * [PR372 @ claims-fillout-corporate](https://github.com/gjensidige/claims-fillout-corporate/pull/372)
+  * [PR597 @ claims-health-declaration](https://github.com/gjensidige/claims-health-declaration/pull/597)
+  * [PR30 @ claims-openpages-forms-frontend](https://github.com/gjensidige/claims-openpages-forms-frontend/pull/30)
+* Also got the chance to remove local gjeff, ++
+* [Don't miss the migration-guide](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex-migrate-from-grid-to-flex--about)
+* [And do study the Flex-spec](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex--about)
 
 </v-clicks>
+
+::right::
+
 <v-clicks after>
 
-<IconsStar/> **Commercial DK, Pavol Repka**
+## Using Flex better
 
-</v-clicks>
-<v-clicks after>
+```
+<Flex layout={1}>
+  <Brick variant="plain"><!-- Custom package, does: -->
+    <Flex>
+      <div></div>
+      <MyContentHere/>
+      <div></div>
+```
 
-xxx
+Could be translated to just:
 
-xxx
+```
+<Flex center="md">
+  <MyContentHere/>
+```
+
+Often led to dependency could be removed.
 
 </v-clicks>
 
@@ -280,30 +308,21 @@ layout: mid-cover
 transition: slide-left
 ---
 
-# <twemoji-rolled-up-newspaper/> Xxxx
+# <twemoji-rolled-up-newspaper/> Noteworthy
 
-Xxx
+<v-clicks depth="2">
 
-* <IconsWebsite/> [The spec for CSS Grid Level 3](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)
-
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> Misc news
-
-<v-clicks>
-
-Potential news to write:
-
-* Vercel's v0, GitHub's X?, StackBlitz X? It's all AI
-* Turborepo "done"
-* Vite pushing for architecture change
-* Node.JS 23 new version, so 22 takes over from 20 as LTS - effective from last week - [Release](https://nodejs.org/en/blog/release/v22.11.0)
-* Team Platform - PAT must expire in 90 days
-* Grafana can now query GitHub
-
-* <IconsWebsite/> [xxx](#)
+* <IconsWebsite/> [Team Platform: - PAT must expire in 90 days](https://gjensidige.slack.com/archives/C01APFDMR7F/p1729580984849939)
+* <IconsWebsite/> Node.JS released **23**, so **22** takes over from 20 as **LTS** - [effective from last week](https://nodejs.org/en/blog/release/v22.11.0)
+* <IconsWebsite/> Final week to do [State of React 2024](https://survey.devographics.com/en-Us/survey/state-of-react/2024)
+* <IconsWebsite/> [Grafana can now query GitHub](https://gjensidige.slack.com/archives/CT3RMH2UE/p1730707214179359) (rollbacked because of auth bug)
+* AI everywhere ... Basic "trend" is to do even more "boring" setup/boilerplating for you, faster
+  * <IconsWebsite/> [Vercel's v0](https://v0.dev/)
+  * <IconsWebsite/> [GitHub's **Spark**](https://githubnext.com/projects/github-spark) (only preview)
+  * <IconsWebsite/> [StackBlitz' **Bolt**](https://bolt.new/)
+* <IconsWebsite/> [State of CSS 2024 results are in](https://2024.stateofcss.com/en-US), or [read a blog-post](https://www.joshwcomeau.com/email/2024-10-22-css-survey/).
+* <IconsWebsite/> [Vercel's Turbopack is stable](https://nextjs.org/blog/turbopack-for-development-stable)
+* <IconsWebsite/> Team Evan You hard at work on [finishing Rolldown](https://rolldown.rs/), and move Vite to it (replace rollup and esbuild).
 
 </v-clicks>
 
@@ -320,9 +339,14 @@ transition: slide-left
 
 # <twemoji-cherry-blossom/> Reading tips
 
+Loooads of conferences with a lot of shared knowledge, news and updates.
+
 <v-clicks>
 
-* <IconsWebsite/> [xxx](#)
+* <IconsWebsite/> [Re-watch any of the talks from ViteConf 2024](https://viteconf.org/24/replay), insane amount of talks on big and new frameworks
+* <IconsWebsite/> [JavaScript Day 2024 from JetBrains](https://lp.jetbrains.com/javascript-day-2024/), many interesting talks
+* <IconsWebsite/> [NextConf 2024](https://nextjs.org/conf)
+* <IconsWebsite/> [GitHub Universe](https://githubuniverse.com/)
 
 </v-clicks>
 
