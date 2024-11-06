@@ -148,7 +148,7 @@ Latest and greatest versions from the **Builders Core** suit of packages:
 
 `@gjensidige/builders-components` <twemoji-new-button />
 
-## <twemoji-disguised-face/> Icons: 1.0.15
+## <twemoji-disguised-face/> Icons: 1.6.4
 
 `@gjensidige/builders-icons`
 
@@ -274,6 +274,10 @@ Thanks to CSS and `:has` there's no need for that
 
 > "If h1 contains a svg, style the h1 like this"
 
+[Browser support is above 93%](https://caniuse.com/css-has)
+
+[Want more? Nice article on :has](https://www.joshwcomeau.com/css/has/)
+
 </v-clicks>
 
 ::right::
@@ -327,8 +331,44 @@ layout: two-cols-header
   * [PR372 @ claims-fillout-corporate](https://github.com/gjensidige/claims-fillout-corporate/pull/372)
   * [PR597 @ claims-health-declaration](https://github.com/gjensidige/claims-health-declaration/pull/597)
   * [PR30 @ claims-openpages-forms-frontend](https://github.com/gjensidige/claims-openpages-forms-frontend/pull/30)
-* Also got the chance to remove local gjeff, ++
-* [Don't miss the migration-guide](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex-migrate-from-grid-to-flex--about)
+
+</v-clicks>
+
+::right::
+
+<v-clicks after>
+
+## Replace grid with flex
+
+```
+  <Container>
+    <Row>
+      <Col xl="8" lg="12">
+```
+
+No Container, Row, Col 
+
+Only Flex
+
+```
+  <Flex center>
+```
+
+</v-clicks>
+
+---
+transition: slide-left
+layout: two-cols-header
+---
+
+# <twemoji-recycling-symbol/> Cleanups with Flex
+
+::left::
+
+<v-clicks depth="2">
+
+* Also got the chance to remove local gjeff, and some other deps
+* [I highly recomend the migration-guide](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex-migrate-from-grid-to-flex--about)
 * [And do study the Flex-spec](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex--about)
 
 </v-clicks>
@@ -339,7 +379,7 @@ layout: two-cols-header
 
 ## Using Flex better
 
-```
+```html
 <Flex layout={1}>
   <Brick variant="plain"><!-- Custom package, does: -->
     <Flex>
@@ -350,7 +390,7 @@ layout: two-cols-header
 
 Could be translated to just:
 
-```
+```html
 <Flex center="md">
   <MyContentHere/>
 ```
@@ -382,7 +422,7 @@ transition: slide-left
   * <IconsWebsite/> [Vercel's v0](https://v0.dev/)
   * <IconsWebsite/> [GitHub's **Spark**](https://githubnext.com/projects/github-spark) (only preview)
   * <IconsWebsite/> [StackBlitz' **Bolt**](https://bolt.new/)
-* <IconsWebsite/> [State of CSS 2024 results are in](https://2024.stateofcss.com/en-US), or [read a blog-post](https://www.joshwcomeau.com/email/2024-10-22-css-survey/).
+* <IconsWebsite/> [State of CSS 2024 results are in](https://2024.stateofcss.com/en-US), or [read a blog-post](https://www.joshwcomeau.com/email/2024-10-22-css-survey/), or [CSS-tricks](https://css-tricks.com/state-of-css-2024-results/).
 * <IconsWebsite/> [Vercel's Turbopack is stable](https://nextjs.org/blog/turbopack-for-development-stable)
 * <IconsWebsite/> Team Evan You hard at work on [finishing Rolldown](https://rolldown.rs/), and move Vite to it (replace rollup and esbuild).
 
@@ -410,6 +450,7 @@ Loooads of conferences with a lot of shared knowledge, news and updates.
 * <IconsWebsite/> [NextConf 2024](https://nextjs.org/conf)
 * <IconsWebsite/> [GitHub Universe](https://githubuniverse.com/)
 * <IconsWebsite/> [Trending video of Wes Bos analyzing a blazingly fast website](https://www.youtube.com/watch?v=-Ln-8QM8KhQ) (close to 1M views)
+* <IconsWebsite/> [The current state of "animate height to auto"](https://theosoti.com/blog/height-transition/)
 
 </v-clicks>
 
