@@ -27,6 +27,7 @@
     display: flex;
     padding: 0.8rem;
     align-items: baseline;
+    white-space: nowrap;
   }
   .slidev-layout.mid-cover h1::before {
     background: var(--slidev-theme-center-headingBg);
