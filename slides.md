@@ -26,84 +26,78 @@ transition: slide-up
 
 # <twemoji-spiral-notepad/> Agenda
 
-* Accessibility
-* Gjensidige
-* Builders Core
-* News
-* Inspiration
+* Reminder: hiring
+* Future app-deving
+* Builders Core on Bun and Turborepo
 
 ---
 transition: slide-left
 layout: mid-cover
 ---
 
-# <LogoGjensidigeLarge/> Gjensidige
+# <LogoGjensidigeLarge/> Recruiting
 
 ---
-transition: slide-up
-layout: test
+transition: slide-left
 ---
 
-## <twemoji-waving-hand/> Welcome
+# Designsystem is hiring
 
-So, probably some of you have seen many new faces on our floor.
+## Senior Developer
 
-**Team Edo** has been reborn, in Norway.
+* Know a good fit? Help them and us to connect!
+* [The ad on .builders](https://www.gjensidige.builders/community/blog/designsystemet-soker-senior-utviklere)
+* Deadline: Sunday!
 
-<v-clicks>
+---
+transition: slide-left
+layout: mid-cover
+---
 
-* Welcome **Marit Fredrikke Hansen** - Back-end/Fullstack
-* Welcome **Magnus Le** - Front-end/Fullstack 
-* It's a full team, with .NET-devs, agile coach, ++
+# <LogoGjensidigeLarge/> App dev
+
+---
+transition: slide-left
+---
+
+# App developement 2025 and beyond
+
+<v-clicks depth="2">
+
+* Visit by the eminent app team from Bratislava - Pali, Ludo, Tomas, Cuky
+* Already done two talks - on React Native, and on bun
+* They (and rest of) **Mobile and Web Services** are tasked to:
+  * Make contributions to the app easy for all tribes
+  * Using boilerplates / ready-made components / guides ++
+  * All in familiar React Native
+  * Each tribe will own and control their part of the app
+* Expect more one this going forward
 
 </v-clicks>
 
 ---
-transition: slide-up
+transition: slide-left
+layout: mid-cover
 ---
 
-# <twemoji-wheelchair-symbol/> A11y docs
+# <LogoGjensidigeLarge/> Core
 
-<Spacer/>
-<IconsSlack/>**#accessibility** - For ideas, questions, sharing, what not
-<Spacer/>
+---
+transition: slide-left
+---
+
+# How it was
 
 <v-clicks depth="2">
 
-* Last Accessibility forum we discussed `<Modal/>` in length.
-  * There will be some new recommendations on this, but takes time to research.
-* Some mentioned they didn't know about each component having [an accessibility heading](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-card--about) of its own ...
-
-</v-clicks>
-
----
-transition: slide-up
----
-
-# <twemoji-busts-in-silhouette/> New squads etc
-
-<v-clicks depth="2">
-
-* New developer landscape for all
-* New leaders, new lingo (chapters ++)
-* Mostly the same
-* But two teams are no more, and two new ones are born ...
-
-</v-clicks>
-
----
-transition: fade-out
----
-
-# <twemoji-people-hugging/> Team Builders? Team Mobile App?
-
-<v-clicks depth="2">
-
-* **Team Builders** is no more <twemoji-headstone/>
-* **Team Mobile App** is no more <twemoji-headstone/>
-* All staff from these teams have been placed into:
-  * Squad **Designsystem** - for all things designsystem
-  * Squad **Mobile and Web Services** - for all services/platforms/integrations
+* Lerna used to handle the monorepo, build and publish each package, handle release notes
+  * With help of Conventional Commits
+* Classic npm to run it all, with some node-help here and there
+* Lerna has been around long, then bought by nx
+* Lerna does a lot, so many things. So it's big.
+* Lerna runs `lint` and `test` on `git push`
+  * And in GitHub actions
+* A lot of the "consumption" of CPU time is going via Lerna
 
 </v-clicks>
 
@@ -111,18 +105,145 @@ transition: fade-out
 transition: slide-left
 ---
 
-# <twemoji-busts-in-silhouette/> Squad Designsystem
+# Bun
 
 <v-clicks depth="2">
 
-* One of the newborn <twemoji-baby/> **squads** at Gjensidige - **Designsystem**
-* Gjensidige's **Designsystem** is owned by this squad
-  * Both mobile and web-based
-* There's 2 developers on this team, me and Maria Lilleberg Holm <twemoji-flexed-biceps/>
-  * _But we will start recruiting for a third dev soon ..._
-* Slack-channels, documentation, etc, will change *gradually* to reflect new ownership
-* The word **Builders**, as part of naming (packages, domain name, ++), is **not planned** to change
-  * So, just keep using `builders-components` and whatnot
+* [https://bun.sh/](https://bun.sh/)
+* Under development for a few years (2022)
+* Released as stable 1 roughly a year ago (september 2023)
+* A drop-in replacer for Node/npm!
+  * It also uses `package.json` and `node_modules`
+* Works side-by-side with node and npm
+* Contains more than node + npm, can do jsx, ts, testing natively
+* But also lacks some node-features
+  * Or does them differently
+  * Like lock-file - `bun.lockb`, private repoes - `bunfig.toml`
+* But does everything faster - a lot faster!
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# Turborepo
+
+<v-clicks depth="2">
+
+* [https://turbo.build/repo/docs](https://turbo.build/repo/docs)
+* Developed by Vercel
+* Must configure if it should run `yarn`, `npm`, `deno` or `bun`
+* Plays well with `workspaces` from `npm` (and `yarn`)
+* Will trigger specified commands, like `build`, `lint`, `test` in entire workspace
+* Does all this faster than Lerna
+* Even has a smart cache-mode possibly cutting build to 0 seconds
+  * `.turbo`-folder in every sub-repo
+  * Example `README.md` = 0s
+* Does not handle release-notes
+* Must be configured using `turbo.json`
+* Requires you specify package manager in `package.json`
+  * `"packageManager": "npm@10.0.0",`
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# Approach - localhost
+
+<v-clicks depth="2">
+
+* We use Lerna for many things - `build`, `publish`, `version`, and `test`
+* We use node/npm many places, even for custom scripts here and there
+* But, all these tools can live together - bun, turborepo, node/npm, lerna, and do their thing
+* So, I simply typed `bun i` instead of `npm i` to use this for `install` - 10s not 21s
+* Turborepo was trickier, especially with our publishing and versioning being a bit special
+* But `build` and `test` is simple
+* So, replace `lerna ...` with `turbo ...` in `package.json`
+* Next was getting this right in `cicd.yml`, this was slightly more tricky
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# Approach - cicd
+
+* No steps for using Turborepo in cicd, since these are wired through npm anyways
+* Install bun in cicd - `- uses: oven-sh/setup-bun@v1.1.1`
+* Can now run `bun install` / `bun i` in the pipeline
+
+```yml
+#      - uses: actions/setup-node@v4
+#        with:
+#          node-version: 20
+#          cache: "npm"
+#      - name: Install
+#        run: npm ci
+      - uses: oven-sh/setup-bun@v1.1.1
+        with:
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@gjensidige"
+      - name: Install dependencies
+        env:
+          BUN_AUTH_TOKEN: ${{ secrets.ACTIONS_SYSTEM_USER }}
+        run: bun install
+```
+
+---
+transition: slide-left
+---
+
+# Approach - cicd, continued
+
+* Turborepo needs a cache, like such (before running it):
+
+```yml
+      - name: Setup turborepo cache
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-turbo-
+```
+
+---
+transition: slide-left
+---
+
+# Pitfalls
+
+<v-clicks depth="2">
+
+* `bun i` generates a bun-lock file, Lerna will think it should use this, not npm, so publishing/release fails
+  * `bun i --no-save` drops the lock-file. Not a forever-solution, but we can release while investigating
+  * Not commiting the lock-file from localhost either
+* CICD: `setup-bun@v2` will not work
+  * Must use `1.1.1` (still running latest bun)
+* Put that cicd turbo cache at the right place ;P
+* Confusing for others when using double systems, double setup, double packages
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# Worth it?
+
+<v-clicks depth="2">
+
+* Turbo Build = 21s - not 35s (431ms on turbo!)
+* Turbo Test = 15.6s - not 31s
+* On github actions it is a bit slower, but both Lerna and Turbo are slower, Turbo saves time
+* Bun cuts local installs from 20-22s to 10s
+* More or less same on cicd
+* We still use node for the rest (building, testing, linting ++)
+* Bun for `bun i` is like a no-brainer, you won't even notice it
+  * Install it next to Node, run it as you please
 
 </v-clicks>
 
@@ -140,25 +261,25 @@ layout: two-cols-header
 
 # <twemoji-notebook-with-decorative-cover/> Builders Core
 
-Latest and greatest versions from the **Builders Core** suit of packages:
+Latest and greatest versions from the **Builders Core** collection of packages:
 
 ::left::
 
-## <twemoji-brick/> Components: 1.18.0
+## <twemoji-brick/> Components: 1.19.1
 
 `@gjensidige/builders-components` <twemoji-new-button />
 
-## <twemoji-disguised-face/> Icons: 1.6.4
+## <twemoji-disguised-face/> Icons: 1.7.1
 
-`@gjensidige/builders-icons`
+`@gjensidige/builders-icons` <twemoji-new-button />
 
-## <twemoji-bar-chart/> Analytics: 16.0.21
+## <twemoji-bar-chart/> Analytics: 16.1.0
 
 `@gjensidige/core-analytics`
 
 ::right::
 
-## <twemoji-world-map/> Navigation: 3.6.23
+## <twemoji-world-map/> Navigation: 3.7.0
 
 `@gjensidige/core-navigation` <twemoji-new-button />
 
@@ -166,7 +287,7 @@ Latest and greatest versions from the **Builders Core** suit of packages:
 
 `@gjensidige/builders-fonts`
 
-## <twemoji-japanese-congratulations-button/> Tokens: 1.0.15
+## <twemoji-japanese-congratulations-button/> Tokens: 1.0.17
 
 `@gjensidige/builders-tokens`
 
@@ -176,331 +297,8 @@ transition: slide-left
 
 # <twemoji-notebook-with-decorative-cover/> Release notes
 
-<v-clicks>
-
-## @gjensidige/builders-components
-
-</v-clicks>
-<v-clicks depth="2">
-
-* **1.18.0** - last week
-  * <twemoji-glowing-star/> `<PopoverMenu/>` now have the possibility to align itself `left` or `right`
-  * <twemoji-glowing-star/> `<Alert/>` can now control if you want to show or hide icon
-  * <twemoji-hammer-and-wrench/> `<Status/>` didn't look good with symbol and text overflow on bigger screens (potential breaking change for styling - added wrapper around children). (thanks @Magnus Kjelland)
-  * <twemoji-hammer-and-wrench/> `<Alert/>`, improvements to styling, especially on mobile.
-  * <twemoji-wheelchair-symbol/> `<Expandable/>` now adds `aria-hidden` on its chevron
-  * <twemoji-notebook-with-decorative-cover/> Added [principals on state](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-button-guidelines--about) for `<Button/>` guidelines
-  * <twemoji-notebook-with-decorative-cover/> [New page](https://www.gjensidige.builders/docs/core/?path=/docs/principles-icons-and-symbols--about) "*Icons and symbols*" under principles (some taken from icons-package, plus added info)
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-notebook-with-decorative-cover/> Release notes
-
-<v-clicks>
-
-## @gjensidige/core-navigation
-
-</v-clicks>
-<v-clicks depth="2">
-
-* **3.6.23** - last week
-  * <twemoji-hammer-and-wrench/> minor styling adjustments in navigation
-  * <twemoji-hammer-and-wrench/> system messages does not show when both _application_ and _location filter_ is set
-  * <twemoji-hammer-and-wrench/> Use correct logo in navigation (thanks @james-christian.rugaard)
-
-</v-clicks>
-<v-clicks after>
-
-<Spacer/>
-
 * <IconsSlack/>Follow **#builders-core-announcements** for release notes!
 * <IconsSlack/>Use **#builders-core** for questions, bug reports, etc.
-
-</v-clicks>
-
----
-transition: slide-left
----
-
-# <twemoji-bar-chart/> Stats-o-rama: Builders Core
-
-<v-clicks>
-
-Finally, we can easily overview all things Builders Core - 
-Welcome: [The Builders Core usage dashboard](https://www.gjensidige.builders/testing/dashboard)
-
-</v-clicks>
-<v-clicks after>
-
-* Updated daily, looooooads of data to drill into
-* **Latest** = `builders-* && core-*` / **Legacy** = everything else
-
-</v-clicks>
-<v-clicks after>
-
-<img src="/images/2024-11-06/core-dashboard.png" class="rounded shadow" style="max-width:85%;" alt="" />
-
-</v-clicks>
-
----
-transition: slide-left
-layout: mid-cover
----
-
-# <twemoji-recycling-symbol/> Worth sharing
-
----
-transition: slide-left
-layout: two-cols-header
----
-
-# <twemoji-recycling-symbol/> I love :has
-
-::left::
-
-<v-clicks>
-
-Like my nice new blue cover-slides with headings?
-
-Ooold way would have been to add different class-names into the HTML, compute it beforehand
-
-Thanks to CSS and `:has` there's no need for that
-
-`h1:has(svg)` translate to:
-
-> "If h1 contains a svg, style the h1 like this"
-
-[Browser support is above 93%](https://caniuse.com/css-has)
-
-[Want more? Nice article on :has](https://www.joshwcomeau.com/css/has/)
-
-</v-clicks>
-
-::right::
-
-<v-clicks after>
-
-```css
-.mySlideCustomLayout h1 {
-  padding: .8rem;
-}
-/* All types of <h1> on my own custom layout */
-```
-
-Title and SVG (these are big):
-
-```css
-.mySlideCustomLayout h1:has(svg) {
-  padding-right: 1rem;
-}
-/* <h1><svg../>Title</h1>
-```
-
-Title and img (emoji):
-
-```css
-.mySlideCustomLayout h1:has(img) {
-  padding-right: 4.8rem;
-}
-/* <h1><img../>Title</h1>
-```
-
-</v-clicks>
-
----
-transition: slide-left
-layout: two-cols-header
----
-
-# <twemoji-recycling-symbol/> Replace nci-grid with Flex
-
-::left::
-
-* <IconsStar/> **Designsystem: Maria, me**
-* <IconsStar/> **Claims (team New): Kristin**
-
-<v-clicks depth="2">
-
-* A few PRs and just a few hours of work
-* Simple examples, but still, now we have a few less users of legacy `nci-grid`
-  * [PR11 @ claims-commercial-forms](https://github.com/gjensidige/claims-commercial-forms/pull/11)
-  * [PR372 @ claims-fillout-corporate](https://github.com/gjensidige/claims-fillout-corporate/pull/372)
-  * [PR597 @ claims-health-declaration](https://github.com/gjensidige/claims-health-declaration/pull/597)
-  * [PR30 @ claims-openpages-forms-frontend](https://github.com/gjensidige/claims-openpages-forms-frontend/pull/30)
-
-</v-clicks>
-
-::right::
-
-<v-clicks after>
-
-## Replace grid with flex
-
-```
-  <Container>
-    <Row>
-      <Col xl="8" lg="12">
-```
-
-No Container, Row, Col 
-
-Only Flex
-
-```
-  <Flex center>
-```
-
-</v-clicks>
-
----
-transition: slide-left
-layout: two-cols-header
----
-
-# <twemoji-recycling-symbol/> Cleanups with Flex
-
-::left::
-
-<v-clicks depth="2">
-
-* Also got the chance to remove local gjeff, and some other deps
-* [I highly recomend the migration-guide](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex-migrate-from-grid-to-flex--about)
-* [And do study the Flex-spec](https://www.gjensidige.builders/docs/core/?path=/docs/packages-builders-components-flex--about)
-
-</v-clicks>
-
-::right::
-
-<v-clicks after>
-
-## Using Flex better
-
-```html
-<Flex layout={1}>
-  <Brick variant="plain"><!-- Custom package, does: -->
-    <Flex>
-      <div></div>
-      <MyContentHere/>
-      <div></div>
-```
-
-Could be translated to just:
-
-```html
-<Flex center="md">
-  <MyContentHere/>
-```
-
-Often led to dependency could be removed.
-
-</v-clicks>
-
----
-transition: slide-left
-layout: mid-cover
----
-
-# <twemoji-rolled-up-newspaper/> News
-
----
-transition: slide-left
----
-
-# <twemoji-rolled-up-newspaper/> Noteworthy
-
-<v-clicks depth="2">
-
-* <IconsWebsite/> [Team Platform: - PAT must expire in 90 days](https://gjensidige.slack.com/archives/C01APFDMR7F/p1729580984849939)
-* <IconsWebsite/> Node.JS released **23**, so **22** takes over from 20 as **LTS** - [effective from last week](https://nodejs.org/en/blog/release/v22.11.0)
-* <IconsWebsite/> Final week to do [State of React 2024](https://survey.devographics.com/en-Us/survey/state-of-react/2024)
-* <IconsWebsite/> [Grafana can now query GitHub](https://gjensidige.slack.com/archives/CT3RMH2UE/p1730707214179359) (rollbacked because of auth bug)
-* AI everywhere ... Basic "trend" is to do even more "boring" setup/boilerplating for you, faster
-  * <IconsWebsite/> [Vercel's v0](https://v0.dev/)
-  * <IconsWebsite/> [GitHub's **Spark**](https://githubnext.com/projects/github-spark) (only preview)
-  * <IconsWebsite/> [StackBlitz' **Bolt**](https://bolt.new/)
-* <IconsWebsite/> [State of CSS 2024 results are in](https://2024.stateofcss.com/en-US), or [read a blog-post](https://www.joshwcomeau.com/email/2024-10-22-css-survey/), or [CSS-tricks](https://css-tricks.com/state-of-css-2024-results/).
-* <IconsWebsite/> [Vercel's Turbopack is stable](https://nextjs.org/blog/turbopack-for-development-stable)
-* <IconsWebsite/> Team Evan You hard at work on [finishing Rolldown](https://rolldown.rs/), and move Vite to it (replace rollup and esbuild).
-
-</v-clicks>
-
----
-transition: slide-left
-layout: mid-cover
----
-
-# <twemoji-cherry-blossom/> Inspiration
-
----
-transition: slide-left
----
-
-# <twemoji-cherry-blossom/> Reading tips
-
-Loooads of conferences with a lot of shared knowledge, news and updates.
-
-<v-clicks>
-
-* <IconsWebsite/> [Re-watch any of the talks from ViteConf 2024](https://viteconf.org/24/replay), insane amount of talks on big and new frameworks
-* <IconsWebsite/> [JavaScript Day 2024 from JetBrains](https://www.youtube.com/playlist?list=PLQ176FUIyIUYPsHqYbLgnQ_9j4Z7q38wY), many interesting talks
-* <IconsWebsite/> [NextConf 2024](https://nextjs.org/conf)
-* <IconsWebsite/> [GitHub Universe](https://githubuniverse.com/)
-* <IconsWebsite/> [Trending video of Wes Bos analyzing a blazingly fast website](https://www.youtube.com/watch?v=-Ln-8QM8KhQ) (close to 1M views)
-* <IconsWebsite/> [The current state of "animate height to auto"](https://theosoti.com/blog/height-transition/)
-
-</v-clicks>
-
----
-transition: slide-left
-layout: mid-cover
----
-
-# <twemoji-package/> Updates
-
----
-transition: fade-out
-layout: two-cols-header
----
-
-# <twemoji-package/> Packages and frameworks
-
-::left::
-
-**[Vite](https://vitejs.dev/)**  
-5.4.10 - [Last week](https://github.com/vitejs/vite/blob/v5.4.10/packages/vite/CHANGELOG.md) (beta 8 of v6)
-
-**[Vitest](https://vitest.dev/)**  
-2.1.4 - [Last week](https://github.com/vitest-dev/vitest/releases)
-
-**[Prettier](https://prettier.io/)**  
-3.3.3 - [latest stable](https://prettier.io/versions)
-
-**[Eslint](https://eslint.org/)**  
-9.14.0 - [v8 is EOL](https://eslint.org/version-support/)
-
-**[TypeScript](https://www.typescriptlang.org/)**  
-5.6.3 - [5.7 beta released last month](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/)
-
-**[clsx](https://github.com/lukeed/clsx?tab=readme-ov-file#readme)**  
-2.1.1 - Still [faster](https://github.com/lukeed/clsx/tree/master/bench) than `classnames` ([50 repoes](https://github.com/search?q=org%3Agjensidige+%22%5C%22classnames%5C%22%3A+%5C%22%5E%22+path%3Apackage.json++NOT+is%3Aarchived&type=code))
-
-::right::
-
-## React  
-<IconsWebsite/> https://react.dev
-* 18.3.1 - [v19 still in beta](https://19.react.dev/)
-
-## Node.JS
-<IconsWebsite/> https://nodejs.org/en
-* 22.11.0 LTS - latest 23.1.0
-
-## Bun
-<IconsWebsite/> https://bun.sh/
-* 1.1.34
 
 ---
 layout: fin
@@ -514,4 +312,4 @@ That's all for now!
 
 <Spacer/>
 
-<twemoji-spiral-calendar/> Next FEF will be held the **20th of November**
+<twemoji-spiral-calendar/> Next FEF will be held the **4th of December**
