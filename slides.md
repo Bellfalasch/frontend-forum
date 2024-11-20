@@ -134,16 +134,33 @@ transition: slide-left
 * [https://turbo.build/repo/docs](https://turbo.build/repo/docs)
 * Developed by Vercel
 * Must configure if it should run `yarn`, `npm`, `deno` or `bun`
-* Plays well with `workspaces` from `npm` (and `yarn`)
+  * Added in `package.json`, like so `"packageManager": "npm@10.0.0",`
+* Plays well with `workspaces` from `npm` (and more)
 * Will trigger specified commands, like `build`, `lint`, `test` in entire workspace
 * Does all this faster than Lerna
-* Even has a smart cache-mode possibly cutting build to 0 seconds
+  * Even has a smart cache-mode possibly cutting build to 0 seconds
   * `.turbo`-folder in every sub-repo
   * Example `README.md` = 0s
-* Does not handle release-notes
 * Must be configured using `turbo.json`
-* Requires you specify package manager in `package.json`
-  * `"packageManager": "npm@10.0.0",`
+* Does not handle release-notes, versioning...
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# Inspiration
+
+<v-clicks depth="2">
+
+* Used a lot of inspiration from other teams to see how to do this in Gjensidige
+* A few teams now use bun already, so I could learn a lot from them
+  * [Private Sales cicd-pipeline](https://github.com/gjensidige/salg-nettbutikk/blob/main/.github/actions/setup/action.yml)
+  * [Our app-code contains loads of good examples, also for other things](https://github.com/gjensidige/gjensidigeappen)
+* For Turborepo I only had Commercial DK to look at
+  * [Their main repo on configuring it](https://github.com/gjensidige/commercial-dk-apps/blob/main/package.json)
+  * [Their workflow on running it](https://github.com/gjensidige/commercial-dk-apps/blob/main/.github/workflows/ci.yml)
 
 </v-clicks>
 
@@ -162,7 +179,8 @@ transition: slide-left
 * Turborepo was trickier, especially with our publishing and versioning being a bit special
 * But `build` and `test` is simple
 * So, replace `lerna ...` with `turbo ...` in `package.json`
-* Next was getting this right in `cicd.yml`, this was slightly more tricky
+* Add necessary config-file `turbo.json` (copy paste from Commercial DK)
+* Next was getting all this right in `cicd.yml`, this was slightly more tricky ...
 
 </v-clicks>
 
@@ -172,11 +190,12 @@ transition: slide-left
 
 # Approach - cicd
 
-* No steps for using Turborepo in cicd, since these are wired through npm anyways
+* No steps for using Turborepo in cicd, since it is wired through npm anyways (like lerna)
 * Install bun in cicd - `- uses: oven-sh/setup-bun@v1.1.1`
 * Can now run `bun install` / `bun i` in the pipeline
 
 ```yml
+# This is the old code, just replace those lines with this:
 #      - uses: actions/setup-node@v4
 #        with:
 #          node-version: 20
@@ -199,7 +218,11 @@ transition: slide-left
 
 # Approach - cicd, continued
 
-* Turborepo needs a cache, like such (before running it):
+* bun for Core does not need private repo access, so can be removed
+  * But are you using Core, you must
+  * Be aware that `.npmrc` or similar needs to be replaced with `bunfig.toml`
+* Next: Turborepo needs a cache, like such (before running it)
+* It works without but will be a lot faster with
 
 ```yml
       - name: Setup turborepo cache
@@ -224,6 +247,8 @@ transition: slide-left
 * CICD: `setup-bun@v2` will not work
   * Must use `1.1.1` (still running latest bun)
 * Put that cicd turbo cache at the right place ;P
+  * After install, before build ...
+* Remember to map all commands into `turbo.config` (like `test:update` ...)
 * Confusing for others when using double systems, double setup, double packages
 
 </v-clicks>
@@ -236,6 +261,8 @@ transition: slide-left
 
 <v-clicks depth="2">
 
+* OMG yes
+* Should have done it long ago!
 * Turbo Build = 21s - not 35s (431ms on turbo!)
 * Turbo Test = 15.6s - not 31s
 * On github actions it is a bit slower, but both Lerna and Turbo are slower, Turbo saves time
@@ -244,6 +271,43 @@ transition: slide-left
 * We still use node for the rest (building, testing, linting ++)
 * Bun for `bun i` is like a no-brainer, you won't even notice it
   * Install it next to Node, run it as you please
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# End result
+
+<v-clicks depth="2">
+
+* The job spanned over multiple PRs, that also did a few other refactorings
+* But here's the ones:
+  * [Add Turborepo (without cache)](https://github.com/gjensidige/builders-core/pull/2748)
+  * [Add bun, turbo cache ... but also some other things](https://github.com/gjensidige/builders-core/pull/2749)
+  * [When Lerna started to be confused by bun lock-file](https://github.com/gjensidige/builders-core/pull/2752)
+* You need to diggest all this, but could perhaps serves as an idea
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+# Next steps
+
+<v-clicks depth="2">
+
+* Use turborepo all the way
+  * Configure turborepo to use bun
+  * Get [changeset](https://www.npmjs.com/package/@changesets/cli) to do versioning and changelogs (replace lerna)
+* Use bun all the way
+  * Readd the lock-file, and use `--frozen-lockfile`
+  * Use bun for testing, their powerful `bun:test`-runner is crazy fast
+  * Migrate files using node to access filesystem
+* Look at [lefthook](https://www.npmjs.com/package/lefthook) to replace Husky
+* What else?!
 
 </v-clicks>
 
