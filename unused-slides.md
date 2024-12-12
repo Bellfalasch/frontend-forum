@@ -1,21 +1,3 @@
----
-theme: the-unnamed
-
-# https://sli.dev/custom/highlighters.html
-highlighter: shiki
-# show line numbers in code blocks?
-lineNumbers: true
-# default page transition
-transition: fade-out
-
-favicon: './favicon.png'
-
-layout: cover
----
-
-# Front-end Forum
-
-## Ikke brukte slides ...
 
 ---
 transition: slide-left
