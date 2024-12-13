@@ -39,15 +39,17 @@ layout: mid-cover
 
 ---
 transition: slide-up
+layout: wrapped
 ---
 
-# Recruiting
-
-Many joined us, very few left us
+<Card
+  title="Recruiting"
+  text="Many joined us, very few left us"
+/>
 
 ---
 transition: slide-up
-layout: mid-cover
+layout: wrapped
 ---
 
 <Card
@@ -57,7 +59,7 @@ layout: mid-cover
 
 ---
 transition: slide-up
-layout: mid-cover
+layout: wrapped
 ---
 
 <Card
@@ -67,7 +69,7 @@ layout: mid-cover
 
 ---
 transition: slide-up
-layout: mid-cover
+layout: wrapped
 ---
 
 <Card
@@ -76,24 +78,28 @@ layout: mid-cover
 />
 
 ---
+layout: wrapped
 transition: slide-up
 ---
 
-# Age of Rust
-
-RSbuild, BiomeJS, oxlint, and modern toolchain simpky outruns the entire "old" JS-based toolchain
-
----
-transition: slide-up
----
-
-# Vite 6
-
-Another year another version
+<Card
+  title="Age of Rust"
+  text="RSbuild, BiomeJS, oxlint, and modern toolchain simpky outruns the entire 'old' JS-based toolchain"
+/>
 
 ---
 transition: slide-up
-layout: mid-cover
+layout: wrapped
+---
+
+<Card
+  title="Vite 6"
+  text="Another year another version"
+/>
+
+---
+transition: slide-up
+layout: wrapped
 ---
 
 # Looking forward

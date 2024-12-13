@@ -15,10 +15,10 @@ defineProps<{
 <style scoped>
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-10rem) rotate(-10deg);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
   }
 }
 
@@ -45,7 +45,7 @@ defineProps<{
   text-decoration: none;
   transition: var(--builders-transition-duration);
   margin: 0 auto;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
 
   animation: 1s ease-out 0s 1 slideInFromLeft;
 
