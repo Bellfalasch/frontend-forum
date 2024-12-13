@@ -99,7 +99,7 @@ layout: wrapped
 
 ---
 transition: slide-up
-layout: wrapped
+layout: mid-cover
 ---
 
 # Looking forward

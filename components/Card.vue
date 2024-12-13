@@ -21,6 +21,20 @@ defineProps<{
     transform: translateX(0) rotate(0deg);
   }
 }
+@keyframes dangle {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-5rem) rotate(5deg);
+  }
+  75% {
+    transform: translateX(5rem) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
 
 .card {
   /* CSS custom properties for later use in child elements */
@@ -47,7 +61,7 @@ defineProps<{
   margin: 0 auto;
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
 
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 5s ease-out 0s 1 dangle;
 
   &:focus-visible { outline: none; box-shadow: var(--builders-focus-boxShadow) }
   & > :is(h1,h2,h3,h4) {
@@ -55,17 +69,27 @@ defineProps<{
     line-height: var(--builders-line-height-130);
     margin-bottom: 0;
   }
-
-  /* Draw consistent border over expandables */
+  /*
   &::before {
-    border-radius: inherit;
-    border: inherit;
-    content: '';
-    inset: -1px;
-    pointer-events: none;
+    width: 2px;
+    height: 500px;
     position: absolute;
-    z-index: 2;
+    left: 50px;
+    top: -400px;
+    background-color: black;
+    content: '';
+    position: -1;
   }
+  &::after {
+    width: 2px;
+    height: 500px;
+    position: absolute;
+    right: 50px;
+    top: -400px;
+    background-color: black;
+    content: '';
+  }
+  */
 }
 /*
 .card {
