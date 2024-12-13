@@ -1,3 +1,6 @@
+import "@gjensidige/builders-tokens/dist/tokens.css";
+import "@gjensidige/builders-fonts/dist/fonts.css";
 import "@slidev/client/styles/layouts-base.css";
 import "./custom.css";
-//import './layouts.css'
+import "./layout-mid-cover.css";
+import "./layout-fin.css";

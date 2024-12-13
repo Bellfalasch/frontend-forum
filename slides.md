@@ -21,33 +21,125 @@ layout: cover
 <twemoji-man-technologist/> Bobby Westberg
 
 ---
-transition: slide-up
+transition: fade
 ---
 
 # <twemoji-spiral-notepad/> Agenda
 
 * Looking back at 2024
 * Guessing how 2025 will be
+* Let's kuizz(i) again!
 
 ---
-transition: slide-left
+transition: slide-up
 layout: mid-cover
 ---
 
-# <LogoGjensidigeLarge/> Recruiting
-
-Many join us, very few left us
+# Looking back 
 
 ---
-transition: slide-left
+transition: slide-up
+---
+
+# Recruiting
+
+Many joined us, very few left us
+
+---
+transition: slide-up
 layout: mid-cover
 ---
 
-# Builders Core
-
-We released 1.0
+<Card
+  title="Builders Core"
+  text="We released 1.0 of builders-components"
+/>
 
 ---
+transition: slide-up
+layout: mid-cover
+---
+
+<Card
+  title="React 19"
+  text="After half-a-year beta+RC we saw a stable release"
+/>
+
+---
+transition: slide-up
+layout: mid-cover
+---
+
+<Card
+  title="Speed"
+  text="Still few, but more teams and repoes move to Bun, Turborepo"
+/>
+
+---
+transition: slide-up
+---
+
+# Age of Rust
+
+RSbuild, BiomeJS, oxlint, and modern toolchain simpky outruns the entire "old" JS-based toolchain
+
+---
+transition: slide-up
+---
+
+# Vite 6
+
+Another year another version
+
+---
+transition: slide-up
+layout: mid-cover
+---
+
+# Looking forward
+
+---
+transition: slide-up
+---
+
+# Chapter Leads
+
+The true power of "emebedded" CLs in all tribes
+
+---
+transition: slide-up
+---
+
+# Tech debt
+
+Hopefully more teams will rise out of the tech debt ashes
+
+---
+transition: slide-up
+---
+
+# Upgrades
+
+React 19, Vite 6, and other modern techs
+
+---
+transition: slide-up
+---
+
+# Bun, oxlint/biome
+
+More teams see the insane value of modern tools
+
+---
+transition: slide-up
+---
+
+# Team Evan You
+
+Major breakthroughs on Vite, building and bundling will change how we stack in 2025
+
+---
+transition: slide-up
 layout: fin
 ---
 
