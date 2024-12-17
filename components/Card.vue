@@ -26,19 +26,27 @@ defineProps<{
     transform: translateX(0) rotate(0deg);
   }
   25% {
-    transform: translateX(-5rem) rotate(5deg);
+    transform: translateX(-6rem) rotate(6deg);
   }
   75% {
-    transform: translateX(5rem) rotate(-5deg);
+    transform: translateX(6rem) rotate(-6deg);
   }
   100% {
     transform: translateX(0) rotate(0deg);
   }
 }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.75) rotate(-30deg); opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.1) rotate(2deg); opacity: 1;
+  }
+}
 
 .card {
   /* CSS custom properties for later use in child elements */
-  --builders-card-background-color: var(--builders-color-default-bg);
+  --builders-card-background-color: var(--builders-color-white);
   --builders-card-border-color: var(--builders-color-default-emphasis);
   --builders-card-icon-color: currentColor;
   --builders-card-nested-border: inherit;
@@ -51,7 +59,7 @@ defineProps<{
   border-radius: var(--builders-radius-md);
   border: 1px solid var(--builders-card-border-color);
   box-sizing: border-box;
-  color: var(--builders-color-default-text);
+  color: #333;
   display: block;
   outline-offset: 2px;
   padding: var(--builders-card-padding);
@@ -60,8 +68,9 @@ defineProps<{
   transition: var(--builders-transition-duration);
   margin: 0 auto;
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
+  max-width: 80%;
 
-  animation: 5s ease-out 0s 1 dangle;
+  animation: 1.75s ease-out 0s 1 zoomIn forwards;
 
   &:focus-visible { outline: none; box-shadow: var(--builders-focus-boxShadow) }
   & > :is(h1,h2,h3,h4) {
@@ -69,57 +78,8 @@ defineProps<{
     line-height: var(--builders-line-height-130);
     margin-bottom: 0;
   }
-  /*
-  &::before {
-    width: 2px;
-    height: 500px;
-    position: absolute;
-    left: 50px;
-    top: -400px;
-    background-color: black;
-    content: '';
-    position: -1;
-  }
-  &::after {
-    width: 2px;
-    height: 500px;
-    position: absolute;
-    right: 50px;
-    top: -400px;
-    background-color: black;
-    content: '';
-  }
-  */
 }
-/*
-.card {
-  --builders-card-border-hover: var(--builders-color-subtle-emphasis);
-  --builders-card-background-hover: var(--builders-color-subtle-emphasis);
-  --builders-card-padding: var(--builders-unit-30);
-  --builders-card-border-color: var(--builders-color-subtle-emphasis);
-  --builders-card-background-color: var(--builders-color-subtle-bg);
 
-  --builders-card-icon-color: currentColor;
-  --builders-card-nested-border: inherit;
-  --builders-card-nested-radius: inherit;
-  --builders-card-nested-margin: -1px var(--builders-card-padding-negative) 0;
-  --builders-card-padding-negative: calc(var(--builders-card-padding)* -1);
-  background-color: var(--builders-card-background-color);
-  border-radius: var(--builders-radius-md);
-  border: 1px solid var(--builders-card-border-color);
-  box-sizing: border-box;
-  box-shadow: 10px 10px 10px black;
-  color: var(--builders-color-default-text);
-  display: block;
-  outline-offset: 2px;
-  padding: var(--builders-card-padding);
-  position: relative;
-  text-decoration: none;
-  transition: var(--builders-transition-duration);
-  margin: 0 auto;
-  text-align: left;
-}
-  */
 h2 {
   font-family: var(--builders-font-display);
   font-weight: var(--builders-font-weight-400);
