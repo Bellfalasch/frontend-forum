@@ -2,11 +2,12 @@
 defineProps<{
   title?: string
   text?: string
+  animate?: string
 }>()
 </script>
 
 <template>
-  <div class="card">
+  <div :class="{'card': true, 'reversed': $props.animate === 'reversed'}">
     <h2>{{ title }}</h2>
     <p>{{ text }}</p>
   </div>
@@ -41,6 +42,14 @@ defineProps<{
   }
   100% {
     transform: scale(1.1) rotate(2deg); opacity: 1;
+  }
+}
+@keyframes zoomInReversed {
+  0% {
+    transform: scale(0.75) rotate(30deg); opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.1) rotate(-2deg); opacity: 1;
   }
 }
 
@@ -78,6 +87,9 @@ defineProps<{
     line-height: var(--builders-line-height-130);
     margin-bottom: 0;
   }
+  &.reversed {
+    animation: 1.75s ease-out 0s 1 zoomInReversed forwards;
+  }
 }
 
 h2 {
@@ -93,5 +105,6 @@ p {
   margin-block-end: 0;
   font-weight: var(--builders-font-weight-400);
   font-size: var(--builders-font-body-1) !important;
+  line-height: 165%;
 }
 </style>

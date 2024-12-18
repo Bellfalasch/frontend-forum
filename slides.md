@@ -18,13 +18,13 @@ layout: cover
 ## 18th of December
 
 <Spacer/>
-<twemoji-man-technologist/> Bobby Westberg
+<twemoji-santa-claus/> Bobby Westberg
 
 ---
 transition: fade
 ---
 
-# <twemoji-spiral-notepad/> Agenda
+# <twemoji-snowflake/> Agenda
 
 * Looking back at 2023
 * Some favourites from 2024
@@ -45,7 +45,7 @@ transition: fade
 * "Form Patterns" were born in our docs
 * Bun 1.0 was released
 * Native CSS nesting, View Transition API
-* "Builders Core" emerged
+* "Builders Core" launched, major rewrite - compound components, and more
 * Frameworks like Astro rises to fame
 * Node 20 became LTS, Node 21 was released
 * Vite 5 was released, Vitest 1.0 was released
@@ -114,8 +114,31 @@ layout: wrapped
 
 <Card
   title="Community"
-  text="Many joined us, very few left. Community keeps growing! We've tried to welcome all new front-enders and fullstackers, CSS-lovers and JS-wizards"
+  text="Many joined us, very few left. Community keeps growing! We've tried to welcome all new front-enders and fullstackers, CSS-lovers and JS-wizards. Front-end Forum invites over 90 persons every other week!"
+  animate="reversed"
 />
+
+---
+transition: slide-up
+layout: test
+---
+
+<v-clicks>
+
+* <twemoji-waving-hand/> Welcome **Solveig Hergot Langås** - Private, sales
+* <twemoji-waving-hand/> Welcome **Oscar Selnes Bognæs** - Service, private
+* <twemoji-waving-hand/> Welcome **Forat Al-Hellali** - Service, private
+* <twemoji-waving-hand/> Welcome **Stine Hauge Danielsen** - Digitalization and Design / re-skill
+* <twemoji-waving-hand/> Welcome **Per Allan Johansson** - Sales, private
+* <twemoji-waving-hand/> Welcome **Samuel Mukunga Bakke** - Sales, private
+* <twemoji-waving-hand/> Welcome **Ulrik Røsby** - Claims
+* <twemoji-waving-hand/> Welcome **Marit Fredrikke Hansen** - Back-end/Fullstack
+* <twemoji-waving-hand/> Welcome **Magnus Le** - Front-end/Fullstack 
+* <twemoji-waving-hand/> Welcome **Henrik Lilleengen** - Chapter Lead, Private
+* <twemoji-waving-hand/> Welcome **Simen Robstad Nilsen** - Senior Developer, Mobile and Web Services
+* <twemoji-waving-hand/> Welcome **Adrian Storm** - Senior Developer, Designsystem - begins in two weeks!
+
+</v-clicks>
 
 ---
 transition: slide-up
@@ -124,7 +147,7 @@ layout: wrapped
 
 <Card
   title="Accessibility"
-  text="The biggest push for accessibility at Gjensidige, involving all countries and locations, cross-disciplinary! Core-docs now have a huge a11y-section."
+  text="The biggest push for accessibility at Gjensidige, involving all countries and locations, cross-disciplinary! Core-docs now have a huge a11y-section. Accessibility champions, with their own forum."
 />
 
 ---
@@ -134,7 +157,8 @@ layout: wrapped
 
 <Card
   title="Builders Core"
-  text="We released 1.0 of builders-components with a modern stack - compound components, es-modules, migration-scripts, no more less, ++"
+  text="We released 1.0 of builders-components with the modern stack we rebuilt it with in 2023 - compound components, es-modules, migration-scripts, no 'less', easier to customize, amazing docs, ++"
+  animate="reversed"
 />
 
 ---
@@ -154,7 +178,8 @@ layout: wrapped
 
 <Card
   title="React 19"
-  text="After half-a-year beta and RC, we saw Facebook do a stable release"
+  text="After half-a-year beta and RC, we saw Facebook do a stable release. First major in a long time!"
+  animate="reversed"
 />
 
 ---
@@ -164,7 +189,7 @@ layout: wrapped
 
 <Card
   title="Angular 19"
-  text="Another number 19 came this year, Angular, and it's said it's actually pretty good"
+  text="Another number 19 came this year - Angular - and it's said it's actually pretty good"
 />
 
 ---
@@ -174,7 +199,8 @@ layout: wrapped
 
 <Card
   title="Stack speed"
-  text="Still few, but more teams and repoes move to Bun, Turborepo, etc"
+  text="Still few at Gjensidige, but more teams will see the light and make the move to a faster stack, like Bun, Turborepo, etc"
+  animate="reversed"
 />
 
 ---
@@ -195,6 +221,28 @@ layout: wrapped
 <Card
   title="CSS"
   text="Talks about CSS5 got intense, and we got an official CSS logo"
+  animate="reversed"
+/>
+
+---
+transition: slide-up
+layout: wrapped
+---
+
+<Card
+  title="Text admin, 2"
+  text="A long summer, amzing devs, and some willingly managers, spawn us a brand new and shiny text admin tool - S.T.A.V."
+/>
+
+---
+transition: slide-up
+layout: wrapped
+---
+
+<Card
+  title="Next.JS and status messages"
+  text="Anyone at Gjensidige, with zero CMS-skills, can now easily publish system-wide messages for all our websites. 'First' app running Next.JS at Gjensidige. Technically Sweden was first, but they've abandon it."
+  animate="reversed"
 />
 
 ---
@@ -204,7 +252,7 @@ layout: wrapped
 
 <Card
   title="So much state!"
-  text="And I mean 'State of ..', polls for HTML, CSS, JS, React, and more, for those that love stats and/or to fill out forms"
+  text="And I mean 'State of ...' - polls for HTML, CSS, JS, React, and more, for those that love stats and/or to fill out forms."
 />
 
 ---
@@ -214,7 +262,8 @@ transition: slide-up
 
 <Card
   title="Age of Rust"
-  text="It has just begun, but old JavaScript-based toolchains are being replaced by Rust (or similar). RSbuild, BiomeJS, oxlint, ++"
+  text="It has just begun, but old JavaScript-based toolchains are being replaced by Rust (or similar) at a high speed. RSbuild, BiomeJS, oxlint, ++"
+  animate="reversed"
 />
 
 ---
@@ -224,7 +273,7 @@ layout: wrapped
 
 <Card
   title="Vite 6"
-  text="Another year another version"
+  text="Another year, another major version."
 />
 
 ---
@@ -235,6 +284,7 @@ layout: wrapped
 <Card
   title="Talks!"
   text="So many of you took to the stage this year (some more than others). We had 14 talks!"
+  animate="reversed"
 />
 
 ---
@@ -244,7 +294,18 @@ layout: wrapped
 
 <Card
   title="Forums!"
-  text="We held 18 Front-end Forums this year (two more than last year)"
+  text="We held 18 Front-end Forums this year (two more than last year)."
+/>
+
+---
+transition: slide-up
+layout: wrapped
+---
+
+<Card
+  title="Tech lifts"
+  text="Many teams made huge efforts to tackle technical debt, a few highlights are Claims, Sweden and Denmark, but no team have left their debt untouched."
+  animate="reversed"
 />
 
 ---
@@ -254,7 +315,7 @@ layout: wrapped
 
 <Card
   title="Deno 2"
-  text="The old Node-dropouts are not giving up, and this actually looks pretty good"
+  text="The old Node-dropouts are not giving up, and this actually looks pretty good."
 />
 
 ---
@@ -264,7 +325,8 @@ layout: wrapped
 
 <Card
   title="AI bonanza"
-  text="Code auto-complete, boilerplating and scaffolding, explain code, write pull requests - there is no end to AI features"
+  text="Code auto-complete, boilerplating and scaffolding, explain code, write pull requests - there is no end to AI features. The employees visited Microsoft for a workshop. GitHub copilot-talk in Gjensidigeskolen with almost 100 tuning in."
+  animate="reversed"
 />
 
 ---
@@ -290,7 +352,7 @@ layout: future
 
 # Tech debt
 
-Hopefully more teams will rise out of the tech-debt ashes, either by upgrades or building new things. More will enjoy the benefits of `builders-core`
+Hopefully more teams will rise out of the tech-debt ashes, either by upgrades or building new things. More will enjoy the benefits of the modern `builders-core`
 
 ---
 transition: slide-up
@@ -299,7 +361,7 @@ layout: future
 
 # Designsystem
 
-`builders-components` will not release any breaking changes in 2025, it will remain on 1.x
+`builders-components` will release at least one breaking change in 2025, mainly cleaning up deprecated components making the codebase smaller and faster.
 
 ---
 transition: slide-up
@@ -308,7 +370,7 @@ layout: future
 
 # Upgrades
 
-React 19, Vite 6, and other modern techs - many Gjensidige teams will begin looking at upgrading. There will most likely not be a React 20 this year.
+React 19, Vite 6, and other modern techs - many Gjensidige teams will begin looking at upgrading. There will most likely not be a React 20 this year, making this a good year to catch up.
 
 ---
 transition: slide-up
@@ -317,7 +379,7 @@ layout: future
 
 # Vanilla
 
-More teams will begin using vanilla CSS as it keeps maturing, less packages and pseduopre-processors. Browser support will increase for feature we've been drooling over in 2024. Less and Sass will not be as common by the end of the year.
+More teams will begin using vanilla CSS as it keeps maturing, less packages and pre-processors. Browser support will increase for feature we've been drooling over in 2024. Less and Sass will not be as common by the end of the year. We might even see the devs behind Less announcing end-of-life. We'll see a first web component in production.
 
 ---
 transition: slide-up
@@ -333,7 +395,7 @@ transition: slide-up
 layout: future
 ---
 
-# Bun, biome, deno, turborepo
+# Bun, deno, turborepo
 
 More Gjensidige-teams see the insane value of modern tools (often Rust-based). More repoes will do bun (or deno).
 
@@ -342,18 +404,18 @@ transition: slide-up
 layout: future
 ---
 
-# Toolchain chaos
+# New ways of linting
 
-As Rust enters the playing field for real, many of your tried and tested packages and tools will lose to new Rust-tools. Some will be replaced by other, even faster tools. The ones that appeared in 2024 will mature in 2025, and new ones will be introduced. It will be a somewhat chaotic 2025.
+The oxc linter Oxlint will release a stable version and now teams will have many options to move away from the slow prettier+eslint spaghetti.
 
 ---
 transition: slide-up
 layout: future
 ---
 
-# Oxlint
+# Toolchain chaos
 
-The linter will release a stable version and most users will never use **eslint** and **prettier** again
+As Rust have entered the playing field for real, many of your tried and tested packages and tools will lose to new Rust-tools. Some Rust-tools of today will even be replaced by other, even faster tools, by the end of the year. The ones that appeared in 2024 will mature a lot in 2025. It will be a somewhat chaotic 2025.
 
 ---
 transition: slide-up
@@ -362,7 +424,7 @@ layout: future
 
 # WCAG 3
 
-There will be serious movements and progress on WCAG 3. No release in 2025, but except a lot of progress and news on it during global accessibility awerness day (May 15).
+There will be serious movements and progress on WCAG 3. No release in 2025, but expect a lot of progress and news on it during global accessibility awerness day (May 15).
 
 ---
 transition: slide-up
@@ -371,7 +433,7 @@ layout: future
 
 # Team Evan You
 
-Major breakthroughs on Vite, building and bundling will change how we stack in 2025. Not only will we have stable versions of the entire toolchain, but Vite 7 will be a major lift, replacing it's entire stack. This will have big ripple effects on the community.
+Major breakthroughs on Vite, building and bundling will change how we stack in 2025. Not only will we have stable versions of the entire toolchain, but Vite 7 will be a major lift, replacing it's entire build-stack. This will have big ripple effects on the community.
 
 ---
 transition: slide-up
@@ -381,6 +443,15 @@ layout: future
 # AI you can't resist
 
 Even the most skeptical developer will give in and begin using AI as the features, speed, and the quality it gives keeps increasing by the day. We can generate entire projects, auto-complete directly from `builders-components`, integrate with Jira-issues, writing tests automatically while we write functions, and more. How we do daily work by the end of 2025 will not look like we do today.
+
+---
+transition: slide-up
+layout: future
+---
+
+# You?
+
+What are your guesses?!
 
 ---
 transition: slide-up
