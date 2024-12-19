@@ -22,15 +22,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Set up .npmrc
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}\n@gjensidige:registry=https://npm.pkg.github.com" > ~/.npmrc
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
       - name: Build
-        run: npm run build -- --base /${{github.event.repository.name}}/
+        run: bun run build -- --base /${{github.event.repository.name}}/
 
       - uses: actions/configure-pages@v4
 
