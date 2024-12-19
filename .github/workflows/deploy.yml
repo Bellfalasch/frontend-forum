@@ -27,7 +27,7 @@ jobs:
 
       - name: Set up .npmrc
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}\n@gjensidige:registry=https://npm.pkg.github.com" > ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Install dependencies
         run: bun install
