@@ -136,6 +136,7 @@ layout: test
 * <twemoji-waving-hand/> Welcome **Magnus Le** - Front-end/Fullstack 
 * <twemoji-waving-hand/> Welcome **Henrik Lilleengen** - Chapter Lead, Private
 * <twemoji-waving-hand/> Welcome **Simen Robstad Nilsen** - Senior Developer, Mobile and Web Services
+* <twemoji-waving-hand/> Welcome **Monika Luu** - Fullstack Developer, Gplus
 * <twemoji-waving-hand/> Welcome **Adrian Storm** - Senior Developer, Designsystem - begins in two weeks!
 
 </v-clicks>
@@ -459,6 +460,15 @@ transition: slide-up
 layout: future
 ---
 
+# React Router 7 merged with Remix
+
+These two libraries merges in 2024, how will this become in practice and how will we work with this. Raised by Ulrik from Claims and Henrik in Private, Sales.
+
+---
+transition: slide-up
+layout: future
+---
+
 # You?
 
 What are your guesses?!
@@ -473,7 +483,7 @@ layout: center
 Test your Front-end Forum (and front-end in general) knowledge. 10 questions!
 
 1. Go to URL: [https://kuizzi.app](https://kuizzi.app/) (use any device)
-2. Enter PIN: **542**
+2. Enter PIN: **Not working anymore**
 3. Create a user
 4. Play!
 

@@ -8,9 +8,7 @@
     "build": "slidev build",
     "export": "slidev export --per-slide --format pdf",
     "export:onboarding": "slidev export slides-frontend-onboarding.md --output frontend-onboarding.pdf --per-slide --format pdf",
-    "lint:check": "biome check ./* --apply",
-    "predeploy": "bun run build",
-    "deploy": "gh-pages -d build"
+    "lint:check": "biome check ./* --apply"
   },
   "dependencies": {
     "@gjensidige/builders-fonts": "^1.0.12",
@@ -27,7 +25,6 @@
     "@iconify-json/la": "^1.2.0",
     "@iconify-json/logos": "^1.2.2",
     "@iconify-json/twemoji": "^1.2.0",
-    "gh-pages": "^6.2.0",
     "playwright-chromium": "^1.47.2"
   }
 }
