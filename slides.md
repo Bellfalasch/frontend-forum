@@ -15,7 +15,7 @@ layout: cover
 
 # Front-end Forum
 
-## 18th of December
+## 19th of December
 
 <Spacer/>
 <twemoji-santa-claus/> Bobby Westberg
@@ -167,6 +167,16 @@ layout: wrapped
 ---
 
 <Card
+  title="Good old web"
+  text="Tim-Berner's Lee's web turned 35! Feel old yet?"
+/>
+
+---
+transition: slide-up
+layout: wrapped
+---
+
+<Card
   title="Node.JS"
   text="Version 23 came, and 22 is now LTS"
 />
@@ -231,7 +241,7 @@ layout: wrapped
 
 <Card
   title="Text admin, 2"
-  text="A long summer, amzing devs, and some willingly managers, spawn us a brand new and shiny text admin tool - S.T.A.V."
+  text="A long summer, amazing devs, and some supportive managers, spawned us a brand new and shiny text admin tool - S.T.A.V."
 />
 
 ---
@@ -241,7 +251,7 @@ layout: wrapped
 
 <Card
   title="Next.JS and status messages"
-  text="Anyone at Gjensidige, with zero CMS-skills, can now easily publish system-wide messages for all our websites. 'First' app running Next.JS at Gjensidige. Technically Sweden was first, but they've abandon it."
+  text="Anyone at Gjensidige, with zero CMS-skills, can now easily publish system-wide messages for all our websites. 'First' app running Next.JS at Gjensidige (technically, Sweden was first, but they've abandon it)."
   animate="reversed"
 />
 

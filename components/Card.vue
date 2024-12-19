@@ -79,7 +79,7 @@ defineProps<{
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
   max-width: 80%;
 
-  animation: 1.75s ease-out 0s 1 zoomIn forwards;
+  animation: 1.25s ease-out 0s 1 zoomIn forwards;
 
   &:focus-visible { outline: none; box-shadow: var(--builders-focus-boxShadow) }
   & > :is(h1,h2,h3,h4) {
@@ -88,7 +88,7 @@ defineProps<{
     margin-bottom: 0;
   }
   &.reversed {
-    animation: 1.75s ease-out 0s 1 zoomInReversed forwards;
+    animation: 1.25s ease-out 0s 1 zoomInReversed forwards;
   }
 }
 
