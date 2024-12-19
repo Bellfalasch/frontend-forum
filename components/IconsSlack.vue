@@ -1,5 +1,5 @@
 <script setup>
-  import iconSvgUrl from "@gjensidige/builders-icons/slack.svg";
+import iconSvgUrl from "@gjensidige/builders-icons/slack.svg";
 </script>
 
 <template>

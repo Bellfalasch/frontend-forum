@@ -1,5 +1,5 @@
 <script setup>
-  import iconSvgUrl from "@gjensidige/builders-icons/website.svg";
+import iconSvgUrl from "@gjensidige/builders-icons/website.svg";
 </script>
 
 <template>

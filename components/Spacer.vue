@@ -1,5 +1,5 @@
 <script setup>
-  // Nothing needed =)
+// Nothing needed =)
 </script>
 
 <template>

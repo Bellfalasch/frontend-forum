@@ -1,12 +1,16 @@
 .slidev-layout.fin {
-  background-color: #161c2c;
-  background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
-  align-content: center;
-  text-align: center;
+	background: linear-gradient(
+		132deg,
+		rgb(65, 80, 95) 0.00%,
+		rgb(36, 37, 38) 100.00%
+	);
+	background-color: #161c2c;
+	align-content: center;
+	text-align: center;
 }
-  .slidev-layout.fin h1 {
-    color: white;
-  }
-  .slidev-layout.fin h1::before {
-    background: #000;
-  }
+.slidev-layout.fin h1 {
+	color: white;
+}
+.slidev-layout.fin h1::before {
+	background: #000;
+}

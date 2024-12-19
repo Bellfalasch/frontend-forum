@@ -1,7 +1,7 @@
 <script setup>
-  import gjensidigeSymbolSvgUrl from "@gjensidige/builders-icons/logos/gjensidige-symbol.svg";
-  // Normally you would import the symbol like this, but it's React and wont work in Vue:
-  //import { GjensidigeSymbol } from '@gjensidige/builders-icons/logos';
+import gjensidigeSymbolSvgUrl from "@gjensidige/builders-icons/logos/gjensidige-symbol.svg";
+// Normally you would import the symbol like this, but it's React and wont work in Vue:
+//import { GjensidigeSymbol } from '@gjensidige/builders-icons/logos';
 </script>
 
 <template>

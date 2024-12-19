@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineProps<{
-  title?: string
-  text?: string
-  animate?: string
-}>()
+	title?: string;
+	text?: string;
+	animate?: string;
+}>();
 </script>
 
 <template>
