@@ -1,5 +1,5 @@
 .slidev-layout.test {
-	background: linear-gradient(to right, #4947b7, #9c3750);
+	background-image: linear-gradient(to right, #4947b7, #9c3750);
 	background-color: #161c2c;
 }
 
@@ -13,7 +13,7 @@
 	z-index: 1;
 }
 .slidev-layout.two-cols-header h1::before {
-	background: var(--slidev-theme-default-headingBg);
+	background-color: var(--slidev-theme-default-headingBg);
 	box-shadow: var(--slidev-theme-header-shadow);
 	content: " ";
 	display: block;
