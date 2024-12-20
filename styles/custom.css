@@ -4,24 +4,27 @@
 }
 
 /* Fix a bug in two-cols-header layout with h1 not getting correct style */
-.slidev-layout.two-cols-header h1 {
-	color: var(--slidev-theme-default-headingColor);
-	display: inline-block;
-	padding: 0.25em;
-	position: relative;
-	margin-bottom: 1em;
-	z-index: 1;
-}
-.slidev-layout.two-cols-header h1::before {
-	background-color: var(--slidev-theme-default-headingBg);
-	box-shadow: var(--slidev-theme-header-shadow);
-	content: " ";
-	display: block;
-	position: absolute;
-	width: calc(100%);
-	height: calc(100%);
-	margin-left: -0.25em;
-	margin-top: -0.25em;
-	z-index: -1;
-	transform: rotate(-1deg);
+.slidev-layout.two-cols-header {
+	h1 {
+		color: var(--slidev-theme-default-headingColor);
+		display: inline-block;
+		padding: 0.25em;
+		position: relative;
+		margin-bottom: 1em;
+		z-index: 1;
+
+		&::before {
+			background-color: var(--slidev-theme-default-headingBg);
+			box-shadow: var(--slidev-theme-header-shadow);
+			content: " ";
+			display: block;
+			position: absolute;
+			width: calc(100%);
+			height: calc(100%);
+			margin-left: -0.25em;
+			margin-top: -0.25em;
+			z-index: -1;
+			transform: rotate(-1deg);
+		}
+	}
 }

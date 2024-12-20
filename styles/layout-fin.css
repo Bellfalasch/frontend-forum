@@ -7,10 +7,11 @@
 	background-color: #161c2c;
 	align-content: center;
 	text-align: center;
-}
-.slidev-layout.fin h1 {
-	color: white;
-}
-.slidev-layout.fin h1::before {
-	background: #000;
+
+	h1 {
+		color: white;
+		&::before {
+			background: #000;
+		}
+	}
 }
