@@ -11,6 +11,6 @@
 	},
 	"files": {
 		"include": ["**/*.ts", "**/*.css", "**/*.vue", "**/*.json", "**/*.md"],
-		"ignore": ["public/*", "node_modules/*"]
+		"ignore": ["public/*", "node_modules/*", "archive/*"]
 	}
 }
