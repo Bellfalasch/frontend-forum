@@ -69,8 +69,7 @@ transition: slide-up
 * Wrote my first webpage 1996, been working professionally since 2006
 * Gjensidige since 2019 (this role since 2022)
 * Done a lot of everything (Java, ASP.NET, MySQL, webdesign, ++)
-* Passion for front-end (vanilla, VueJS, React, Next.JS ++)
-* Loves CSS, vanilla code, and CMS-integrations
+* Passion for front-end (vanilla, CSS, VueJS, React, Next.JS, CMS integrations ++)
 
 </v-clicks>
 
@@ -82,7 +81,7 @@ transition: slide-up
 
 <v-clicks after>
 
-* Swedish, 43yo, two kids (8yo & 6yo), cat (10yo)
+* Swedish, 43yo, two kids (9yo & 6yo), cat (11yo)
 * Norway since 2010
 * Love hockey, craft beer, old games, and drawing
 
